@@ -1,0 +1,23 @@
+{
+  "checks": [
+    "Local background CAD submission returns 202 without Redis",
+    "Every manifest file is listed and actual GLB geometry rotates in the WebGL viewer",
+    "Real DXF drawing displays as SVG",
+    "Generated PDF opens inline",
+    "Excel workbook sheets switch and show real rows",
+    "CSV, JSON, Markdown, PNG, archive inventory and verified downloads work in the UI",
+    "Files from older revisions remain accessible with revision and category filters",
+    "AI workflow submits with 202 and its full generated JSON report is viewable before verification",
+    "File browser and actual 3D model work at 390px without horizontal overflow or password prompts"
+  ],
+  "page_errors": [],
+  "executor": "local background",
+  "redis_required": false,
+  "external_openai_calls": 0,
+  "ai": "MockGateway only",
+  "cad": "Real CadQuery geometry and exports",
+  "files_per_revision": 33,
+  "physical_measurements": false,
+  "desktop": "1440x1080",
+  "mobile": "390x844"
+}

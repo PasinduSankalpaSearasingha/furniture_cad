@@ -1,0 +1,18 @@
+{
+  "checks": [
+    "Workspace opens automatically without a login or stored bearer token",
+    "Project creation, revision save, real CAD, ten parts and private download without password entry",
+    "Mocked AI proposal, measured-evidence form and real CAD verification flow without login",
+    "Material creation and settings without account-creation or password controls",
+    "Projects persist after browser reload without a sign-in step",
+    "Password-free mobile workspace and navigation at 390px"
+  ],
+  "page_errors": [],
+  "external_openai_calls": 0,
+  "cad": "Real CadQuery in isolated local test storage",
+  "ai": "MockGateway only",
+  "physical_measurements": false,
+  "password_entry_required": false,
+  "desktop": "1440x1080",
+  "mobile": "390x844"
+}

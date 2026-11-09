@@ -1,0 +1,21 @@
+{
+  "checks": [
+    "actual CAD on overview",
+    "view controls",
+    "all 80 output thumbnails",
+    "all preview file types",
+    "55 component cards",
+    "isolated ornament/glass/panel geometry",
+    "component drawing download",
+    "category/revision filters",
+    "existing file browser",
+    "desktop and mobile gallery"
+  ],
+  "output_cards": 80,
+  "component_cards": 55,
+  "assembly_triangles": 1108,
+  "page_errors": [],
+  "desktop": "1440x1080",
+  "mobile": "390x844",
+  "external_openai_calls": 0
+}

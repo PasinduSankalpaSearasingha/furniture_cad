@@ -1,0 +1,52 @@
+{
+  "cad_to_reference": {
+    "mean_mm": 0.02610419481769244,
+    "median_mm": 0.006317138671875,
+    "p95_mm": 0.014038127847015858,
+    "maximum_observed_mm": 19.408294677734375
+  },
+  "reference_to_cad": {
+    "mean_mm": 0.006636446635901807,
+    "median_mm": 0.006286725867539644,
+    "p95_mm": 0.013977084308862686,
+    "maximum_observed_mm": 0.02221682481467724
+  },
+  "components": {
+    "0": {
+      "mean_mm": 0.006220722332473932,
+      "median_mm": 0.005920434836298227,
+      "p95_mm": 0.013244683854281902,
+      "maximum_observed_mm": 0.016174323856830597
+    },
+    "1": {
+      "mean_mm": 0.00657353607495348,
+      "median_mm": 0.0063018798828125,
+      "p95_mm": 0.013702545315027237,
+      "maximum_observed_mm": 0.015167237259447575
+    },
+    "2": {
+      "mean_mm": 0.00641423463749462,
+      "median_mm": 0.006248301826417446,
+      "p95_mm": 0.013061853125691414,
+      "maximum_observed_mm": 0.014923189766705036
+    },
+    "3": {
+      "mean_mm": 0.009884835788429351,
+      "median_mm": 0.008656037971377373,
+      "p95_mm": 0.020325487479567528,
+      "maximum_observed_mm": 0.02221682481467724
+    },
+    "4": {
+      "mean_mm": 0.006392189458278968,
+      "median_mm": 0.006198093295097351,
+      "p95_mm": 0.013061724603176117,
+      "maximum_observed_mm": 0.0149231543764472
+    }
+  },
+  "symmetric_mean_mm": 0.01637032072679712,
+  "normal_loss": 0.00613497543067104,
+  "distance_method": "Open3D closest triangle surface on temporary CAD tessellation",
+  "cad_tessellation_tolerance_mm": 0.25,
+  "reference_points": 750000,
+  "cad_points": 750000
+}

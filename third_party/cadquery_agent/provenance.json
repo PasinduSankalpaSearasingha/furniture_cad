@@ -1,0 +1,21 @@
+{
+  "repository": "https://github.com/naturecodec-stack/Agentic-AI-for-CadQuery",
+  "commit": "702b90e0d26b630d7eba09f85d29bb446f6a1b96",
+  "declared_license": "MIT (upstream README)",
+  "files": {
+    "README.md": "93e78c4cc9e816aeecc15568f793c849c63d46ca3ea4afc18c636c7b242768ec",
+    "cq_agent_v4/agents/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cq_agent_v4/agents/assembly_decomposer.py": "38cd8b25d15fa4246faf71741a965630a30a88afaed08f36f678dd6be27011f4",
+    "cq_agent_v4/agents/code_critic.py": "baab974a276fb05c386a8b9d631148b31c61063e35d749e3e3507187f3dbf17f",
+    "cq_agent_v4/agents/coder.py": "8ac2951910929bf85c672579736c7f2c9f72f04ef80c8b0789e880ae6b59d3a0",
+    "cq_agent_v4/agents/dimension_extractor.py": "840b30624ba4a30836dcdd7794a6eb4bb8e7f49ce060dbcf8c7631f9dab35d88",
+    "cq_agent_v4/agents/dimension_validator.py": "b6f60843019e98b0412ec079eb6a7108b76c758f01ce3f82440f7eded0c8b98d",
+    "cq_agent_v4/agents/memory_curator.py": "145b4788b9c00d589c662291a8ae82e2b5fefd92166e69793aa241c4da7fb592",
+    "cq_agent_v4/agents/planner.py": "567587546a6e1509a6399907a598ea3c91ed93953e13329c777455e407992f2d",
+    "cq_agent_v4/agents/repair_specialist.py": "3019dd317cd4feb26c72273ef575f40c0a17966c1cfa3d262e5b36a73eb6bdfe",
+    "cq_agent_v4/agents/reviewer.py": "9dc3bf1ace63c04fa37ccdf468298b72054bc0cb5b837d0313629da0f7ed9339",
+    "cq_agent_v4/agents/skill_selector.py": "18c9c0d9a78e4ef292af3f9dcc2923abce8b73abd2a3dea230d603afd2e1973a",
+    "cq_agent_v4/graph.py": "a9a1b5d9363cd327f1a7bcbf981fdb182a300b59da36c86558a1cca994982f1e"
+  },
+  "integration": "Prompt constants extracted as data; upstream Python, subprocess executor and UI are never executed."
+}

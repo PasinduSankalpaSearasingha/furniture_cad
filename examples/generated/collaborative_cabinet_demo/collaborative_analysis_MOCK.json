@@ -1,0 +1,352 @@
+{
+  "id": "71d5d180-4238-4268-b806-0b5ca7713360",
+  "project_id": "c5dc04ec-2643-4019-999d-32d0ce891ac1",
+  "mode": "COLLABORATIVE",
+  "status": "WAITING_FOR_DESIGNER",
+  "stage": "waiting_for_designer",
+  "progress": 100,
+  "attempts": 1,
+  "revision_id": null,
+  "job_id": null,
+  "result": {
+    "vision": {
+      "category": "display cabinet",
+      "components": [
+        {
+          "component_id": "P001",
+          "label": "Left side",
+          "kind": "panel",
+          "possible_materials": [
+            "plywood"
+          ],
+          "provenance": "IMAGE_OBSERVED",
+          "evidence": "SYNTHETIC MOCK RESPONSE: not an actual vision measurement"
+        },
+        {
+          "component_id": "P002",
+          "label": "Right side",
+          "kind": "panel",
+          "possible_materials": [
+            "plywood"
+          ],
+          "provenance": "IMAGE_OBSERVED",
+          "evidence": "SYNTHETIC MOCK RESPONSE: not an actual vision measurement"
+        },
+        {
+          "component_id": "P003",
+          "label": "Top",
+          "kind": "panel",
+          "possible_materials": [
+            "plywood"
+          ],
+          "provenance": "IMAGE_OBSERVED",
+          "evidence": "SYNTHETIC MOCK RESPONSE: not an actual vision measurement"
+        },
+        {
+          "component_id": "P004",
+          "label": "Bottom",
+          "kind": "panel",
+          "possible_materials": [
+            "plywood"
+          ],
+          "provenance": "IMAGE_OBSERVED",
+          "evidence": "SYNTHETIC MOCK RESPONSE: not an actual vision measurement"
+        },
+        {
+          "component_id": "P005",
+          "label": "Assumed back",
+          "kind": "panel",
+          "possible_materials": [
+            "plywood"
+          ],
+          "provenance": "AI_ESTIMATED",
+          "evidence": "SYNTHETIC MOCK RESPONSE: not an actual vision measurement"
+        },
+        {
+          "component_id": "D001",
+          "label": "Left stile",
+          "kind": "frame",
+          "possible_materials": [
+            "solid_wood"
+          ],
+          "provenance": "IMAGE_OBSERVED",
+          "evidence": "SYNTHETIC MOCK RESPONSE: not an actual vision measurement"
+        },
+        {
+          "component_id": "D002",
+          "label": "Right stile",
+          "kind": "frame",
+          "possible_materials": [
+            "solid_wood"
+          ],
+          "provenance": "IMAGE_OBSERVED",
+          "evidence": "SYNTHETIC MOCK RESPONSE: not an actual vision measurement"
+        },
+        {
+          "component_id": "D003",
+          "label": "Top rail",
+          "kind": "frame",
+          "possible_materials": [
+            "solid_wood"
+          ],
+          "provenance": "IMAGE_OBSERVED",
+          "evidence": "SYNTHETIC MOCK RESPONSE: not an actual vision measurement"
+        },
+        {
+          "component_id": "D004",
+          "label": "Bottom rail",
+          "kind": "frame",
+          "possible_materials": [
+            "solid_wood"
+          ],
+          "provenance": "IMAGE_OBSERVED",
+          "evidence": "SYNTHETIC MOCK RESPONSE: not an actual vision measurement"
+        },
+        {
+          "component_id": "G001",
+          "label": "Visual glass pane",
+          "kind": "glass",
+          "possible_materials": [
+            "glass"
+          ],
+          "provenance": "IMAGE_OBSERVED",
+          "evidence": "SYNTHETIC MOCK RESPONSE: not an actual vision measurement"
+        }
+      ],
+      "proportions": [
+        "Tall rectangular cabinet"
+      ],
+      "observations": [
+        "Synthetic fixture: one framed glass door"
+      ],
+      "assumptions": [
+        "Back construction is not visible"
+      ],
+      "missing_measurements": [
+        {
+          "field": "height_mm",
+          "reason": "Physical measurement required"
+        }
+      ],
+      "limitations": [
+        "Mocked response; reference itself is a CAD-derived review preview"
+      ]
+    },
+    "design": {
+      "status": "SUPPORTED_TEMPLATE",
+      "template_id": "cabinet.v1",
+      "summary": "Synthetic mixed-material cabinet proposal",
+      "components": [
+        {
+          "component_id": "P001",
+          "label": "Left side",
+          "kind": "panel",
+          "possible_materials": [
+            "plywood"
+          ],
+          "provenance": "IMAGE_OBSERVED",
+          "evidence": "SYNTHETIC MOCK RESPONSE: not an actual vision measurement"
+        },
+        {
+          "component_id": "P002",
+          "label": "Right side",
+          "kind": "panel",
+          "possible_materials": [
+            "plywood"
+          ],
+          "provenance": "IMAGE_OBSERVED",
+          "evidence": "SYNTHETIC MOCK RESPONSE: not an actual vision measurement"
+        },
+        {
+          "component_id": "P003",
+          "label": "Top",
+          "kind": "panel",
+          "possible_materials": [
+            "plywood"
+          ],
+          "provenance": "IMAGE_OBSERVED",
+          "evidence": "SYNTHETIC MOCK RESPONSE: not an actual vision measurement"
+        },
+        {
+          "component_id": "P004",
+          "label": "Bottom",
+          "kind": "panel",
+          "possible_materials": [
+            "plywood"
+          ],
+          "provenance": "IMAGE_OBSERVED",
+          "evidence": "SYNTHETIC MOCK RESPONSE: not an actual vision measurement"
+        },
+        {
+          "component_id": "P005",
+          "label": "Assumed back",
+          "kind": "panel",
+          "possible_materials": [
+            "plywood"
+          ],
+          "provenance": "AI_ESTIMATED",
+          "evidence": "SYNTHETIC MOCK RESPONSE: not an actual vision measurement"
+        },
+        {
+          "component_id": "D001",
+          "label": "Left stile",
+          "kind": "frame",
+          "possible_materials": [
+            "solid_wood"
+          ],
+          "provenance": "IMAGE_OBSERVED",
+          "evidence": "SYNTHETIC MOCK RESPONSE: not an actual vision measurement"
+        },
+        {
+          "component_id": "D002",
+          "label": "Right stile",
+          "kind": "frame",
+          "possible_materials": [
+            "solid_wood"
+          ],
+          "provenance": "IMAGE_OBSERVED",
+          "evidence": "SYNTHETIC MOCK RESPONSE: not an actual vision measurement"
+        },
+        {
+          "component_id": "D003",
+          "label": "Top rail",
+          "kind": "frame",
+          "possible_materials": [
+            "solid_wood"
+          ],
+          "provenance": "IMAGE_OBSERVED",
+          "evidence": "SYNTHETIC MOCK RESPONSE: not an actual vision measurement"
+        },
+        {
+          "component_id": "D004",
+          "label": "Bottom rail",
+          "kind": "frame",
+          "possible_materials": [
+            "solid_wood"
+          ],
+          "provenance": "IMAGE_OBSERVED",
+          "evidence": "SYNTHETIC MOCK RESPONSE: not an actual vision measurement"
+        },
+        {
+          "component_id": "G001",
+          "label": "Visual glass pane",
+          "kind": "glass",
+          "possible_materials": [
+            "glass"
+          ],
+          "provenance": "IMAGE_OBSERVED",
+          "evidence": "SYNTHETIC MOCK RESPONSE: not an actual vision measurement"
+        }
+      ],
+      "relationships": [
+        {
+          "connection_id": "C001",
+          "first_component_id": "P001",
+          "second_component_id": "P004",
+          "relationship": "side to bottom"
+        }
+      ],
+      "parameters": [
+        {
+          "field": "width_mm",
+          "suggested_value": 700.0,
+          "provenance": "AI_ESTIMATED",
+          "explanation": "Unverified fixture estimate; never manufacturing authority"
+        }
+      ],
+      "required_measurements": [
+        {
+          "field": "width_mm",
+          "reason": "Required by the deterministic cabinet template; designer verification required"
+        },
+        {
+          "field": "depth_mm",
+          "reason": "Required by the deterministic cabinet template; designer verification required"
+        },
+        {
+          "field": "height_mm",
+          "reason": "Required by the deterministic cabinet template; designer verification required"
+        },
+        {
+          "field": "panel_thickness_mm",
+          "reason": "Required by the deterministic cabinet template; designer verification required"
+        },
+        {
+          "field": "back_thickness_mm",
+          "reason": "Required by the deterministic cabinet template; designer verification required"
+        },
+        {
+          "field": "door_frame_width_mm",
+          "reason": "Required by the deterministic cabinet template; designer verification required"
+        },
+        {
+          "field": "door_frame_depth_mm",
+          "reason": "Required by the deterministic cabinet template; designer verification required"
+        },
+        {
+          "field": "glass_thickness_mm",
+          "reason": "Required by the deterministic cabinet template; designer verification required"
+        },
+        {
+          "field": "door_perimeter_gap_mm",
+          "reason": "Required by the deterministic cabinet template; designer verification required"
+        },
+        {
+          "field": "glass_edge_clearance_mm",
+          "reason": "Required by the deterministic cabinet template; designer verification required"
+        },
+        {
+          "field": "door_standoff_mm",
+          "reason": "Required by the deterministic cabinet template; designer verification required"
+        }
+      ],
+      "unrepresented_features": []
+    },
+    "joinery": {
+      "joints": [
+        {
+          "connection_id": "C001",
+          "profile_id": null,
+          "status": "ENGINEERING_REVIEW_REQUIRED",
+          "reason": "Server could not verify an approved compatible catalog reference. No factory data supplied"
+        }
+      ],
+      "required_hardware_types": [
+        "hinge",
+        "connector",
+        "glass_retainer"
+      ],
+      "unsupported_connections": [
+        "Frame joints and glass retention require engineering"
+      ]
+    },
+    "review": {
+      "summary": "Synthetic advisory review; engineering checks remain authoritative",
+      "issues": [],
+      "revision_recommended": false,
+      "engineering_certified": false
+    },
+    "automatic_corrections": 0,
+    "requires_designer_verification": true,
+    "approved_for_manufacturing": false
+  },
+  "error": null,
+  "completed_stages": [
+    "vision",
+    "design_0",
+    "joinery_0",
+    "review_0"
+  ],
+  "usage": {
+    "input_tokens": 400,
+    "output_tokens": 200,
+    "generated_images": 0
+  },
+  "cost": {
+    "status": "PRICE_REQUIRED",
+    "total": null,
+    "currency": null
+  },
+  "usage_complete": true,
+  "approved_for_manufacturing": false
+}

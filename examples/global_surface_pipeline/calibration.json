@@ -1,0 +1,35 @@
+{
+  "transform": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "uniform_scale": 1.0,
+  "units": "mm",
+  "calibration": "confirmed dimensions",
+  "confirmed_dimensions": {
+    "width_mm": 700
+  },
+  "physical_accuracy_verified": false
+}

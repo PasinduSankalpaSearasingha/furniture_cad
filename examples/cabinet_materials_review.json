@@ -1,0 +1,26 @@
+{
+  "project_name": "Mixed-material cabinet - unapproved engineering example",
+  "width_mm": 700,
+  "depth_mm": 450,
+  "height_mm": 1800,
+  "carcass_material": "plywood",
+  "panel_thickness_mm": 18,
+  "back_thickness_mm": 6,
+  "include_glazed_door": true,
+  "door_frame_wood": "solid_wood",
+  "door_frame_width_mm": 55,
+  "door_frame_depth_mm": 24,
+  "glass_thickness_mm": 6,
+  "door_perimeter_gap_mm": 3,
+  "joint_type": "none",
+  "measured_dimensions_confirmed": false,
+  "dimension_provenance": "user_provided",
+  "material_profiles": [
+    {"material_id":"DEMO-PLY18","name":"Unverified plywood 18 mm","material":"plywood","actual_thickness_mm":18},
+    {"material_id":"DEMO-PLY6","name":"Unverified plywood 6 mm","material":"plywood","actual_thickness_mm":6},
+    {"material_id":"DEMO-WOOD24","name":"Unverified solid timber 24 mm","material":"solid_wood","actual_thickness_mm":24},
+    {"material_id":"DEMO-GLASS6","name":"Unverified glass 6 mm","material":"glass","actual_thickness_mm":6}
+  ],
+  "material_assignments": {"carcass":"DEMO-PLY18","back":"DEMO-PLY6","door_frame":"DEMO-WOOD24","glass":"DEMO-GLASS6"},
+  "hardware": []
+}

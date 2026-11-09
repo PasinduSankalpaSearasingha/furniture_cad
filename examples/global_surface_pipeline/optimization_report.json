@@ -1,0 +1,792 @@
+{
+  "version": "GLOBAL_SURFACE_OPTIMIZER_V2",
+  "primary_fitting_method": "global_surface",
+  "mode": "quality",
+  "status": "improved",
+  "initial": {
+    "cad_to_reference": {
+      "mean_mm": 0.6893664198096098,
+      "rms_mm": 3.002693544075348,
+      "median_mm": 2.6702880859375e-05,
+      "p95_mm": 5.710052490234375,
+      "maximum_observed_mm": 15.000000953674316
+    },
+    "reference_to_cad": {
+      "mean_mm": 0.6856518199139344,
+      "rms_mm": 2.9827558509681196,
+      "median_mm": 2.5177723728120327e-05,
+      "p95_mm": 5.695404052734375,
+      "maximum_observed_mm": 15.000000953674316
+    },
+    "symmetric_mean_mm": 0.6875091198617722,
+    "rms_mm": 2.99274130072383,
+    "p95_mm": 5.700714111328125,
+    "maximum_observed_mm": 15.000000953674316,
+    "components": {
+      "0": {
+        "cad_to_reference": {
+          "mean_mm": 5.4718888941391844e-05,
+          "rms_mm": 0.000263989485936769,
+          "median_mm": 2.15791860682657e-05,
+          "p95_mm": 6.823938019806519e-05,
+          "maximum_observed_mm": 0.007531201932579279
+        },
+        "reference_to_cad": {
+          "mean_mm": 5.457148092113063e-05,
+          "rms_mm": 0.00026358904508951995,
+          "median_mm": 2.15791860682657e-05,
+          "p95_mm": 6.823938019806519e-05,
+          "maximum_observed_mm": 0.007531201932579279
+        },
+        "correspondence": "geometric region correspondence; not proof of a manufactured part",
+        "mean_mm": 5.457148092113063e-05,
+        "rms_mm": 0.00026358904508951995,
+        "median_mm": 2.15791860682657e-05,
+        "p95_mm": 6.823938019806519e-05,
+        "maximum_observed_mm": 0.007531201932579279
+      },
+      "1": {
+        "cad_to_reference": {
+          "mean_mm": 7.249420170719313,
+          "rms_mm": 9.738101234887276,
+          "median_mm": 6.86053466796875,
+          "p95_mm": 15.0,
+          "maximum_observed_mm": 15.000000953674316
+        },
+        "reference_to_cad": {
+          "mean_mm": 7.261294896189652,
+          "rms_mm": 9.707551767455803,
+          "median_mm": 6.8179931640625,
+          "p95_mm": 15.0,
+          "maximum_observed_mm": 15.000000953674316
+        },
+        "correspondence": "geometric region correspondence; not proof of a manufactured part",
+        "mean_mm": 7.261294896189652,
+        "rms_mm": 9.707551767455803,
+        "median_mm": 6.8179931640625,
+        "p95_mm": 15.0,
+        "maximum_observed_mm": 15.000000953674316
+      },
+      "2": {
+        "cad_to_reference": {
+          "mean_mm": 0.0002843658258291051,
+          "rms_mm": 0.0006179537134710413,
+          "median_mm": 3.0517578125e-05,
+          "p95_mm": 0.0015286230482161045,
+          "maximum_observed_mm": 0.004460684489458799
+        },
+        "reference_to_cad": {
+          "mean_mm": 0.00028410610379949006,
+          "rms_mm": 0.0006177592454890296,
+          "median_mm": 3.0517578125e-05,
+          "p95_mm": 0.0015286230482161045,
+          "maximum_observed_mm": 0.004460684489458799
+        },
+        "correspondence": "geometric region correspondence; not proof of a manufactured part",
+        "mean_mm": 0.00028410610379949006,
+        "rms_mm": 0.0006177592454890296,
+        "median_mm": 3.0517578125e-05,
+        "p95_mm": 0.0015286230482161045,
+        "maximum_observed_mm": 0.004460684489458799
+      },
+      "3": {
+        "cad_to_reference": {
+          "mean_mm": 0.0002937773007081031,
+          "rms_mm": 0.0006555435977282431,
+          "median_mm": 3.0517578125e-05,
+          "p95_mm": 0.001617719535715878,
+          "maximum_observed_mm": 0.005615980830043554
+        },
+        "reference_to_cad": {
+          "mean_mm": 0.00029178883360954713,
+          "rms_mm": 0.0006484945797810446,
+          "median_mm": 3.0517578125e-05,
+          "p95_mm": 0.0015875741373747587,
+          "maximum_observed_mm": 0.005615980830043554
+        },
+        "correspondence": "geometric region correspondence; not proof of a manufactured part",
+        "mean_mm": 0.00029178883360954713,
+        "rms_mm": 0.0006484945797810446,
+        "median_mm": 3.0517578125e-05,
+        "p95_mm": 0.0015875741373747587,
+        "maximum_observed_mm": 0.005615980830043554
+      },
+      "4": {
+        "cad_to_reference": {
+          "mean_mm": 0.00029088680915372034,
+          "rms_mm": 0.0006264417341483755,
+          "median_mm": 3.0517578125e-05,
+          "p95_mm": 0.0014981613494455814,
+          "maximum_observed_mm": 0.0042465790174901485
+        },
+        "reference_to_cad": {
+          "mean_mm": 0.0002931536367323192,
+          "rms_mm": 0.0006257339249494414,
+          "median_mm": 3.0517578125e-05,
+          "p95_mm": 0.0014712669653818011,
+          "maximum_observed_mm": 0.0042465790174901485
+        },
+        "correspondence": "geometric region correspondence; not proof of a manufactured part",
+        "mean_mm": 0.0002931536367323192,
+        "rms_mm": 0.0006257339249494414,
+        "median_mm": 3.0517578125e-05,
+        "p95_mm": 0.0014712669653818011,
+        "maximum_observed_mm": 0.0042465790174901485
+      }
+    },
+    "normal_loss": 0.04746621978711927,
+    "normal_rms_angle_deg": 21.836924092464027,
+    "normals_reliable": true,
+    "normal_orientation": "oriented",
+    "unmatched_reference_area_fraction": 0.0594421062557859,
+    "unmatched_cad_area_fraction": 0.05894282572318196,
+    "oversized_cad_area_fraction": null,
+    "oversized_status": "unverified with unsigned distances",
+    "unmatched_tolerance_mm": 2.0,
+    "cad_points": 25000,
+    "reference_points": 25000,
+    "surface_coverage": "entire triangle surface; no visibility filtering",
+    "distance_method": "Open3D closest point on triangles in both directions",
+    "cad_tessellation_tolerance_mm": 0.25,
+    "objective_loss_components": {
+      "cad_to_reference": 1.1617564414676316,
+      "reference_to_cad": 1.1528248115148074,
+      "plane_cad": 0.29043908816180847,
+      "plane_reference": 0.28820618158506156,
+      "normal_cad": 0.004694422917157626,
+      "normal_reference": 0.004798820962195675,
+      "component_cad": 0.29759526304798367,
+      "component_reference": 0.28993710866421013
+    },
+    "sdf": {
+      "eligible": false,
+      "reason": "self-intersections or intersecting shells",
+      "requested": "auto",
+      "enabled": false,
+      "sampling": "sparse query points; no dense voxel field"
+    }
+  },
+  "final": {
+    "cad_to_reference": {
+      "mean_mm": 0.00015243390784356193,
+      "rms_mm": 0.00044762696764938153,
+      "median_mm": 2.4425980882369913e-05,
+      "p95_mm": 0.00091603584587574,
+      "maximum_observed_mm": 0.008088079281151295
+    },
+    "reference_to_cad": {
+      "mean_mm": 0.00015081688468223132,
+      "rms_mm": 0.00044375087504644516,
+      "median_mm": 2.4126411517499946e-05,
+      "p95_mm": 0.0008933887584134936,
+      "maximum_observed_mm": 0.008221578784286976
+    },
+    "symmetric_mean_mm": 0.00015162539626289659,
+    "rms_mm": 0.00044569313505564916,
+    "p95_mm": 0.0009049117797985673,
+    "maximum_observed_mm": 0.008221578784286976,
+    "components": {
+      "0": {
+        "cad_to_reference": {
+          "mean_mm": 5.652078607863275e-05,
+          "rms_mm": 0.0002678060843593541,
+          "median_mm": 2.15791860682657e-05,
+          "p95_mm": 6.823938019806519e-05,
+          "maximum_observed_mm": 0.008088079281151295
+        },
+        "reference_to_cad": {
+          "mean_mm": 5.5479319349156835e-05,
+          "rms_mm": 0.0002628552820626583,
+          "median_mm": 2.15791860682657e-05,
+          "p95_mm": 6.823938019806519e-05,
+          "maximum_observed_mm": 0.008221578784286976
+        },
+        "correspondence": "geometric region correspondence; not proof of a manufactured part",
+        "mean_mm": 5.5479319349156835e-05,
+        "rms_mm": 0.0002628552820626583,
+        "median_mm": 2.15791860682657e-05,
+        "p95_mm": 6.823938019806519e-05,
+        "maximum_observed_mm": 0.008221578784286976
+      },
+      "1": {
+        "cad_to_reference": {
+          "mean_mm": 0.00035091961944257996,
+          "rms_mm": 0.000647983575714086,
+          "median_mm": 0.00018310546875,
+          "p95_mm": 0.0015286230482161045,
+          "maximum_observed_mm": 0.0052512409165501595
+        },
+        "reference_to_cad": {
+          "mean_mm": 0.00035360826521242444,
+          "rms_mm": 0.000649346444247098,
+          "median_mm": 0.00018310546875,
+          "p95_mm": 0.0015369016909971833,
+          "maximum_observed_mm": 0.006110549904406071
+        },
+        "correspondence": "geometric region correspondence; not proof of a manufactured part",
+        "mean_mm": 0.00035360826521242444,
+        "rms_mm": 0.000649346444247098,
+        "median_mm": 0.00018310546875,
+        "p95_mm": 0.0015369016909971833,
+        "maximum_observed_mm": 0.006110549904406071
+      },
+      "2": {
+        "cad_to_reference": {
+          "mean_mm": 0.00029630014069840355,
+          "rms_mm": 0.0006413598907485028,
+          "median_mm": 3.0517578125e-05,
+          "p95_mm": 0.0015611762646585703,
+          "maximum_observed_mm": 0.0054324716329574585
+        },
+        "reference_to_cad": {
+          "mean_mm": 0.0002937412375599414,
+          "rms_mm": 0.0006385367320853881,
+          "median_mm": 3.0517578125e-05,
+          "p95_mm": 0.0015286230482161045,
+          "maximum_observed_mm": 0.00549392681568861
+        },
+        "correspondence": "geometric region correspondence; not proof of a manufactured part",
+        "mean_mm": 0.0002937412375599414,
+        "rms_mm": 0.0006385367320853881,
+        "median_mm": 3.0517578125e-05,
+        "p95_mm": 0.0015286230482161045,
+        "maximum_observed_mm": 0.00549392681568861
+      },
+      "3": {
+        "cad_to_reference": {
+          "mean_mm": 0.0002928118155700383,
+          "rms_mm": 0.0006345999998131572,
+          "median_mm": 3.0517578125e-05,
+          "p95_mm": 0.0015277850907295942,
+          "maximum_observed_mm": 0.005435213912278414
+        },
+        "reference_to_cad": {
+          "mean_mm": 0.00028785216476112776,
+          "rms_mm": 0.0006272287212956999,
+          "median_mm": 3.0517578125e-05,
+          "p95_mm": 0.001496606389991939,
+          "maximum_observed_mm": 0.005495727993547916
+        },
+        "correspondence": "geometric region correspondence; not proof of a manufactured part",
+        "mean_mm": 0.00028785216476112776,
+        "rms_mm": 0.0006272287212956999,
+        "median_mm": 3.0517578125e-05,
+        "p95_mm": 0.001496606389991939,
+        "maximum_observed_mm": 0.005495727993547916
+      },
+      "4": {
+        "cad_to_reference": {
+          "mean_mm": 0.0002950836786821923,
+          "rms_mm": 0.0006374707128865458,
+          "median_mm": 3.0517578125e-05,
+          "p95_mm": 0.0015307539142668247,
+          "maximum_observed_mm": 0.005127520766109228
+        },
+        "reference_to_cad": {
+          "mean_mm": 0.00029493930796253295,
+          "rms_mm": 0.0006365667702072357,
+          "median_mm": 3.0517578125e-05,
+          "p95_mm": 0.0015261840308085084,
+          "maximum_observed_mm": 0.005375340115278959
+        },
+        "correspondence": "geometric region correspondence; not proof of a manufactured part",
+        "mean_mm": 0.00029493930796253295,
+        "rms_mm": 0.0006365667702072357,
+        "median_mm": 3.0517578125e-05,
+        "p95_mm": 0.0015261840308085084,
+        "maximum_observed_mm": 0.005375340115278959
+      }
+    },
+    "normal_loss": 0.010362120991613464,
+    "normal_rms_angle_deg": 12.953162163224496,
+    "normals_reliable": true,
+    "normal_orientation": "oriented",
+    "unmatched_reference_area_fraction": 0.0,
+    "unmatched_cad_area_fraction": 0.0,
+    "oversized_cad_area_fraction": null,
+    "oversized_status": "unverified with unsigned distances",
+    "unmatched_tolerance_mm": 2.0,
+    "cad_points": 443884,
+    "reference_points": 298496,
+    "surface_coverage": "entire triangle surface; no visibility filtering",
+    "distance_method": "Open3D closest point on triangles in both directions",
+    "cad_tessellation_tolerance_mm": 0.25,
+    "objective_loss_components": {
+      "cad_to_reference": 1.001849080517854e-07,
+      "reference_to_cad": 9.845737585905845e-08,
+      "plane_cad": 1.9567442353170025e-10,
+      "plane_reference": 1.938868833278244e-10,
+      "normal_cad": 0.0010380038930132146,
+      "normal_reference": 0.00103442023444268,
+      "component_cad": 0.004182672309439328,
+      "component_reference": 2.4614982070152595e-08
+    },
+    "sdf": {
+      "eligible": false,
+      "reason": "self-intersections or intersecting shells",
+      "requested": "auto",
+      "enabled": false,
+      "sampling": "sparse query points; no dense voxel field"
+    }
+  },
+  "initial_objective": 3.4902521383208587,
+  "final_objective": 0.006158346233435918,
+  "initial_photo_error": 0.0017498683028508543,
+  "photo_error": 2.2595517436294784e-08,
+  "units": "mm",
+  "evaluations": 18,
+  "exact_evaluations": 4,
+  "query_evaluations": 26,
+  "mesh_query_seconds": 1.8484085999662057,
+  "stages": [
+    {
+      "requested_points": 25000,
+      "actual_points": 25000,
+      "evaluations": 14,
+      "seconds": 1.375,
+      "exact_score_improvement": 3.484093792087423,
+      "sensitivities": {
+        "F002.position.0": 0.38273277230987157
+      },
+      "shortlisted_native_candidates": 4,
+      "memory_fallback": false
+    },
+    {
+      "requested_points": 100000,
+      "actual_points": 100000,
+      "evaluations": 4,
+      "seconds": 0.875,
+      "exact_score_improvement": 0.0,
+      "sensitivities": {
+        "F002.position.0": 0.3827327723098595
+      },
+      "shortlisted_native_candidates": 0,
+      "memory_fallback": false
+    }
+  ],
+  "revisions": [
+    {
+      "score": 0.006158346233435918,
+      "surface_mean_mm": 0.00015095713661793545,
+      "updates": {
+        "F002.position.0": -290.0001884784803
+      }
+    }
+  ],
+  "attempts": [
+    {
+      "valid": true,
+      "score": 0.006158346233435918,
+      "proxy_score": 0.0061583452229877714,
+      "updates": {
+        "F002.position.0": -290.0001884784803
+      }
+    },
+    {
+      "valid": true,
+      "score": 0.00618592538994233,
+      "proxy_score": 0.0061859239926330785,
+      "updates": {
+        "F002.position.0": -289.99994780075787
+      }
+    },
+    {
+      "valid": false,
+      "reason": "Candidate worsens reviewed original-photo evidence",
+      "updates": {
+        "F002.position.0": -289.98650857641866
+      }
+    },
+    {
+      "valid": false,
+      "reason": "Candidate worsens reviewed original-photo evidence",
+      "updates": {
+        "F002.position.0": -289.3831832246945
+      }
+    }
+  ],
+  "stop_reason": "density_increase_did_not_improve_fit",
+  "registration": {
+    "method": "trimmed multiscale rigid point-to-point ICP",
+    "rmse_mm": 0.5660361088087247,
+    "iterations": 15,
+    "scale_optimized": false,
+    "reference_to_cad_transform": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "coarse_orientation_candidates": 24,
+    "initial_surface_mean_mm": 1.0677886009216309,
+    "final_surface_mean_mm": 1.0677886009216309,
+    "shape_parameters_optimized": false
+  },
+  "component_correspondence": {
+    "method": "initial closest triangle regions; uncertain segmentation",
+    "unassigned_faces": 0
+  },
+  "structural_review_required": false,
+  "multiview": null,
+  "fitting_views": 0,
+  "virtual_camera_evaluations": 0,
+  "ignored_legacy_multi_angle": false,
+  "photo_evidence": [
+    {
+      "image_id": "a7fd38a8-afbc-41fd-91e2-575b6a993d6f",
+      "status": "measured",
+      "error": 2.2595517436294784e-08
+    }
+  ],
+  "photo_verification_status": "reviewed_photo_camera_evidence",
+  "original_photograph_priority": "photo guard vetoes visible-shape regressions; excluded from primary 3D objective",
+  "locked_measurements": [
+    {
+      "parameter": "width_mm",
+      "requested_mm": 700,
+      "actual_mm": 700.0,
+      "error_mm": 0.0,
+      "tolerance_mm": 0.01
+    }
+  ],
+  "fixed_dimensions_preserved": true,
+  "solid_checks": {
+    "valid_closed_solids": true,
+    "part_count": 5,
+    "contacts": [
+      {
+        "a": "F001",
+        "b": "F002",
+        "gap_mm": 0.0,
+        "overlap_mm3": 0.0
+      },
+      {
+        "a": "F001",
+        "b": "F003",
+        "gap_mm": 0.0,
+        "overlap_mm3": 0.0
+      },
+      {
+        "a": "F001",
+        "b": "F004",
+        "gap_mm": 0.0,
+        "overlap_mm3": 0.0
+      },
+      {
+        "a": "F001",
+        "b": "F005",
+        "gap_mm": 0.0,
+        "overlap_mm3": 0.0
+      }
+    ],
+    "contact_groups": [
+      [
+        "F001",
+        "F005",
+        "F003",
+        "F004",
+        "F002"
+      ]
+    ],
+    "assembly_connected": true,
+    "contact_tolerance_mm": 0.5,
+    "furniture_items_connected": true,
+    "furniture_items": [
+      {
+        "item_id": "PRIMARY",
+        "label": "synthetic table",
+        "part_ids": [
+          "F001",
+          "F002",
+          "F003",
+          "F004",
+          "F005"
+        ],
+        "connected": true,
+        "contact_groups": [
+          [
+            "F001",
+            "F002",
+            "F003",
+            "F004",
+            "F005"
+          ]
+        ]
+      }
+    ],
+    "separate_item_dimensions": [],
+    "interference_check_passed": true,
+    "physical_joinery_verified": false,
+    "structural_strength_verified": false
+  },
+  "processing_seconds": 4.4060000000026776,
+  "resources": {
+    "rss_mb": 423.1328125,
+    "available_mb": 209.19921875,
+    "cpu_seconds": 16.5,
+    "peak_rss_mb": 479.515625,
+    "peak_memory_method": "process RSS sampled every 50 ms"
+  },
+  "fallback": true,
+  "actual_verification_points": 298496,
+  "requested_verification_points": 750000,
+  "requested_stage_points": [
+    25000,
+    100000,
+    300000
+  ],
+  "sdf": {
+    "eligible": false,
+    "reason": "self-intersections or intersecting shells",
+    "requested": "auto",
+    "enabled": false,
+    "sampling": "sparse query points; no dense voxel field"
+  },
+  "external_ai_calls": 0,
+  "additional_neural4d_generations": 0,
+  "additional_llm_calls": 0,
+  "physical_accuracy_verified": false,
+  "hidden_geometry": "estimated from the generated mesh; not physical evidence",
+  "solver": "bounded SciPy trust-region least_squares with area-weighted soft-L1 residuals and staged controls",
+  "fast_model": "cached B-Rep triangle proxies and fixed barycentric samples; bidirectional closest-triangle queries",
+  "exact_model": "rebuilt and validated native B-Rep; same global objective measured on CAD tessellation",
+  "native_component_cache_enabled": true,
+  "loss_configuration": {
+    "bidirectional": true,
+    "point_to_plane": true,
+    "normal_loss": true,
+    "component_aware": true,
+    "robust_delta_mm": 2.0,
+    "surface_weight": 1.0,
+    "point_to_plane_weight": 0.25,
+    "normal_weight": 0.05,
+    "component_weight": 0.25
+  },
+  "finite_differences": "bounded absolute steps; fixed normal correspondences within each Jacobian",
+  "parameters": [
+    {
+      "parameter_id": "F002.position.0",
+      "component_ids": [
+        "F002"
+      ],
+      "current_value": -275.0,
+      "minimum": -305.0,
+      "maximum": -245.0,
+      "unit": "mm",
+      "user_confirmed": false,
+      "optimize": true,
+      "phase": "position",
+      "evidence_ids": [],
+      "uncertainty": null,
+      "path": [
+        "parts",
+        1,
+        "position",
+        0
+      ]
+    }
+  ],
+  "limitations": [
+    "Arbitrary sculpted furniture and automatic multi-patch fitting remain unresolved",
+    "Final verification may outlast the numerical solve time budget; the isolated job worker enforces a hard deadline",
+    "Distances use a temporary CAD tessellation at 0.25 mm; STEP remains native B-Rep geometry"
+  ],
+  "reconstruction": {
+    "source": "existing_engineering_plan",
+    "complete": true,
+    "unresolved_features": []
+  },
+  "export_validation": {
+    "assembly_reopened": true,
+    "assembly_solid_count": 5,
+    "assembly_sha256": "ff87407bb247682c98de51c3c1d57a42035e47bd6f805b8c6c5c9ddfa54bbd52",
+    "components": {
+      "F001": {
+        "valid_closed_solid": true,
+        "solid_count": 1,
+        "step_reopened": true,
+        "source_volume_mm3": 10500000.000000002,
+        "step_volume_mm3": 10500000.000000002,
+        "volume_error_mm3": 0.0,
+        "volume_tolerance_mm3": 1.05,
+        "volume_integration_relative_tolerance": 1e-10,
+        "source_kernel_default_volume_mm3": 10500000.0,
+        "step_kernel_default_volume_mm3": 10500000.0,
+        "envelope_max_error_mm": 0.0,
+        "envelope_tolerance_mm": 0.005,
+        "envelope_tessellation_mm": 0.02,
+        "envelope_mesh_mode": "ABSOLUTE",
+        "envelope_recorded_mesh_deflection_mm": 2.0097183471152322e-14,
+        "raw_occt_bound_difference_mm": 0.0,
+        "sampled_surface_max_gap_mm": 0.0,
+        "surface_samples": 388,
+        "surface_sampling_method": "EXACT_BREP_TRIMMED_UV_EDGES_AND_VERTICES",
+        "surface_tolerance_mm": 0.001,
+        "verification": "B-Rep validity, closed shells, volume, bounds and bidirectional surface samples; not an exact surface proof",
+        "physical_dimensions_verified": false,
+        "approved_for_manufacturing": false
+      },
+      "F002": {
+        "valid_closed_solid": true,
+        "solid_count": 1,
+        "step_reopened": true,
+        "source_volume_mm3": 1152000.0,
+        "step_volume_mm3": 1152000.0,
+        "volume_error_mm3": 0.0,
+        "volume_tolerance_mm3": 0.1152,
+        "volume_integration_relative_tolerance": 1e-10,
+        "source_kernel_default_volume_mm3": 1152000.0,
+        "step_kernel_default_volume_mm3": 1152000.0,
+        "envelope_max_error_mm": 0.0,
+        "envelope_tolerance_mm": 0.005,
+        "envelope_tessellation_mm": 0.02,
+        "envelope_mesh_mode": "ABSOLUTE",
+        "envelope_recorded_mesh_deflection_mm": 5.684341886080802e-14,
+        "raw_occt_bound_difference_mm": 0.0,
+        "sampled_surface_max_gap_mm": 0.0,
+        "surface_samples": 388,
+        "surface_sampling_method": "EXACT_BREP_TRIMMED_UV_EDGES_AND_VERTICES",
+        "surface_tolerance_mm": 0.001,
+        "verification": "B-Rep validity, closed shells, volume, bounds and bidirectional surface samples; not an exact surface proof",
+        "physical_dimensions_verified": false,
+        "approved_for_manufacturing": false
+      },
+      "F003": {
+        "valid_closed_solid": true,
+        "solid_count": 1,
+        "step_reopened": true,
+        "source_volume_mm3": 1152000.0,
+        "step_volume_mm3": 1152000.0,
+        "volume_error_mm3": 0.0,
+        "volume_tolerance_mm3": 0.1152,
+        "volume_integration_relative_tolerance": 1e-10,
+        "source_kernel_default_volume_mm3": 1152000.0,
+        "step_kernel_default_volume_mm3": 1152000.0,
+        "envelope_max_error_mm": 0.0,
+        "envelope_tolerance_mm": 0.005,
+        "envelope_tessellation_mm": 0.02,
+        "envelope_mesh_mode": "ABSOLUTE",
+        "envelope_recorded_mesh_deflection_mm": 0.0,
+        "raw_occt_bound_difference_mm": 0.0,
+        "sampled_surface_max_gap_mm": 0.0,
+        "surface_samples": 388,
+        "surface_sampling_method": "EXACT_BREP_TRIMMED_UV_EDGES_AND_VERTICES",
+        "surface_tolerance_mm": 0.001,
+        "verification": "B-Rep validity, closed shells, volume, bounds and bidirectional surface samples; not an exact surface proof",
+        "physical_dimensions_verified": false,
+        "approved_for_manufacturing": false
+      },
+      "F004": {
+        "valid_closed_solid": true,
+        "solid_count": 1,
+        "step_reopened": true,
+        "source_volume_mm3": 1152000.0,
+        "step_volume_mm3": 1152000.0,
+        "volume_error_mm3": 0.0,
+        "volume_tolerance_mm3": 0.1152,
+        "volume_integration_relative_tolerance": 1e-10,
+        "source_kernel_default_volume_mm3": 1152000.0,
+        "step_kernel_default_volume_mm3": 1152000.0,
+        "envelope_max_error_mm": 0.0,
+        "envelope_tolerance_mm": 0.005,
+        "envelope_tessellation_mm": 0.02,
+        "envelope_mesh_mode": "ABSOLUTE",
+        "envelope_recorded_mesh_deflection_mm": 0.0,
+        "raw_occt_bound_difference_mm": 0.0,
+        "sampled_surface_max_gap_mm": 0.0,
+        "surface_samples": 388,
+        "surface_sampling_method": "EXACT_BREP_TRIMMED_UV_EDGES_AND_VERTICES",
+        "surface_tolerance_mm": 0.001,
+        "verification": "B-Rep validity, closed shells, volume, bounds and bidirectional surface samples; not an exact surface proof",
+        "physical_dimensions_verified": false,
+        "approved_for_manufacturing": false
+      },
+      "F005": {
+        "valid_closed_solid": true,
+        "solid_count": 1,
+        "step_reopened": true,
+        "source_volume_mm3": 1152000.0,
+        "step_volume_mm3": 1152000.0,
+        "volume_error_mm3": 0.0,
+        "volume_tolerance_mm3": 0.1152,
+        "volume_integration_relative_tolerance": 1e-10,
+        "source_kernel_default_volume_mm3": 1152000.0,
+        "step_kernel_default_volume_mm3": 1152000.0,
+        "envelope_max_error_mm": 0.0,
+        "envelope_tolerance_mm": 0.005,
+        "envelope_tessellation_mm": 0.02,
+        "envelope_mesh_mode": "ABSOLUTE",
+        "envelope_recorded_mesh_deflection_mm": 0.0,
+        "raw_occt_bound_difference_mm": 0.0,
+        "sampled_surface_max_gap_mm": 0.0,
+        "surface_samples": 388,
+        "surface_sampling_method": "EXACT_BREP_TRIMMED_UV_EDGES_AND_VERTICES",
+        "surface_tolerance_mm": 0.001,
+        "verification": "B-Rep validity, closed shells, volume, bounds and bidirectional surface samples; not an exact surface proof",
+        "physical_dimensions_verified": false,
+        "approved_for_manufacturing": false
+      }
+    },
+    "approved_for_manufacturing": false
+  },
+  "calibration": {
+    "transform": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "uniform_scale": 1.0,
+    "units": "mm",
+    "calibration": "confirmed dimensions",
+    "confirmed_dimensions": {
+      "width_mm": 700
+    },
+    "physical_accuracy_verified": false
+  },
+  "original_mesh_preserved": true,
+  "error_map_95th_percentile_mm": 0.01,
+  "original_photo_used": true,
+  "production_ready": false,
+  "manufacturing_review_required": true
+}

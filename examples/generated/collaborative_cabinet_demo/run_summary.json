@@ -1,0 +1,25 @@
+{
+  "demo": "OFFLINE PROTOTYPE - MOCKED AI AND SIMULATED DESIGNER",
+  "external_openai_calls": 0,
+  "reference_kind": "CAD_DERIVED_REVIEW_IMAGE",
+  "physical_measurements_performed": false,
+  "workflow_id": "71d5d180-4238-4268-b806-0b5ca7713360",
+  "revision_id": "54d4331f-d520-4b9b-9bf4-ad884f180183",
+  "job_id": "01a8dccc-aa00-4240-8a13-147b5cd2a230",
+  "initial_status": "WAITING_FOR_DESIGNER",
+  "final_status": "REVIEW_REQUIRED",
+  "cad_before_verification_http_status": 409,
+  "approval_http_status": 409,
+  "release_http_status": 409,
+  "designer_rejection_http_status": 201,
+  "parts": 10,
+  "agent_calls": [
+    "vision",
+    "design",
+    "joinery",
+    "review",
+    "review"
+  ],
+  "approved_for_manufacturing": false,
+  "package": "cad_review_package/design_review_package.zip"
+}

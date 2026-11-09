@@ -1,0 +1,1134 @@
+{
+  "furniture_type": "Four-door raised sideboard / credenza",
+  "summary": "Synthetic regression for estimated rounding on curved cabinet uprights.",
+  "values": [
+    {
+      "key": "width_mm",
+      "value": 2100.0,
+      "explanation": "Fixed supplied overall target; SAMPLE_DRAWING provenance, physically unverified."
+    },
+    {
+      "key": "depth_mm",
+      "value": 545.0,
+      "explanation": "Fixed supplied depth, interpreted to include pull projection."
+    },
+    {
+      "key": "height_mm",
+      "value": 858.0,
+      "explanation": "Fixed supplied overall height including top."
+    },
+    {
+      "key": "height_without_top_mm",
+      "value": 840.0,
+      "explanation": "Supplied floor-to-top target without the 18 mm slab."
+    },
+    {
+      "key": "top_thickness_mm",
+      "value": 18.0,
+      "explanation": "Supplied slab thickness target."
+    },
+    {
+      "key": "width_to_height_ratio",
+      "value": 2.448,
+      "explanation": "Supplied rounded width/height descriptor, not an exact independent equation."
+    },
+    {
+      "key": "depth_to_width_ratio",
+      "value": 0.26,
+      "explanation": "Supplied rounded depth/width descriptor."
+    },
+    {
+      "key": "top_width_mm",
+      "value": 2100.0,
+      "explanation": "Supplied full-width top target."
+    },
+    {
+      "key": "top_depth_mm",
+      "value": 520.0,
+      "explanation": "Supplied slab depth excluding pulls."
+    },
+    {
+      "key": "top_corner_radius_mm",
+      "value": 25.0,
+      "explanation": "Supplied estimated top plan-corner rounding."
+    },
+    {
+      "key": "carcass_width_mm",
+      "value": 2100.0,
+      "explanation": "Supplied body width including outer uprights."
+    },
+    {
+      "key": "carcass_depth_mm",
+      "value": 520.0,
+      "explanation": "Supplied body depth including front thickness, excluding pulls."
+    },
+    {
+      "key": "carcass_height_mm",
+      "value": 668.0,
+      "explanation": "Supplied body height from 172 to 840 mm."
+    },
+    {
+      "key": "leg_height_mm",
+      "value": 172.0,
+      "explanation": "Supplied exposed support height and underside datum."
+    },
+    {
+      "key": "side_panel_thickness_mm",
+      "value": 20.0,
+      "explanation": "Supplied unverified panel thickness allowance, also used for rear and bottom."
+    },
+    {
+      "key": "door_count",
+      "value": 4.0,
+      "explanation": "Four modeled front panels F002-F005; operation unverified."
+    },
+    {
+      "key": "interdoor_seam_count",
+      "value": 3.0,
+      "explanation": "Three modeled separating seams."
+    },
+    {
+      "key": "outer_upright_face_width_mm",
+      "value": 45.0,
+      "explanation": "Supplied outer upright frontal width."
+    },
+    {
+      "key": "door_width_mm",
+      "value": 498.75,
+      "explanation": "Supplied equal front width."
+    },
+    {
+      "key": "door_height_mm",
+      "value": 650.0,
+      "explanation": "Supplied front panel height."
+    },
+    {
+      "key": "door_thickness_mm",
+      "value": 20.0,
+      "explanation": "Supplied unverified front thickness."
+    },
+    {
+      "key": "door_gap_mm",
+      "value": 3.0,
+      "explanation": "Supplied seam width, established by left-edge datums and panel widths."
+    },
+    {
+      "key": "door_outer_side_reveal_mm",
+      "value": 3.0,
+      "explanation": "Supplied outer reveal established by front and upright datums."
+    },
+    {
+      "key": "door_top_reveal_mm",
+      "value": 9.0,
+      "explanation": "Supplied top reveal established by front top and body datum."
+    },
+    {
+      "key": "door_bottom_reveal_mm",
+      "value": 9.0,
+      "explanation": "Supplied bottom reveal established by front bottom and underside."
+    },
+    {
+      "key": "door_bottom_z_mm",
+      "value": 181.0,
+      "explanation": "Supplied front bottom elevation."
+    },
+    {
+      "key": "door_01_left_x_mm",
+      "value": 48.0,
+      "explanation": "Supplied front 1 left datum."
+    },
+    {
+      "key": "door_02_left_x_mm",
+      "value": 549.75,
+      "explanation": "Supplied front 2 left datum."
+    },
+    {
+      "key": "door_03_left_x_mm",
+      "value": 1051.5,
+      "explanation": "Supplied front 3 left datum."
+    },
+    {
+      "key": "door_04_left_x_mm",
+      "value": 1553.25,
+      "explanation": "Supplied front 4 left datum."
+    },
+    {
+      "key": "handle_count",
+      "value": 4.0,
+      "explanation": "Four distinct modeled pulls F014-F017."
+    },
+    {
+      "key": "handle_pair_count",
+      "value": 2.0,
+      "explanation": "Two opposing pull pairs on fronts 1-2 and 3-4."
+    },
+    {
+      "key": "handle_width_mm",
+      "value": 200.0,
+      "explanation": "Supplied pull horizontal length."
+    },
+    {
+      "key": "handle_projection_mm",
+      "value": 25.0,
+      "explanation": "Supplied projection beyond door face."
+    },
+    {
+      "key": "handle_height_mm",
+      "value": 18.0,
+      "explanation": "Supplied pull vertical section."
+    },
+    {
+      "key": "handle_paired_edge_setback_mm",
+      "value": 5.0,
+      "explanation": "Supplied pull setback from paired front edge."
+    },
+    {
+      "key": "handle_end_bevel_run_mm",
+      "value": 10.0,
+      "explanation": "Supplied sloping-end horizontal run."
+    },
+    {
+      "key": "visible_support_count",
+      "value": 4.0,
+      "explanation": "Supplied visible support portions; hidden extras unknown."
+    },
+    {
+      "key": "leg_width_mm",
+      "value": 50.0,
+      "explanation": "Supplied front leg width below shoulder."
+    },
+    {
+      "key": "leg_upper_depth_mm",
+      "value": 45.0,
+      "explanation": "Supplied estimated upper support depth; front extrusion retains this constant depth."
+    },
+    {
+      "key": "leg_foot_width_mm",
+      "value": 25.0,
+      "explanation": "Supplied front terminal foot width."
+    },
+    {
+      "key": "leg_foot_depth_mm",
+      "value": 25.0,
+      "explanation": "Supplied estimated terminal depth, used for rear feet; front depth taper is not represented."
+    },
+    {
+      "key": "leg_shoulder_width_mm",
+      "value": 75.0,
+      "explanation": "Supplied shoulder extent before contact trimming."
+    },
+    {
+      "key": "leg_inner_transition_radius_mm",
+      "value": 25.0,
+      "explanation": "Supplied shoulder transition scale, used in cubic profile controls."
+    },
+    {
+      "key": "outer_upright_edge_radius_mm",
+      "value": 15.0,
+      "explanation": "Supplied nominal rounding estimate; edge treatment uses one third to fit the foot profile."
+    },
+    {
+      "key": "rear_left_visible_leg_upper_width_mm",
+      "value": 30.0,
+      "explanation": "Supplied rear-left upper width; provisionally reused on occluded support."
+    },
+    {
+      "key": "rear_left_foot_width_mm",
+      "value": 20.0,
+      "explanation": "Supplied rear-left terminal width."
+    },
+    {
+      "key": "occluded_support_visible_height_mm",
+      "value": 15.0,
+      "explanation": "Supplied apparent visible tip height, not full physical support height."
+    },
+    {
+      "key": "occluded_support_tip_width_mm",
+      "value": 25.0,
+      "explanation": "Supplied occluded support terminal width."
+    },
+    {
+      "key": "leg_count",
+      "value": 4.0,
+      "explanation": "Matching-input visible leg count, represented by F010-F013."
+    }
+  ],
+  "parts": [
+    {
+      "part_id": "F001",
+      "label": "Continuous pale rounded top",
+      "evidence": "Thin continuous pale veined slab with softly rounded corners; material is an appearance proxy.",
+      "geometry": "box",
+      "material": "plastic",
+      "color_rgb": [
+        0.8,
+        0.8,
+        0.77
+      ],
+      "position": [
+        "width_mm/2",
+        "depth_mm-top_depth_mm/2",
+        "height_mm-top_thickness_mm/2"
+      ],
+      "rotation_deg": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        "top_width_mm",
+        "top_depth_mm",
+        "top_thickness_mm"
+      ],
+      "corner_radius": "top_corner_radius_mm",
+      "dish_depth": 0.0,
+      "outline": [],
+      "path": [],
+      "curve_mode": "polyline",
+      "sections": []
+    },
+    {
+      "part_id": "F002",
+      "label": "Front 1 left outer",
+      "evidence": "Leftmost uninterrupted wood front, with upper-right pull.",
+      "geometry": "box",
+      "material": "plywood",
+      "color_rgb": [
+        0.36,
+        0.255,
+        0.17
+      ],
+      "position": [
+        "door_01_left_x_mm+door_width_mm/2",
+        "depth_mm-carcass_depth_mm+door_thickness_mm/2",
+        "door_bottom_z_mm+door_height_mm/2"
+      ],
+      "rotation_deg": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        "door_width_mm",
+        "door_thickness_mm",
+        "door_height_mm"
+      ],
+      "corner_radius": 0.0,
+      "dish_depth": 0.0,
+      "outline": [],
+      "path": [],
+      "curve_mode": "polyline",
+      "sections": []
+    },
+    {
+      "part_id": "F003",
+      "label": "Front 2 left inner",
+      "evidence": "Second tall front with narrow separating seams and upper-left pull.",
+      "geometry": "box",
+      "material": "plywood",
+      "color_rgb": [
+        0.38,
+        0.27,
+        0.18
+      ],
+      "position": [
+        "door_02_left_x_mm+door_width_mm/2",
+        "depth_mm-carcass_depth_mm+door_thickness_mm/2",
+        "door_bottom_z_mm+door_height_mm/2"
+      ],
+      "rotation_deg": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        "door_width_mm",
+        "door_thickness_mm",
+        "door_height_mm"
+      ],
+      "corner_radius": 0.0,
+      "dish_depth": 0.0,
+      "outline": [],
+      "path": [],
+      "curve_mode": "polyline",
+      "sections": []
+    },
+    {
+      "part_id": "F004",
+      "label": "Front 3 right inner",
+      "evidence": "Third broad wood front with pull toward adjoining fourth front.",
+      "geometry": "box",
+      "material": "plywood",
+      "color_rgb": [
+        0.36,
+        0.25,
+        0.165
+      ],
+      "position": [
+        "door_03_left_x_mm+door_width_mm/2",
+        "depth_mm-carcass_depth_mm+door_thickness_mm/2",
+        "door_bottom_z_mm+door_height_mm/2"
+      ],
+      "rotation_deg": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        "door_width_mm",
+        "door_thickness_mm",
+        "door_height_mm"
+      ],
+      "corner_radius": 0.0,
+      "dish_depth": 0.0,
+      "outline": [],
+      "path": [],
+      "curve_mode": "polyline",
+      "sections": []
+    },
+    {
+      "part_id": "F005",
+      "label": "Front 4 right outer",
+      "evidence": "Rightmost full-height front bordered by narrow outer upright.",
+      "geometry": "box",
+      "material": "plywood",
+      "color_rgb": [
+        0.39,
+        0.275,
+        0.18
+      ],
+      "position": [
+        "door_04_left_x_mm+door_width_mm/2",
+        "depth_mm-carcass_depth_mm+door_thickness_mm/2",
+        "door_bottom_z_mm+door_height_mm/2"
+      ],
+      "rotation_deg": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        "door_width_mm",
+        "door_thickness_mm",
+        "door_height_mm"
+      ],
+      "corner_radius": 0.0,
+      "dish_depth": 0.0,
+      "outline": [],
+      "path": [],
+      "curve_mode": "polyline",
+      "sections": []
+    },
+    {
+      "part_id": "F006",
+      "label": "Broad left end closure",
+      "evidence": "Broad exposed left end; thickness and rear termination estimated.",
+      "geometry": "box",
+      "material": "plywood",
+      "color_rgb": [
+        0.365,
+        0.26,
+        0.18
+      ],
+      "position": [
+        "(width_mm-carcass_width_mm)/2+side_panel_thickness_mm/2",
+        "depth_mm-(carcass_depth_mm-leg_upper_depth_mm)/2",
+        "height_without_top_mm-carcass_height_mm/2"
+      ],
+      "rotation_deg": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        "side_panel_thickness_mm",
+        "carcass_depth_mm-leg_upper_depth_mm",
+        "carcass_height_mm"
+      ],
+      "corner_radius": 0.0,
+      "dish_depth": 0.0,
+      "outline": [],
+      "path": [],
+      "curve_mode": "polyline",
+      "sections": []
+    },
+    {
+      "part_id": "F007",
+      "label": "Right end exterior closure",
+      "evidence": "Assumed closed right end consistent with cabinet exterior.",
+      "geometry": "box",
+      "material": "plywood",
+      "color_rgb": [
+        0.35,
+        0.245,
+        0.16
+      ],
+      "position": [
+        "(width_mm+carcass_width_mm)/2-side_panel_thickness_mm/2",
+        "depth_mm-(carcass_depth_mm-leg_upper_depth_mm)/2",
+        "height_without_top_mm-carcass_height_mm/2"
+      ],
+      "rotation_deg": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        "side_panel_thickness_mm",
+        "carcass_depth_mm-leg_upper_depth_mm",
+        "carcass_height_mm"
+      ],
+      "corner_radius": 0.0,
+      "dish_depth": 0.0,
+      "outline": [],
+      "path": [],
+      "curve_mode": "polyline",
+      "sections": []
+    },
+    {
+      "part_id": "F008",
+      "label": "Assumed rear closure",
+      "evidence": "Unseen rear closed by a simple assumed exterior panel.",
+      "geometry": "box",
+      "material": "plywood",
+      "color_rgb": [
+        0.34,
+        0.24,
+        0.16
+      ],
+      "position": [
+        "width_mm/2",
+        "depth_mm-side_panel_thickness_mm/2",
+        "height_without_top_mm-carcass_height_mm/2"
+      ],
+      "rotation_deg": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        "carcass_width_mm-2*side_panel_thickness_mm",
+        "side_panel_thickness_mm",
+        "carcass_height_mm"
+      ],
+      "corner_radius": 0.0,
+      "dish_depth": 0.0,
+      "outline": [],
+      "path": [],
+      "curve_mode": "polyline",
+      "sections": []
+    },
+    {
+      "part_id": "F009",
+      "label": "Raised underside closure",
+      "evidence": "Raised cabinet baseline, without a deep exposed apron.",
+      "geometry": "box",
+      "material": "plywood",
+      "color_rgb": [
+        0.33,
+        0.23,
+        0.15
+      ],
+      "position": [
+        "width_mm/2",
+        "depth_mm-carcass_depth_mm/2-side_panel_thickness_mm/2",
+        "leg_height_mm+side_panel_thickness_mm/2"
+      ],
+      "rotation_deg": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        "carcass_width_mm-2*side_panel_thickness_mm",
+        "carcass_depth_mm-side_panel_thickness_mm",
+        "side_panel_thickness_mm"
+      ],
+      "corner_radius": 0.0,
+      "dish_depth": 0.0,
+      "outline": [],
+      "path": [],
+      "curve_mode": "polyline",
+      "sections": []
+    },
+    {
+      "part_id": "F010",
+      "label": "Continuous left upright and shoulder foot",
+      "evidence": "Left front upright continues into a narrow tapered foot and concave shoulder. Closed bounded outline avoids loft overshoot and reversing cusp.",
+      "geometry": "outline_panel",
+      "material": "solid_wood",
+      "color_rgb": [
+        0.38,
+        0.275,
+        0.185
+      ],
+      "position": [
+        "(width_mm-carcass_width_mm)/2",
+        "depth_mm-carcass_depth_mm+leg_upper_depth_mm/2",
+        0.0
+      ],
+      "rotation_deg": [
+        90.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        "leg_shoulder_width_mm",
+        "height_without_top_mm",
+        "leg_upper_depth_mm"
+      ],
+      "corner_radius": 0.0,
+      "edge_radius": "outer_upright_edge_radius_mm/3",
+      "dish_depth": 0.0,
+      "outline": [
+        [
+          0.0,
+          "height_without_top_mm"
+        ],
+        [
+          "outer_upright_face_width_mm/3",
+          "height_without_top_mm"
+        ],
+        [
+          "outer_upright_face_width_mm*2/3",
+          "height_without_top_mm"
+        ],
+        [
+          "outer_upright_face_width_mm",
+          "height_without_top_mm"
+        ],
+        [
+          "outer_upright_face_width_mm",
+          "height_without_top_mm-carcass_height_mm/3"
+        ],
+        [
+          "outer_upright_face_width_mm",
+          "leg_height_mm+2*leg_inner_transition_radius_mm"
+        ],
+        [
+          "outer_upright_face_width_mm",
+          "leg_height_mm+leg_inner_transition_radius_mm"
+        ],
+        [
+          "outer_upright_face_width_mm",
+          "leg_height_mm+leg_inner_transition_radius_mm/2"
+        ],
+        [
+          "leg_shoulder_width_mm",
+          "leg_height_mm+side_panel_thickness_mm"
+        ],
+        [
+          "leg_shoulder_width_mm",
+          "door_bottom_z_mm"
+        ],
+        [
+          "leg_shoulder_width_mm",
+          "leg_height_mm"
+        ],
+        [
+          "leg_width_mm",
+          "leg_height_mm"
+        ],
+        [
+          "leg_width_mm",
+          "leg_height_mm-leg_inner_transition_radius_mm"
+        ],
+        [
+          "leg_width_mm",
+          "leg_height_mm*0.6"
+        ],
+        [
+          "leg_foot_width_mm",
+          "leg_height_mm*0.2"
+        ],
+        [
+          "leg_foot_width_mm",
+          0.0
+        ],
+        [
+          "leg_foot_width_mm*2/3",
+          0.0
+        ],
+        [
+          "leg_foot_width_mm/3",
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          "height_without_top_mm/3"
+        ],
+        [
+          0.0,
+          "height_without_top_mm*2/3"
+        ],
+        [
+          0.0,
+          "height_without_top_mm"
+        ]
+      ],
+      "path": [],
+      "curve_mode": "bezier",
+      "sections": []
+    },
+    {
+      "part_id": "F011",
+      "label": "Continuous right upright and shoulder foot",
+      "evidence": "Matching right outer upright and curved-shoulder tapered foot; bounded mirrored profile.",
+      "geometry": "outline_panel",
+      "material": "solid_wood",
+      "color_rgb": [
+        0.36,
+        0.25,
+        0.165
+      ],
+      "position": [
+        "(width_mm+carcass_width_mm)/2",
+        "depth_mm-carcass_depth_mm+leg_upper_depth_mm/2",
+        0.0
+      ],
+      "rotation_deg": [
+        90.0,
+        0.0,
+        180.0
+      ],
+      "size": [
+        "leg_shoulder_width_mm",
+        "height_without_top_mm",
+        "leg_upper_depth_mm"
+      ],
+      "corner_radius": 0.0,
+      "edge_radius": "outer_upright_edge_radius_mm/3",
+      "dish_depth": 0.0,
+      "outline": [
+        [
+          0.0,
+          "height_without_top_mm"
+        ],
+        [
+          "outer_upright_face_width_mm/3",
+          "height_without_top_mm"
+        ],
+        [
+          "outer_upright_face_width_mm*2/3",
+          "height_without_top_mm"
+        ],
+        [
+          "outer_upright_face_width_mm",
+          "height_without_top_mm"
+        ],
+        [
+          "outer_upright_face_width_mm",
+          "height_without_top_mm-carcass_height_mm/3"
+        ],
+        [
+          "outer_upright_face_width_mm",
+          "leg_height_mm+2*leg_inner_transition_radius_mm"
+        ],
+        [
+          "outer_upright_face_width_mm",
+          "leg_height_mm+leg_inner_transition_radius_mm"
+        ],
+        [
+          "outer_upright_face_width_mm",
+          "leg_height_mm+leg_inner_transition_radius_mm/2"
+        ],
+        [
+          "leg_shoulder_width_mm",
+          "leg_height_mm+side_panel_thickness_mm"
+        ],
+        [
+          "leg_shoulder_width_mm",
+          "door_bottom_z_mm"
+        ],
+        [
+          "leg_shoulder_width_mm",
+          "leg_height_mm"
+        ],
+        [
+          "leg_width_mm",
+          "leg_height_mm"
+        ],
+        [
+          "leg_width_mm",
+          "leg_height_mm-leg_inner_transition_radius_mm"
+        ],
+        [
+          "leg_width_mm",
+          "leg_height_mm*0.6"
+        ],
+        [
+          "leg_foot_width_mm",
+          "leg_height_mm*0.2"
+        ],
+        [
+          "leg_foot_width_mm",
+          0.0
+        ],
+        [
+          "leg_foot_width_mm*2/3",
+          0.0
+        ],
+        [
+          "leg_foot_width_mm/3",
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          "height_without_top_mm/3"
+        ],
+        [
+          0.0,
+          "height_without_top_mm*2/3"
+        ],
+        [
+          0.0,
+          "height_without_top_mm"
+        ]
+      ],
+      "path": [],
+      "curve_mode": "bezier",
+      "sections": []
+    },
+    {
+      "part_id": "F012",
+      "label": "Rear-left tapered support",
+      "evidence": "Slim rear-left foot, modestly splayed; taper ends at underside rather than passing through panels.",
+      "geometry": "loft",
+      "material": "solid_wood",
+      "color_rgb": [
+        0.29,
+        0.205,
+        0.14
+      ],
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_deg": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        "rear_left_visible_leg_upper_width_mm",
+        "leg_upper_depth_mm",
+        "leg_height_mm"
+      ],
+      "corner_radius": 0.0,
+      "dish_depth": 0.0,
+      "outline": [],
+      "path": [],
+      "curve_mode": "polyline",
+      "sections": [
+        {
+          "center": [
+            "rear_left_foot_width_mm/2",
+            "depth_mm-leg_foot_depth_mm/2",
+            0.0
+          ],
+          "width": "rear_left_foot_width_mm",
+          "depth": "leg_foot_depth_mm",
+          "profile": "rectangle",
+          "corner_radius": "rear_left_foot_width_mm/4"
+        },
+        {
+          "center": [
+            "rear_left_visible_leg_upper_width_mm/2",
+            "depth_mm-leg_upper_depth_mm/2",
+            "leg_height_mm"
+          ],
+          "width": "rear_left_visible_leg_upper_width_mm",
+          "depth": "leg_upper_depth_mm",
+          "profile": "rectangle",
+          "corner_radius": "rear_left_foot_width_mm/4"
+        }
+      ]
+    },
+    {
+      "part_id": "F013",
+      "label": "Provisional occluded rear support",
+      "evidence": "Only a dark tip is visible. Upper continuation and rear-right placement are provisional.",
+      "geometry": "loft",
+      "material": "solid_wood",
+      "color_rgb": [
+        0.255,
+        0.18,
+        0.12
+      ],
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_deg": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        "occluded_support_tip_width_mm",
+        "leg_foot_depth_mm",
+        "leg_height_mm"
+      ],
+      "corner_radius": 0.0,
+      "dish_depth": 0.0,
+      "outline": [],
+      "path": [],
+      "curve_mode": "polyline",
+      "sections": [
+        {
+          "center": [
+            "width_mm-rear_left_visible_leg_upper_width_mm/2",
+            "depth_mm-leg_upper_depth_mm/2",
+            0.0
+          ],
+          "width": "occluded_support_tip_width_mm",
+          "depth": "leg_foot_depth_mm",
+          "profile": "rectangle",
+          "corner_radius": "occluded_support_tip_width_mm/5"
+        },
+        {
+          "center": [
+            "width_mm-rear_left_visible_leg_upper_width_mm/2",
+            "depth_mm-leg_upper_depth_mm/2",
+            "leg_height_mm"
+          ],
+          "width": "rear_left_visible_leg_upper_width_mm",
+          "depth": "leg_upper_depth_mm",
+          "profile": "rectangle",
+          "corner_radius": "occluded_support_tip_width_mm/5"
+        }
+      ]
+    },
+    {
+      "part_id": "F014",
+      "label": "Pull 1 right-offset beveled ledge",
+      "evidence": "Short ledge pull at front 1 upper-right edge; sloping ends.",
+      "geometry": "outline_panel",
+      "material": "solid_wood",
+      "color_rgb": [
+        0.43,
+        0.32,
+        0.235
+      ],
+      "position": [
+        "door_01_left_x_mm+door_width_mm-handle_paired_edge_setback_mm-handle_width_mm",
+        "depth_mm-carcass_depth_mm-handle_projection_mm+(handle_projection_mm+door_thickness_mm/4)/2",
+        "door_bottom_z_mm+door_height_mm-handle_height_mm"
+      ],
+      "rotation_deg": [
+        90.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        "handle_width_mm",
+        "handle_height_mm",
+        "handle_projection_mm+door_thickness_mm/4"
+      ],
+      "corner_radius": 0.0,
+      "dish_depth": 0.0,
+      "outline": [
+        [
+          0.0,
+          "handle_height_mm"
+        ],
+        [
+          "handle_width_mm",
+          "handle_height_mm"
+        ],
+        [
+          "handle_width_mm-handle_end_bevel_run_mm",
+          0.0
+        ],
+        [
+          "handle_end_bevel_run_mm",
+          0.0
+        ]
+      ],
+      "path": [],
+      "curve_mode": "polyline",
+      "sections": []
+    },
+    {
+      "part_id": "F015",
+      "label": "Pull 2 left-offset beveled ledge",
+      "evidence": "Upper-left ledge on second front completes first pair.",
+      "geometry": "outline_panel",
+      "material": "solid_wood",
+      "color_rgb": [
+        0.42,
+        0.31,
+        0.225
+      ],
+      "position": [
+        "door_02_left_x_mm+handle_paired_edge_setback_mm",
+        "depth_mm-carcass_depth_mm-handle_projection_mm+(handle_projection_mm+door_thickness_mm/4)/2",
+        "door_bottom_z_mm+door_height_mm-handle_height_mm"
+      ],
+      "rotation_deg": [
+        90.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        "handle_width_mm",
+        "handle_height_mm",
+        "handle_projection_mm+door_thickness_mm/4"
+      ],
+      "corner_radius": 0.0,
+      "dish_depth": 0.0,
+      "outline": [
+        [
+          0.0,
+          "handle_height_mm"
+        ],
+        [
+          "handle_width_mm",
+          "handle_height_mm"
+        ],
+        [
+          "handle_width_mm-handle_end_bevel_run_mm",
+          0.0
+        ],
+        [
+          "handle_end_bevel_run_mm",
+          0.0
+        ]
+      ],
+      "path": [],
+      "curve_mode": "polyline",
+      "sections": []
+    },
+    {
+      "part_id": "F016",
+      "label": "Pull 3 right-offset beveled ledge",
+      "evidence": "Upper-right ledge on third front starts second pair.",
+      "geometry": "outline_panel",
+      "material": "solid_wood",
+      "color_rgb": [
+        0.43,
+        0.32,
+        0.23
+      ],
+      "position": [
+        "door_03_left_x_mm+door_width_mm-handle_paired_edge_setback_mm-handle_width_mm",
+        "depth_mm-carcass_depth_mm-handle_projection_mm+(handle_projection_mm+door_thickness_mm/4)/2",
+        "door_bottom_z_mm+door_height_mm-handle_height_mm"
+      ],
+      "rotation_deg": [
+        90.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        "handle_width_mm",
+        "handle_height_mm",
+        "handle_projection_mm+door_thickness_mm/4"
+      ],
+      "corner_radius": 0.0,
+      "dish_depth": 0.0,
+      "outline": [
+        [
+          0.0,
+          "handle_height_mm"
+        ],
+        [
+          "handle_width_mm",
+          "handle_height_mm"
+        ],
+        [
+          "handle_width_mm-handle_end_bevel_run_mm",
+          0.0
+        ],
+        [
+          "handle_end_bevel_run_mm",
+          0.0
+        ]
+      ],
+      "path": [],
+      "curve_mode": "polyline",
+      "sections": []
+    },
+    {
+      "part_id": "F017",
+      "label": "Pull 4 left-offset beveled ledge",
+      "evidence": "Upper-left ledge on fourth front completes second pair.",
+      "geometry": "outline_panel",
+      "material": "solid_wood",
+      "color_rgb": [
+        0.41,
+        0.3,
+        0.215
+      ],
+      "position": [
+        "door_04_left_x_mm+handle_paired_edge_setback_mm",
+        "depth_mm-carcass_depth_mm-handle_projection_mm+(handle_projection_mm+door_thickness_mm/4)/2",
+        "door_bottom_z_mm+door_height_mm-handle_height_mm"
+      ],
+      "rotation_deg": [
+        90.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        "handle_width_mm",
+        "handle_height_mm",
+        "handle_projection_mm+door_thickness_mm/4"
+      ],
+      "corner_radius": 0.0,
+      "dish_depth": 0.0,
+      "outline": [
+        [
+          0.0,
+          "handle_height_mm"
+        ],
+        [
+          "handle_width_mm",
+          "handle_height_mm"
+        ],
+        [
+          "handle_width_mm-handle_end_bevel_run_mm",
+          0.0
+        ],
+        [
+          "handle_end_bevel_run_mm",
+          0.0
+        ]
+      ],
+      "path": [],
+      "curve_mode": "polyline",
+      "sections": []
+    }
+  ],
+  "assumptions": [
+    "Overall 2100 x 545 x 858 mm and all supplied dimensional values are retained as design targets, not verified physical measurements.",
+    "X runs left to right, Y front to back, Z upward. Pulls reach Y=0; body occupies Y=25..545.",
+    "Plywood and solid_wood are unverified wood-substrate proxies. Plastic is an opaque appearance proxy for the stone-like top because stone is unavailable in the schema.",
+    "Four closed fronts are interpreted as doors; hinges, internal divisions and joinery are not inferred.",
+    "Rear and underside closures are unverified exterior-envelope assumptions.",
+    "Continuous front upright/foot solids describe visual continuity, not proven one-piece manufacture.",
+    "The prior full-height front loft generated interference with the opposite rear support. Bounded closed profiles remove that interpolation failure and avoid the earlier reversing shoulder cusp.",
+    "Front upright-foot depth is approximated as a constant upper depth. Supplied terminal depth is retained and used on the rear feet; front depth taper remains unrepresented.",
+    "Rear-left foot is visible; full right-rear support and placement are provisional. Apparent 15 mm tip exposure is perspective-dependent.",
+    "Counts describe fixed topology: four fronts, three seams, four pulls in two pairs and four supports.",
+    "Rounded ratios are descriptors, not independent exact equations.",
+    "Advisory reconstruction only; qualified designer signoff remains required. No structural or manufacturing approval is implied."
+  ],
+  "unrepresented_features": [
+    "Wood grain and pale slab veining are not represented by uniform colors.",
+    "Concealed fittings, shelves, joints and top attachment are omitted.",
+    "Front feet retain width taper but approximate depth as constant; fine upright rounding uses a smaller edge treatment than the nominal 15 mm estimate.",
+    "Exact shoulder curvature, rear support placement and apparent tip exposure remain uncertain.",
+    "No exact photo fidelity or material identification is claimed."
+  ]
+}

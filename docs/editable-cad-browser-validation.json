@@ -1,0 +1,25 @@
+{
+  "webgl_assembly": true,
+  "parts": 5,
+  "six_svg_views": true,
+  "part_selection": true,
+  "pdf_http_200": true,
+  "boundary_review_controls": true,
+  "mobile_no_overflow": true,
+  "browser_errors": [],
+  "sol_requests": 0,
+  "neural4d_jobs": 0,
+  "local_revision": {
+    "job": "188ad58f-c2e3-48e9-90fe-9a2a998933e4",
+    "sol_requests": 0,
+    "neural4d_jobs": 0,
+    "reused_projections": [
+      "assembly",
+      "F001",
+      "F002",
+      "F003",
+      "F004",
+      "F005"
+    ]
+  }
+}

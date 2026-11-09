@@ -1,0 +1,44 @@
+name: Fiske Studio verification
+on: [push, pull_request]
+jobs:
+  deterministic:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+      - run: npm ci
+        working-directory: frontend
+      - run: npm run build
+        working-directory: frontend
+      - run: node scripts/check_frontend_submissions.mjs
+      - uses: astral-sh/setup-uv@v6
+        with:
+          version: '0.12.9'
+      - run: uv sync --frozen
+      - run: uv run alembic upgrade head
+      - run: uv run alembic check
+      - run: uv run pytest -q --junitxml=test-results.xml
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: tests-${{ matrix.os }}
+          path: test-results.xml
+  compose:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: docker compose up --build -d --wait
+        env:
+          POSTGRES_PASSWORD: ci_only_ephemeral_password_12345
+      - run: curl --fail http://127.0.0.1:8000/health/ready
+      - run: docker compose logs
+        if: failure()
+        env:
+          POSTGRES_PASSWORD: ci_only_ephemeral_password_12345

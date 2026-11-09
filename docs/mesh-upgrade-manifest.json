@@ -1,0 +1,366 @@
+{
+  "version": 1,
+  "original_root": "D:\\Enfection\\furniture_planner\\furniture_manufacturing_starter",
+  "files": [
+    {
+      "path": ".env.example",
+      "source_sha256": "d1c5dfabacb2bb074df7bd13df4961a07eb6f647839257dd51773086c6ff424f",
+      "previous_sha256": "31301f34029db8d6a88a0e4d4cfd568489f239372002e3e0d5458ee62f283b71"
+    },
+    {
+      "path": "app/adaptive_view_selector.py",
+      "source_sha256": "61ad7ee5fee66ac794ddfc9f385246f663759e3c803750ad84913984bdcde536",
+      "previous_sha256": null
+    },
+    {
+      "path": "app/api/neural4d.py",
+      "source_sha256": "4e4239716c49b6090537d79381d6339d62a5983e36b61f211110c7b28a039389",
+      "previous_sha256": null
+    },
+    {
+      "path": "app/cad_optimizer.py",
+      "source_sha256": "cc47aa021eada49256d74963bf5d364a86f6e9efdcb5c04052d07b8838b87222",
+      "previous_sha256": "b64a990308fd9f745c3dcc789c2a80f535dd52ae6f54b84dff8950990a1a51f8"
+    },
+    {
+      "path": "app/config.py",
+      "source_sha256": "4df4fb998c7196cf8595c96124153cb048e759153fe179846795f661a0d7232c",
+      "previous_sha256": "631de7b78f73b84dcdcbb2e4c7042092d08b4a86446166fcac4b95d6eb708563"
+    },
+    {
+      "path": "app/dense_cad_optimizer.py",
+      "source_sha256": "259ba9e8fba4e53d6ba7018eda2895fb739ae2c5dd7c06f474f8490c64d16b0b",
+      "previous_sha256": null
+    },
+    {
+      "path": "app/geometry_acceleration.py",
+      "source_sha256": "04feb41dc6e8da5442a185d767a66fc4f9a4662bb64020cb391faa247f8fbeca",
+      "previous_sha256": null
+    },
+    {
+      "path": "app/geometry_cache.py",
+      "source_sha256": "92dc74cbbb99967a7cfa0cc471adb49dc07bdf91286fee114cb4c6cd93ebbe37",
+      "previous_sha256": null
+    },
+    {
+      "path": "app/integrations/__init__.py",
+      "source_sha256": "42782b8e123db3de98bd162d43fae72ee29d19dd0b764d34f3b1d47d7089ee2b",
+      "previous_sha256": null
+    },
+    {
+      "path": "app/integrations/neural4d_client.py",
+      "source_sha256": "271907aaa89ba61bda86515f3fd0237a107ff83a3cce6618b8e845556ea76d36",
+      "previous_sha256": null
+    },
+    {
+      "path": "app/jobs.py",
+      "source_sha256": "bb8715d2e420091b8d540139079ddad93c0540a0266e5d36fd50ccb491d1ad15",
+      "previous_sha256": "b70351f9d5ed1d45b800e9bc526ac6b47367ab04833853a0373efaabcac4fc8a"
+    },
+    {
+      "path": "app/main.py",
+      "source_sha256": "d223249723642f8ba41b83b483a1d747db8584b8d8e17a17759fd7a379189972",
+      "previous_sha256": "5c9818a1b6e6c97d6851b540cac54617f0a770902a3c18ae9670bcaa52329abe"
+    },
+    {
+      "path": "app/mesh_analyzer.py",
+      "source_sha256": "03a553a78a0857787454ffcb2fe57cdd47be326012a0a07de986b8d1ef1b25ec",
+      "previous_sha256": null
+    },
+    {
+      "path": "app/mesh_cad_schema.py",
+      "source_sha256": "4aab58f03e0f747fe2b5d86b583e974d8ab9ef659fd90662236de2b168ea981a",
+      "previous_sha256": null
+    },
+    {
+      "path": "app/mesh_photo_verification.py",
+      "source_sha256": "6acda19dba6af577ebffbf09f95074719b892e9c7f97cfc88607c6e9ad369490",
+      "previous_sha256": null
+    },
+    {
+      "path": "app/mesh_pipeline.py",
+      "source_sha256": "fe8b7471a5618b5c5e59211ade775c543cc3581b37325d15bfc16469085d4a5b",
+      "previous_sha256": null
+    },
+    {
+      "path": "app/mesh_pipeline_worker.py",
+      "source_sha256": "e5ba1a15f57417d84edb50f3b7c89120759ebbc92c6bcc7673c068b9f14e7eff",
+      "previous_sha256": null
+    },
+    {
+      "path": "app/mesh_reconstruction_jobs.py",
+      "source_sha256": "fead64f0e6b197332ab0170cda187bddab1586b83ec7d423bbc10ad0c79319ed",
+      "previous_sha256": null
+    },
+    {
+      "path": "app/mesh_registration.py",
+      "source_sha256": "32340708490779ef3aa1305eb8ed55fc9594c61e48c82b9a40fb2c929f7a6587",
+      "previous_sha256": null
+    },
+    {
+      "path": "app/mesh_sampling.py",
+      "source_sha256": "d86b33478b493105c5b93c0919bc20f50d3218aab7e5b0ee6d102f075b861f0a",
+      "previous_sha256": null
+    },
+    {
+      "path": "app/mesh_segmentation.py",
+      "source_sha256": "43b9f56aa9c664e614c4f8f460d29b805f6cd59bf417f0cbd01411397ec17b84",
+      "previous_sha256": null
+    },
+    {
+      "path": "app/mesh_to_cad.py",
+      "source_sha256": "4e3c4db31fde3f7b1734ed46b0f771b586fea96d63723ba27d2892a86cfeac84",
+      "previous_sha256": null
+    },
+    {
+      "path": "app/multiview_geometry.py",
+      "source_sha256": "e097a99c0ca4b2751620c66bea654e82fcea84255ef5c28b3c0b8c53e30dfeeb",
+      "previous_sha256": null
+    },
+    {
+      "path": "app/studio_dist/assets/DimensionSheet-B4_wpHnI.js",
+      "source_sha256": "573e392b710aca21ea3fc902d8eb93b977d2a67b5ec7525c50890d130bea000f",
+      "previous_sha256": null
+    },
+    {
+      "path": "app/studio_dist/assets/Viewer-C9h9u3D5.js",
+      "source_sha256": "b5c02ea256044f46aa08d9f8bdde2b7a26fe435fb52964b4d150cdce3394b974",
+      "previous_sha256": null
+    },
+    {
+      "path": "app/studio_dist/assets/index-BKQA_KL4.css",
+      "source_sha256": "bf4fd1ae8a55ae5854ba5b238156f93e83fe3296cd08ecc5e5943d4d1e7665b9",
+      "previous_sha256": null
+    },
+    {
+      "path": "app/studio_dist/assets/index-Dzq3pJTz.js",
+      "source_sha256": "31e5c9a5515aa6c48e79784a9312bd6092fe3fbec5b6b5252d3f3685845b4cbc",
+      "previous_sha256": null
+    },
+    {
+      "path": "app/studio_dist/index.html",
+      "source_sha256": "b1f31d50184c2f7534575f6063588522e0dc5c246ee3a488adca3f729a666f0d",
+      "previous_sha256": "09d8844196c09b064be08c571fd9215bdba4044c183a91b218be11f0ee818c64"
+    },
+    {
+      "path": "docs/NEURAL4D_MESH_REPORT.md",
+      "source_sha256": "d5876f0a7363088c71b358374fd1f1d4b26ccab1f4145918591e4384aab42e2f",
+      "previous_sha256": null
+    },
+    {
+      "path": "docs/dense-benchmarks.json",
+      "source_sha256": "74d27e1048c103a4472fa7e1de27a9d82422f47063304ff4d7a438e3566e89d4",
+      "previous_sha256": null
+    },
+    {
+      "path": "docs/dense-legacy-comparison.json",
+      "source_sha256": "bc02ae3566f01b76ac9e3e8259518768202b1c4720389a88786c32fc01daea3d",
+      "previous_sha256": null
+    },
+    {
+      "path": "docs/full-test-results.xml",
+      "source_sha256": "598225700f73e298f46c0d30b93138edefbca513f11def09d05fa75180a5f3b6",
+      "previous_sha256": null
+    },
+    {
+      "path": "docs/mesh-compatibility-results.xml",
+      "source_sha256": "2a07ee210ef0cc43956a2530f6ae31b65f94842c729aeae943564ec7da482d61",
+      "previous_sha256": null
+    },
+    {
+      "path": "docs/neural4d-mesh-test-results.xml",
+      "source_sha256": "76bf390021c77b313b93adf839dd90fe0099e137d69f57fc4f6c8cf13c17dca0",
+      "previous_sha256": null
+    },
+    {
+      "path": "docs/source_inventory.txt",
+      "source_sha256": "54b065f07a1c863e24cb49a5ce22f91b92a69ed1eee09444f544beffd0bf544b",
+      "previous_sha256": null
+    },
+    {
+      "path": "examples/dense_mesh_pipeline/F001.step",
+      "source_sha256": "4249c03f9c6d3b1b3741ad0c8cd77f1c40664cee4cfcfcec941082ca9998b70a",
+      "previous_sha256": null
+    },
+    {
+      "path": "examples/dense_mesh_pipeline/F002.step",
+      "source_sha256": "4fd234976636ffac3c2e7f03293cd4811ab4fe5c45a0ce392e3f5291e4f90873",
+      "previous_sha256": null
+    },
+    {
+      "path": "examples/dense_mesh_pipeline/F003.step",
+      "source_sha256": "281c246fbca514731e463302697fa909e698d3adffde9cf920af67ebfd5b310a",
+      "previous_sha256": null
+    },
+    {
+      "path": "examples/dense_mesh_pipeline/F004.step",
+      "source_sha256": "c3d6f9b77d1289c6719fd57e78032b50946e4fd0cbe1022eac838156214a597f",
+      "previous_sha256": null
+    },
+    {
+      "path": "examples/dense_mesh_pipeline/F005.step",
+      "source_sha256": "a28bf96f481bdb1f819ec0b270752afb3be585f1d9ad89e4b6f2c8bdfc041613",
+      "previous_sha256": null
+    },
+    {
+      "path": "examples/dense_mesh_pipeline/assembly.step",
+      "source_sha256": "25441da8e8f6d98bbcab4e12015ccf0540f63b6479a05489513b9f7feb394a3d",
+      "previous_sha256": null
+    },
+    {
+      "path": "examples/dense_mesh_pipeline/component_graph.json",
+      "source_sha256": "ab65d2c88991bdce71e4990d4bbb319d199cbf7d2f7a36a19981db4f904dc286",
+      "previous_sha256": null
+    },
+    {
+      "path": "examples/dense_mesh_pipeline/deviation.glb",
+      "source_sha256": "3ab32721b898880bdc8440d5f229eae5b760830f3ae937c7cc46ce711274a7a0",
+      "previous_sha256": null
+    },
+    {
+      "path": "examples/dense_mesh_pipeline/editable_cad.py",
+      "source_sha256": "7bf8f6373b0e76b3234c19562b261f8f56cdba79cfff7e4c8cafb0864e6307ad",
+      "previous_sha256": null
+    },
+    {
+      "path": "examples/dense_mesh_pipeline/feature_specification.json",
+      "source_sha256": "c843daa40e01afbd2d2d4bdeb78af3913389796ad432a71b8e0da7880170006d",
+      "previous_sha256": null
+    },
+    {
+      "path": "examples/dense_mesh_pipeline/geometry_deviation_report.json",
+      "source_sha256": "af1905d31678a5571b4254678d895d2bb9238204a70e88039b20dcb7e1cbdb6f",
+      "previous_sha256": null
+    },
+    {
+      "path": "examples/dense_mesh_pipeline/optimization_report.json",
+      "source_sha256": "37276eb525f16eb54cc598abb774d70ae135b3ace18c6ec4c16ce725ccaf7890",
+      "previous_sha256": null
+    },
+    {
+      "path": "examples/dense_mesh_pipeline/optimized_cad.glb",
+      "source_sha256": "f10d9d5bd02d875a1a34ff2dc741bc6d303c8ac29971620951651e9249048c3e",
+      "previous_sha256": null
+    },
+    {
+      "path": "examples/dense_mesh_pipeline/original_photo.png",
+      "source_sha256": "18845735262e8d4e891ea78712005302fcfef630e787309f912547879e61e2ac",
+      "previous_sha256": null
+    },
+    {
+      "path": "examples/dense_mesh_pipeline/overlay.glb",
+      "source_sha256": "fe02ab675823c8d8d7b071e8e421559cb2e0d2b8b5daa2f7c83ae157cab70791",
+      "previous_sha256": null
+    },
+    {
+      "path": "examples/dense_mesh_pipeline/parameter_revision_history.json",
+      "source_sha256": "ccb6b69f9fbdd243ff82d489589fce6279068c6e1377a10fd1e79a14a417fc64",
+      "previous_sha256": null
+    },
+    {
+      "path": "examples/dense_mesh_pipeline/reference.glb",
+      "source_sha256": "d9b41bf70a72718e035f2461544250f9a496d190f5d6f2ec31443175de6607d6",
+      "previous_sha256": null
+    },
+    {
+      "path": "examples/dense_mesh_pipeline/synthetic_reference.obj",
+      "source_sha256": "6eb7f3f3fec8bf9b06a4cd804b178c6d5a32c4268b12e14dec27fd7c85362c88",
+      "previous_sha256": null
+    },
+    {
+      "path": "frontend/src/MeshReconstruction.jsx",
+      "source_sha256": "24e61a96aa2b4320b3dba787fa183e829680a4e059dc983d23e40b2a46eab17b",
+      "previous_sha256": null
+    },
+    {
+      "path": "frontend/src/main.jsx",
+      "source_sha256": "fc7c56464b75991c7da3704dca458d8266c800c112e120d66e4b152679f22914",
+      "previous_sha256": "2e89bba8b44b407068bc8c2b3f7ac624c72be1d99bfe6e61977bc2357518576f"
+    },
+    {
+      "path": "frontend/src/style.css",
+      "source_sha256": "2a0d83d2f8797a5770963c21938fec21d40ce74ced7efbb870c5c6ea55f30415",
+      "previous_sha256": "554138979bb2dc42c41a92e16d1e79888f166834382327448a1e82a8fba2f469"
+    },
+    {
+      "path": "pyproject.toml",
+      "source_sha256": "b4fc2b754d7cc8e2575b65cd33dfff54115de715a843035ad485be37618cf526",
+      "previous_sha256": "3a7e2da6e5fa2676cfd28cecc5d035f7c48ddf6e76935bc0219f276ff71a9609"
+    },
+    {
+      "path": "requirements.txt",
+      "source_sha256": "85c69c2b8c350cd79d66e011e920bff12c5ee58567d17e43a16f06f030c5f149",
+      "previous_sha256": "0380c3e737442cb17edc71afb9e4b9d98d8ba23e99d441da71e3321a81843fbc"
+    },
+    {
+      "path": "scripts/apply_mesh_upgrade.ps1",
+      "source_sha256": "7b36c8795330dcfadbf4701dab2a546fcd00a251a30986496877097b44564e21",
+      "previous_sha256": null
+    },
+    {
+      "path": "scripts/benchmark_dense_geometry.py",
+      "source_sha256": "4b1d7c05b6c452c9e051bef7d53fdcf59edafb6f94c7fda29c6e7b712bf088d9",
+      "previous_sha256": null
+    },
+    {
+      "path": "scripts/create_dense_mesh_sample.py",
+      "source_sha256": "9794f139a247a44077d6fbb01ffff6673d8b5a21f49fd6e71019ac47a9eebafd",
+      "previous_sha256": null
+    },
+    {
+      "path": "scripts/prepare_mesh_upgrade.py",
+      "source_sha256": "21251571bd9d8a93783ae40eb2bbfb6898fffe2be6a7d79324721bb610dc2112",
+      "previous_sha256": null
+    },
+    {
+      "path": "scripts/run_mesh_reconstruction.py",
+      "source_sha256": "e0bf5857401200d8caa286ebeff857e4f9f5fa83277dde0cb961a32f66e297cd",
+      "previous_sha256": null
+    },
+    {
+      "path": "tests/test_dense_cad_optimizer.py",
+      "source_sha256": "0fe351e9e231892ecb3997476fae93d02f6d52aa5d766a48b2da228821cf60c7",
+      "previous_sha256": null
+    },
+    {
+      "path": "tests/test_dense_mesh_geometry.py",
+      "source_sha256": "450dfd2470376811d9a70bfcd5afd8a865fffccfaa823104b98e9d66c1d5d571",
+      "previous_sha256": null
+    },
+    {
+      "path": "tests/test_image_to_cad.py",
+      "source_sha256": "f2496aca6cb974c26848f4cfed9a185965f4f8112935f6f53b467af3c8a85453",
+      "previous_sha256": "b0e151ff2d7af170aa7c1ecd168f5bd239dc7bd652fccb1d68f11bbc2b8f2ab9"
+    },
+    {
+      "path": "tests/test_mesh_photo_verification.py",
+      "source_sha256": "a17f478a748429b6bf85d0816608aaea65e260ee862fa1a9523a3eedec8b2d11",
+      "previous_sha256": null
+    },
+    {
+      "path": "tests/test_mesh_pipeline.py",
+      "source_sha256": "611ee705b805a355c6df1d794292c34f1299c37b7314500a22c12ba67f180999",
+      "previous_sha256": null
+    },
+    {
+      "path": "tests/test_mesh_reconstruction_api.py",
+      "source_sha256": "19f25e4c27962f76c5700dc7d64c85e1211b71ed1724abcc4d7216cb174f7d20",
+      "previous_sha256": null
+    },
+    {
+      "path": "tests/test_mesh_reconstruction_recovery.py",
+      "source_sha256": "eea92c6e9855848f39194f210d346f2c0cd812d147196884c636692a02c105b1",
+      "previous_sha256": null
+    },
+    {
+      "path": "tests/test_neural4d_provider.py",
+      "source_sha256": "f566b9a30ad5daf3a0e4ba86d03ced0f2e9078d4ef1afcb72b108a55b934a0b3",
+      "previous_sha256": null
+    },
+    {
+      "path": "uv.lock",
+      "source_sha256": "277e74bc2fd5324c759fa5f789e1ca34d4071151530e1e738c85d72a8356d357",
+      "previous_sha256": "03515801e2dbe4fc0b03fbcde20861163e61268a5b6e9bdcbc86c84a666afcbf"
+    }
+  ]
+}

@@ -1,0 +1,406 @@
+"""Two-speed surface fitting over existing native CAD parameters. No network I/O."""
+from dataclasses import dataclass
+import time
+import numpy as np
+from scipy.optimize import least_squares
+from scipy.spatial import cKDTree
+from scipy.spatial.transform import Rotation
+from scipy.interpolate import RectBivariateSpline
+from .cad_parameters import CADParameterRegistry
+from .geometry_acceleration import SurfaceIndex, deviation_statistics
+from .geometry_cache import GeometryCache, ResourceBudget
+from .mesh_analyzer import analyze_mesh
+from .mesh_sampling import STAGES, sample_surface
+from .mesh_to_cad import build_native, tessellate_build
+from .mesh_cad_schema import DenseOptimizationOptions
+from .photo_schema import PhotoDesign, number
+
+
+@dataclass
+class DenseOptimizationResult:
+    plan: PhotoDesign
+    build: object
+    report: dict
+    reference: object
+    deviation_points: np.ndarray
+    deviation_mm: np.ndarray
+
+
+class FitBudgetStop(Exception):
+    pass
+
+
+def resolved_frame(part, values):
+    rotation = Rotation.from_euler('xyz', [number(v, values) for v in part.rotation_deg], degrees=True).as_matrix()
+    center = np.array([number(v, values) for v in part.position])
+    size = np.array([number(v, values) for v in part.size])
+    return rotation, center, size
+
+
+class ComponentProxy:
+    """Cached local samples; affine primitives and section/path displacements.
+
+    These are trial approximations. Only rebuilt, checked B-Reps may be accepted.
+    """
+    def __init__(self, plan, samples):
+        self.plan, self.samples = plan, samples
+        self.values = {v.key: v.value for v in plan.values}
+        self.local = {}
+        for index, part in enumerate(plan.parts):
+            selected = samples.component_ids == index
+            rotation, center, size = resolved_frame(part, self.values)
+            local = (samples.points[selected] - center) @ rotation
+            normals = samples.normals[selected] @ rotation
+            self.local[index] = selected, local, normals, size
+
+    def evaluate(self, plan):
+        values = {v.key: v.value for v in plan.values}
+        points = np.empty_like(self.samples.points, dtype=float)
+        normals = np.empty_like(points)
+        for index, (before, after) in enumerate(zip(self.plan.parts, plan.parts)):
+            selected, local, local_normals, size = self.local[index]
+            rotation, center, new_size = resolved_frame(after, values)
+            ratio = new_size / size
+            moved = local * ratio
+            if before.path and len(before.path) == len(after.path):
+                original = np.array([[number(v, self.values) for v in p] for p in before.path])
+                changed = np.array([[number(v, values) for v in p] for p in after.path])
+                # Local radial interpolation of sparse meaningful path controls.
+                _, nearest = cKDTree(original).query(local)
+                moved += changed[nearest] - original[nearest]
+            if before.sections and len(before.sections) == len(after.sections):
+                original = np.array([[number(v, self.values) for v in p.center] for p in before.sections])
+                changed = np.array([[number(v, values) for v in p.center] for p in after.sections])
+                _, nearest = cKDTree(original).query(local)
+                moved += changed[nearest] - original[nearest]
+                widths_before = np.array([number(p.width, self.values) for p in before.sections])
+                widths_after = np.array([number(p.width, values) for p in after.sections])
+                depths_before = np.array([number(p.depth, self.values) for p in before.sections])
+                depths_after = np.array([number(p.depth, values) for p in after.sections])
+                moved[:, 0] *= (widths_after/widths_before)[nearest]
+                moved[:, 1] *= (depths_after/depths_before)[nearest]
+            if before.outline and len(before.outline) == len(after.outline):
+                original = np.array([[number(v, self.values) for v in p] for p in before.outline])
+                changed = np.array([[number(v, values) for v in p] for p in after.outline])
+                _, nearest = cKDTree(original).query(local[:, :2])
+                moved[:, :2] += changed[nearest]-original[nearest]
+            if before.surface_grid and after.surface_grid:
+                original = np.array([[number(v, self.values) for v in row] for row in before.surface_grid.depths])
+                changed = np.array([[number(v, values) for v in row] for row in after.surface_grid.depths])
+                ny, nx = original.shape
+                spline = RectBivariateSpline(np.linspace(-size[1]/2, size[1]/2, ny),
+                    np.linspace(-size[0]/2, size[0]/2, nx), changed-original, kx=min(3, ny-1), ky=min(3, nx-1))
+                # Blend the dish displacement down through the stock thickness;
+                # the lower panel remains anchored in this trial approximation.
+                blend = np.clip((local[:, 2]+size[2]/2)/size[2], 0, 1)
+                moved[:, 2] -= spline.ev(local[:, 1], local[:, 0])*blend
+            points[selected] = moved @ rotation.T + center
+            normal = (local_normals / ratio) @ rotation.T
+            normals[selected] = normal / np.maximum(np.linalg.norm(normal, axis=1)[:, None], 1e-12)
+        return points, normals
+
+
+def assign_reference_components(reference, cad, threads=4):
+    closest = SurfaceIndex(cad, threads=threads).closest(reference.mesh.triangles_center)
+    labels = cad.face_components[closest['face_ids']]
+    result = analyze_mesh(reference.mesh, labels)
+    return result
+
+
+def sensitive_parameters(registry, plan, cad_samples, maximum):
+    """Bounded mathematical probes avoid spending solves on inert controls."""
+    from dataclasses import replace
+    ids = np.linspace(0, len(cad_samples.points)-1, min(512, len(cad_samples.points)), dtype=int)
+    subset = replace(cad_samples, **{name: getattr(cad_samples, name)[ids] for name in
+        ('points', 'normals', 'face_ids', 'component_ids', 'area_weights')})
+    proxy = ComponentProxy(plan, subset)
+    initial, _ = proxy.evaluate(plan)
+    measured = []
+    phases = ('global', 'position', 'component', 'curve')
+    candidates = registry.candidates()
+    probe_candidates = [p for phase in phases for p in [item for item in candidates if item.phase == phase][:24]]
+    for parameter in probe_candidates:
+        value = min(parameter.maximum, parameter.current_value+max(.01, (parameter.maximum-parameter.minimum)*.03))
+        if value == parameter.current_value:
+            value = max(parameter.minimum, parameter.current_value-.01)
+        try:
+            changed = registry.apply({parameter.parameter_id: value})
+            points, _ = proxy.evaluate(changed)
+            sensitivity = float(np.sqrt(np.mean(np.sum((points-initial)**2, axis=1)))/max(abs(value-parameter.current_value), 1e-9))
+            if sensitivity > 1e-6:
+                measured.append((parameter, sensitivity))
+        except ValueError:
+            continue
+    phase = {'global':0, 'position':1, 'component':2, 'curve':3}
+    measured.sort(key=lambda item: (phase[item[0].phase], -item[1]))
+    pools = {name: [p for p, _ in measured if p.phase == name] for name in phases}
+    selected = []
+    while len(selected) < maximum and any(pools.values()):
+        for name in phases:
+            if pools[name] and len(selected) < maximum:
+                selected.append(pools[name].pop(0))
+    return selected, {p.parameter_id: sensitivity for p, sensitivity in measured}
+
+
+def bidirectional_report(reference_index, cad, reference_samples, count, budget, cache, component_aware):
+    cad_samples = sample_surface(cad, count, budget=budget, cache=cache)
+    cad_index = SurfaceIndex(cad, threads=budget.workers)
+    forward = reference_index.closest(cad_samples.points, cad_samples.component_ids if component_aware else None)
+    reverse = cad_index.closest(reference_samples.points, reference_samples.component_ids if component_aware else None)
+    a, b = forward['distances'], reverse['distances']
+    normal_error = 1 - np.clip(np.einsum('ij,ij->i', cad_samples.normals, forward['normals']), -1, 1)
+    per_component = {}
+    for component in np.unique(reference_samples.component_ids):
+        selected = reference_samples.component_ids == component
+        per_component[str(int(component))] = deviation_statistics(b[selected], reference_samples.area_weights[selected])
+    report = dict(cad_to_reference=deviation_statistics(a, cad_samples.area_weights),
+        reference_to_cad=deviation_statistics(b, reference_samples.area_weights), components=per_component,
+        symmetric_mean_mm=float((np.sum(a*cad_samples.area_weights)+np.sum(b*reference_samples.area_weights))*.5),
+        normal_loss=float(np.sum(normal_error*cad_samples.area_weights)),
+        distance_method='Open3D closest triangle surface on temporary CAD tessellation',
+        cad_tessellation_tolerance_mm=.25, reference_points=len(b), cad_points=len(a))
+    return report, reverse
+
+
+def photo_error(plan, build, views):
+    """Reviewed image evidence uses the existing native projection engine."""
+    from .cad_projection import NativeProjection, project_points, landmark_point, curve_points
+    from .cad_optimizer import boundary_distances
+    errors = []
+    evidence = []
+    for view in views:
+        if view.camera is None or not view.camera.reliable:
+            evidence.append(dict(image_id=str(view.image_id), status='unverified', reason='A reliable photo camera is required'))
+            continue
+        diagonal = np.hypot(*view.camera.image_size)
+        local = []
+        for landmark in view.landmarks:
+            if landmark.visible:
+                projected = project_points([landmark_point(landmark, plan, build)], view.camera)[0]
+                local.append(float(np.linalg.norm(projected-landmark.image_point)/diagonal)*landmark.confidence)
+        for curve in view.curves:
+            if curve.visible:
+                projected = project_points(curve_points(curve, plan, build), view.camera)
+                local.extend((boundary_distances(projected, curve.image_points)/diagonal*curve.confidence).tolist())
+        if view.silhouette and view.silhouette_reviewed:
+            # The established projection API supplies exact B-Rep HLR contours.
+            projection = NativeProjection(build, view.camera)
+            predicted = projection.silhouette()
+            local.extend((boundary_distances(predicted, view.silhouette)/diagonal).tolist())
+        if local:
+            errors.extend(local)
+            evidence.append(dict(image_id=str(view.image_id), status='measured', error=float(np.mean(local))))
+    return (float(np.mean(errors)) if errors else None), evidence
+
+
+def optimize_dense_cad(plan, reference, options=None, *, inputs=None, cache=None, progress=None, photo_bytes=None, publish_best=None):
+    from .engineering_cad import geometry_checks, check_supplied_dimensions
+    options = DenseOptimizationOptions.model_validate(options or {})
+    plan = PhotoDesign.model_validate(plan)
+    inputs = inputs or {}
+    cache = cache or GeometryCache()
+    budget = ResourceBudget(options.memory_mb, workers=options.workers)
+    started = time.monotonic()
+    deadline = started + options.max_seconds
+    evaluations = 0
+    controls = options.controls.model_copy(update={'mode': 'quality' if options.mode == 'extended' else options.mode})
+    registry = CADParameterRegistry(plan, inputs.get('known_values', []), controls)
+    active = registry.candidates()[:options.max_parameters] if options.enabled else []
+    baseline = build_native(plan, inputs)
+    baseline_checks = geometry_checks(baseline)
+    photo_reference = None
+    if photo_bytes:
+        from .mesh_photo_verification import PhotoReference
+        photo_reference = PhotoReference(photo_bytes, plan, baseline, options.photo_reference)
+    required = {tuple(sorted((c['a'], c['b']))) for c in baseline_checks['contacts']}
+    required.update(tuple(sorted(c)) for c in controls.required_contacts)
+    cad = tessellate_build(baseline)
+    reference = assign_reference_components(reference, cad, budget.workers) if options.component_aware else reference
+    # Missing component coverage is explicit; no cross-component nearest matches.
+    available = set(np.unique(reference.face_components))
+    if options.component_aware and not set(range(len(plan.parts))) <= available:
+        raise ValueError('Reference lacks correspondences for one or more native CAD components')
+    reference_index = SurfaceIndex(reference, threads=budget.workers)
+    target_count, view_count = STAGES[options.mode]
+    stages = [25_000] + ([100_000] if target_count >= 100_000 else []) + ([300_000] if target_count >= 300_000 else [])
+    # Extended mode increases verification density, not rebuilds per trial.
+    cameras, reference_views = [], []
+    if options.multi_angle:
+        from .multiview_geometry import generate_cameras
+        from .adaptive_view_selector import select_views
+        candidates = generate_cameras(reference.mesh.bounds, view_count, resolution=options.camera_resolution)
+        cameras, reference_views = select_views(reference_index, candidates)
+    def exact_metrics(build, model, count):
+        points = sample_surface(reference, count, budget=budget, cache=cache, adaptive=options.adaptive_sampling)
+        model_cad = tessellate_build(build)
+        measurements, reverse = bidirectional_report(reference_index, model_cad, points, count, budget, cache, options.component_aware)
+        photo, evidence = photo_error(model, build, options.photo_views)
+        if photo is None and photo_reference is not None:
+            photo, automatic_evidence = photo_reference.evaluate(model, build)
+            evidence.append(automatic_evidence)
+        view_loss = 0.
+        if cameras:
+            from .multiview_geometry import multiview_report
+            view_report = multiview_report(reference_index, SurfaceIndex(model_cad, threads=budget.workers), cameras, reference_views)
+            view_loss = view_report['silhouette_iou_loss']
+        scale = max(np.linalg.norm(np.ptp(reference.mesh.bounds, axis=0)), 1.)
+        score = options.surface_weight*measurements['symmetric_mean_mm']/scale + options.normal_weight*measurements['normal_loss']
+        score += options.silhouette_weight*view_loss
+        if photo is not None:
+            score += options.photo_weight*photo
+        return score, measurements, model_cad, photo, evidence, reverse
+    best_score, initial, best_cad, best_photo, photo_evidence, _ = exact_metrics(baseline, plan, 25_000)
+    initial_score = best_score
+    best_plan, best_build, best_checks = plan, baseline, baseline_checks
+    if publish_best:
+        publish_best(best_plan, best_build)
+    revisions, attempts, stage_reports = [], [], []
+    stop_reason = 'completed'
+    for count in stages:
+        if not active or time.monotonic() >= deadline:
+            stop_reason = 'disabled_or_no_active_parameters' if not active else 'wall_time_budget'
+            break
+        stage_started = time.monotonic()
+        registry = CADParameterRegistry(best_plan, inputs.get('known_values', []), controls)
+        importance = None
+        if options.adaptive_sampling and count > 25_000:
+            current_index = SurfaceIndex(best_cad, threads=budget.workers)
+            face_error = current_index.closest(reference.mesh.triangles_center)['distances']
+            importance = face_error/max(float(np.quantile(face_error, .9)), .01)
+        reference_samples = sample_surface(reference, count, budget=budget, cache=cache,
+            adaptive=options.adaptive_sampling, importance=importance)
+        cad_samples = sample_surface(best_cad, count, budget=budget, cache=cache)
+        active, sensitivities = sensitive_parameters(registry, best_plan, cad_samples, options.max_parameters)
+        if not active:
+            stop_reason = 'no_sensitive_unlocked_parameters'
+            break
+        proxy = ComponentProxy(best_plan, cad_samples)
+        shortlisted = []
+        start_score = best_score
+        start_evaluations = evaluations
+        updates = {}
+        for phase in ('global', 'position', 'component', 'curve'):
+            group = [p for p in active if p.phase == phase]
+            if not group:
+                continue
+            x0 = np.array([p.current_value for p in group])
+            low, high = np.array([p.minimum for p in group]), np.array([p.maximum for p in group])
+            group = [p for p in group if p.maximum-p.minimum > 1e-8]
+            if not group:
+                continue
+            x0 = np.array([updates.get(p.parameter_id, p.current_value) for p in group])
+            low = np.array([p.minimum for p in group]); high = np.array([p.maximum for p in group])
+            size = len(cad_samples.points) + len(reference_samples.points) + len(cad_samples.points) + len(group)
+            diagonal = max(np.linalg.norm(np.ptp(reference.mesh.bounds, axis=0)), 1.)
+            best_proxy = [np.inf, evaluations]
+            def residual(x):
+                nonlocal evaluations
+                if evaluations >= options.max_evaluations or time.monotonic() >= deadline:
+                    raise FitBudgetStop()
+                if evaluations-best_proxy[1] >= controls.stagnation_evaluations:
+                    raise FitBudgetStop()
+                evaluations += 1
+                trial = {**updates, **dict(zip((p.parameter_id for p in group), x))}
+                try:
+                    candidate = registry.apply(trial)
+                    points, normals = proxy.evaluate(candidate)
+                    match = reference_index.closest(points, cad_samples.component_ids if options.component_aware else None)
+                    # The reverse fast term uses a point-cloud approximation.
+                    reverse = np.empty(len(reference_samples.points))
+                    labels = np.unique(reference_samples.component_ids) if options.component_aware else [None]
+                    for label in labels:
+                        a = cad_samples.component_ids == label if label is not None else np.ones(len(points), dtype=bool)
+                        b = reference_samples.component_ids == label if label is not None else np.ones(len(reverse), dtype=bool)
+                        reverse[b] = cKDTree(points[a]).query(reference_samples.points[b], workers=budget.workers)[0]
+                    normal = 1-np.clip(np.einsum('ij,ij->i', normals, match['normals']), -1, 1)
+                    result = np.concatenate((match['distances']/diagonal*np.sqrt(cad_samples.area_weights*options.surface_weight),
+                        reverse/diagonal*np.sqrt(reference_samples.area_weights*options.surface_weight),
+                        normal*np.sqrt(cad_samples.area_weights*options.normal_weight),
+                        (x-x0)/np.maximum(high-low, 1)*np.sqrt(options.regularization_weight)))
+                    loss = float(result@result)
+                    if loss < best_proxy[0]-1e-12:
+                        best_proxy[:] = [loss, evaluations]
+                    shortlisted.append((loss, trial))
+                    shortlisted.sort(key=lambda item: item[0])
+                    del shortlisted[options.exact_candidates*3:]
+                except (ValueError, FloatingPointError):
+                    result = np.full(size, 10.)
+                if progress:
+                    progress('fitting', evaluations, options.max_evaluations)
+                return result
+            try:
+                result = least_squares(residual, x0, bounds=(low, high), loss='soft_l1',
+                    diff_step=.01, x_scale='jac', max_nfev=max(1, (options.max_evaluations-evaluations)//(len(group)+1)),
+                    ftol=1e-5, xtol=1e-4, gtol=1e-6)
+                updates.update(dict(zip((p.parameter_id for p in group), result.x)))
+            except FitBudgetStop:
+                stop_reason = 'evaluation_or_wall_time_budget'
+                break
+        seen = set()
+        for _, trial in shortlisted:
+            key = tuple(sorted(trial.items()))
+            if key in seen:
+                continue
+            seen.add(key)
+            if len(seen) > options.exact_candidates or time.monotonic() >= deadline:
+                break
+            try:
+                candidate = registry.apply(trial)
+                build = build_native(candidate, inputs)
+                checks = geometry_checks(build)
+                contacts = {tuple(sorted((c['a'], c['b']))) for c in checks['contacts']}
+                if not required <= contacts:
+                    raise ValueError('Candidate lost a required assembly contact')
+                score, metrics, model_cad, photo, evidence, _ = exact_metrics(build, candidate, 25_000)
+                # Reviewed photo evidence vetoes a worsening candidate, even if
+                # the estimated reference mesh prefers that candidate.
+                if best_photo is not None and (photo is None or photo > best_photo+1e-6):
+                    raise ValueError('Candidate worsens reviewed original-photo evidence')
+                attempts.append(dict(valid=True, score=score, updates=trial))
+                if score < best_score-options.minimum_improvement:
+                    best_plan, best_build, best_checks, best_cad = candidate, build, checks, model_cad
+                    best_score, best_photo, photo_evidence = score, photo, evidence
+                    revisions.append(dict(score=score, surface_mean_mm=metrics['symmetric_mean_mm'], updates=trial))
+                    if publish_best:
+                        publish_best(best_plan, best_build)
+            except Exception as exc:
+                attempts.append(dict(valid=False, reason=str(exc)[:300], updates=trial))
+        stage_reports.append(dict(requested_points=count, actual_points=len(reference_samples.points),
+            evaluations=evaluations-start_evaluations, seconds=time.monotonic()-stage_started,
+            exact_score_improvement=start_score-best_score, sensitivities=sensitivities))
+        if start_score-best_score < options.minimum_improvement:
+            stop_reason = 'density_increase_did_not_improve_fit'
+            break
+    verification_count = options.verify_points
+    final_reference = sample_surface(reference, verification_count, budget=budget, cache=cache, adaptive=options.adaptive_sampling)
+    final_cad = tessellate_build(best_build)
+    final, reverse = bidirectional_report(reference_index, final_cad, final_reference,
+                                          verification_count, budget, cache, options.component_aware)
+    locked = check_supplied_dimensions(best_build, inputs.get('known_values', []))
+    multiview = None
+    if options.multi_angle:
+        from .multiview_geometry import generate_cameras, multiview_report
+        final_cameras = generate_cameras(reference.mesh.bounds, options.final_views, resolution=options.camera_resolution)
+        multiview = multiview_report(reference_index, SurfaceIndex(final_cad, threads=budget.workers), final_cameras)
+    report = dict(version='DENSE_NATIVE_CAD_V1', status='improved' if revisions else 'validated_initial',
+        mode=options.mode, solver='SciPy bounded trust-region least_squares, soft_l1, grouped parameters and sensitivity probes',
+        constraints='Hard parameter bounds and measurement locks; exact native topology, contacts and interference acceptance',
+        loss_weights=dict(surface=options.surface_weight, silhouette=options.silhouette_weight,
+            normals=options.normal_weight, photo=options.photo_weight, regularization=options.regularization_weight),
+        initial=initial, final=final, initial_objective=initial_score, final_objective=best_score,
+        units='mm', evaluations=evaluations, stages=stage_reports, revisions=revisions, attempts=attempts,
+        stop_reason=stop_reason, multiview=multiview, fitting_views=len(cameras),
+        photo_error=best_photo, photo_evidence=photo_evidence,
+        photo_verification_status=('reviewed_photo_camera_evidence' if any(v.camera and v.camera.reliable for v in options.photo_views)
+            else 'estimated_camera_photo_comparison') if best_photo is not None else 'unverified: usable photo foreground or reviewed evidence required',
+        locked_measurements=locked, fixed_dimensions_preserved=True, solid_checks=best_checks,
+        processing_seconds=time.monotonic()-started, resources=budget.snapshot(),
+        fallback=final_reference.fallback, actual_verification_points=len(final_reference.points),
+        additional_neural4d_generations=0, additional_llm_calls=0, physical_accuracy_verified=False,
+        fast_model='cached component affine and local control displacement; reverse nearest-point approximation',
+        exact_model='rebuilt OCCT B-Rep, topology/contact checks and closest CAD tessellation surface',
+        limitations=['Arbitrary sculpted furniture and automatic multi-patch fitting are unresolved',
+                    'Final verification is a separate pass and may exceed the numerical solver wall-time budget'])
+    if not reference.report.get('winding_consistent', True):
+        report['limitations'].append('Reference face winding is inconsistent; normal comparisons need review')
+    return DenseOptimizationResult(best_plan, best_build, report, reference, final_reference.points, reverse['distances'])

@@ -1,0 +1,909 @@
+{
+  "results": [
+    {
+      "case": "table",
+      "seconds": 17.456477799991262,
+      "parts": 5,
+      "drawing_sheets": 6,
+      "six_views_per_sheet": 6,
+      "freecad": {
+        "status": "validated",
+        "freecad_version": [
+          "1",
+          "1",
+          "4"
+        ],
+        "parts": {
+          "F001": {
+            "volume_mm3": 10500000.0,
+            "bounds_mm": [
+              700.0,
+              500.0,
+              30.0
+            ],
+            "individual_fcstd_reopened": true,
+            "individual_frame": "local_stock_frame"
+          },
+          "F002": {
+            "volume_mm3": 1152000.0,
+            "bounds_mm": [
+              40.0,
+              40.0,
+              720.0
+            ],
+            "individual_fcstd_reopened": true,
+            "individual_frame": "local_stock_frame"
+          },
+          "F003": {
+            "volume_mm3": 1152000.0,
+            "bounds_mm": [
+              40.0,
+              40.0,
+              720.0
+            ],
+            "individual_fcstd_reopened": true,
+            "individual_frame": "local_stock_frame"
+          },
+          "F004": {
+            "volume_mm3": 1152000.0,
+            "bounds_mm": [
+              40.0,
+              40.0,
+              720.0
+            ],
+            "individual_fcstd_reopened": true,
+            "individual_frame": "local_stock_frame"
+          },
+          "F005": {
+            "volume_mm3": 1152000.0,
+            "bounds_mm": [
+              40.0,
+              40.0,
+              720.0
+            ],
+            "individual_fcstd_reopened": true,
+            "individual_frame": "local_stock_frame"
+          }
+        },
+        "editability": {
+          "status": "parameter_regenerated",
+          "changed_parameter": "depth_mm",
+          "before": 500.0,
+          "after": 510.0,
+          "affected_parts": [
+            "F001",
+            "F002",
+            "F003",
+            "F004",
+            "F005"
+          ],
+          "edited_step_regenerated": true,
+          "independent_regeneration": {
+            "edited_step_reopened": true,
+            "six_views_regenerated": [
+              "front",
+              "back",
+              "left",
+              "right",
+              "top",
+              "bottom"
+            ],
+            "part_count": 5,
+            "all_native_solids_valid": true
+          }
+        },
+        "curved_editability": null,
+        "representation": "Native Sketcher/Pad boxes and FeaturePython B-Reps driven by the same declarative source",
+        "requires_project_venv": true,
+        "native_sketch_history": true,
+        "feature_types": {
+          "F001": "Sketcher+PartDesign::Pad",
+          "F002": "Sketcher+PartDesign::Pad",
+          "F003": "Sketcher+PartDesign::Pad",
+          "F004": "Sketcher+PartDesign::Pad",
+          "F005": "Sketcher+PartDesign::Pad"
+        }
+      },
+      "final_surface": {
+        "cad_to_reference": {
+          "mean_mm": 0.00014613323905668062,
+          "rms_mm": 0.00044580404405965653,
+          "median_mm": 2.15791860682657e-05,
+          "p95_mm": 0.000885009765625,
+          "maximum_observed_mm": 0.005615565925836563
+        },
+        "reference_to_cad": {
+          "mean_mm": 0.00014560750625192712,
+          "rms_mm": 0.0004442295538879607,
+          "median_mm": 2.15791860682657e-05,
+          "p95_mm": 0.0008734907023608685,
+          "maximum_observed_mm": 0.005615565925836563
+        },
+        "symmetric_mean_mm": 0.00014587037265430386,
+        "rms_mm": 0.0004450174953007133,
+        "p95_mm": 0.0008807904087007046,
+        "maximum_observed_mm": 0.005615565925836563,
+        "components": {
+          "0": {
+            "cad_to_reference": {
+              "mean_mm": 5.551819330077438e-05,
+              "rms_mm": 0.00027859041156629385,
+              "median_mm": 1.9073486328125e-05,
+              "p95_mm": 6.291359750321135e-05,
+              "maximum_observed_mm": 0.005615565925836563
+            },
+            "reference_to_cad": {
+              "mean_mm": 5.5446364290990396e-05,
+              "rms_mm": 0.0002784521682588614,
+              "median_mm": 1.9073486328125e-05,
+              "p95_mm": 6.291359750321135e-05,
+              "maximum_observed_mm": 0.005615565925836563
+            },
+            "correspondence": "geometric region correspondence; not proof of a manufactured part",
+            "mean_mm": 5.5446364290990396e-05,
+            "rms_mm": 0.0002784521682588614,
+            "median_mm": 1.9073486328125e-05,
+            "p95_mm": 6.291359750321135e-05,
+            "maximum_observed_mm": 0.005615565925836563
+          },
+          "1": {
+            "cad_to_reference": {
+              "mean_mm": 0.00029398106990813827,
+              "rms_mm": 0.0006286624728820655,
+              "median_mm": 3.0517578125e-05,
+              "p95_mm": 0.0014120771083980799,
+              "maximum_observed_mm": 0.0044317785650491714
+            },
+            "reference_to_cad": {
+              "mean_mm": 0.0002833299381378992,
+              "rms_mm": 0.000606157309077345,
+              "median_mm": 3.0517578125e-05,
+              "p95_mm": 0.0013835103018209338,
+              "maximum_observed_mm": 0.0044317785650491714
+            },
+            "correspondence": "geometric region correspondence; not proof of a manufactured part",
+            "mean_mm": 0.0002833299381378992,
+            "rms_mm": 0.000606157309077345,
+            "median_mm": 3.0517578125e-05,
+            "p95_mm": 0.0013835103018209338,
+            "maximum_observed_mm": 0.0044317785650491714
+          },
+          "2": {
+            "cad_to_reference": {
+              "mean_mm": 0.00028302808252517685,
+              "rms_mm": 0.0006028663019784124,
+              "median_mm": 3.0517578125e-05,
+              "p95_mm": 0.0015265654074028134,
+              "maximum_observed_mm": 0.003906995058059692
+            },
+            "reference_to_cad": {
+              "mean_mm": 0.00028139131618716524,
+              "rms_mm": 0.0006014350385612994,
+              "median_mm": 3.0517578125e-05,
+              "p95_mm": 0.0015265654074028134,
+              "maximum_observed_mm": 0.003906995058059692
+            },
+            "correspondence": "geometric region correspondence; not proof of a manufactured part",
+            "mean_mm": 0.00028139131618716524,
+            "rms_mm": 0.0006014350385612994,
+            "median_mm": 3.0517578125e-05,
+            "p95_mm": 0.0015265654074028134,
+            "maximum_observed_mm": 0.003906995058059692
+          },
+          "3": {
+            "cad_to_reference": {
+              "mean_mm": 0.00028524336522403485,
+              "rms_mm": 0.0005988948349520952,
+              "median_mm": 3.0517578125e-05,
+              "p95_mm": 0.0014045546995475888,
+              "maximum_observed_mm": 0.0031744148582220078
+            },
+            "reference_to_cad": {
+              "mean_mm": 0.000288280655057045,
+              "rms_mm": 0.0006002766114584511,
+              "median_mm": 3.0517578125e-05,
+              "p95_mm": 0.0014045546995475888,
+              "maximum_observed_mm": 0.0031744148582220078
+            },
+            "correspondence": "geometric region correspondence; not proof of a manufactured part",
+            "mean_mm": 0.000288280655057045,
+            "rms_mm": 0.0006002766114584511,
+            "median_mm": 3.0517578125e-05,
+            "p95_mm": 0.0014045546995475888,
+            "maximum_observed_mm": 0.0031744148582220078
+          },
+          "4": {
+            "cad_to_reference": {
+              "mean_mm": 0.00031335829547906127,
+              "rms_mm": 0.000683865294532138,
+              "median_mm": 3.0517578125e-05,
+              "p95_mm": 0.0017395688919350505,
+              "maximum_observed_mm": 0.004122697748243809
+            },
+            "reference_to_cad": {
+              "mean_mm": 0.000320590026400684,
+              "rms_mm": 0.0006972961964980951,
+              "median_mm": 3.0517578125e-05,
+              "p95_mm": 0.0017419095383957028,
+              "maximum_observed_mm": 0.004122697748243809
+            },
+            "correspondence": "geometric region correspondence; not proof of a manufactured part",
+            "mean_mm": 0.000320590026400684,
+            "rms_mm": 0.0006972961964980951,
+            "median_mm": 3.0517578125e-05,
+            "p95_mm": 0.0017419095383957028,
+            "maximum_observed_mm": 0.004122697748243809
+          }
+        },
+        "normal_loss": 0.016144996269290095,
+        "normal_rms_angle_deg": 16.172474750714546,
+        "normals_reliable": true,
+        "normal_orientation": "oriented",
+        "unmatched_reference_area_fraction": 0.0,
+        "unmatched_cad_area_fraction": 0.0,
+        "oversized_cad_area_fraction": null,
+        "oversized_status": "unverified with unsigned distances",
+        "unmatched_tolerance_mm": 2.0,
+        "cad_points": 2500,
+        "reference_points": 2500,
+        "surface_coverage": "entire triangle surface; no visibility filtering",
+        "distance_method": "Open3D closest point on triangles in both directions",
+        "cad_tessellation_tolerance_mm": 0.25,
+        "objective_loss_components": {
+          "cad_to_reference": 9.937057446357381e-08,
+          "reference_to_cad": 9.866990003108525e-08,
+          "plane_cad": 0.0,
+          "plane_reference": 0.0,
+          "normal_cad": 0.0016218623818769775,
+          "normal_reference": 0.0016071367614571056,
+          "component_cad": 0.0024220771330131655,
+          "component_reference": 2.4668426145897666e-08
+        },
+        "sdf": {
+          "eligible": false,
+          "reason": "self-intersections or intersecting shells",
+          "requested": "auto",
+          "enabled": false,
+          "sampling": "sparse query points; no dense voxel field"
+        }
+      },
+      "actual_verification_points": 2500,
+      "sol_requests": 0,
+      "neural4d_jobs": 0,
+      "source": "known synthetic native B-Rep fixture, not actual Neural4D output",
+      "package": "D:\\Enfection\\furniture cad\\outputs\\editable_delivery_benchmark\\table\\package.zip"
+    },
+    {
+      "case": "cabinet",
+      "seconds": 17.19007589999819,
+      "parts": 6,
+      "drawing_sheets": 7,
+      "six_views_per_sheet": 6,
+      "freecad": {
+        "status": "validated",
+        "freecad_version": [
+          "1",
+          "1",
+          "4"
+        ],
+        "parts": {
+          "F001": {
+            "volume_mm3": 8100000.0,
+            "bounds_mm": [
+              18.0,
+              450.0,
+              1000.0
+            ],
+            "individual_fcstd_reopened": true,
+            "individual_frame": "local_stock_frame"
+          },
+          "F002": {
+            "volume_mm3": 8100000.0,
+            "bounds_mm": [
+              18.0,
+              450.0,
+              1000.0
+            ],
+            "individual_fcstd_reopened": true,
+            "individual_frame": "local_stock_frame"
+          },
+          "F003": {
+            "volume_mm3": 5378400.0,
+            "bounds_mm": [
+              664.0,
+              450.0,
+              18.0
+            ],
+            "individual_fcstd_reopened": true,
+            "individual_frame": "local_stock_frame"
+          },
+          "F004": {
+            "volume_mm3": 5378400.0,
+            "bounds_mm": [
+              664.0,
+              450.0,
+              18.0
+            ],
+            "individual_fcstd_reopened": true,
+            "individual_frame": "local_stock_frame"
+          },
+          "F005": {
+            "volume_mm3": 11521728.0,
+            "bounds_mm": [
+              664.0,
+              18.0,
+              964.0
+            ],
+            "individual_fcstd_reopened": true,
+            "individual_frame": "local_stock_frame"
+          },
+          "F006": {
+            "volume_mm3": 5163264.0,
+            "bounds_mm": [
+              664.0,
+              432.0,
+              18.0
+            ],
+            "individual_fcstd_reopened": true,
+            "individual_frame": "local_stock_frame"
+          }
+        },
+        "editability": {
+          "status": "parameter_regenerated",
+          "changed_parameter": "depth_mm",
+          "before": 450.0,
+          "after": 459.0,
+          "affected_parts": [
+            "F001",
+            "F002",
+            "F003",
+            "F004",
+            "F005",
+            "F006"
+          ],
+          "edited_step_regenerated": true,
+          "independent_regeneration": {
+            "edited_step_reopened": true,
+            "six_views_regenerated": [
+              "front",
+              "back",
+              "left",
+              "right",
+              "top",
+              "bottom"
+            ],
+            "part_count": 6,
+            "all_native_solids_valid": true
+          }
+        },
+        "curved_editability": null,
+        "representation": "Native Sketcher/Pad boxes and FeaturePython B-Reps driven by the same declarative source",
+        "requires_project_venv": true,
+        "native_sketch_history": true,
+        "feature_types": {
+          "F001": "Sketcher+PartDesign::Pad",
+          "F002": "Sketcher+PartDesign::Pad",
+          "F003": "Sketcher+PartDesign::Pad",
+          "F004": "Sketcher+PartDesign::Pad",
+          "F005": "Sketcher+PartDesign::Pad",
+          "F006": "Sketcher+PartDesign::Pad"
+        }
+      },
+      "final_surface": {
+        "cad_to_reference": {
+          "mean_mm": 0.00011847297485338625,
+          "rms_mm": 0.0014618868370007813,
+          "median_mm": 2.4425980882369913e-05,
+          "p95_mm": 7.62939453125e-05,
+          "maximum_observed_mm": 0.054809875786304474
+        },
+        "reference_to_cad": {
+          "mean_mm": 0.00014312426261063,
+          "rms_mm": 0.001813097573930058,
+          "median_mm": 2.412626417935826e-05,
+          "p95_mm": 7.62939453125e-05,
+          "maximum_observed_mm": 0.054809875786304474
+        },
+        "symmetric_mean_mm": 0.0001307986187320081,
+        "rms_mm": 0.0016468812854585498,
+        "p95_mm": 7.62939453125e-05,
+        "maximum_observed_mm": 0.054809875786304474,
+        "components": {
+          "0": {
+            "cad_to_reference": {
+              "mean_mm": 0.0003156439518079423,
+              "rms_mm": 0.002970583974704545,
+              "median_mm": 3.0517578125e-05,
+              "p95_mm": 9.1552734375e-05,
+              "maximum_observed_mm": 0.054809875786304474
+            },
+            "reference_to_cad": {
+              "mean_mm": 0.00026923089012803055,
+              "rms_mm": 0.002884062812826055,
+              "median_mm": 2.9930792152299546e-05,
+              "p95_mm": 8.392333984375e-05,
+              "maximum_observed_mm": 0.054809875786304474
+            },
+            "correspondence": "geometric region correspondence; not proof of a manufactured part",
+            "mean_mm": 0.00026923089012803055,
+            "rms_mm": 0.002884062812826055,
+            "median_mm": 2.9930792152299546e-05,
+            "p95_mm": 8.392333984375e-05,
+            "maximum_observed_mm": 0.054809875786304474
+          },
+          "1": {
+            "cad_to_reference": {
+              "mean_mm": 0.00012305769776342574,
+              "rms_mm": 0.0014281404040235048,
+              "median_mm": 3.0517578125e-05,
+              "p95_mm": 8.63167442730628e-05,
+              "maximum_observed_mm": 0.02960282191634178
+            },
+            "reference_to_cad": {
+              "mean_mm": 0.0003112528350224179,
+              "rms_mm": 0.002905908151316196,
+              "median_mm": 3.0517578125e-05,
+              "p95_mm": 8.63167442730628e-05,
+              "maximum_observed_mm": 0.04932018369436264
+            },
+            "correspondence": "geometric region correspondence; not proof of a manufactured part",
+            "mean_mm": 0.0003112528350224179,
+            "rms_mm": 0.002905908151316196,
+            "median_mm": 3.0517578125e-05,
+            "p95_mm": 8.63167442730628e-05,
+            "maximum_observed_mm": 0.04932018369436264
+          },
+          "2": {
+            "cad_to_reference": {
+              "mean_mm": 8.464431763314667e-05,
+              "rms_mm": 0.0006670651560433526,
+              "median_mm": 2.15791860682657e-05,
+              "p95_mm": 6.473755638580769e-05,
+              "maximum_observed_mm": 0.010186576284468174
+            },
+            "reference_to_cad": {
+              "mean_mm": 9.001481387497213e-05,
+              "rms_mm": 0.0008378071246940681,
+              "median_mm": 2.15791860682657e-05,
+              "p95_mm": 6.473755638580769e-05,
+              "maximum_observed_mm": 0.014391109347343445
+            },
+            "correspondence": "geometric region correspondence; not proof of a manufactured part",
+            "mean_mm": 9.001481387497213e-05,
+            "rms_mm": 0.0008378071246940681,
+            "median_mm": 2.15791860682657e-05,
+            "p95_mm": 6.473755638580769e-05,
+            "maximum_observed_mm": 0.014391109347343445
+          },
+          "3": {
+            "cad_to_reference": {
+              "mean_mm": 8.07793292071917e-05,
+              "rms_mm": 0.0005514805943381596,
+              "median_mm": 2.320389830856584e-05,
+              "p95_mm": 7.197556260507554e-05,
+              "maximum_observed_mm": 0.008865474723279476
+            },
+            "reference_to_cad": {
+              "mean_mm": 4.7817557890979e-05,
+              "rms_mm": 0.0002678990850125792,
+              "median_mm": 2.412626417935826e-05,
+              "p95_mm": 7.197556260507554e-05,
+              "maximum_observed_mm": 0.004868065472692251
+            },
+            "correspondence": "geometric region correspondence; not proof of a manufactured part",
+            "mean_mm": 4.7817557890979e-05,
+            "rms_mm": 0.0002678990850125792,
+            "median_mm": 2.412626417935826e-05,
+            "p95_mm": 7.197556260507554e-05,
+            "maximum_observed_mm": 0.004868065472692251
+          },
+          "4": {
+            "cad_to_reference": {
+              "mean_mm": 3.3134235915592086e-05,
+              "rms_mm": 4.2163374984828314e-05,
+              "median_mm": 3.0517578125e-05,
+              "p95_mm": 8.110157796181738e-05,
+              "maximum_observed_mm": 0.00012207403779029846
+            },
+            "reference_to_cad": {
+              "mean_mm": 3.274570651383157e-05,
+              "rms_mm": 4.179766340815118e-05,
+              "median_mm": 3.0517578125e-05,
+              "p95_mm": 7.965321856318042e-05,
+              "maximum_observed_mm": 0.00012207403779029846
+            },
+            "correspondence": "geometric region correspondence; not proof of a manufactured part",
+            "mean_mm": 3.274570651383157e-05,
+            "rms_mm": 4.179766340815118e-05,
+            "median_mm": 3.0517578125e-05,
+            "p95_mm": 7.965321856318042e-05,
+            "maximum_observed_mm": 0.00012207403779029846
+          },
+          "5": {
+            "cad_to_reference": {
+              "mean_mm": 6.59168897972292e-05,
+              "rms_mm": 0.00048504174185007727,
+              "median_mm": 2.0275394490454346e-05,
+              "p95_mm": 6.103515625e-05,
+              "maximum_observed_mm": 0.005821308121085167
+            },
+            "reference_to_cad": {
+              "mean_mm": 6.884127589922069e-05,
+              "rms_mm": 0.0004893293351438448,
+              "median_mm": 1.945121584867593e-05,
+              "p95_mm": 6.103515625e-05,
+              "maximum_observed_mm": 0.005821308121085167
+            },
+            "correspondence": "geometric region correspondence; not proof of a manufactured part",
+            "mean_mm": 6.884127589922069e-05,
+            "rms_mm": 0.0004893293351438448,
+            "median_mm": 1.945121584867593e-05,
+            "p95_mm": 6.103515625e-05,
+            "maximum_observed_mm": 0.005821308121085167
+          }
+        },
+        "normal_loss": 0.0,
+        "normal_rms_angle_deg": 0.0,
+        "normals_reliable": true,
+        "normal_orientation": "unoriented open surface",
+        "unmatched_reference_area_fraction": 0.0,
+        "unmatched_cad_area_fraction": 0.0,
+        "oversized_cad_area_fraction": null,
+        "oversized_status": "unverified with unsigned distances",
+        "unmatched_tolerance_mm": 2.0,
+        "cad_points": 2500,
+        "reference_points": 2500,
+        "surface_coverage": "entire triangle surface; no visibility filtering",
+        "distance_method": "Open3D closest point on triangles in both directions",
+        "cad_tessellation_tolerance_mm": 0.25,
+        "objective_loss_components": {
+          "cad_to_reference": 1.0684249344448941e-06,
+          "reference_to_cad": 1.6434537431678851e-06,
+          "plane_cad": 0.0,
+          "plane_reference": 0.0,
+          "normal_cad": 0.0,
+          "normal_reference": 0.0,
+          "component_cad": 0.006241716349839296,
+          "component_reference": 4.1321488910788974e-07
+        },
+        "sdf": {
+          "eligible": false,
+          "reason": "open or non-manifold reference mesh",
+          "requested": "auto",
+          "enabled": false,
+          "sampling": "sparse query points; no dense voxel field"
+        }
+      },
+      "actual_verification_points": 2500,
+      "sol_requests": 0,
+      "neural4d_jobs": 0,
+      "source": "known synthetic native B-Rep fixture, not actual Neural4D output",
+      "package": "D:\\Enfection\\furniture cad\\outputs\\editable_delivery_benchmark\\cabinet\\package.zip"
+    },
+    {
+      "case": "curved_chair",
+      "seconds": 37.03811140000471,
+      "parts": 6,
+      "drawing_sheets": 7,
+      "six_views_per_sheet": 6,
+      "freecad": {
+        "status": "validated",
+        "freecad_version": [
+          "1",
+          "1",
+          "4"
+        ],
+        "parts": {
+          "F001": {
+            "volume_mm3": 6750000.0,
+            "bounds_mm": [
+              500.0,
+              450.0,
+              30.0
+            ],
+            "individual_fcstd_reopened": true,
+            "individual_frame": "local_stock_frame"
+          },
+          "F002": {
+            "volume_mm3": 672000.0,
+            "bounds_mm": [
+              40.0,
+              40.0,
+              420.0
+            ],
+            "individual_fcstd_reopened": true,
+            "individual_frame": "local_stock_frame"
+          },
+          "F003": {
+            "volume_mm3": 672000.0,
+            "bounds_mm": [
+              40.0,
+              40.0,
+              420.0
+            ],
+            "individual_fcstd_reopened": true,
+            "individual_frame": "local_stock_frame"
+          },
+          "F004": {
+            "volume_mm3": 672000.0,
+            "bounds_mm": [
+              40.0,
+              40.0,
+              420.0
+            ],
+            "individual_fcstd_reopened": true,
+            "individual_frame": "local_stock_frame"
+          },
+          "F005": {
+            "volume_mm3": 672000.0,
+            "bounds_mm": [
+              40.0,
+              40.0,
+              420.0
+            ],
+            "individual_fcstd_reopened": true,
+            "individual_frame": "local_stock_frame"
+          },
+          "F006": {
+            "volume_mm3": 255486.66006592798,
+            "bounds_mm": [
+              480.69470918922326,
+              98.52029030949444,
+              169.47489350776357
+            ],
+            "individual_fcstd_reopened": true,
+            "individual_frame": "local_stock_frame"
+          }
+        },
+        "editability": {
+          "status": "parameter_regenerated",
+          "changed_parameter": "depth_mm",
+          "before": 450.0,
+          "after": 459.0,
+          "affected_parts": [
+            "F001",
+            "F002",
+            "F003",
+            "F004",
+            "F005",
+            "F006"
+          ],
+          "edited_step_regenerated": true,
+          "independent_regeneration": {
+            "edited_step_reopened": true,
+            "six_views_regenerated": [
+              "front",
+              "back",
+              "left",
+              "right",
+              "top",
+              "bottom"
+            ],
+            "part_count": 6,
+            "all_native_solids_valid": true
+          }
+        },
+        "curved_editability": {
+          "part_id": "F006",
+          "control": "path[2][1]",
+          "valid_after_edit": true,
+          "independent_regeneration": {
+            "edited_step_reopened": true,
+            "six_views_regenerated": [
+              "front",
+              "back",
+              "left",
+              "right",
+              "top",
+              "bottom"
+            ],
+            "part_count": 6,
+            "all_native_solids_valid": true
+          }
+        },
+        "representation": "Native Sketcher/Pad boxes and FeaturePython B-Reps driven by the same declarative source",
+        "requires_project_venv": true,
+        "native_sketch_history": true,
+        "feature_types": {
+          "F001": "Sketcher+PartDesign::Pad",
+          "F002": "Sketcher+PartDesign::Pad",
+          "F003": "Sketcher+PartDesign::Pad",
+          "F004": "Sketcher+PartDesign::Pad",
+          "F005": "Sketcher+PartDesign::Pad",
+          "F006": "FeaturePython"
+        }
+      },
+      "final_surface": {
+        "cad_to_reference": {
+          "mean_mm": 4.202750129426439e-05,
+          "rms_mm": 0.00011116585711922913,
+          "median_mm": 1.52587890625e-05,
+          "p95_mm": 0.00021847261814400554,
+          "maximum_observed_mm": 0.0012571612605825067
+        },
+        "reference_to_cad": {
+          "mean_mm": 4.193086604495177e-05,
+          "rms_mm": 0.00011114700378014525,
+          "median_mm": 1.52587890625e-05,
+          "p95_mm": 0.00021847261814400554,
+          "maximum_observed_mm": 0.0012571612605825067
+        },
+        "symmetric_mean_mm": 4.1979183669608086e-05,
+        "rms_mm": 0.0001111564308494036,
+        "p95_mm": 0.00021847261814400554,
+        "maximum_observed_mm": 0.0012571612605825067,
+        "components": {
+          "0": {
+            "cad_to_reference": {
+              "mean_mm": 3.091224963004663e-05,
+              "rms_mm": 9.882617134766068e-05,
+              "median_mm": 1.52587890625e-05,
+              "p95_mm": 5.7220458984375e-05,
+              "maximum_observed_mm": 0.0012571612605825067
+            },
+            "reference_to_cad": {
+              "mean_mm": 3.091224963004662e-05,
+              "rms_mm": 9.882617134766066e-05,
+              "median_mm": 1.52587890625e-05,
+              "p95_mm": 5.7220458984375e-05,
+              "maximum_observed_mm": 0.0012571612605825067
+            },
+            "correspondence": "geometric region correspondence; not proof of a manufactured part",
+            "mean_mm": 3.091224963004662e-05,
+            "rms_mm": 9.882617134766066e-05,
+            "median_mm": 1.52587890625e-05,
+            "p95_mm": 5.7220458984375e-05,
+            "maximum_observed_mm": 0.0012571612605825067
+          },
+          "1": {
+            "cad_to_reference": {
+              "mean_mm": 7.604178542583842e-05,
+              "rms_mm": 0.00015745438758709432,
+              "median_mm": 1.52587890625e-05,
+              "p95_mm": 0.0003370776539668441,
+              "maximum_observed_mm": 0.0008252452244050801
+            },
+            "reference_to_cad": {
+              "mean_mm": 7.604178542583843e-05,
+              "rms_mm": 0.00015745438758709432,
+              "median_mm": 1.52587890625e-05,
+              "p95_mm": 0.0003370776539668441,
+              "maximum_observed_mm": 0.0008252452244050801
+            },
+            "correspondence": "geometric region correspondence; not proof of a manufactured part",
+            "mean_mm": 7.604178542583843e-05,
+            "rms_mm": 0.00015745438758709432,
+            "median_mm": 1.52587890625e-05,
+            "p95_mm": 0.0003370776539668441,
+            "maximum_observed_mm": 0.0008252452244050801
+          },
+          "2": {
+            "cad_to_reference": {
+              "mean_mm": 5.763373843973776e-05,
+              "rms_mm": 0.00011844959835840017,
+              "median_mm": 1.52587890625e-05,
+              "p95_mm": 0.0002598478167783469,
+              "maximum_observed_mm": 0.00067138671875
+            },
+            "reference_to_cad": {
+              "mean_mm": 5.7633738439737765e-05,
+              "rms_mm": 0.00011844959835840019,
+              "median_mm": 1.52587890625e-05,
+              "p95_mm": 0.0002598478167783469,
+              "maximum_observed_mm": 0.00067138671875
+            },
+            "correspondence": "geometric region correspondence; not proof of a manufactured part",
+            "mean_mm": 5.7633738439737765e-05,
+            "rms_mm": 0.00011844959835840019,
+            "median_mm": 1.52587890625e-05,
+            "p95_mm": 0.0002598478167783469,
+            "maximum_observed_mm": 0.00067138671875
+          },
+          "3": {
+            "cad_to_reference": {
+              "mean_mm": 6.799111493284432e-05,
+              "rms_mm": 0.0001371096268602655,
+              "median_mm": 1.52587890625e-05,
+              "p95_mm": 0.00033603995689190924,
+              "maximum_observed_mm": 0.000763549585826695
+            },
+            "reference_to_cad": {
+              "mean_mm": 6.799111493284432e-05,
+              "rms_mm": 0.00013710962686026552,
+              "median_mm": 1.52587890625e-05,
+              "p95_mm": 0.00033603995689190924,
+              "maximum_observed_mm": 0.000763549585826695
+            },
+            "correspondence": "geometric region correspondence; not proof of a manufactured part",
+            "mean_mm": 6.799111493284432e-05,
+            "rms_mm": 0.00013710962686026552,
+            "median_mm": 1.52587890625e-05,
+            "p95_mm": 0.00033603995689190924,
+            "maximum_observed_mm": 0.000763549585826695
+          },
+          "4": {
+            "cad_to_reference": {
+              "mean_mm": 6.415826451352011e-05,
+              "rms_mm": 0.00013249576117609885,
+              "median_mm": 1.52587890625e-05,
+              "p95_mm": 0.000308589922497049,
+              "maximum_observed_mm": 0.0008698847959749401
+            },
+            "reference_to_cad": {
+              "mean_mm": 6.415826451352011e-05,
+              "rms_mm": 0.00013249576117609885,
+              "median_mm": 1.52587890625e-05,
+              "p95_mm": 0.000308589922497049,
+              "maximum_observed_mm": 0.0008698847959749401
+            },
+            "correspondence": "geometric region correspondence; not proof of a manufactured part",
+            "mean_mm": 6.415826451352011e-05,
+            "rms_mm": 0.00013249576117609885,
+            "median_mm": 1.52587890625e-05,
+            "p95_mm": 0.000308589922497049,
+            "maximum_observed_mm": 0.0008698847959749401
+          },
+          "5": {
+            "cad_to_reference": {
+              "mean_mm": 1.2311117338685036e-05,
+              "rms_mm": 2.117089776327154e-05,
+              "median_mm": 7.62939453125e-06,
+              "p95_mm": 6.151014531496912e-05,
+              "maximum_observed_mm": 6.473755638580769e-05
+            },
+            "reference_to_cad": {
+              "mean_mm": 1.0381079438795478e-05,
+              "rms_mm": 1.9087659072574753e-05,
+              "median_mm": 4.76837158203125e-07,
+              "p95_mm": 6.103515625e-05,
+              "maximum_observed_mm": 6.473755638580769e-05
+            },
+            "correspondence": "geometric region correspondence; not proof of a manufactured part",
+            "mean_mm": 1.0381079438795478e-05,
+            "rms_mm": 1.9087659072574753e-05,
+            "median_mm": 4.76837158203125e-07,
+            "p95_mm": 6.103515625e-05,
+            "maximum_observed_mm": 6.473755638580769e-05
+          }
+        },
+        "normal_loss": 0.020299746864338244,
+        "normal_rms_angle_deg": 18.134384214453018,
+        "normals_reliable": true,
+        "normal_orientation": "oriented",
+        "unmatched_reference_area_fraction": 0.0,
+        "unmatched_cad_area_fraction": 0.0,
+        "oversized_cad_area_fraction": null,
+        "oversized_status": "unverified with unsigned distances",
+        "unmatched_tolerance_mm": 2.0,
+        "cad_points": 2500,
+        "reference_points": 2500,
+        "surface_coverage": "entire triangle surface; no visibility filtering",
+        "distance_method": "Open3D closest point on triangles in both directions",
+        "cad_tessellation_tolerance_mm": 0.25,
+        "objective_loss_components": {
+          "cad_to_reference": 6.178923695583979e-09,
+          "reference_to_cad": 6.176828025709621e-09,
+          "plane_cad": 1.9006047385152557e-12,
+          "plane_reference": 1.5245507072064577e-12,
+          "normal_cad": 0.0020299738726151065,
+          "normal_reference": 0.002029975361286401,
+          "component_cad": 1.545224770303275e-09,
+          "component_reference": 1.5447008532004361e-09
+        },
+        "sdf": {
+          "eligible": false,
+          "reason": "self-intersections or intersecting shells",
+          "requested": "auto",
+          "enabled": false,
+          "sampling": "sparse query points; no dense voxel field"
+        }
+      },
+      "actual_verification_points": 2500,
+      "sol_requests": 0,
+      "neural4d_jobs": 0,
+      "source": "known synthetic native B-Rep fixture, not actual Neural4D output",
+      "package": "D:\\Enfection\\furniture cad\\outputs\\editable_delivery_benchmark\\curved_chair\\package.zip"
+    }
+  ],
+  "peak_process_tree_rss_mb": 679.9375
+}

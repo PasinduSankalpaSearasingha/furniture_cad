@@ -1,0 +1,2 @@
+﻿part_id,label,material,material_id,length_mm,width_mm,thickness_mm,finished_length_mm,finished_width_mm,finished_thickness_mm,quantity,grain_axis,edge_treatment,revision,status,blank_verified,note
+G001,Conceptual glass insert,glass,DEMO-GLASS6,1646.0,546.0,6.0,1646.0,546.0,6.0,1,none,SPECIFICATION_REQUIRED,1,REVIEW,False,"Visual only: retention, glass safety, edges, and fittings unverified."

@@ -1,0 +1,11 @@
+.venv
+.git
+.env
+data
+outputs
+dist
+.pytest_cache
+**/__pycache__
+frontend/node_modules
+app/studio_dist
+blender/runtime

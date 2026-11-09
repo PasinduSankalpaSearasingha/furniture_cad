@@ -1,0 +1,10 @@
+﻿part_id,label,material,material_id,length_mm,width_mm,thickness_mm,finished_length_mm,finished_width_mm,finished_thickness_mm,quantity,grain_axis,edge_treatment,revision,status,blank_verified,note
+P001,Left side,plywood,DEMO-PLY18,1800.0,450.0,18.0,1800.0,450.0,18.0,1,length,SPECIFICATION_REQUIRED,1,REVIEW,False,
+P002,Right side,plywood,DEMO-PLY18,1800.0,450.0,18.0,1800.0,450.0,18.0,1,length,SPECIFICATION_REQUIRED,1,REVIEW,False,
+P003,Top panel,plywood,DEMO-PLY18,664.0,450.0,18.0,664.0,450.0,18.0,1,length,SPECIFICATION_REQUIRED,1,REVIEW,False,
+P004,Bottom panel,plywood,DEMO-PLY18,664.0,450.0,18.0,664.0,450.0,18.0,1,length,SPECIFICATION_REQUIRED,1,REVIEW,False,
+P005,Inset back (illustrative),plywood,DEMO-PLY6,1764.0,664.0,6.0,1764.0,664.0,6.0,1,length,SPECIFICATION_REQUIRED,1,REVIEW,False,Back fastening/grooves not designed.
+D001,Left door stile,solid_wood,DEMO-WOOD24,1758.0,55.0,24.0,1758.0,55.0,24.0,1,length,SPECIFICATION_REQUIRED,1,REVIEW,False,
+D002,Right door stile,solid_wood,DEMO-WOOD24,1758.0,55.0,24.0,1758.0,55.0,24.0,1,length,SPECIFICATION_REQUIRED,1,REVIEW,False,
+D003,Top door rail,solid_wood,DEMO-WOOD24,548.0,55.0,24.0,548.0,55.0,24.0,1,length,SPECIFICATION_REQUIRED,1,REVIEW,False,
+D004,Bottom door rail,solid_wood,DEMO-WOOD24,548.0,55.0,24.0,548.0,55.0,24.0,1,length,SPECIFICATION_REQUIRED,1,REVIEW,False,

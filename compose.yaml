@@ -1,0 +1,94 @@
+x-app: &app
+  build: .
+  environment: &environment
+    DATABASE_URL: postgresql+psycopg://furniture:${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD in .env}@postgres:5432/furniture
+    REDIS_URL: redis://redis:6379/0
+    STORAGE_ROOT: /srv/artifacts
+    JOB_EXECUTOR: celery
+    LOCAL_WORKSPACE: '0'
+    AI_ENABLED: ${AI_ENABLED:-0}
+    OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+    OPENAI_VISION_MODEL: ${OPENAI_VISION_MODEL:-}
+    OPENAI_DESIGN_MODEL: ${OPENAI_DESIGN_MODEL:-}
+    OPENAI_JOINERY_MODEL: ${OPENAI_JOINERY_MODEL:-}
+    OPENAI_REVIEW_MODEL: ${OPENAI_REVIEW_MODEL:-}
+    OPENAI_RENDER_MODEL: ${OPENAI_RENDER_MODEL:-}
+    OPENAI_IMAGE_MODEL: ${OPENAI_IMAGE_MODEL:-}
+    OPENAI_FALLBACK_MODEL: ${OPENAI_FALLBACK_MODEL:-}
+    OPENAI_REASONING_MODEL: ${OPENAI_REASONING_MODEL:-}
+    OPENAI_REASONING_EFFORT: ${OPENAI_REASONING_EFFORT:-high}
+    OPENAI_TIMEOUT_SECONDS: ${OPENAI_TIMEOUT_SECONDS:-90}
+    OPENAI_BACKGROUND_MODE: ${OPENAI_BACKGROUND_MODE:-1}
+    OPENAI_POLL_INTERVAL_SECONDS: ${OPENAI_POLL_INTERVAL_SECONDS:-2}
+    AI_MAX_OUTPUT_TOKENS: ${AI_MAX_OUTPUT_TOKENS:-6000}
+    AI_PHOTO_MAX_OUTPUT_TOKENS: ${AI_PHOTO_MAX_OUTPUT_TOKENS:-28000}
+    AI_PHOTO_TIMEOUT_SECONDS: ${AI_PHOTO_TIMEOUT_SECONDS:-600}
+    AI_PHOTO_REASONING_EFFORT: ${AI_PHOTO_REASONING_EFFORT:-medium}
+    CAD_OPTIMIZER_ENABLED: ${CAD_OPTIMIZER_ENABLED:-1}
+    CAD_OPTIMIZER_MODE: ${CAD_OPTIMIZER_MODE:-balanced}
+    CAD_OPTIMIZER_MAX_SECONDS: ${CAD_OPTIMIZER_MAX_SECONDS:-600}
+    CAD_FINAL_CORRECTION_ENABLED: ${CAD_FINAL_CORRECTION_ENABLED:-1}
+  volumes:
+    - artifacts:/srv/artifacts
+
+services:
+  postgres:
+    image: postgres:16-bookworm
+    environment:
+      POSTGRES_USER: furniture
+      POSTGRES_DB: furniture
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD in .env}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: [CMD-SHELL, "pg_isready -U furniture -d furniture"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+    restart: unless-stopped
+  redis:
+    image: redis:7-bookworm
+    command: [redis-server, --appendonly, 'yes']
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: [CMD, redis-cli, ping]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+    restart: unless-stopped
+  migrate:
+    <<: *app
+    command: [alembic, upgrade, head]
+    depends_on:
+      postgres: {condition: service_healthy}
+  api:
+    <<: *app
+    ports:
+      - "${APP_BIND_ADDRESS:-127.0.0.1}:8000:8000"
+    depends_on:
+      migrate: {condition: service_completed_successfully}
+      redis: {condition: service_healthy}
+    healthcheck:
+      test: [CMD, python, -c, "import urllib.request; urllib.request.urlopen('http://localhost:8000/health/ready',timeout=5)"]
+      interval: 20s
+      timeout: 10s
+      retries: 5
+    restart: unless-stopped
+  worker:
+    <<: *app
+    command: [celery, -A, app.jobs.celery_app, worker, --loglevel=INFO, --concurrency=1, -Q, 'celery,renders']
+    depends_on:
+      migrate: {condition: service_completed_successfully}
+      redis: {condition: service_healthy}
+    healthcheck:
+      test: [CMD, celery, -A, app.jobs.celery_app, inspect, ping, --timeout=5]
+      interval: 60s
+      timeout: 20s
+      retries: 3
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
+  redis_data:
+  artifacts:

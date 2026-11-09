@@ -1,0 +1,10 @@
+{
+  "image": "cad_optimizer_real_photo.jpg",
+  "source": "data/reference_samples/Momentro/Shoe Cabinet/Referance Resources/ATLANTE 4 WOOD.jpg",
+  "provenance": "800x600 copy of the existing catalog photograph; manually annotated front facade corners",
+  "limitations": "Only 2D facade width fitting is tested. Camera scale and panel dimensions are assumptions, not physical measurements or calibrated ground truth. No hidden construction or full-furniture accuracy is verified.",
+  "image_size": [800, 600],
+  "front_facade_pixels": [[88, 347], [715, 347], [715, 489], [88, 489]],
+  "assumed_pixels_per_mm": 0.4,
+  "assumed_panel_height_mm": 355
+}

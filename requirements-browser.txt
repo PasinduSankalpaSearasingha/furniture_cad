@@ -1,0 +1,2 @@
+# Optional read-only Chrome QA. Production and ordinary pytest do not require this.
+playwright==1.64.0

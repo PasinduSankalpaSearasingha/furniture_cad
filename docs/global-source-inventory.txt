@@ -1,0 +1,123 @@
+app\__init__.py: 
+app\adaptive_view_selector.py: select_views
+app\agents\__init__.py: 
+app\agents\blender_modeling_agent.py: BlenderModelingAgent
+app\agents\cad_agent.py: VerifiedCADContext, select_furniture_template, validate_design_specification, generate_parametric_cad, validate_cad_geometry, export_cad_assembly, tool_definitions
+app\agents\design_agent.py: propose
+app\agents\engineering_agent.py: execute
+app\agents\final_correction.py: FinalCADReview, comparison_tile, render_tile, verify_tile, execute
+app\agents\furniture_agent.py: Dimensions, EstimateRequest, FurnitureEstimate, estimate, specification
+app\agents\joinery_agent.py: recommend
+app\agents\manufacturing_agent.py: ManufacturingDocumentationAgent
+app\agents\orchestrator.py: workflow_supported, event, WorkflowRunner, run_workflow, dispatch_workflow, notify_cad_completed
+app\agents\photo_agent.py: PhotoRequest, ReferenceView, PhotoAnalysis, analyze, plan, specification, geometry_envelope, estimate_adjustments, retain_estimate_basis, preflight, resolve_estimated_geometry
+app\agents\photo_fidelity.py: GeometryDifference, PhotoGeometryReview, PhotoGeometryPatch, PartFieldChange, SparseGeometryPatch, expand_sparse_patch, apply_geometry_patch, parameter_edit, geometry_changed, validate_correction, refine
+app\agents\reference_fit_agent.py: reference_inputs, fit_reference, load_context, measure, require_improvement, final_measurement
+app\agents\render_agent.py: render
+app\agents\review_agent.py: review, retain_deterministic
+app\agents\studio_agent.py: FurnitureDesignAgent
+app\agents\vision_agent.py: analyze
+app\ai\__init__.py: 
+app\ai\cad_preview.py: render_step_preview
+app\ai\furniture_budget.py: policy, summary, reserve, FurnitureBudget
+app\ai\geometry_preview.py: tessellation, preview_meshes, render_build, preview_png
+app\ai\image_generation.py: decode_generated_image, FurnitureImageGenerationService
+app\ai\images.py: ImageInputError, normalized_png, store_image, image_path, read_image, image_content, image_json
+app\ai\openai_client.py: ToolResult, AIServiceError, credit_limit, provider_diagnostics, usage_dict, calculate_cost, ResponsesGateway
+app\ai\prompt_templates.py: 
+app\ai\reference_fitting.py: FitBudgetExceeded, MeshPart, rotation_matrix, mesh_from_build, frame_for, project, render_mask, anchor, boundary, metrics, prepare_target, initial_camera, fit_camera, referenced_names, bezier_samples, actions_for, deform, adjusted_plan, fit_plan
+app\ai\reference_mask.py: png_bytes, decode_mask, foreground
+app\ai\response_store.py: WorkflowResponseStore
+app\ai\schemas.py: ObservedComponent, MeasurementRequirement, FurnitureVisionResult, CandidateParameter, ComponentRelationship, DesignProposal, JointSuggestion, JoineryRecommendation, QualityIssue, QualityReviewResult, VerifiedMeasurement, VerifiedFurnitureSpecification, CADGenerationRequest, CADGenerationResult, ManufacturingPackage, WorkflowRequest, PresentationRequest, JoineryLookup, AIPriceProfile
+app\api\__init__.py: 
+app\api\agents.py: workflow_stage_label, register_routes
+app\api\image_to_cad.py: ImageToCADRequest, Complete360Request, EditCADRequest, register_image_to_cad_routes
+app\api\neural4d.py: register_neural4d_routes
+app\api\studio.py: StudioBody, ConceptBody, BlenderBody, register_studio_routes
+app\artifacts.py: file_info, list_components, list_files, document_preview, dxf_svg
+app\auth.py: require_same_origin, local_workspace_user, hash_password, verify_password, issue_token, current_user, require_role
+app\budget_drafts.py: describe_draft, retain_exportable_draft, available_budget_draft, reference_only_output
+app\cad.py: BuildResult, create_cabinet, rectangular_component, export_cad
+app\cad_geometry_proxy.py: rational_surface_points, resolved_surface, curve_samples, resolved_frame, ComponentProxy
+app\cad_meshing.py: CADMeshError, CADTriangleBudgetError, mesh_absolute, absolute_triangles, absolute_mesh_bounds, simplify_triangles
+app\cad_operations.py: apply_features
+app\cad_optimizer.py: optimize_mesh_cad, digest, OptimizationStop, OptimizationResult, empty_report, NativeCADBuilder, boundary_distances, check_unselected_solids, align_camera, optimize_cad, parameter_changes, optimize_cad_isolated
+app\cad_optimizer_schema.py: CADCamera, CADLandmark, CADCurveObservation, CADViewEvidence, CADParameterOverride, CADParameterRelation, CADLossWeights, CADOptimizationOptions
+app\cad_optimizer_worker.py: main
+app\cad_parameters.py: references, CADParameter, CADParameterRegistry, part_value
+app\cad_projection.py: project_points, local_to_world, landmark_point, curve_points, NativeProjection, project_points_hlr
+app\cli.py: main
+app\config.py: Settings
+app\curve_dimensions.py: curve_inventory, add_curve_dimensions
+app\database.py: uid, utcnow, Base, User, Token, Project, Revision, Job, Approval, Release, CatalogEntry, AuditLog, ImageAsset, AgentWorkflow, AgentEvent, AIInvocation, Database, audit, commit_response
+app\delivery.py: verify_delivery, build_delivery
+app\dense_cad_optimizer.py: DenseOptimizationResult, FitBudgetStop, assign_reference_components, sensitive_parameters, bidirectional_report, photo_error, optimize_dense_cad
+app\dimension_sheet.py: label, edge_lines, orthographic_lines, Sheet, fit_text, create_dimension_sheet
+app\dimension_sheet_clip.py: clip_polyline
+app\dimension_sheet_service.py: sheet_directory, verify_sheet, ensure_sheet, sheet_json
+app\display_cad.py: display_component_ids, create_display_cabinet
+app\drawing_projection.py: Projection, write_dxf
+app\drawings.py: projected_edges, bounds_for, dxf_view, pdf_view, export_drawings, export_front_elevation
+app\engineering_cad.py: cad_bounds, cad_bounds_for, render_preview, check_supplied_dimensions, check_solid, brep_surface_samples, verify_solid_step, part_sheet, geometry_checks, build_engineering_package
+app\engineering_edits.py: EngineeringEditPatch, merge_edit, verify_edit_contract, verify_edit_solids, edit_inputs
+app\engineering_repairs.py: EngineeringRepairPatch, merge_repair
+app\engineering_schema.py: EngineeringPhotoView, VisibleShapeFeature, FurnitureAppearance, EngineeringDimensions, EngineeringComponent, EngineeringAssembly, VisibleFeatureCheck, EngineeringReview
+app\engineering_upstream.py: provenance, prompt
+app\estimated_workflow.py: EstimatedCADContext, validate_estimated_revision, queue_estimated_cad
+app\furniture_cad.py: create_furniture
+app\furniture_catalog.py: catalog, template, default_spec
+app\furniture_items.py: item_contracts, primary_part_ids, shape_spans, dimensions_for, separate_item_checks, infer_saved_companion
+app\furniture_references.py: FurnitureReferenceView, validate_references
+app\furniture_sheet.py: create_furniture_sheet
+app\geometry.py: exact_bounds, trimmed_bounds
+app\geometry_acceleration.py: SurfaceIndex, PointIndex, deviation_statistics
+app\geometry_cache.py: content_hash, GeometryCache, ResourceBudget
+app\geometry_repairs.py: EdgeRoundingError, profile_corner_repair, resolve_repaired_geometry
+app\global_cad_optimizer.py: _BudgetStop, _MemoryMonitor, _correspondence, optimize_global_cad, _optimize
+app\global_mesh_fitter.py: inside_outside_status, soft_l1_residual, GlobalSurfaceEvaluation, GlobalMeshFitter, NativeMeshProxy
+app\integrations\__init__.py: 
+app\integrations\neural4d_client.py: ProviderError, SubmissionUncertain, public_download_url, ProviderStore, Neural4DClient
+app\jobs.py: run_job, generate_task, agent_workflow_task, dispatch, mesh_reconstruction_task
+app\joinery_engine.py: apply_joints, update_joint_envelope, prismatic_joint
+app\local_executor.py: LocalQueueFull, LocalExecutor, submit_local, submit_render
+app\loft_repair.py: profile_wire, _check_solid, _native_loft, _intermediate_profiles, _section_fidelity, build_bounded_loft
+app\logging_config.py: StructuredFormatter, configure_logging
+app\main.py: Login, CreateUser, CreateProject, Review, create_app
+app\manufacturing.py: write_csv, schedules_from_registry, export_manufacturing
+app\mesh_analyzer.py: MeshData, analyze_mesh, load_mesh
+app\mesh_cad_schema.py: configured_bool, configured_points, DenseOptimizationOptions, MeshReconstructionRequest
+app\mesh_photo_verification.py: PhotoReference
+app\mesh_pipeline.py: write_json, preview_glb, run_reconstruction
+app\mesh_pipeline_worker.py: main
+app\mesh_reconstruction_jobs.py: ReconstructionJobs, run_mesh_job, dispatch_mesh_job
+app\mesh_registration.py: normalize_mesh, rigid_transform, coarse_orientation, align_reference_mesh, register_points
+app\mesh_sampling.py: SurfaceSamples, sample_surface
+app\mesh_segmentation.py: ComponentRegion, segment_mesh
+app\mesh_to_cad.py: reconstruct_plan, build_native, tessellate_build, fit_bspline, nurbs_patch, export_native
+app\model_scope.py: project_model_scope, scoped_workflows
+app\models.py: StrictModel, Material, MaterialProfile, HardwareProfile, JointProfile, JointSpec, DisplayLayout, FurnitureParameters, CabinetSpec, Part, ManufacturingOperation
+app\multiview_geometry.py: VirtualCamera, generate_cameras, analyze_view, compare_views, multiview_report
+app\photo_cad.py: curve, world_up_sweep, bound_loft, create_photo_furniture
+app\photo_matching.py: reconstruction_models, reference_camera, reference_render_size, checked_visual_review, photo_match
+app\photo_schema.py: PhotoModel, number, InputValue, PhotoInput, ResolvedValue, LoftSection, CADFeature, SurfaceDish, SurfaceGrid, SweepSection, RationalSurface, PhotoPart, SeparateFurnitureItem, PhotoDesign
+app\pipeline.py: canonical_hash, file_hash, build_package, safe_directory, verify_package, verify_artifact
+app\project_deletion.py: project_artifacts, QuarantinedArtifacts, delete_project
+app\reference_fit_schema.py: FitLandmark, FitView, ReferenceFitOptions, MaskStroke, ReferenceMaskRequest
+app\registry.py: PartsRegistry
+app\rendering\__init__.py: 
+app\rendering\blender_service.py: discover_blender, blender_health, render_geometry
+app\rendering\config.py: RenderOptions, preset
+app\rendering\modeling.py: numeric_plan, triangle_distance, surface_samples, indexed_triangle_distance, compare_meshes, compare_export, load_native, context_for, build_model
+app\review_mesh.py: export_component_stl, remove_degenerate_stl_facets, export_glb
+app\sample_dimensions.py: descriptor, catalogue, match_dimensions, dimension_inputs, workflow_dimensions
+app\storage_completion.py: storage_design, complete_storage_plan, coverage_360
+app\storage_completion_service.py: completion_checkpoints
+app\studio_schema.py: StudioRequest, ConceptRequest, BlenderRequest, Correction, VisualReview
+app\table_comparison_sheet.py: create_comparison_sheet
+app\techdraw.py: drawing_request, validate_exports, enhance_drawings
+app\techdraw_worker.py: digest, generate
+app\validation_engine.py: Finding, ValidationReport, validate_build
+app\whole_furniture.py: build_whole_furniture_package
+app\workflow.py: DesignState, transition, ensure_approvable
+app\workflow_process.py: settings_payload, run_isolated_workflow
+app\workflow_worker.py: main

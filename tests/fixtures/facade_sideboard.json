@@ -1,0 +1,1200 @@
+{
+  "furniture_type": "Long low sideboard",
+  "summary": "Thirteen separate exterior components retain the dark surround, four pale doors, four central fronts with sweeping upper-edge grips, and recessed base. Targets are 3000 \u00d7 500 \u00d7 700 mm. A provisional lower-panel upstand provides geometric contact behind the fronts, not verified construction.",
+  "values": [
+    {
+      "key": "width_mm",
+      "value": 3000.0,
+      "explanation": "Fixed supplied overall target; SAMPLE_DRAWING provenance, unverified."
+    },
+    {
+      "key": "depth_mm",
+      "value": 500.0,
+      "explanation": "Fixed supplied overall target; SAMPLE_DRAWING provenance, unverified."
+    },
+    {
+      "key": "height_mm",
+      "value": 700.0,
+      "explanation": "Fixed supplied overall target including base, unverified."
+    },
+    {
+      "key": "width_to_height_ratio",
+      "value": 4.286,
+      "explanation": "Supplied rounded descriptive ratio, not an independent constraint."
+    },
+    {
+      "key": "width_to_depth_ratio",
+      "value": 6.0,
+      "explanation": "Supplied descriptive ratio; overall dimensions govern geometry."
+    },
+    {
+      "key": "front_zone_count",
+      "value": 3.0,
+      "explanation": "Two paired-door banks and central stack."
+    },
+    {
+      "key": "door_count",
+      "value": 4.0,
+      "explanation": "Separate leaves F005, F006, F011 and F012."
+    },
+    {
+      "key": "drawer_front_count",
+      "value": 4.0,
+      "explanation": "Separate fronts F007 through F010; drives stack spacing."
+    },
+    {
+      "key": "integrated_curved_pull_count",
+      "value": 6.0,
+      "explanation": "Four drawer scallops and two paired-door scallops."
+    },
+    {
+      "key": "top_panel_count",
+      "value": 1.0,
+      "explanation": "Continuous top F001."
+    },
+    {
+      "key": "recessed_base_assembly_count",
+      "value": 1.0,
+      "explanation": "Visible base representation F013; hidden supports unknown."
+    },
+    {
+      "key": "top_thickness_mm",
+      "value": 25.0,
+      "explanation": "Supplied unverified top thickness estimate."
+    },
+    {
+      "key": "cabinet_body_height_mm",
+      "value": 575.0,
+      "explanation": "Supplied height below top and above base."
+    },
+    {
+      "key": "base_height_mm",
+      "value": 100.0,
+      "explanation": "Supplied unverified base height."
+    },
+    {
+      "key": "left_door_bank_width_mm",
+      "value": 1000.0,
+      "explanation": "Supplied nominal left facade zone width."
+    },
+    {
+      "key": "central_drawer_bank_width_mm",
+      "value": 1000.0,
+      "explanation": "Supplied nominal central zone width."
+    },
+    {
+      "key": "right_door_bank_width_mm",
+      "value": 1000.0,
+      "explanation": "Supplied nominal right facade zone width."
+    },
+    {
+      "key": "door_leaf_width_mm",
+      "value": 496.0,
+      "explanation": "Supplied leaf width; center gaps evaluate to 2 mm."
+    },
+    {
+      "key": "door_leaf_height_mm",
+      "value": 569.0,
+      "explanation": "Supplied full-height door front estimate."
+    },
+    {
+      "key": "drawer_front_width_mm",
+      "value": 994.0,
+      "explanation": "Supplied central front width estimate."
+    },
+    {
+      "key": "drawer_front_height_mm",
+      "value": 140.0,
+      "explanation": "Supplied front height before upper scalloping."
+    },
+    {
+      "key": "front_reveal_mm",
+      "value": 3.0,
+      "explanation": "Supplied estimated perimeter reveal."
+    },
+    {
+      "key": "front_panel_thickness_mm",
+      "value": 20.0,
+      "explanation": "Supplied unverified front stock estimate."
+    },
+    {
+      "key": "carcass_panel_thickness_mm",
+      "value": 20.0,
+      "explanation": "Supplied unverified surround stock estimate."
+    },
+    {
+      "key": "drawer_curved_pull_span_mm",
+      "value": 900.0,
+      "explanation": "Supplied span of each curved drawer opening."
+    },
+    {
+      "key": "drawer_curved_pull_vertical_sweep_mm",
+      "value": 35.0,
+      "explanation": "Supplied maximum drawer upper-edge depression."
+    },
+    {
+      "key": "paired_door_pull_span_mm",
+      "value": 280.0,
+      "explanation": "Supplied combined scallop span across each pair."
+    },
+    {
+      "key": "paired_door_pull_vertical_sweep_mm",
+      "value": 20.0,
+      "explanation": "Supplied depression at each paired-door seam."
+    },
+    {
+      "key": "base_front_setback_mm",
+      "value": 70.0,
+      "explanation": "Supplied estimated base front setback."
+    },
+    {
+      "key": "base_end_setback_mm",
+      "value": 150.0,
+      "explanation": "Supplied estimated base setback at both ends."
+    }
+  ],
+  "parts": [
+    {
+      "part_id": "F001",
+      "label": "Continuous dark top panel",
+      "evidence": "One uninterrupted slim dark top spans the facade and visible left end.",
+      "geometry": "box",
+      "material": "solid_wood",
+      "color_rgb": [
+        0.16,
+        0.105,
+        0.085
+      ],
+      "position": [
+        "width_mm/2",
+        "depth_mm/2",
+        "height_mm-top_thickness_mm/2"
+      ],
+      "rotation_deg": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        "width_mm",
+        "depth_mm",
+        "top_thickness_mm"
+      ],
+      "corner_radius": 0.0,
+      "dish_depth": 0.0,
+      "outline": [],
+      "path": [],
+      "curve_mode": "polyline",
+      "sections": []
+    },
+    {
+      "part_id": "F002",
+      "label": "Left outer side panel",
+      "evidence": "Broad dark near end wraps below the continuous top.",
+      "geometry": "box",
+      "material": "solid_wood",
+      "color_rgb": [
+        0.18,
+        0.12,
+        0.095
+      ],
+      "position": [
+        "carcass_panel_thickness_mm/2",
+        "(depth_mm+front_panel_thickness_mm)/2",
+        "base_height_mm+cabinet_body_height_mm/2"
+      ],
+      "rotation_deg": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        "carcass_panel_thickness_mm",
+        "depth_mm-front_panel_thickness_mm",
+        "cabinet_body_height_mm"
+      ],
+      "corner_radius": 0.0,
+      "dish_depth": 0.0,
+      "outline": [],
+      "path": [],
+      "curve_mode": "polyline",
+      "sections": []
+    },
+    {
+      "part_id": "F003",
+      "label": "Right outer side panel",
+      "evidence": "Thin dark boundary at the far right provisionally matches the near end.",
+      "geometry": "box",
+      "material": "solid_wood",
+      "color_rgb": [
+        0.18,
+        0.12,
+        0.095
+      ],
+      "position": [
+        "width_mm-carcass_panel_thickness_mm/2",
+        "(depth_mm+front_panel_thickness_mm)/2",
+        "base_height_mm+cabinet_body_height_mm/2"
+      ],
+      "rotation_deg": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        "carcass_panel_thickness_mm",
+        "depth_mm-front_panel_thickness_mm",
+        "cabinet_body_height_mm"
+      ],
+      "corner_radius": 0.0,
+      "dish_depth": 0.0,
+      "outline": [],
+      "path": [],
+      "curve_mode": "polyline",
+      "sections": []
+    },
+    {
+      "part_id": "F004",
+      "label": "Lower carcass panel with provisional contact upstand",
+      "evidence": "Dark lower boundary is visible; the integral upstand behind fronts is an unverified geometric support interpretation, not observed joinery.",
+      "geometry": "outline_panel",
+      "material": "solid_wood",
+      "color_rgb": [
+        0.16,
+        0.105,
+        0.085
+      ],
+      "position": [
+        "width_mm/2",
+        "front_panel_thickness_mm",
+        "base_height_mm"
+      ],
+      "rotation_deg": [
+        90.0,
+        0.0,
+        90.0
+      ],
+      "size": [
+        "depth_mm-front_panel_thickness_mm",
+        "cabinet_body_height_mm",
+        "width_mm-2*carcass_panel_thickness_mm"
+      ],
+      "corner_radius": 0.0,
+      "dish_depth": 0.0,
+      "outline": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          "depth_mm-front_panel_thickness_mm",
+          0.0
+        ],
+        [
+          "depth_mm-front_panel_thickness_mm",
+          "carcass_panel_thickness_mm"
+        ],
+        [
+          "carcass_panel_thickness_mm",
+          "carcass_panel_thickness_mm"
+        ],
+        [
+          "carcass_panel_thickness_mm",
+          "cabinet_body_height_mm"
+        ],
+        [
+          0.0,
+          "cabinet_body_height_mm"
+        ]
+      ],
+      "path": [],
+      "curve_mode": "polyline",
+      "sections": []
+    },
+    {
+      "part_id": "F005",
+      "label": "Left bank outer door leaf",
+      "evidence": "Pale outer left door with upper-edge curve descending toward the paired seam.",
+      "geometry": "outline_panel",
+      "material": "solid_wood",
+      "color_rgb": [
+        0.72,
+        0.61,
+        0.43
+      ],
+      "position": [
+        "front_reveal_mm",
+        "front_panel_thickness_mm/2",
+        "base_height_mm+front_reveal_mm"
+      ],
+      "rotation_deg": [
+        90.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        "door_leaf_width_mm",
+        "door_leaf_height_mm",
+        "front_panel_thickness_mm"
+      ],
+      "corner_radius": 0.0,
+      "dish_depth": 0.0,
+      "outline": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          "door_leaf_width_mm/3",
+          0.0
+        ],
+        [
+          "door_leaf_width_mm*2/3",
+          0.0
+        ],
+        [
+          "door_leaf_width_mm",
+          0.0
+        ],
+        [
+          "door_leaf_width_mm",
+          "door_leaf_height_mm/3"
+        ],
+        [
+          "door_leaf_width_mm",
+          "door_leaf_height_mm*2/3"
+        ],
+        [
+          "door_leaf_width_mm",
+          "door_leaf_height_mm-paired_door_pull_vertical_sweep_mm"
+        ],
+        [
+          "door_leaf_width_mm-paired_door_pull_span_mm/6",
+          "door_leaf_height_mm-paired_door_pull_vertical_sweep_mm"
+        ],
+        [
+          "door_leaf_width_mm-paired_door_pull_span_mm/3",
+          "door_leaf_height_mm"
+        ],
+        [
+          "door_leaf_width_mm-paired_door_pull_span_mm/2",
+          "door_leaf_height_mm"
+        ],
+        [
+          "(door_leaf_width_mm-paired_door_pull_span_mm/2)*2/3",
+          "door_leaf_height_mm"
+        ],
+        [
+          "(door_leaf_width_mm-paired_door_pull_span_mm/2)/3",
+          "door_leaf_height_mm"
+        ],
+        [
+          0.0,
+          "door_leaf_height_mm"
+        ],
+        [
+          0.0,
+          "door_leaf_height_mm*2/3"
+        ],
+        [
+          0.0,
+          "door_leaf_height_mm/3"
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "path": [],
+      "curve_mode": "bezier",
+      "sections": []
+    },
+    {
+      "part_id": "F006",
+      "label": "Left bank inner door leaf",
+      "evidence": "Second left leaf has the complementary scallop rising away from its meeting seam.",
+      "geometry": "outline_panel",
+      "material": "solid_wood",
+      "color_rgb": [
+        0.74,
+        0.63,
+        0.45
+      ],
+      "position": [
+        "left_door_bank_width_mm-front_reveal_mm-door_leaf_width_mm",
+        "front_panel_thickness_mm/2",
+        "base_height_mm+front_reveal_mm"
+      ],
+      "rotation_deg": [
+        90.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        "door_leaf_width_mm",
+        "door_leaf_height_mm",
+        "front_panel_thickness_mm"
+      ],
+      "corner_radius": 0.0,
+      "dish_depth": 0.0,
+      "outline": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          "door_leaf_width_mm/3",
+          0.0
+        ],
+        [
+          "door_leaf_width_mm*2/3",
+          0.0
+        ],
+        [
+          "door_leaf_width_mm",
+          0.0
+        ],
+        [
+          "door_leaf_width_mm",
+          "door_leaf_height_mm/3"
+        ],
+        [
+          "door_leaf_width_mm",
+          "door_leaf_height_mm*2/3"
+        ],
+        [
+          "door_leaf_width_mm",
+          "door_leaf_height_mm"
+        ],
+        [
+          "door_leaf_width_mm-(door_leaf_width_mm-paired_door_pull_span_mm/2)/3",
+          "door_leaf_height_mm"
+        ],
+        [
+          "door_leaf_width_mm-(door_leaf_width_mm-paired_door_pull_span_mm/2)*2/3",
+          "door_leaf_height_mm"
+        ],
+        [
+          "paired_door_pull_span_mm/2",
+          "door_leaf_height_mm"
+        ],
+        [
+          "paired_door_pull_span_mm/3",
+          "door_leaf_height_mm"
+        ],
+        [
+          "paired_door_pull_span_mm/6",
+          "door_leaf_height_mm-paired_door_pull_vertical_sweep_mm"
+        ],
+        [
+          0.0,
+          "door_leaf_height_mm-paired_door_pull_vertical_sweep_mm"
+        ],
+        [
+          0.0,
+          "door_leaf_height_mm/2"
+        ],
+        [
+          0.0,
+          "door_leaf_height_mm/4"
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "path": [],
+      "curve_mode": "bezier",
+      "sections": []
+    },
+    {
+      "part_id": "F007",
+      "label": "Central drawer front top",
+      "evidence": "Top of four central fronts has a broad shallow curved upper grip.",
+      "geometry": "outline_panel",
+      "material": "solid_wood",
+      "color_rgb": [
+        0.73,
+        0.62,
+        0.44
+      ],
+      "position": [
+        "left_door_bank_width_mm+(central_drawer_bank_width_mm-drawer_front_width_mm)/2",
+        "front_panel_thickness_mm/2",
+        "base_height_mm+cabinet_body_height_mm-front_reveal_mm-drawer_front_height_mm"
+      ],
+      "rotation_deg": [
+        90.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        "drawer_front_width_mm",
+        "drawer_front_height_mm",
+        "front_panel_thickness_mm"
+      ],
+      "corner_radius": 0.0,
+      "dish_depth": 0.0,
+      "outline": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          "drawer_front_width_mm/3",
+          0.0
+        ],
+        [
+          "drawer_front_width_mm*2/3",
+          0.0
+        ],
+        [
+          "drawer_front_width_mm",
+          0.0
+        ],
+        [
+          "drawer_front_width_mm",
+          "drawer_front_height_mm/3"
+        ],
+        [
+          "drawer_front_width_mm",
+          "drawer_front_height_mm*2/3"
+        ],
+        [
+          "drawer_front_width_mm",
+          "drawer_front_height_mm"
+        ],
+        [
+          "drawer_front_width_mm-(drawer_front_width_mm-drawer_curved_pull_span_mm)/6",
+          "drawer_front_height_mm"
+        ],
+        [
+          "drawer_front_width_mm-(drawer_front_width_mm-drawer_curved_pull_span_mm)/3",
+          "drawer_front_height_mm"
+        ],
+        [
+          "(drawer_front_width_mm+drawer_curved_pull_span_mm)/2",
+          "drawer_front_height_mm"
+        ],
+        [
+          "(drawer_front_width_mm+drawer_curved_pull_span_mm)/2-drawer_curved_pull_span_mm/3",
+          "drawer_front_height_mm-drawer_curved_pull_vertical_sweep_mm*4/3"
+        ],
+        [
+          "(drawer_front_width_mm-drawer_curved_pull_span_mm)/2+drawer_curved_pull_span_mm/3",
+          "drawer_front_height_mm-drawer_curved_pull_vertical_sweep_mm*4/3"
+        ],
+        [
+          "(drawer_front_width_mm-drawer_curved_pull_span_mm)/2",
+          "drawer_front_height_mm"
+        ],
+        [
+          "(drawer_front_width_mm-drawer_curved_pull_span_mm)/3",
+          "drawer_front_height_mm"
+        ],
+        [
+          "(drawer_front_width_mm-drawer_curved_pull_span_mm)/6",
+          "drawer_front_height_mm"
+        ],
+        [
+          0.0,
+          "drawer_front_height_mm"
+        ],
+        [
+          0.0,
+          "drawer_front_height_mm*2/3"
+        ],
+        [
+          0.0,
+          "drawer_front_height_mm/3"
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "path": [],
+      "curve_mode": "bezier",
+      "sections": []
+    },
+    {
+      "part_id": "F008",
+      "label": "Central drawer front second",
+      "evidence": "Second individually bounded front repeats the broad sweeping grip.",
+      "geometry": "outline_panel",
+      "material": "solid_wood",
+      "color_rgb": [
+        0.73,
+        0.62,
+        0.44
+      ],
+      "position": [
+        "left_door_bank_width_mm+(central_drawer_bank_width_mm-drawer_front_width_mm)/2",
+        "front_panel_thickness_mm/2",
+        "base_height_mm+front_reveal_mm+2*(drawer_front_height_mm+(cabinet_body_height_mm-2*front_reveal_mm-drawer_front_count*drawer_front_height_mm)/(drawer_front_count-1))"
+      ],
+      "rotation_deg": [
+        90.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        "drawer_front_width_mm",
+        "drawer_front_height_mm",
+        "front_panel_thickness_mm"
+      ],
+      "corner_radius": 0.0,
+      "dish_depth": 0.0,
+      "outline": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          "drawer_front_width_mm/3",
+          0.0
+        ],
+        [
+          "drawer_front_width_mm*2/3",
+          0.0
+        ],
+        [
+          "drawer_front_width_mm",
+          0.0
+        ],
+        [
+          "drawer_front_width_mm",
+          "drawer_front_height_mm/3"
+        ],
+        [
+          "drawer_front_width_mm",
+          "drawer_front_height_mm*2/3"
+        ],
+        [
+          "drawer_front_width_mm",
+          "drawer_front_height_mm"
+        ],
+        [
+          "drawer_front_width_mm-(drawer_front_width_mm-drawer_curved_pull_span_mm)/6",
+          "drawer_front_height_mm"
+        ],
+        [
+          "drawer_front_width_mm-(drawer_front_width_mm-drawer_curved_pull_span_mm)/3",
+          "drawer_front_height_mm"
+        ],
+        [
+          "(drawer_front_width_mm+drawer_curved_pull_span_mm)/2",
+          "drawer_front_height_mm"
+        ],
+        [
+          "(drawer_front_width_mm+drawer_curved_pull_span_mm)/2-drawer_curved_pull_span_mm/3",
+          "drawer_front_height_mm-drawer_curved_pull_vertical_sweep_mm*4/3"
+        ],
+        [
+          "(drawer_front_width_mm-drawer_curved_pull_span_mm)/2+drawer_curved_pull_span_mm/3",
+          "drawer_front_height_mm-drawer_curved_pull_vertical_sweep_mm*4/3"
+        ],
+        [
+          "(drawer_front_width_mm-drawer_curved_pull_span_mm)/2",
+          "drawer_front_height_mm"
+        ],
+        [
+          "(drawer_front_width_mm-drawer_curved_pull_span_mm)/3",
+          "drawer_front_height_mm"
+        ],
+        [
+          "(drawer_front_width_mm-drawer_curved_pull_span_mm)/6",
+          "drawer_front_height_mm"
+        ],
+        [
+          0.0,
+          "drawer_front_height_mm"
+        ],
+        [
+          0.0,
+          "drawer_front_height_mm*2/3"
+        ],
+        [
+          0.0,
+          "drawer_front_height_mm/3"
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "path": [],
+      "curve_mode": "bezier",
+      "sections": []
+    },
+    {
+      "part_id": "F009",
+      "label": "Central drawer front third",
+      "evidence": "Third separate front has its own long shallow curved upper grip.",
+      "geometry": "outline_panel",
+      "material": "solid_wood",
+      "color_rgb": [
+        0.73,
+        0.62,
+        0.44
+      ],
+      "position": [
+        "left_door_bank_width_mm+(central_drawer_bank_width_mm-drawer_front_width_mm)/2",
+        "front_panel_thickness_mm/2",
+        "base_height_mm+front_reveal_mm+drawer_front_height_mm+(cabinet_body_height_mm-2*front_reveal_mm-drawer_front_count*drawer_front_height_mm)/(drawer_front_count-1)"
+      ],
+      "rotation_deg": [
+        90.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        "drawer_front_width_mm",
+        "drawer_front_height_mm",
+        "front_panel_thickness_mm"
+      ],
+      "corner_radius": 0.0,
+      "dish_depth": 0.0,
+      "outline": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          "drawer_front_width_mm/3",
+          0.0
+        ],
+        [
+          "drawer_front_width_mm*2/3",
+          0.0
+        ],
+        [
+          "drawer_front_width_mm",
+          0.0
+        ],
+        [
+          "drawer_front_width_mm",
+          "drawer_front_height_mm/3"
+        ],
+        [
+          "drawer_front_width_mm",
+          "drawer_front_height_mm*2/3"
+        ],
+        [
+          "drawer_front_width_mm",
+          "drawer_front_height_mm"
+        ],
+        [
+          "drawer_front_width_mm-(drawer_front_width_mm-drawer_curved_pull_span_mm)/6",
+          "drawer_front_height_mm"
+        ],
+        [
+          "drawer_front_width_mm-(drawer_front_width_mm-drawer_curved_pull_span_mm)/3",
+          "drawer_front_height_mm"
+        ],
+        [
+          "(drawer_front_width_mm+drawer_curved_pull_span_mm)/2",
+          "drawer_front_height_mm"
+        ],
+        [
+          "(drawer_front_width_mm+drawer_curved_pull_span_mm)/2-drawer_curved_pull_span_mm/3",
+          "drawer_front_height_mm-drawer_curved_pull_vertical_sweep_mm*4/3"
+        ],
+        [
+          "(drawer_front_width_mm-drawer_curved_pull_span_mm)/2+drawer_curved_pull_span_mm/3",
+          "drawer_front_height_mm-drawer_curved_pull_vertical_sweep_mm*4/3"
+        ],
+        [
+          "(drawer_front_width_mm-drawer_curved_pull_span_mm)/2",
+          "drawer_front_height_mm"
+        ],
+        [
+          "(drawer_front_width_mm-drawer_curved_pull_span_mm)/3",
+          "drawer_front_height_mm"
+        ],
+        [
+          "(drawer_front_width_mm-drawer_curved_pull_span_mm)/6",
+          "drawer_front_height_mm"
+        ],
+        [
+          0.0,
+          "drawer_front_height_mm"
+        ],
+        [
+          0.0,
+          "drawer_front_height_mm*2/3"
+        ],
+        [
+          0.0,
+          "drawer_front_height_mm/3"
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "path": [],
+      "curve_mode": "bezier",
+      "sections": []
+    },
+    {
+      "part_id": "F010",
+      "label": "Central drawer front bottom",
+      "evidence": "Lowest central front carries the fourth sweeping grip above the dark lower boundary.",
+      "geometry": "outline_panel",
+      "material": "solid_wood",
+      "color_rgb": [
+        0.73,
+        0.62,
+        0.44
+      ],
+      "position": [
+        "left_door_bank_width_mm+(central_drawer_bank_width_mm-drawer_front_width_mm)/2",
+        "front_panel_thickness_mm/2",
+        "base_height_mm+front_reveal_mm"
+      ],
+      "rotation_deg": [
+        90.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        "drawer_front_width_mm",
+        "drawer_front_height_mm",
+        "front_panel_thickness_mm"
+      ],
+      "corner_radius": 0.0,
+      "dish_depth": 0.0,
+      "outline": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          "drawer_front_width_mm/3",
+          0.0
+        ],
+        [
+          "drawer_front_width_mm*2/3",
+          0.0
+        ],
+        [
+          "drawer_front_width_mm",
+          0.0
+        ],
+        [
+          "drawer_front_width_mm",
+          "drawer_front_height_mm/3"
+        ],
+        [
+          "drawer_front_width_mm",
+          "drawer_front_height_mm*2/3"
+        ],
+        [
+          "drawer_front_width_mm",
+          "drawer_front_height_mm"
+        ],
+        [
+          "drawer_front_width_mm-(drawer_front_width_mm-drawer_curved_pull_span_mm)/6",
+          "drawer_front_height_mm"
+        ],
+        [
+          "drawer_front_width_mm-(drawer_front_width_mm-drawer_curved_pull_span_mm)/3",
+          "drawer_front_height_mm"
+        ],
+        [
+          "(drawer_front_width_mm+drawer_curved_pull_span_mm)/2",
+          "drawer_front_height_mm"
+        ],
+        [
+          "(drawer_front_width_mm+drawer_curved_pull_span_mm)/2-drawer_curved_pull_span_mm/3",
+          "drawer_front_height_mm-drawer_curved_pull_vertical_sweep_mm*4/3"
+        ],
+        [
+          "(drawer_front_width_mm-drawer_curved_pull_span_mm)/2+drawer_curved_pull_span_mm/3",
+          "drawer_front_height_mm-drawer_curved_pull_vertical_sweep_mm*4/3"
+        ],
+        [
+          "(drawer_front_width_mm-drawer_curved_pull_span_mm)/2",
+          "drawer_front_height_mm"
+        ],
+        [
+          "(drawer_front_width_mm-drawer_curved_pull_span_mm)/3",
+          "drawer_front_height_mm"
+        ],
+        [
+          "(drawer_front_width_mm-drawer_curved_pull_span_mm)/6",
+          "drawer_front_height_mm"
+        ],
+        [
+          0.0,
+          "drawer_front_height_mm"
+        ],
+        [
+          0.0,
+          "drawer_front_height_mm*2/3"
+        ],
+        [
+          0.0,
+          "drawer_front_height_mm/3"
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "path": [],
+      "curve_mode": "bezier",
+      "sections": []
+    },
+    {
+      "part_id": "F011",
+      "label": "Right bank inner door leaf",
+      "evidence": "Door beside the central stack has the left half of the right paired scallop.",
+      "geometry": "outline_panel",
+      "material": "solid_wood",
+      "color_rgb": [
+        0.74,
+        0.63,
+        0.45
+      ],
+      "position": [
+        "left_door_bank_width_mm+central_drawer_bank_width_mm+front_reveal_mm",
+        "front_panel_thickness_mm/2",
+        "base_height_mm+front_reveal_mm"
+      ],
+      "rotation_deg": [
+        90.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        "door_leaf_width_mm",
+        "door_leaf_height_mm",
+        "front_panel_thickness_mm"
+      ],
+      "corner_radius": 0.0,
+      "dish_depth": 0.0,
+      "outline": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          "door_leaf_width_mm/3",
+          0.0
+        ],
+        [
+          "door_leaf_width_mm*2/3",
+          0.0
+        ],
+        [
+          "door_leaf_width_mm",
+          0.0
+        ],
+        [
+          "door_leaf_width_mm",
+          "door_leaf_height_mm/3"
+        ],
+        [
+          "door_leaf_width_mm",
+          "door_leaf_height_mm*2/3"
+        ],
+        [
+          "door_leaf_width_mm",
+          "door_leaf_height_mm-paired_door_pull_vertical_sweep_mm"
+        ],
+        [
+          "door_leaf_width_mm-paired_door_pull_span_mm/6",
+          "door_leaf_height_mm-paired_door_pull_vertical_sweep_mm"
+        ],
+        [
+          "door_leaf_width_mm-paired_door_pull_span_mm/3",
+          "door_leaf_height_mm"
+        ],
+        [
+          "door_leaf_width_mm-paired_door_pull_span_mm/2",
+          "door_leaf_height_mm"
+        ],
+        [
+          "(door_leaf_width_mm-paired_door_pull_span_mm/2)*2/3",
+          "door_leaf_height_mm"
+        ],
+        [
+          "(door_leaf_width_mm-paired_door_pull_span_mm/2)/3",
+          "door_leaf_height_mm"
+        ],
+        [
+          0.0,
+          "door_leaf_height_mm"
+        ],
+        [
+          0.0,
+          "door_leaf_height_mm*2/3"
+        ],
+        [
+          0.0,
+          "door_leaf_height_mm/3"
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "path": [],
+      "curve_mode": "bezier",
+      "sections": []
+    },
+    {
+      "part_id": "F012",
+      "label": "Right bank outer door leaf",
+      "evidence": "Far-right light leaf has the complementary upper grip and narrow paired seam.",
+      "geometry": "outline_panel",
+      "material": "solid_wood",
+      "color_rgb": [
+        0.74,
+        0.63,
+        0.45
+      ],
+      "position": [
+        "left_door_bank_width_mm+central_drawer_bank_width_mm+right_door_bank_width_mm-front_reveal_mm-door_leaf_width_mm",
+        "front_panel_thickness_mm/2",
+        "base_height_mm+front_reveal_mm"
+      ],
+      "rotation_deg": [
+        90.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        "door_leaf_width_mm",
+        "door_leaf_height_mm",
+        "front_panel_thickness_mm"
+      ],
+      "corner_radius": 0.0,
+      "dish_depth": 0.0,
+      "outline": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          "door_leaf_width_mm/3",
+          0.0
+        ],
+        [
+          "door_leaf_width_mm*2/3",
+          0.0
+        ],
+        [
+          "door_leaf_width_mm",
+          0.0
+        ],
+        [
+          "door_leaf_width_mm",
+          "door_leaf_height_mm/3"
+        ],
+        [
+          "door_leaf_width_mm",
+          "door_leaf_height_mm*2/3"
+        ],
+        [
+          "door_leaf_width_mm",
+          "door_leaf_height_mm"
+        ],
+        [
+          "door_leaf_width_mm-(door_leaf_width_mm-paired_door_pull_span_mm/2)/3",
+          "door_leaf_height_mm"
+        ],
+        [
+          "door_leaf_width_mm-(door_leaf_width_mm-paired_door_pull_span_mm/2)*2/3",
+          "door_leaf_height_mm"
+        ],
+        [
+          "paired_door_pull_span_mm/2",
+          "door_leaf_height_mm"
+        ],
+        [
+          "paired_door_pull_span_mm/3",
+          "door_leaf_height_mm"
+        ],
+        [
+          "paired_door_pull_span_mm/6",
+          "door_leaf_height_mm-paired_door_pull_vertical_sweep_mm"
+        ],
+        [
+          0.0,
+          "door_leaf_height_mm-paired_door_pull_vertical_sweep_mm"
+        ],
+        [
+          0.0,
+          "door_leaf_height_mm/2"
+        ],
+        [
+          0.0,
+          "door_leaf_height_mm/4"
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "path": [],
+      "curve_mode": "bezier",
+      "sections": []
+    },
+    {
+      "part_id": "F013",
+      "label": "Visible recessed base front member",
+      "evidence": "Dark recessed horizontal base is visible below the facade; concealed support counts are unknown.",
+      "geometry": "box",
+      "material": "solid_wood",
+      "color_rgb": [
+        0.11,
+        0.085,
+        0.07
+      ],
+      "position": [
+        "width_mm/2",
+        "base_front_setback_mm+carcass_panel_thickness_mm/2",
+        "base_height_mm/2"
+      ],
+      "rotation_deg": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        "width_mm-2*base_end_setback_mm",
+        "carcass_panel_thickness_mm",
+        "base_height_mm"
+      ],
+      "corner_radius": 0.0,
+      "dish_depth": 0.0,
+      "outline": [],
+      "path": [],
+      "curve_mode": "polyline",
+      "sections": []
+    }
+  ],
+  "assumptions": [
+    "The photograph governs appearance. Supplied 3000 \u00d7 500 \u00d7 700 mm dimensions are fixed targets with unverified SAMPLE_DRAWING provenance; the PDF was not inspected.",
+    "All supplied estimated parameters remain unchanged. Counts describe the fixed component contract; rounded aspect ratios are descriptive rather than independent constraints.",
+    "Y=0 is front. Fronts occupy Y=0..20; end panels start behind them, preserving nominal facade widths without contradictory stock overlap.",
+    "Equal nominal zones, stock, reveals and setbacks are estimates, not recovered physical measurements.",
+    "Wood appearances use solid_wood as a visual material category; actual veneer, substrate, species and finish are unknown.",
+    "Curved grips are provisional full-thickness scalloped upper edges. Actual recess cross-sections, undercuts and machining depths cannot be established.",
+    "Each paired scallop is divided between leaves; the span is the sum of the half spans, excluding the meeting gap.",
+    "F004 is a single L-section lower panel with an integral upright directly behind the fronts. This unverified contact surrogate retains the exterior decomposition but is not evidence of an actual panel or concealed support mechanism.",
+    "F013 represents only the visible base front member, with unknown thickness provisionally equated to carcass stock. Additional base supports are unresolved.",
+    "No back, partitions, shelves, drawer boxes, hinges, runners or joinery are reconstructed.",
+    "Advisory reconstruction only: geometric validation does not establish manufacturing approval or structural qualification. Qualified designer review remains required."
+  ],
+  "unrepresented_features": [
+    "Actual grip depth, undercuts and compound transitions; only the curved exterior silhouettes are represented.",
+    "Subtle edge softness, unresolved small radii and lower door corner rounding.",
+    "Fine grain, veneer seams, finish and lighting-dependent colors.",
+    "Unseen rear and interior construction; actual lower panel arrangement and base supports.",
+    "Perspective uncertainty and slight apparent grip asymmetry."
+  ]
+}

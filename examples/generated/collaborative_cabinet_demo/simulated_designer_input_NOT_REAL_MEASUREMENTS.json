@@ -1,0 +1,124 @@
+{
+  "specification": {
+    "project_name": "OFFLINE DEMO - SYNTHETIC INPUTS - NOT PHYSICALLY VERIFIED",
+    "width_mm": 700,
+    "depth_mm": 450,
+    "height_mm": 1800,
+    "carcass_material": "plywood",
+    "panel_thickness_mm": 18,
+    "back_thickness_mm": 6,
+    "include_glazed_door": true,
+    "door_frame_wood": "solid_wood",
+    "door_frame_width_mm": 55,
+    "door_frame_depth_mm": 24,
+    "glass_thickness_mm": 6,
+    "door_perimeter_gap_mm": 3,
+    "joint_type": "none",
+    "measured_dimensions_confirmed": false,
+    "dimension_provenance": "user_provided",
+    "material_profiles": [
+      {
+        "material_id": "DEMO-PLY18",
+        "name": "Unverified plywood 18 mm",
+        "material": "plywood",
+        "actual_thickness_mm": 18
+      },
+      {
+        "material_id": "DEMO-PLY6",
+        "name": "Unverified plywood 6 mm",
+        "material": "plywood",
+        "actual_thickness_mm": 6
+      },
+      {
+        "material_id": "DEMO-WOOD24",
+        "name": "Unverified solid timber 24 mm",
+        "material": "solid_wood",
+        "actual_thickness_mm": 24
+      },
+      {
+        "material_id": "DEMO-GLASS6",
+        "name": "Unverified glass 6 mm",
+        "material": "glass",
+        "actual_thickness_mm": 6
+      }
+    ],
+    "material_assignments": {
+      "carcass": "DEMO-PLY18",
+      "back": "DEMO-PLY6",
+      "door_frame": "DEMO-WOOD24",
+      "glass": "DEMO-GLASS6"
+    },
+    "hardware": [],
+    "glass_edge_clearance_mm": 1,
+    "door_standoff_mm": 1
+  },
+  "measurements": [
+    {
+      "field": "width_mm",
+      "value_mm": 700,
+      "provenance": "PHYSICALLY_MEASURED",
+      "evidence_reference": "SYNTHETIC DEMO FIXTURE ONLY - NO ACTUAL PHYSICAL MEASUREMENT OR FACTORY APPROVAL"
+    },
+    {
+      "field": "depth_mm",
+      "value_mm": 450,
+      "provenance": "PHYSICALLY_MEASURED",
+      "evidence_reference": "SYNTHETIC DEMO FIXTURE ONLY - NO ACTUAL PHYSICAL MEASUREMENT OR FACTORY APPROVAL"
+    },
+    {
+      "field": "height_mm",
+      "value_mm": 1800,
+      "provenance": "PHYSICALLY_MEASURED",
+      "evidence_reference": "SYNTHETIC DEMO FIXTURE ONLY - NO ACTUAL PHYSICAL MEASUREMENT OR FACTORY APPROVAL"
+    },
+    {
+      "field": "panel_thickness_mm",
+      "value_mm": 18,
+      "provenance": "USER_PROVIDED",
+      "evidence_reference": "SYNTHETIC DEMO FIXTURE ONLY - NO ACTUAL PHYSICAL MEASUREMENT OR FACTORY APPROVAL"
+    },
+    {
+      "field": "back_thickness_mm",
+      "value_mm": 6,
+      "provenance": "USER_PROVIDED",
+      "evidence_reference": "SYNTHETIC DEMO FIXTURE ONLY - NO ACTUAL PHYSICAL MEASUREMENT OR FACTORY APPROVAL"
+    },
+    {
+      "field": "door_frame_width_mm",
+      "value_mm": 55,
+      "provenance": "USER_PROVIDED",
+      "evidence_reference": "SYNTHETIC DEMO FIXTURE ONLY - NO ACTUAL PHYSICAL MEASUREMENT OR FACTORY APPROVAL"
+    },
+    {
+      "field": "door_frame_depth_mm",
+      "value_mm": 24,
+      "provenance": "USER_PROVIDED",
+      "evidence_reference": "SYNTHETIC DEMO FIXTURE ONLY - NO ACTUAL PHYSICAL MEASUREMENT OR FACTORY APPROVAL"
+    },
+    {
+      "field": "glass_thickness_mm",
+      "value_mm": 6,
+      "provenance": "USER_PROVIDED",
+      "evidence_reference": "SYNTHETIC DEMO FIXTURE ONLY - NO ACTUAL PHYSICAL MEASUREMENT OR FACTORY APPROVAL"
+    },
+    {
+      "field": "door_perimeter_gap_mm",
+      "value_mm": 3,
+      "provenance": "USER_PROVIDED",
+      "evidence_reference": "SYNTHETIC DEMO FIXTURE ONLY - NO ACTUAL PHYSICAL MEASUREMENT OR FACTORY APPROVAL"
+    },
+    {
+      "field": "glass_edge_clearance_mm",
+      "value_mm": 1,
+      "provenance": "USER_PROVIDED",
+      "evidence_reference": "SYNTHETIC DEMO FIXTURE ONLY - NO ACTUAL PHYSICAL MEASUREMENT OR FACTORY APPROVAL"
+    },
+    {
+      "field": "door_standoff_mm",
+      "value_mm": 1,
+      "provenance": "USER_PROVIDED",
+      "evidence_reference": "SYNTHETIC DEMO FIXTURE ONLY - NO ACTUAL PHYSICAL MEASUREMENT OR FACTORY APPROVAL"
+    }
+  ],
+  "designer_comment": "SYNTHETIC DEMO FIXTURE ONLY - NO ACTUAL PHYSICAL MEASUREMENT OR FACTORY APPROVAL"
+}

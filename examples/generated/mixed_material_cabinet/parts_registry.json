@@ -1,0 +1,402 @@
+[
+  {
+    "part_id": "P001",
+    "label": "Left side",
+    "material": "plywood",
+    "category": "panel",
+    "blank_length_mm": 1800.0,
+    "blank_width_mm": 450.0,
+    "blank_thickness_mm": 18.0,
+    "size_xyz_mm": [
+      18.0,
+      450.0,
+      1800.0
+    ],
+    "center_xyz_mm": [
+      9.0,
+      225.0,
+      900.0
+    ],
+    "grain_axis": "length",
+    "note": "",
+    "material_id": "DEMO-PLY18",
+    "length_mm": 1800.0,
+    "width_mm": 450.0,
+    "thickness_mm": 18.0,
+    "quantity": 1,
+    "revision": 1,
+    "manufacturing_status": "DRAFT",
+    "blank_verified": false,
+    "edge_treatment": null,
+    "length_axis": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "thickness_axis": [
+      -1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "part_id": "P002",
+    "label": "Right side",
+    "material": "plywood",
+    "category": "panel",
+    "blank_length_mm": 1800.0,
+    "blank_width_mm": 450.0,
+    "blank_thickness_mm": 18.0,
+    "size_xyz_mm": [
+      18.0,
+      450.0,
+      1800.0
+    ],
+    "center_xyz_mm": [
+      691.0,
+      225.0,
+      900.0
+    ],
+    "grain_axis": "length",
+    "note": "",
+    "material_id": "DEMO-PLY18",
+    "length_mm": 1800.0,
+    "width_mm": 450.0,
+    "thickness_mm": 18.0,
+    "quantity": 1,
+    "revision": 1,
+    "manufacturing_status": "DRAFT",
+    "blank_verified": false,
+    "edge_treatment": null,
+    "length_axis": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "thickness_axis": [
+      -1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "part_id": "P003",
+    "label": "Top panel",
+    "material": "plywood",
+    "category": "panel",
+    "blank_length_mm": 664.0,
+    "blank_width_mm": 450.0,
+    "blank_thickness_mm": 18.0,
+    "size_xyz_mm": [
+      664.0,
+      450.0,
+      18.0
+    ],
+    "center_xyz_mm": [
+      350.0,
+      225.0,
+      1791.0
+    ],
+    "grain_axis": "length",
+    "note": "",
+    "material_id": "DEMO-PLY18",
+    "length_mm": 664.0,
+    "width_mm": 450.0,
+    "thickness_mm": 18.0,
+    "quantity": 1,
+    "revision": 1,
+    "manufacturing_status": "DRAFT",
+    "blank_verified": false,
+    "edge_treatment": null,
+    "length_axis": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "thickness_axis": [
+      0.0,
+      0.0,
+      1.0
+    ]
+  },
+  {
+    "part_id": "P004",
+    "label": "Bottom panel",
+    "material": "plywood",
+    "category": "panel",
+    "blank_length_mm": 664.0,
+    "blank_width_mm": 450.0,
+    "blank_thickness_mm": 18.0,
+    "size_xyz_mm": [
+      664.0,
+      450.0,
+      18.0
+    ],
+    "center_xyz_mm": [
+      350.0,
+      225.0,
+      9.0
+    ],
+    "grain_axis": "length",
+    "note": "",
+    "material_id": "DEMO-PLY18",
+    "length_mm": 664.0,
+    "width_mm": 450.0,
+    "thickness_mm": 18.0,
+    "quantity": 1,
+    "revision": 1,
+    "manufacturing_status": "DRAFT",
+    "blank_verified": false,
+    "edge_treatment": null,
+    "length_axis": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "thickness_axis": [
+      0.0,
+      0.0,
+      1.0
+    ]
+  },
+  {
+    "part_id": "P005",
+    "label": "Inset back (illustrative)",
+    "material": "plywood",
+    "category": "panel",
+    "blank_length_mm": 1764.0,
+    "blank_width_mm": 664.0,
+    "blank_thickness_mm": 6.0,
+    "size_xyz_mm": [
+      664.0,
+      6.0,
+      1764.0
+    ],
+    "center_xyz_mm": [
+      350.0,
+      447.0,
+      900.0
+    ],
+    "grain_axis": "length",
+    "note": "Back fastening/grooves not designed.",
+    "material_id": "DEMO-PLY6",
+    "length_mm": 1764.0,
+    "width_mm": 664.0,
+    "thickness_mm": 6.0,
+    "quantity": 1,
+    "revision": 1,
+    "manufacturing_status": "DRAFT",
+    "blank_verified": false,
+    "edge_treatment": null,
+    "length_axis": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "thickness_axis": [
+      0.0,
+      1.0,
+      0.0
+    ]
+  },
+  {
+    "part_id": "D001",
+    "label": "Left door stile",
+    "material": "solid_wood",
+    "category": "frame",
+    "blank_length_mm": 1758.0,
+    "blank_width_mm": 55.0,
+    "blank_thickness_mm": 24.0,
+    "size_xyz_mm": [
+      55.0,
+      24.0,
+      1758.0
+    ],
+    "center_xyz_mm": [
+      48.5,
+      -13.0,
+      900.0
+    ],
+    "grain_axis": "length",
+    "note": "",
+    "material_id": "DEMO-WOOD24",
+    "length_mm": 1758.0,
+    "width_mm": 55.0,
+    "thickness_mm": 24.0,
+    "quantity": 1,
+    "revision": 1,
+    "manufacturing_status": "DRAFT",
+    "blank_verified": false,
+    "edge_treatment": null,
+    "length_axis": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "thickness_axis": [
+      0.0,
+      1.0,
+      0.0
+    ]
+  },
+  {
+    "part_id": "D002",
+    "label": "Right door stile",
+    "material": "solid_wood",
+    "category": "frame",
+    "blank_length_mm": 1758.0,
+    "blank_width_mm": 55.0,
+    "blank_thickness_mm": 24.0,
+    "size_xyz_mm": [
+      55.0,
+      24.0,
+      1758.0
+    ],
+    "center_xyz_mm": [
+      651.5,
+      -13.0,
+      900.0
+    ],
+    "grain_axis": "length",
+    "note": "",
+    "material_id": "DEMO-WOOD24",
+    "length_mm": 1758.0,
+    "width_mm": 55.0,
+    "thickness_mm": 24.0,
+    "quantity": 1,
+    "revision": 1,
+    "manufacturing_status": "DRAFT",
+    "blank_verified": false,
+    "edge_treatment": null,
+    "length_axis": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "thickness_axis": [
+      0.0,
+      1.0,
+      0.0
+    ]
+  },
+  {
+    "part_id": "D003",
+    "label": "Top door rail",
+    "material": "solid_wood",
+    "category": "frame",
+    "blank_length_mm": 548.0,
+    "blank_width_mm": 55.0,
+    "blank_thickness_mm": 24.0,
+    "size_xyz_mm": [
+      548.0,
+      24.0,
+      55.0
+    ],
+    "center_xyz_mm": [
+      350.0,
+      -13.0,
+      1751.5
+    ],
+    "grain_axis": "length",
+    "note": "",
+    "material_id": "DEMO-WOOD24",
+    "length_mm": 548.0,
+    "width_mm": 55.0,
+    "thickness_mm": 24.0,
+    "quantity": 1,
+    "revision": 1,
+    "manufacturing_status": "DRAFT",
+    "blank_verified": false,
+    "edge_treatment": null,
+    "length_axis": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "thickness_axis": [
+      0.0,
+      -1.0,
+      0.0
+    ]
+  },
+  {
+    "part_id": "D004",
+    "label": "Bottom door rail",
+    "material": "solid_wood",
+    "category": "frame",
+    "blank_length_mm": 548.0,
+    "blank_width_mm": 55.0,
+    "blank_thickness_mm": 24.0,
+    "size_xyz_mm": [
+      548.0,
+      24.0,
+      55.0
+    ],
+    "center_xyz_mm": [
+      350.0,
+      -13.0,
+      48.5
+    ],
+    "grain_axis": "length",
+    "note": "",
+    "material_id": "DEMO-WOOD24",
+    "length_mm": 548.0,
+    "width_mm": 55.0,
+    "thickness_mm": 24.0,
+    "quantity": 1,
+    "revision": 1,
+    "manufacturing_status": "DRAFT",
+    "blank_verified": false,
+    "edge_treatment": null,
+    "length_axis": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "thickness_axis": [
+      0.0,
+      -1.0,
+      0.0
+    ]
+  },
+  {
+    "part_id": "G001",
+    "label": "Conceptual glass insert",
+    "material": "glass",
+    "category": "glass",
+    "blank_length_mm": 1646.0,
+    "blank_width_mm": 546.0,
+    "blank_thickness_mm": 6.0,
+    "size_xyz_mm": [
+      546.0,
+      6.0,
+      1646.0
+    ],
+    "center_xyz_mm": [
+      350.0,
+      -13.0,
+      900.0
+    ],
+    "grain_axis": "none",
+    "note": "Visual only: retention, glass safety, edges, and fittings unverified.",
+    "material_id": "DEMO-GLASS6",
+    "length_mm": 1646.0,
+    "width_mm": 546.0,
+    "thickness_mm": 6.0,
+    "quantity": 1,
+    "revision": 1,
+    "manufacturing_status": "DRAFT",
+    "blank_verified": false,
+    "edge_treatment": null,
+    "length_axis": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "thickness_axis": [
+      0.0,
+      1.0,
+      0.0
+    ]
+  }
+]

@@ -1,0 +1,5 @@
+﻿material,material_id,thickness_mm,parts_count,part_ids,blank_volume_m3,blank_area_m2,supplier_reference,stock_quantity,procurement_status,unit_cost,extended_cost,pricing_status
+glass,DEMO-GLASS6,6.0,1,G001,0.005392296,0.898716,,,NESTING_AND_WASTAGE_REQUIRED,,,PRICE_REQUIRED
+plywood,DEMO-PLY18,18.0,4,"P001,P002,P003,P004",0.0399168,2.2176,,,NESTING_AND_WASTAGE_REQUIRED,,,PRICE_REQUIRED
+plywood,DEMO-PLY6,6.0,1,P005,0.007027776,1.171296,,,NESTING_AND_WASTAGE_REQUIRED,,,PRICE_REQUIRED
+solid_wood,DEMO-WOOD24,24.0,4,"D001,D002,D003,D004",0.00608784,0.25366,,,NESTING_AND_WASTAGE_REQUIRED,,,PRICE_REQUIRED

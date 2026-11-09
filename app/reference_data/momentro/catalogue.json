@@ -1,0 +1,240 @@
+{
+  "version": 1,
+  "source": "Momentro.zip",
+  "samples": [
+    {
+      "id": "bed",
+      "label": "Bed",
+      "dimensions": {
+        "width_mm": 2500,
+        "depth_mm": 2010,
+        "height_mm": 1200
+      },
+      "drawing": {
+        "filename": "Fiske Staff Drawing - LF03 & LFO4 - Bed_1 Job Order & Drawing.pdf",
+        "file": "bed.pdf",
+        "page": 2,
+        "sha256": "f371206c9aecaa9cadcbb10649c342e673b2d1aa1e01aeef22c4ced3d54fe8c1"
+      },
+      "notes": [
+        "Drawing length 2010 mm is mapped to overall depth. Bed height: 590 mm; overall headboard height: 1200 mm."
+      ],
+      "references": [
+        {
+          "file": "bed-1.jpg",
+          "original_filename": "Referance Image - Bed.JPG",
+          "sha256": "9a260272067098a041cb7482a42d16820b2ad49848d54cb75ee3177a2d25a886",
+          "normalized_sha256": [
+            "9207c492d617dc2a00377ff9e8f59a0939b8449d4355ee07971b0dfe25d46220",
+            "60da5fd096e9bfcd4d409961d0873cb74a8276e7a4b2c1415d0be640c3c87635"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bench",
+      "label": "Bench",
+      "dimensions": {
+        "width_mm": 1350,
+        "depth_mm": 430,
+        "height_mm": 450
+      },
+      "drawing": {
+        "filename": "Fiske Staff Drawing - LF01 Bench - Kuan Ai(1).pdf",
+        "file": "bench.pdf",
+        "page": 1,
+        "sha256": "8d8aee7d68af9bc8f97f1845d609f40ee4267375ff033b9639d3d242abdc1758"
+      },
+      "notes": [
+        "Dimensions come from the Fiske shop drawing, rather than the reference presentation PDF."
+      ],
+      "references": [
+        {
+          "file": "bench-1.jpg",
+          "original_filename": "Referance Resource - TNS_Bench-compressed.pdf page 2",
+          "sha256": "a678f557b292bc1f130dca5e8ea4864915cd86de60b606cbe39f287e2d58ebb1",
+          "normalized_sha256": [
+            "5dd6bbd4ec54488895f3147212779d69189fd8fe8da6141d4329cf64e7d6230d",
+            "9c548cdc593ccb053389372624170e0420fd1dcc685b671edbb52dd37f4cd2fa"
+          ]
+        },
+        {
+          "file": "bench-2.jpg",
+          "original_filename": "Referance Resource - TNS_Bench-compressed.pdf page 2 photo",
+          "sha256": "ae8530e6799fab82d9380979a5416f0e5bb17df3af5bc37f787cd832905b2d97",
+          "normalized_sha256": [
+            "f04ef859a86d6e4bc56aad5348aee45774315a547fc47423b9a1586e3fc4cedd"
+          ]
+        },
+        {
+          "file": "bench-3.jpg",
+          "original_filename": "Referance Resource - TNS_Bench-compressed.pdf page 2 photo",
+          "sha256": "cb74e0fbab3fe065640700c84536cd24f1d78d56da735608bfc1fbeb8a04e971",
+          "normalized_sha256": [
+            "e73a5e03e217388ae8d3d94d613d428ae583d05c92d1a6582312128343046c5f"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shoe-cabinet",
+      "label": "Shoe cabinet",
+      "dimensions": {
+        "width_mm": 2100,
+        "depth_mm": 545,
+        "height_mm": 858
+      },
+      "drawing": {
+        "filename": "FISKE STAFF DRAWING - LF02 SHOE STORAGE CABINET.pdf",
+        "file": "shoe-cabinet.pdf",
+        "page": 1,
+        "sha256": "ccdb3d731224391c271b5be24c7773e4d43950be906e065b438b242c0b50a5b1"
+      },
+      "notes": [
+        "Drawing lists heights 840/858 mm. Default: 858 mm including the 18 mm top; enter 840 mm for the carcass without the client top."
+      ],
+      "references": [
+        {
+          "file": "shoe-cabinet-1.jpg",
+          "original_filename": "ATLANTE 4 WOOD 2.jpg",
+          "sha256": "a85ba8fb3be033acd61ce1ea9f93fb9e40aa194f2d791253ff3a5c52b31ed091",
+          "normalized_sha256": [
+            "68f6d118bf6c08d47f9b4d9587ba962e8afda64089a20cc65425ed35eaff6cd3"
+          ]
+        },
+        {
+          "file": "shoe-cabinet-2.jpg",
+          "original_filename": "ATLANTE 4 WOOD.jpg",
+          "sha256": "e57925abe4e3541bd5ea14e13f1cd520967b1216d810b06032c5601dd4f214f9",
+          "normalized_sha256": [
+            "303224ec10c3c60fd9bb41f765007679fdfacd61344957c304194dfc8553a5f4"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "label": "With client top",
+          "height_mm": 858
+        },
+        {
+          "label": "Without top",
+          "height_mm": 840
+        }
+      ]
+    },
+    {
+      "id": "sideboard",
+      "label": "Sideboard",
+      "dimensions": {
+        "width_mm": 3000,
+        "depth_mm": 500,
+        "height_mm": 700
+      },
+      "drawing": {
+        "filename": "FISKE STAFF DRAWING - LF07 SIDEBOARD.pdf",
+        "file": "sideboard.pdf",
+        "page": 1,
+        "sha256": "17f5193c653ad67e526869ff2d57d008742eeccecdfb9857b244ed2fb7ea1250"
+      },
+      "notes": [
+        "Uses the overall dimension line in the shop drawing."
+      ],
+      "references": [
+        {
+          "file": "sideboard-1.jpg",
+          "original_filename": "Referance Image - LF07 Sideboard.JPG",
+          "sha256": "0064bc5b1722f295f0c3deebdaf54efbde34bbdbc944cafa3ebe6cafaca943d5",
+          "normalized_sha256": [
+            "5d44ac38a05ab7b485e3c2496af0d52c6b739508adad558d2c2cb5d5d0cc9924",
+            "b8755977952784afd84acd16d93082c7dbd2bdac12d1b94a491b50010cf5911a"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sofa",
+      "label": "Sofa",
+      "dimensions": {
+        "width_mm": 3000,
+        "depth_mm": 1450,
+        "height_mm": 880
+      },
+      "drawing": {
+        "filename": "Fiske Staff Drawing - LF02 SOFA MASTER.pdf",
+        "file": "sofa.pdf",
+        "page": 1,
+        "sha256": "4d2ffba96dd9871d1eff8c1037bd03e258956863b4e4005e360fb945765e0b42"
+      },
+      "notes": [
+        "Shop drawing seat heights: 440/380 mm. The reference image includes other product sizes; the paired shop drawing supplies the target size."
+      ],
+      "references": [
+        {
+          "file": "sofa-1.jpg",
+          "original_filename": "Referance Image - LF02 Sofa.JPG",
+          "sha256": "e58ba7070df60ced01d491cdbf81514742b2364953acf195da8647e7f0125400",
+          "normalized_sha256": [
+            "87d1824ab6833760bf7f4669f529c307584a429234dcad224d569d138c234794",
+            "d9026a044887a94fcd15328e5510833cfa3818917970c7e9746391c7ce696ae9"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "table-a",
+      "label": "Dining table A",
+      "dimensions": {
+        "width_mm": 2800,
+        "depth_mm": 1100,
+        "height_mm": 750
+      },
+      "drawing": {
+        "filename": "Fiske Staff Drawing - Dining Table-Layout1.pdf",
+        "file": "table-a.pdf",
+        "page": 1,
+        "sha256": "fc70f4fb6821590d7edd8bb5f3e5d1890455c5df08ae3f44890f4a99a7bda624"
+      },
+      "notes": [],
+      "references": [
+        {
+          "file": "table-a-1.jpg",
+          "original_filename": "Referance Image - 4.JPG",
+          "sha256": "c6b6fb87c38e2005f351e8dc4da23a59c53cf42caa577d81d1930feee5c8c80b",
+          "normalized_sha256": [
+            "ba5bc9d2457d5695414c5a95cefbad256aa1fa812a44f22faef7eb82cc76c21f",
+            "a79e0530a9a2572e1fbefc1ba6ccb85d5e01a7261b53a3b60738809f6aa7a34f"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "table-b",
+      "label": "Dining table B",
+      "dimensions": {
+        "width_mm": 2200,
+        "depth_mm": 950,
+        "height_mm": 750
+      },
+      "drawing": {
+        "filename": "Fiske Staff Drawing - Nick Ho LF02 (2).pdf",
+        "file": "table-b.pdf",
+        "page": 1,
+        "sha256": "839eeee6997882a472eeeb6a3a2a0fb507a9a5bd00e569da4330efa32239b6bd"
+      },
+      "notes": [
+        "Overall dimensions include the client stone top. The drawing title gives BASE dimensions 2100 x 850 x 732 mm; these must not replace the overall dimensions."
+      ],
+      "references": [
+        {
+          "file": "table-b-1.jpg",
+          "original_filename": "Referance Image - WhatsApp Image 2026-06-30 at 12.28.20 PM.jpeg",
+          "sha256": "e15f9bfea4b0c24d6b31a7e3508707a4f6d62e8f6d94431b8ae1494c1fec4233",
+          "normalized_sha256": [
+            "6b5226bbd5d546a06acfa6b72cc7f527a3f1481757d17dce500016852cc4288a",
+            "c5fba1a703e9962b3c5c645f2b9a984507b67c12d4dfb68c491e9866180a0c83"
+          ]
+        }
+      ]
+    }
+  ]
+}

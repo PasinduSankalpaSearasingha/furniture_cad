@@ -1,0 +1,17 @@
+{
+  "project_name": "Mixed-material Display Cabinet Demo",
+  "width_mm": 700,
+  "depth_mm": 450,
+  "height_mm": 1800,
+  "carcass_material": "plywood",
+  "panel_thickness_mm": 18,
+  "back_thickness_mm": 6,
+  "include_glazed_door": true,
+  "door_frame_wood": "solid_wood",
+  "door_frame_width_mm": 55,
+  "door_frame_depth_mm": 24,
+  "glass_thickness_mm": 6,
+  "door_perimeter_gap_mm": 3,
+  "joint_type": "dowel_demo",
+  "measured_dimensions_confirmed": false
+}

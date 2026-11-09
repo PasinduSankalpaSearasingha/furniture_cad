@@ -1,0 +1,10 @@
+{
+  "kind": "CAD_DERIVED_REVIEW_REFERENCE",
+  "source_step": "examples\\generated\\mixed_material_cabinet\\cabinet.step",
+  "source_step_sha256": "1a9fd852ffcf797c5603828578ccadaaf1a8473770057e24e2eca4c9da785138",
+  "image_sha256": "8ce84ded7c219e9bdc84c337db33c5d651c28aa5ef0ac48f395b610a3aca92d5",
+  "source_revision": 1,
+  "physically_measured": false,
+  "ai_generated": false,
+  "approved_for_manufacturing": false
+}

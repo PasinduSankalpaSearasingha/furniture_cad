@@ -1,0 +1,319 @@
+[
+  {
+    "id": 1,
+    "event": "workflow_queued",
+    "stage": "queued",
+    "details": {
+      "mode": "COLLABORATIVE",
+      "input_sha256": "53086e98e417f534cd05e2efe36ad083d0edde06fe86125e8ef797982a0186f9"
+    },
+    "created_at": "2026-10-18T10:32:53.900338+00:00"
+  },
+  {
+    "id": 2,
+    "event": "workflow_started",
+    "stage": "starting",
+    "details": {
+      "attempt": 1
+    },
+    "created_at": "2026-10-18T10:32:53.915356+00:00"
+  },
+  {
+    "id": 3,
+    "event": "stage_started",
+    "stage": "vision",
+    "details": {},
+    "created_at": "2026-10-18T10:32:53.942624+00:00"
+  },
+  {
+    "id": 4,
+    "event": "invocation_started",
+    "stage": "vision",
+    "details": {
+      "model": "MOCK_MODEL_NOT_FOR_API",
+      "request_hash": "b58a5aea421bb9d1b1a5120596b0b6c170b75c9e35e3aeb761c7d06e07ad66be"
+    },
+    "created_at": "2026-10-18T10:32:53.954738+00:00"
+  },
+  {
+    "id": 5,
+    "event": "invocation_completed",
+    "stage": "vision",
+    "details": {
+      "invocation_id": "82d98e2b-fda9-4c72-b4e6-7b90a06f0609",
+      "model": "MOCK_MODEL_NOT_FOR_API",
+      "response_id": "MOCK_RESPONSE"
+    },
+    "created_at": "2026-10-18T10:32:53.962739+00:00"
+  },
+  {
+    "id": 6,
+    "event": "stage_completed",
+    "stage": "vision",
+    "details": {
+      "output_sha256": "fc2a2367aa71a583002065cfff8554182562664a06437b5bc1246f11d1f830a1"
+    },
+    "created_at": "2026-10-18T10:32:53.976745+00:00"
+  },
+  {
+    "id": 7,
+    "event": "stage_started",
+    "stage": "design_0",
+    "details": {},
+    "created_at": "2026-10-18T10:32:53.987267+00:00"
+  },
+  {
+    "id": 8,
+    "event": "invocation_started",
+    "stage": "design_0",
+    "details": {
+      "model": "MOCK_MODEL_NOT_FOR_API",
+      "request_hash": "7a35be3c7b5ea72306668c4e4c41d664895b0fce97df30224b4b9c5a446b3f3f"
+    },
+    "created_at": "2026-10-18T10:32:53.996768+00:00"
+  },
+  {
+    "id": 9,
+    "event": "invocation_completed",
+    "stage": "design_0",
+    "details": {
+      "invocation_id": "96fdc772-7e76-43ad-a554-85201cf737f7",
+      "model": "MOCK_MODEL_NOT_FOR_API",
+      "response_id": "MOCK_RESPONSE"
+    },
+    "created_at": "2026-10-18T10:32:54.003982+00:00"
+  },
+  {
+    "id": 10,
+    "event": "stage_completed",
+    "stage": "design_0",
+    "details": {
+      "output_sha256": "38a5a4d59d30653a81304e9646d6209a16990f7addad3474a6cdcb76a5418018"
+    },
+    "created_at": "2026-10-18T10:32:54.013436+00:00"
+  },
+  {
+    "id": 11,
+    "event": "stage_started",
+    "stage": "joinery_0",
+    "details": {},
+    "created_at": "2026-10-18T10:32:54.019466+00:00"
+  },
+  {
+    "id": 12,
+    "event": "tool_called",
+    "stage": "joinery_0",
+    "details": {
+      "name": "lookup_approved_joinery",
+      "arguments": {
+        "materials": [
+          "plywood"
+        ]
+      }
+    },
+    "created_at": "2026-10-18T10:32:54.028732+00:00"
+  },
+  {
+    "id": 13,
+    "event": "invocation_started",
+    "stage": "joinery_0",
+    "details": {
+      "model": "MOCK_MODEL_NOT_FOR_API",
+      "request_hash": "07bd2e09e8ec38587ab5780135835eb48a82a5815a0a8fc642c283efd1c10d6e"
+    },
+    "created_at": "2026-10-18T10:32:54.036113+00:00"
+  },
+  {
+    "id": 14,
+    "event": "invocation_completed",
+    "stage": "joinery_0",
+    "details": {
+      "invocation_id": "49cd8253-678e-45a2-82c5-61ff87544dac",
+      "model": "MOCK_MODEL_NOT_FOR_API",
+      "response_id": "MOCK_RESPONSE"
+    },
+    "created_at": "2026-10-18T10:32:54.041408+00:00"
+  },
+  {
+    "id": 15,
+    "event": "stage_completed",
+    "stage": "joinery_0",
+    "details": {
+      "output_sha256": "229458712a86633b37d80461ba2e0ef2af703844ff6601b0398dfb542f258813"
+    },
+    "created_at": "2026-10-18T10:32:54.050406+00:00"
+  },
+  {
+    "id": 16,
+    "event": "stage_started",
+    "stage": "review_0",
+    "details": {},
+    "created_at": "2026-10-18T10:32:54.056048+00:00"
+  },
+  {
+    "id": 17,
+    "event": "invocation_started",
+    "stage": "review_0",
+    "details": {
+      "model": "MOCK_MODEL_NOT_FOR_API",
+      "request_hash": "e198e393017b85e6a558422c155cd656a45656fdfd180d96b9020e529b6d2b9e"
+    },
+    "created_at": "2026-10-18T10:32:54.063049+00:00"
+  },
+  {
+    "id": 18,
+    "event": "invocation_completed",
+    "stage": "review_0",
+    "details": {
+      "invocation_id": "6dc84d4b-badd-472c-8543-06d96d76ff0c",
+      "model": "MOCK_MODEL_NOT_FOR_API",
+      "response_id": "MOCK_RESPONSE"
+    },
+    "created_at": "2026-10-18T10:32:54.067056+00:00"
+  },
+  {
+    "id": 19,
+    "event": "stage_completed",
+    "stage": "review_0",
+    "details": {
+      "output_sha256": "7e2925d2c0abc4f88ee4111a50c32a65e07f178faa6a7dc282539ea8f7ff9bd5"
+    },
+    "created_at": "2026-10-18T10:32:54.074078+00:00"
+  },
+  {
+    "id": 20,
+    "event": "workflow_completed",
+    "stage": "waiting_for_designer",
+    "details": {
+      "state": "WAITING_FOR_DESIGNER"
+    },
+    "created_at": "2026-10-18T10:32:54.080431+00:00"
+  },
+  {
+    "id": 21,
+    "event": "designer_verified",
+    "stage": "verification",
+    "details": {
+      "revision_id": "54d4331f-d520-4b9b-9bf4-ad884f180183",
+      "specification_hash": "16fff5638bbc51498ab196aa9d058bd911a5c9f9bb5d0df3866f4f05a028028c",
+      "designer_id": "e30ee10f-6c0f-42bb-87e0-108373a814cd"
+    },
+    "created_at": "2026-10-18T10:32:54.172584+00:00"
+  },
+  {
+    "id": 22,
+    "event": "cad_queued",
+    "stage": "cad",
+    "details": {
+      "job_id": "01a8dccc-aa00-4240-8a13-147b5cd2a230",
+      "revision_id": "54d4331f-d520-4b9b-9bf4-ad884f180183"
+    },
+    "created_at": "2026-10-18T10:32:54.194934+00:00"
+  },
+  {
+    "id": 23,
+    "event": "cad_completed",
+    "stage": "post_cad_review",
+    "details": {
+      "job_id": "01a8dccc-aa00-4240-8a13-147b5cd2a230"
+    },
+    "created_at": "2026-10-18T10:32:56.178994+00:00"
+  },
+  {
+    "id": 24,
+    "event": "workflow_started",
+    "stage": "starting",
+    "details": {
+      "attempt": 1
+    },
+    "created_at": "2026-10-18T10:32:56.190142+00:00"
+  },
+  {
+    "id": 25,
+    "event": "stage_started",
+    "stage": "cad_result",
+    "details": {},
+    "created_at": "2026-10-18T10:32:56.297727+00:00"
+  },
+  {
+    "id": 26,
+    "event": "stage_completed",
+    "stage": "cad_result",
+    "details": {
+      "output_sha256": "152dbddee475b291300abac4b2e866f1df3b55b515f7231e6d3fb72b26423268"
+    },
+    "created_at": "2026-10-18T10:32:56.309168+00:00"
+  },
+  {
+    "id": 27,
+    "event": "stage_started",
+    "stage": "manufacturing_package",
+    "details": {},
+    "created_at": "2026-10-18T10:32:56.316234+00:00"
+  },
+  {
+    "id": 28,
+    "event": "stage_completed",
+    "stage": "manufacturing_package",
+    "details": {
+      "output_sha256": "a8eae6b07d90b2b50ad3474720ab42476e191902d08185775094373342297124"
+    },
+    "created_at": "2026-10-18T10:32:56.323334+00:00"
+  },
+  {
+    "id": 29,
+    "event": "stage_started",
+    "stage": "post_cad_review",
+    "details": {},
+    "created_at": "2026-10-18T10:32:56.339885+00:00"
+  },
+  {
+    "id": 30,
+    "event": "invocation_started",
+    "stage": "post_cad_review",
+    "details": {
+      "model": "MOCK_MODEL_NOT_FOR_API",
+      "request_hash": "5a1d4c28d43429d6c17a7b1d08a34e7b6b92c8283ecd091584e459986315d1b2"
+    },
+    "created_at": "2026-10-18T10:32:56.354882+00:00"
+  },
+  {
+    "id": 31,
+    "event": "invocation_completed",
+    "stage": "post_cad_review",
+    "details": {
+      "invocation_id": "216bcf90-6b50-40cc-b22c-05227e27e450",
+      "model": "MOCK_MODEL_NOT_FOR_API",
+      "response_id": "MOCK_RESPONSE"
+    },
+    "created_at": "2026-10-18T10:32:56.361108+00:00"
+  },
+  {
+    "id": 32,
+    "event": "stage_completed",
+    "stage": "post_cad_review",
+    "details": {
+      "output_sha256": "54700c9bca6f27214e10fc87e4d7a65e68d6db53b06f7eef253bb836b0373a3d"
+    },
+    "created_at": "2026-10-18T10:32:56.382076+00:00"
+  },
+  {
+    "id": 33,
+    "event": "workflow_completed",
+    "stage": "review_required",
+    "details": {
+      "state": "REVIEW_REQUIRED"
+    },
+    "created_at": "2026-10-18T10:32:56.396594+00:00"
+  },
+  {
+    "id": 34,
+    "event": "designer_reviewed",
+    "stage": "approval",
+    "details": {
+      "decision": "CHANGES_REQUESTED",
+      "revision_id": "54d4331f-d520-4b9b-9bf4-ad884f180183"
+    },
+    "created_at": "2026-10-18T10:32:56.866260+00:00"
+  }
+]

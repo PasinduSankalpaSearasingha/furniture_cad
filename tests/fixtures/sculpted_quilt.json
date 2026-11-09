@@ -1,0 +1,726 @@
+{
+  "furniture_type": "Bed with asymmetric curved headboard and draped quilt",
+  "summary": "Regression fixture for adaptive volume integration on a closed sculpted surface.",
+  "values": [
+    {
+      "key": "width_mm",
+      "value": 2500.0,
+      "explanation": "Fixed supplied overall width; unverified drawing provenance."
+    },
+    {
+      "key": "depth_mm",
+      "value": 2010.0,
+      "explanation": "Fixed supplied overall depth; unverified drawing provenance."
+    },
+    {
+      "key": "height_mm",
+      "value": 1200.0,
+      "explanation": "Fixed supplied overall height; unverified drawing provenance."
+    },
+    {
+      "key": "bed_height_mm",
+      "value": 590.0,
+      "explanation": "Supplied bed-height target interpreted as nominal bedding-top datum."
+    },
+    {
+      "key": "overall_width_to_depth_ratio",
+      "value": 1.244,
+      "explanation": "Retained supplied rounded descriptive ratio; geometry follows overall dimensions."
+    },
+    {
+      "key": "overall_height_to_width_ratio",
+      "value": 0.48,
+      "explanation": "Retained supplied descriptive height/width ratio."
+    },
+    {
+      "key": "headboard_panel_count",
+      "value": 1.0,
+      "explanation": "One broad visible headboard field."
+    },
+    {
+      "key": "headboard_border_assembly_count",
+      "value": 1.0,
+      "explanation": "One continuous visual perimeter assembly, not fabrication segmentation."
+    },
+    {
+      "key": "bed_base_assembly_count",
+      "value": 1.0,
+      "explanation": "One base exterior assembly; internal construction unknown."
+    },
+    {
+      "key": "mattress_count",
+      "value": 1.0,
+      "explanation": "One mattress layer."
+    },
+    {
+      "key": "bedding_cover_count",
+      "value": 1.0,
+      "explanation": "One continuous covering solid."
+    },
+    {
+      "key": "base_visible_face_count",
+      "value": 2.0,
+      "explanation": "Two adjoining base faces exposed in reference, not a construction count."
+    },
+    {
+      "key": "headboard_width_mm",
+      "value": 2500.0,
+      "explanation": "Supplied estimated headboard span."
+    },
+    {
+      "key": "headboard_max_height_mm",
+      "value": 1200.0,
+      "explanation": "Supplied maximum headboard elevation."
+    },
+    {
+      "key": "headboard_thickness_mm",
+      "value": 45.0,
+      "explanation": "Supplied unverified headboard depth estimate."
+    },
+    {
+      "key": "headboard_border_width_mm",
+      "value": 25.0,
+      "explanation": "Supplied narrow border face-width estimate."
+    },
+    {
+      "key": "headboard_left_top_height_mm",
+      "value": 820.0,
+      "explanation": "Supplied provisional left upper outline elevation."
+    },
+    {
+      "key": "headboard_center_top_height_mm",
+      "value": 940.0,
+      "explanation": "Supplied provisional center outline elevation."
+    },
+    {
+      "key": "headboard_right_peak_height_mm",
+      "value": 1200.0,
+      "explanation": "Supplied provisional high-right peak datum."
+    },
+    {
+      "key": "headboard_left_corner_nominal_radius_mm",
+      "value": 80.0,
+      "explanation": "Supplied nominal left rounded transition extent, not measured circular radius."
+    },
+    {
+      "key": "headboard_right_corner_nominal_radius_mm",
+      "value": 45.0,
+      "explanation": "Supplied nominal right rounded transition extent."
+    },
+    {
+      "key": "base_width_mm",
+      "value": 2380.0,
+      "explanation": "Supplied estimated base width."
+    },
+    {
+      "key": "base_length_mm",
+      "value": 1965.0,
+      "explanation": "Supplied estimated base depth."
+    },
+    {
+      "key": "base_height_mm",
+      "value": 300.0,
+      "explanation": "Supplied estimated plinth height."
+    },
+    {
+      "key": "headboard_extension_beyond_base_each_side_mm",
+      "value": 60.0,
+      "explanation": "Supplied derived per-side headboard extension beyond centered base."
+    },
+    {
+      "key": "base_head_offset_mm",
+      "value": 45.0,
+      "explanation": "Supplied base rear offset from overall rear datum."
+    },
+    {
+      "key": "mattress_width_mm",
+      "value": 2360.0,
+      "explanation": "Supplied mattress width overrides generic matching suggestion."
+    },
+    {
+      "key": "mattress_length_mm",
+      "value": 1945.0,
+      "explanation": "Supplied mattress length overrides generic matching suggestion."
+    },
+    {
+      "key": "mattress_thickness_mm",
+      "value": 250.0,
+      "explanation": "Supplied unverified mattress thickness."
+    },
+    {
+      "key": "mattress_inset_on_base_mm",
+      "value": 10.0,
+      "explanation": "Supplied nominal mattress inset."
+    },
+    {
+      "key": "mattress_bottom_elevation_mm",
+      "value": 300.0,
+      "explanation": "Supplied assumed mattress-bottom datum."
+    },
+    {
+      "key": "mattress_top_elevation_mm",
+      "value": 550.0,
+      "explanation": "Supplied nominal mattress-top datum."
+    },
+    {
+      "key": "bedding_nominal_thickness_mm",
+      "value": 40.0,
+      "explanation": "Supplied nominal covering thickness, locally varying due to folds."
+    },
+    {
+      "key": "bedding_projected_width_mm",
+      "value": 2420.0,
+      "explanation": "Supplied covering projected width."
+    },
+    {
+      "key": "bedding_projected_length_mm",
+      "value": 1955.0,
+      "explanation": "Supplied covering projected length."
+    },
+    {
+      "key": "bedding_side_overhang_mm",
+      "value": 30.0,
+      "explanation": "Supplied nominal covering side projection beyond mattress."
+    },
+    {
+      "key": "bedding_foot_overhang_mm",
+      "value": 10.0,
+      "explanation": "Supplied nominal covering projection beyond mattress foot."
+    },
+    {
+      "key": "bedding_foot_drape_drop_mm",
+      "value": 100.0,
+      "explanation": "Supplied estimated maximum drape-envelope drop below nominal bedding top."
+    },
+    {
+      "key": "headboard_peak_above_bed_mm",
+      "value": 610.0,
+      "explanation": "Supplied derived headboard projection above nominal bedding datum."
+    },
+    {
+      "key": "headboard_height_mm",
+      "value": 1200.0,
+      "explanation": "Matching-input headboard-height parameter coordinated with supplied height edit."
+    },
+    {
+      "key": "bedding_thickness_mm",
+      "value": 40.0,
+      "explanation": "Matching-input covering thickness coordinated with supplied nominal thickness."
+    },
+    {
+      "key": "mattress_corner_radius_mm",
+      "value": 35.0,
+      "explanation": "Unverified mattress plan-corner softening retained from previous plan."
+    },
+    {
+      "key": "mattress_edge_radius_mm",
+      "value": 8.0,
+      "explanation": "Unverified small mattress edge softening retained from previous plan."
+    },
+    {
+      "key": "bedding_corner_radius_mm",
+      "value": 70.0,
+      "explanation": "Estimated broad quilt plan-corner softening."
+    },
+    {
+      "key": "bedding_margin_relief_mm",
+      "value": 60.0,
+      "explanation": "Estimated modulated margin lowering, below 65 percent of covering envelope thickness."
+    },
+    {
+      "key": "bedding_fold_relief_mm",
+      "value": 25.0,
+      "explanation": "Estimated broad interior fold-to-valley relief; reduced oscillation for a simpler continuous surface."
+    }
+  ],
+  "parts": [
+    {
+      "part_id": "F001",
+      "label": "Continuous asymmetric headboard field",
+      "evidence": "One broad continuous light patterned face, with low rounded left end and curved rising top toward the right.",
+      "geometry": "outline_panel",
+      "material": "plywood",
+      "color_rgb": [
+        0.55,
+        0.54,
+        0.49
+      ],
+      "position": [
+        "(width_mm-headboard_width_mm)/2",
+        "headboard_thickness_mm/2",
+        0.0
+      ],
+      "rotation_deg": [
+        90.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        "headboard_width_mm",
+        "headboard_height_mm",
+        "headboard_thickness_mm"
+      ],
+      "corner_radius": 0.0,
+      "dish_depth": 0.0,
+      "outline": [
+        [
+          "headboard_border_width_mm",
+          "headboard_border_width_mm"
+        ],
+        [
+          "headboard_width_mm/3",
+          "headboard_border_width_mm"
+        ],
+        [
+          "headboard_width_mm*2/3",
+          "headboard_border_width_mm"
+        ],
+        [
+          "headboard_width_mm-headboard_border_width_mm",
+          "headboard_border_width_mm"
+        ],
+        [
+          "headboard_width_mm-headboard_border_width_mm",
+          "headboard_height_mm/3"
+        ],
+        [
+          "headboard_width_mm-headboard_border_width_mm",
+          "headboard_height_mm*2/3"
+        ],
+        [
+          "headboard_width_mm-headboard_border_width_mm",
+          "headboard_max_height_mm-headboard_right_corner_nominal_radius_mm"
+        ],
+        [
+          "headboard_width_mm-headboard_border_width_mm",
+          "headboard_height_mm-headboard_border_width_mm-headboard_right_corner_nominal_radius_mm/3"
+        ],
+        [
+          "headboard_width_mm-headboard_right_corner_nominal_radius_mm-headboard_border_width_mm/3",
+          "headboard_height_mm-headboard_border_width_mm"
+        ],
+        [
+          "headboard_width_mm-headboard_right_corner_nominal_radius_mm",
+          "headboard_height_mm-headboard_border_width_mm"
+        ],
+        [
+          "headboard_width_mm*0.92",
+          "headboard_height_mm-headboard_border_width_mm"
+        ],
+        [
+          "headboard_width_mm*0.72",
+          "headboard_center_top_height_mm+headboard_right_peak_height_mm/12-headboard_border_width_mm"
+        ],
+        [
+          "headboard_width_mm/2",
+          "headboard_center_top_height_mm-headboard_border_width_mm"
+        ],
+        [
+          "headboard_width_mm*0.32",
+          "headboard_center_top_height_mm-headboard_right_peak_height_mm/12*0.8181818182-headboard_border_width_mm"
+        ],
+        [
+          "headboard_width_mm*0.14",
+          "headboard_left_top_height_mm-headboard_border_width_mm"
+        ],
+        [
+          "headboard_left_corner_nominal_radius_mm",
+          "headboard_left_top_height_mm-headboard_border_width_mm"
+        ],
+        [
+          "headboard_border_width_mm+headboard_left_corner_nominal_radius_mm/3",
+          "headboard_left_top_height_mm-headboard_border_width_mm"
+        ],
+        [
+          "headboard_border_width_mm",
+          "headboard_left_top_height_mm-headboard_left_corner_nominal_radius_mm/3-headboard_border_width_mm"
+        ],
+        [
+          "headboard_border_width_mm",
+          "headboard_left_top_height_mm-headboard_left_corner_nominal_radius_mm"
+        ],
+        [
+          "headboard_border_width_mm",
+          "headboard_left_top_height_mm/2"
+        ],
+        [
+          "headboard_border_width_mm",
+          "headboard_left_top_height_mm/4"
+        ],
+        [
+          "headboard_border_width_mm",
+          "headboard_border_width_mm"
+        ]
+      ],
+      "path": [],
+      "curve_mode": "bezier",
+      "sections": []
+    },
+    {
+      "part_id": "F002",
+      "label": "Continuous dark headboard perimeter",
+      "evidence": "Narrow continuous dark perimeter tracks the rounded top and exposed sides; earlier field trims its interior.",
+      "geometry": "outline_panel",
+      "material": "plywood",
+      "color_rgb": [
+        0.065,
+        0.062,
+        0.055
+      ],
+      "position": [
+        "(width_mm-headboard_width_mm)/2",
+        "headboard_thickness_mm/2",
+        0.0
+      ],
+      "rotation_deg": [
+        90.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        "headboard_width_mm",
+        "headboard_max_height_mm",
+        "headboard_thickness_mm"
+      ],
+      "corner_radius": 0.0,
+      "dish_depth": 0.0,
+      "outline": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          "headboard_width_mm/3",
+          0.0
+        ],
+        [
+          "headboard_width_mm*2/3",
+          0.0
+        ],
+        [
+          "headboard_width_mm",
+          0.0
+        ],
+        [
+          "headboard_width_mm",
+          "headboard_max_height_mm/3"
+        ],
+        [
+          "headboard_width_mm",
+          "headboard_max_height_mm*2/3"
+        ],
+        [
+          "headboard_width_mm",
+          "headboard_max_height_mm-headboard_right_corner_nominal_radius_mm"
+        ],
+        [
+          "headboard_width_mm",
+          "height_mm-headboard_right_corner_nominal_radius_mm/3"
+        ],
+        [
+          "headboard_width_mm-headboard_right_corner_nominal_radius_mm/3",
+          "height_mm"
+        ],
+        [
+          "headboard_width_mm-headboard_right_corner_nominal_radius_mm",
+          "height_mm"
+        ],
+        [
+          "headboard_width_mm*0.92",
+          "headboard_right_peak_height_mm"
+        ],
+        [
+          "headboard_width_mm*0.72",
+          "headboard_center_top_height_mm+headboard_right_peak_height_mm/12"
+        ],
+        [
+          "headboard_width_mm/2",
+          "headboard_center_top_height_mm"
+        ],
+        [
+          "headboard_width_mm*0.32",
+          "headboard_center_top_height_mm-headboard_right_peak_height_mm/12*0.8181818182"
+        ],
+        [
+          "headboard_width_mm*0.14",
+          "headboard_left_top_height_mm"
+        ],
+        [
+          "headboard_left_corner_nominal_radius_mm",
+          "headboard_left_top_height_mm"
+        ],
+        [
+          "headboard_left_corner_nominal_radius_mm/3",
+          "headboard_left_top_height_mm"
+        ],
+        [
+          0.0,
+          "headboard_left_top_height_mm-headboard_left_corner_nominal_radius_mm/3"
+        ],
+        [
+          0.0,
+          "headboard_left_top_height_mm-headboard_left_corner_nominal_radius_mm"
+        ],
+        [
+          0.0,
+          "headboard_left_top_height_mm/2"
+        ],
+        [
+          0.0,
+          "headboard_left_top_height_mm/4"
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "path": [],
+      "curve_mode": "bezier",
+      "sections": []
+    },
+    {
+      "part_id": "F003",
+      "label": "Closed dark bed-base exterior envelope",
+      "evidence": "Low dark closed rectangular base with broad uninterrupted side and foot faces, no distinct exposed legs.",
+      "geometry": "box",
+      "material": "mdf",
+      "color_rgb": [
+        0.075,
+        0.072,
+        0.064
+      ],
+      "position": [
+        "width_mm/2",
+        "base_head_offset_mm+base_length_mm/2",
+        "base_height_mm/2"
+      ],
+      "rotation_deg": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        "base_width_mm",
+        "base_length_mm",
+        "base_height_mm"
+      ],
+      "corner_radius": 0.0,
+      "dish_depth": 0.0,
+      "outline": [],
+      "path": [],
+      "curve_mode": "polyline",
+      "sections": []
+    },
+    {
+      "part_id": "F004",
+      "label": "Softened mattress envelope",
+      "evidence": "Distinct thick padded band between base and covering, with softened corners and edges.",
+      "geometry": "box",
+      "material": "foam",
+      "color_rgb": [
+        0.57,
+        0.58,
+        0.55
+      ],
+      "position": [
+        "width_mm/2",
+        "base_head_offset_mm+mattress_inset_on_base_mm+mattress_length_mm/2",
+        "mattress_bottom_elevation_mm+mattress_thickness_mm/2"
+      ],
+      "rotation_deg": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        "mattress_width_mm",
+        "mattress_length_mm",
+        "mattress_thickness_mm"
+      ],
+      "corner_radius": "mattress_corner_radius_mm",
+      "edge_radius": "mattress_edge_radius_mm",
+      "dish_depth": 0.0,
+      "outline": [],
+      "path": [],
+      "curve_mode": "polyline",
+      "sections": []
+    },
+    {
+      "part_id": "F005",
+      "label": "Continuous irregular relief quilt and draped margins",
+      "evidence": "One gray covering with irregular broad raised folds, valleys and rounded lowered foot margin. Reduced grid complexity preserves continuous relief without the failed densely oscillating surface.",
+      "geometry": "outline_panel",
+      "material": "fabric",
+      "color_rgb": [
+        0.49,
+        0.51,
+        0.48
+      ],
+      "position": [
+        "width_mm/2",
+        "depth_mm-bedding_projected_length_mm/2",
+        "(bed_height_mm+mattress_top_elevation_mm+bedding_thickness_mm)/2-bedding_foot_drape_drop_mm/2"
+      ],
+      "rotation_deg": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        "bedding_projected_width_mm",
+        "bedding_projected_length_mm",
+        "bedding_foot_drape_drop_mm"
+      ],
+      "corner_radius": 0.0,
+      "dish_depth": 0.0,
+      "surface_grid": {
+        "depths": [
+          [
+            "bedding_margin_relief_mm",
+            "bedding_margin_relief_mm*0.85",
+            "bedding_margin_relief_mm*0.95",
+            "bedding_margin_relief_mm*0.8",
+            "bedding_margin_relief_mm"
+          ],
+          [
+            "bedding_margin_relief_mm*0.85",
+            0.0,
+            "bedding_fold_relief_mm",
+            "bedding_fold_relief_mm*0.2",
+            "bedding_margin_relief_mm*0.95"
+          ],
+          [
+            "bedding_margin_relief_mm*0.95",
+            "bedding_fold_relief_mm*0.9",
+            "bedding_fold_relief_mm*0.15",
+            "bedding_fold_relief_mm*0.8",
+            "bedding_margin_relief_mm*0.8"
+          ],
+          [
+            "bedding_margin_relief_mm*0.8",
+            "bedding_fold_relief_mm*0.2",
+            "bedding_fold_relief_mm*0.85",
+            0.0,
+            "bedding_margin_relief_mm*0.95"
+          ],
+          [
+            "bedding_margin_relief_mm",
+            "bedding_margin_relief_mm*0.9",
+            "bedding_margin_relief_mm*0.8",
+            "bedding_margin_relief_mm*0.96",
+            "bedding_margin_relief_mm"
+          ]
+        ]
+      },
+      "outline": [
+        [
+          "0-bedding_projected_width_mm/2+bedding_corner_radius_mm",
+          "0-bedding_projected_length_mm/2"
+        ],
+        [
+          "0-bedding_projected_width_mm/6",
+          "0-bedding_projected_length_mm/2"
+        ],
+        [
+          "bedding_projected_width_mm/6",
+          "0-bedding_projected_length_mm/2"
+        ],
+        [
+          "bedding_projected_width_mm/2-bedding_corner_radius_mm",
+          "0-bedding_projected_length_mm/2"
+        ],
+        [
+          "bedding_projected_width_mm/2-bedding_corner_radius_mm/3",
+          "0-bedding_projected_length_mm/2"
+        ],
+        [
+          "bedding_projected_width_mm/2",
+          "0-bedding_projected_length_mm/2+bedding_corner_radius_mm/3"
+        ],
+        [
+          "bedding_projected_width_mm/2",
+          "0-bedding_projected_length_mm/2+bedding_corner_radius_mm"
+        ],
+        [
+          "bedding_projected_width_mm/2",
+          "0-bedding_projected_length_mm/6"
+        ],
+        [
+          "bedding_projected_width_mm/2",
+          "bedding_projected_length_mm/6"
+        ],
+        [
+          "bedding_projected_width_mm/2",
+          "bedding_projected_length_mm/2-bedding_corner_radius_mm"
+        ],
+        [
+          "bedding_projected_width_mm/2",
+          "bedding_projected_length_mm/2-bedding_corner_radius_mm/3"
+        ],
+        [
+          "bedding_projected_width_mm/2-bedding_corner_radius_mm/3",
+          "bedding_projected_length_mm/2"
+        ],
+        [
+          "bedding_projected_width_mm/2-bedding_corner_radius_mm",
+          "bedding_projected_length_mm/2"
+        ],
+        [
+          "bedding_projected_width_mm/6",
+          "bedding_projected_length_mm/2"
+        ],
+        [
+          "0-bedding_projected_width_mm/6",
+          "bedding_projected_length_mm/2"
+        ],
+        [
+          "0-bedding_projected_width_mm/2+bedding_corner_radius_mm",
+          "bedding_projected_length_mm/2"
+        ],
+        [
+          "0-bedding_projected_width_mm/2+bedding_corner_radius_mm/3",
+          "bedding_projected_length_mm/2"
+        ],
+        [
+          "0-bedding_projected_width_mm/2",
+          "bedding_projected_length_mm/2-bedding_corner_radius_mm/3"
+        ],
+        [
+          "0-bedding_projected_width_mm/2",
+          "bedding_projected_length_mm/2-bedding_corner_radius_mm"
+        ],
+        [
+          "0-bedding_projected_width_mm/2",
+          "bedding_projected_length_mm/6"
+        ],
+        [
+          "0-bedding_projected_width_mm/2",
+          "0-bedding_projected_length_mm/6"
+        ],
+        [
+          "0-bedding_projected_width_mm/2",
+          "0-bedding_projected_length_mm/2+bedding_corner_radius_mm"
+        ],
+        [
+          "0-bedding_projected_width_mm/2",
+          "0-bedding_projected_length_mm/2+bedding_corner_radius_mm/3"
+        ],
+        [
+          "0-bedding_projected_width_mm/2+bedding_corner_radius_mm/3",
+          "0-bedding_projected_length_mm/2"
+        ],
+        [
+          "0-bedding_projected_width_mm/2+bedding_corner_radius_mm",
+          "0-bedding_projected_length_mm/2"
+        ]
+      ],
+      "path": [],
+      "curve_mode": "bezier",
+      "sections": []
+    }
+  ],
+  "assumptions": [
+    "Synthetic CAD verification fixture; not a manufacturing drawing."
+  ],
+  "unrepresented_features": []
+}

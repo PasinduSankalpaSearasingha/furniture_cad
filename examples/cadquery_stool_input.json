@@ -1,0 +1,96 @@
+{
+  "furniture_type": "stool",
+  "summary": "Sample stool with a rectangular seat and four straight round legs. All dimensions are in millimetres.",
+  "values": [
+    {
+      "key": "width_mm",
+      "value": 600,
+      "explanation": "Illustrative overall seat width."
+    },
+    {
+      "key": "depth_mm",
+      "value": 400,
+      "explanation": "Illustrative overall seat depth."
+    },
+    {
+      "key": "height_mm",
+      "value": 450,
+      "explanation": "Illustrative overall height, including the seat."
+    },
+    {
+      "key": "top_thickness_mm",
+      "value": 30,
+      "explanation": "Seat thickness; leg height is overall height minus this thickness."
+    },
+    {
+      "key": "leg_width_mm",
+      "value": 40,
+      "explanation": "Round leg diameter and distance from each adjacent seat edge to the leg centre."
+    }
+  ],
+  "parts": [
+    {
+      "part_id": "F001",
+      "label": "Seat",
+      "evidence": "Illustrative sample geometry; not measured from a photograph.",
+      "geometry": "box",
+      "material": "solid_wood",
+      "color_rgb": [0.55, 0.34, 0.18],
+      "size": ["width_mm", "depth_mm", "top_thickness_mm"],
+      "position": ["width_mm/2", "depth_mm/2", "height_mm-top_thickness_mm/2"],
+      "rotation_deg": [0, 0, 0]
+    },
+    {
+      "part_id": "F002",
+      "label": "Front left leg",
+      "evidence": "Illustrative sample geometry; not measured from a photograph.",
+      "geometry": "cylinder",
+      "material": "solid_wood",
+      "color_rgb": [0.55, 0.34, 0.18],
+      "size": ["leg_width_mm", "leg_width_mm", "height_mm-top_thickness_mm"],
+      "position": ["leg_width_mm", "leg_width_mm", "(height_mm-top_thickness_mm)/2"],
+      "rotation_deg": [0, 0, 0]
+    },
+    {
+      "part_id": "F003",
+      "label": "Front right leg",
+      "evidence": "Illustrative sample geometry; not measured from a photograph.",
+      "geometry": "cylinder",
+      "material": "solid_wood",
+      "color_rgb": [0.55, 0.34, 0.18],
+      "size": ["leg_width_mm", "leg_width_mm", "height_mm-top_thickness_mm"],
+      "position": ["width_mm-leg_width_mm", "leg_width_mm", "(height_mm-top_thickness_mm)/2"],
+      "rotation_deg": [0, 0, 0]
+    },
+    {
+      "part_id": "F004",
+      "label": "Rear left leg",
+      "evidence": "Illustrative sample geometry; not measured from a photograph.",
+      "geometry": "cylinder",
+      "material": "solid_wood",
+      "color_rgb": [0.55, 0.34, 0.18],
+      "size": ["leg_width_mm", "leg_width_mm", "height_mm-top_thickness_mm"],
+      "position": ["leg_width_mm", "depth_mm-leg_width_mm", "(height_mm-top_thickness_mm)/2"],
+      "rotation_deg": [0, 0, 0]
+    },
+    {
+      "part_id": "F005",
+      "label": "Rear right leg",
+      "evidence": "Illustrative sample geometry; not measured from a photograph.",
+      "geometry": "cylinder",
+      "material": "solid_wood",
+      "color_rgb": [0.55, 0.34, 0.18],
+      "size": ["leg_width_mm", "leg_width_mm", "height_mm-top_thickness_mm"],
+      "position": ["width_mm-leg_width_mm", "depth_mm-leg_width_mm", "(height_mm-top_thickness_mm)/2"],
+      "rotation_deg": [0, 0, 0]
+    }
+  ],
+  "assumptions": [
+    "This is a hand-authored input example; all dimensions are illustrative.",
+    "X runs left to right, Y front to back and Z bottom to top. The floor is Z=0.",
+    "Parts are positioned by their centres; each leg touches the underside of the seat."
+  ],
+  "unrepresented_features": [
+    "Physical joints, fasteners and machining tolerances are not specified."
+  ]
+}

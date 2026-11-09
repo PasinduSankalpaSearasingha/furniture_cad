@@ -1,0 +1,477 @@
+{
+  "info": {
+    "name": "Forma AI CAD & Blender Studio",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": "Local password-free API examples. Image generation and AI design endpoints incur OpenAI usage. Set image/workflow variables from completed responses. Shared deployments require an existing bearer token."
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://127.0.0.1:8000"
+    },
+    {
+      "key": "projectId",
+      "value": ""
+    },
+    {
+      "key": "imageId",
+      "value": ""
+    },
+    {
+      "key": "workflowId",
+      "value": ""
+    },
+    {
+      "key": "renderWorkflowId",
+      "value": ""
+    }
+  ],
+  "item": [
+    {
+      "name": "Create project",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": "{{baseUrl}}/api/projects",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Oak writing desk\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.collectionVariables.set(\"projectId\", pm.response.json().id);"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Upload furniture image",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": "{{baseUrl}}/api/projects/{{projectId}}/upload-image",
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "file",
+              "type": "file",
+              "src": null
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Analyze uploaded image",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": "{{baseUrl}}/api/projects/{{projectId}}/analyze",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"image_ids\": [\n    \"{{imageId}}\"\n  ]\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Generate Sunburst concepts",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": "{{baseUrl}}/api/projects/{{projectId}}/generate-concept",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"prompt\": \"Modern oak writing desk with rounded corners\",\n  \"count\": 1,\n  \"quality\": \"low\",\n  \"size\": \"1024x1024\",\n  \"backend\": \"responses\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.collectionVariables.set(\"workflowId\", pm.response.json().workflow_id);"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Edit concept through Image API",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": "{{baseUrl}}/api/projects/{{projectId}}/edit-concept",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"prompt\": \"Preserve the silhouette and show a walnut finish\",\n  \"image_ids\": [\n    \"{{imageId}}\"\n  ],\n  \"operation\": \"material\",\n  \"backend\": \"direct\",\n  \"quality\": \"low\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "List concepts",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{baseUrl}}/api/projects/{{projectId}}/concepts"
+      }
+    },
+    {
+      "name": "Select concept",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": "{{baseUrl}}/api/projects/{{projectId}}/concepts/{{imageId}}/select",
+        "body": {
+          "mode": "raw",
+          "raw": "{}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Generate CAD and Blender renders",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": "{{baseUrl}}/api/projects/{{projectId}}/generate-cad",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"concept_id\": \"{{imageId}}\",\n  \"known_values\": [\n    {\n      \"key\": \"width_mm\",\n      \"value\": 1200\n    },\n    {\n      \"key\": \"depth_mm\",\n      \"value\": 600\n    },\n    {\n      \"key\": \"height_mm\",\n      \"value\": 750\n    }\n  ],\n  \"render_options\": {\n    \"quality\": \"preview\",\n    \"finish\": \"oak\",\n    \"views\": [\n      \"front\",\n      \"side\",\n      \"top\",\n      \"isometric\",\n      \"hero\"\n    ]\n  }\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Poll workflow",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{baseUrl}}/api/v1/agents/workflows/{{workflowId}}"
+      }
+    },
+    {
+      "name": "Workflow events",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{baseUrl}}/api/v1/agents/workflows/{{workflowId}}/events"
+      }
+    },
+    {
+      "name": "Change parameter",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": "{{baseUrl}}/api/projects/{{projectId}}/parameters",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"parameter_changes\": [\n    {\n      \"key\": \"width_mm\",\n      \"value\": 1300\n    }\n  ],\n  \"render_options\": {\n    \"quality\": \"draft\",\n    \"views\": [\n      \"hero\"\n    ]\n  }\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Natural-language edit",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": "{{baseUrl}}/api/projects/{{projectId}}/modify",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"prompt\": \"Increase only tabletop thickness to 30 mm; preserve all overall dimensions\",\n  \"render_options\": {\n    \"quality\": \"preview\",\n    \"views\": [\n      \"hero\",\n      \"front\"\n    ]\n  }\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Blender preview",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": "{{baseUrl}}/api/projects/{{projectId}}/render/preview",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"render_options\": {\n    \"quality\": \"preview\",\n    \"finish\": \"walnut\",\n    \"environment\": \"studio\",\n    \"views\": [\n      \"hero\",\n      \"front\"\n    ]\n  }\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Blender final",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": "{{baseUrl}}/api/projects/{{projectId}}/render/final",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"render_options\": {\n    \"quality\": \"high\",\n    \"finish\": \"oak\",\n    \"views\": [\n      \"hero\"\n    ]\n  }\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Compare with reference",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": "{{baseUrl}}/api/projects/{{projectId}}/refine",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"render_workflow_id\": \"{{renderWorkflowId}}\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Accept correction",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": "{{baseUrl}}/api/projects/{{projectId}}/corrections/{{workflowId}}/C001/accept",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"render_options\": {\n    \"quality\": \"draft\",\n    \"views\": [\n      \"hero\"\n    ]\n  }\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Reject correction",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": "{{baseUrl}}/api/projects/{{projectId}}/corrections/{{workflowId}}/C001/reject",
+        "body": {
+          "mode": "raw",
+          "raw": "{}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Project status",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{baseUrl}}/api/projects/{{projectId}}/status"
+      }
+    },
+    {
+      "name": "Components and schedules",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{baseUrl}}/api/projects/{{projectId}}/components"
+      }
+    },
+    {
+      "name": "Revisions",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{baseUrl}}/api/projects/{{projectId}}/revisions"
+      }
+    },
+    {
+      "name": "Renders",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{baseUrl}}/api/projects/{{projectId}}/renders"
+      }
+    },
+    {
+      "name": "Download step",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{baseUrl}}/api/projects/{{projectId}}/download/step"
+      }
+    },
+    {
+      "name": "Download glb",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{baseUrl}}/api/projects/{{projectId}}/download/glb"
+      }
+    },
+    {
+      "name": "Download blend",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{baseUrl}}/api/projects/{{projectId}}/download/blend"
+      }
+    },
+    {
+      "name": "Download renders",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{baseUrl}}/api/projects/{{projectId}}/download/renders"
+      }
+    },
+    {
+      "name": "Download package",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{baseUrl}}/api/projects/{{projectId}}/download/package"
+      }
+    },
+    {
+      "name": "cad status",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{baseUrl}}/api/system/cad/status"
+      }
+    },
+    {
+      "name": "blender status",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{baseUrl}}/api/system/blender/status"
+      }
+    },
+    {
+      "name": "openai status",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{baseUrl}}/api/system/openai/status"
+      }
+    }
+  ]
+}

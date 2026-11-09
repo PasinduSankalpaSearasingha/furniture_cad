@@ -1,0 +1,197 @@
+[
+  {
+    "mode": "economy",
+    "requested_points": 25000,
+    "actual_points": 25000,
+    "virtual_views": 12,
+    "sampling_seconds": 0.006100400001741946,
+    "mesh_query_seconds": 0.00713019999966491,
+    "raycasting_seconds": 0.025135799995041452,
+    "cad_rebuild_seconds": 0.1354076999996323,
+    "fitting_and_verification_seconds": 5.807576699997298,
+    "total_seconds": 5.845977100005257,
+    "evaluations": 19,
+    "average_fitting_evaluation_seconds": 0.2754736842111207,
+    "initial_mean_deviation_mm": 0.6980709397068334,
+    "final_mean_deviation_mm": 0.012257961217687977,
+    "final_p95_mm": 0.002869301475584507,
+    "cad_valid": true,
+    "photo_error": null,
+    "photo_error_reason": "Synthetic reference has no original photograph",
+    "peak_gpu_mb": null,
+    "device": "CPU",
+    "stage_reports": [
+      {
+        "requested_points": 25000,
+        "actual_points": 25000,
+        "evaluations": 19,
+        "seconds": 5.234000000011292,
+        "exact_score_improvement": 0.004556177431423635,
+        "sensitivities": {
+          "F002.position.0": 0.38273277230987157
+        }
+      }
+    ],
+    "stop_reason": "completed",
+    "sample_step_reimport_valid": true,
+    "peak_process_rss_mb": 213.8984375
+  },
+  {
+    "mode": "balanced",
+    "requested_points": 100000,
+    "actual_points": 100000,
+    "virtual_views": 24,
+    "sampling_seconds": 0.02696499999728985,
+    "mesh_query_seconds": 0.02485490000981372,
+    "raycasting_seconds": 0.059973299998091534,
+    "cad_rebuild_seconds": 0.1354076999996323,
+    "fitting_and_verification_seconds": 3.667553000006592,
+    "total_seconds": 3.7793608000065433,
+    "evaluations": 23,
+    "average_fitting_evaluation_seconds": 0.1358695652173913,
+    "initial_mean_deviation_mm": 0.6980709397068334,
+    "final_mean_deviation_mm": 0.006324810057319301,
+    "final_p95_mm": 0.002813581610098481,
+    "cad_valid": true,
+    "photo_error": null,
+    "photo_error_reason": "Synthetic reference has no original photograph",
+    "peak_gpu_mb": null,
+    "device": "CPU",
+    "stage_reports": [
+      {
+        "requested_points": 25000,
+        "actual_points": 25000,
+        "evaluations": 19,
+        "seconds": 1.8439999999973224,
+        "exact_score_improvement": 0.0183071084979989,
+        "sensitivities": {
+          "F002.position.0": 0.38273277230987157
+        }
+      },
+      {
+        "requested_points": 100000,
+        "actual_points": 100000,
+        "evaluations": 4,
+        "seconds": 1.2810000000026776,
+        "exact_score_improvement": 1.3213800357435258e-05,
+        "sensitivities": {
+          "F002.position.0": 0.38273277230987157
+        }
+      }
+    ],
+    "stop_reason": "completed",
+    "peak_process_rss_mb": 135.8359375
+  },
+  {
+    "mode": "quality",
+    "requested_points": 300000,
+    "actual_points": 300000,
+    "virtual_views": 36,
+    "sampling_seconds": 0.08108540000102948,
+    "mesh_query_seconds": 0.06419479999749456,
+    "raycasting_seconds": 0.06732469999406021,
+    "cad_rebuild_seconds": 0.1354076999996323,
+    "fitting_and_verification_seconds": 5.795892599999206,
+    "total_seconds": 6.008519900002284,
+    "evaluations": 24,
+    "average_fitting_evaluation_seconds": 0.20570833333355645,
+    "initial_mean_deviation_mm": 0.6980709397068334,
+    "final_mean_deviation_mm": 0.006292235905763141,
+    "final_p95_mm": 0.0028387908823788166,
+    "cad_valid": true,
+    "photo_error": null,
+    "photo_error_reason": "Synthetic reference has no original photograph",
+    "peak_gpu_mb": null,
+    "device": "CPU",
+    "stage_reports": [
+      {
+        "requested_points": 25000,
+        "actual_points": 25000,
+        "evaluations": 19,
+        "seconds": 2.014999999999418,
+        "exact_score_improvement": 0.005979440805945299,
+        "sensitivities": {
+          "F002.position.0": 0.38273277230987157
+        }
+      },
+      {
+        "requested_points": 100000,
+        "actual_points": 100000,
+        "evaluations": 4,
+        "seconds": 1.7970000000059372,
+        "exact_score_improvement": 1.3213800357435258e-05,
+        "sensitivities": {
+          "F002.position.0": 0.38273277230987157
+        }
+      },
+      {
+        "requested_points": 300000,
+        "actual_points": 300000,
+        "evaluations": 1,
+        "seconds": 1.125,
+        "exact_score_improvement": 0.0,
+        "sensitivities": {
+          "F002.position.0": 0.38273277230987157
+        }
+      }
+    ],
+    "stop_reason": "density_increase_did_not_improve_fit",
+    "peak_process_rss_mb": 161.0703125
+  },
+  {
+    "mode": "extended",
+    "requested_points": 750000,
+    "actual_points": 750000,
+    "virtual_views": 48,
+    "sampling_seconds": 0.27233089999936055,
+    "mesh_query_seconds": 0.14344299999356735,
+    "raycasting_seconds": 0.08033630000136327,
+    "cad_rebuild_seconds": 0.1354076999996323,
+    "fitting_and_verification_seconds": 4.0071054,
+    "total_seconds": 4.50322650000453,
+    "evaluations": 24,
+    "average_fitting_evaluation_seconds": 0.11654166666630772,
+    "initial_mean_deviation_mm": 0.6980709397068334,
+    "final_mean_deviation_mm": 0.006105022488543164,
+    "final_p95_mm": 0.002899330575019121,
+    "cad_valid": true,
+    "photo_error": null,
+    "photo_error_reason": "Synthetic reference has no original photograph",
+    "peak_gpu_mb": null,
+    "device": "CPU",
+    "stage_reports": [
+      {
+        "requested_points": 25000,
+        "actual_points": 25000,
+        "evaluations": 19,
+        "seconds": 1.2339999999967404,
+        "exact_score_improvement": 0.005092650518647418,
+        "sensitivities": {
+          "F002.position.0": 0.38273277230987157
+        }
+      },
+      {
+        "requested_points": 100000,
+        "actual_points": 100000,
+        "evaluations": 4,
+        "seconds": 0.9379999999946449,
+        "exact_score_improvement": 1.3213800357435258e-05,
+        "sensitivities": {
+          "F002.position.0": 0.38273277230987157
+        }
+      },
+      {
+        "requested_points": 300000,
+        "actual_points": 300000,
+        "evaluations": 1,
+        "seconds": 0.625,
+        "exact_score_improvement": 0.0,
+        "sensitivities": {
+          "F002.position.0": 0.38273277230987157
+        }
+      }
+    ],
+    "stop_reason": "density_increase_did_not_improve_fit",
+    "peak_process_rss_mb": 326.41015625
+  }
+]

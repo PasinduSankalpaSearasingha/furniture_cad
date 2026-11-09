@@ -1,0 +1,13 @@
+{
+  "id": "899cd82d-2c62-4356-b972-d89b5c94322c",
+  "project_id": "c5dc04ec-2643-4019-999d-32d0ce891ac1",
+  "kind": "REFERENCE",
+  "sha256": "eefb9383f92e78b691fa69e0de524a27db8beecc1de5a0afa68093e4a1a9753c",
+  "width": 980,
+  "height": 1120,
+  "provenance": {
+    "source": "USER_PROVIDED",
+    "authoritative_geometry": false
+  },
+  "download_url": "/api/v1/images/899cd82d-2c62-4356-b972-d89b5c94322c"
+}

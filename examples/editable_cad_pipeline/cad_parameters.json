@@ -1,0 +1,35 @@
+{
+  "values": [
+    {
+      "key": "width_mm",
+      "value": 700.0,
+      "explanation": "Synthetic estimate"
+    },
+    {
+      "key": "depth_mm",
+      "value": 500.0,
+      "explanation": "Synthetic estimate"
+    },
+    {
+      "key": "height_mm",
+      "value": 750.0,
+      "explanation": "Synthetic estimate"
+    },
+    {
+      "key": "top_thickness_mm",
+      "value": 30.0,
+      "explanation": "Synthetic estimate"
+    },
+    {
+      "key": "leg_width_mm",
+      "value": 40.0,
+      "explanation": "Synthetic estimate"
+    }
+  ],
+  "locked": [
+    "width_mm"
+  ],
+  "source": "feature_specification.json",
+  "units": "mm",
+  "status": "draft"
+}

@@ -1,0 +1,323 @@
+{
+  "version": 3,
+  "original_root": "D:\\Enfection\\furniture_planner\\furniture_manufacturing_starter",
+  "files": [
+    {
+      "path": ".env.example",
+      "source_sha256": "f40a84820da3063c09ddfdb622d9fd7a885abc1f73a62c18815bff31e83a1013",
+      "previous_sha256": "7e782402673822330b2073c759cfbe59a8d932f3a42ff753097c32f5cfe6f0ac"
+    },
+    {
+      "path": "app/agents/engineering_agent.py",
+      "source_sha256": "5cab1ab58a679d262b7c24ed026c2810a5d424975b3c64969eac095107588442",
+      "previous_sha256": "778bcbe9ec961fc6d272dd709e6edd7abf2181e37ec43eacc6ae4cbdcc98e6fe"
+    },
+    {
+      "path": "app/agents/orchestrator.py",
+      "source_sha256": "f74f4939454ae5f9375ee33be6a7489bdc9c46e4e970c42de0ea58cc3811ba4b",
+      "previous_sha256": "6f146152e62fe5bf4a0c9523b4f0f2a96bda40f17e640029f4d203db044e1a1f"
+    },
+    {
+      "path": "app/ai/furniture_budget.py",
+      "source_sha256": "5e2a7e39e062bbdca3fba09784d8724b58a0d5f2b8e86b5cd0f0e70319354562",
+      "previous_sha256": "43d57bc989e3bdeea16848b039530a9adc7031afeb21b5aafa5005bcf0dce54e"
+    },
+    {
+      "path": "app/ai/geometry_preview.py",
+      "source_sha256": "8b357ad1436fcc5f4a7e56cad87eab952d3812cdb2eb2128b290db74f8862590",
+      "previous_sha256": "dc6c0bf78ff0ef1202880186967b57c3016bdd61d501aaee8d7e07f79d6cec90"
+    },
+    {
+      "path": "app/ai_call_ledger.py",
+      "source_sha256": "0fb90cab38b77ef52cd27caac790a11352823e98f526c82fe363075fba0c1255",
+      "previous_sha256": null
+    },
+    {
+      "path": "app/ai_part_detector.py",
+      "source_sha256": "e8d6749fa87478b879666129ff44e681149795c99538fc81b8bd7674ab34581d",
+      "previous_sha256": null
+    },
+    {
+      "path": "app/api/neural4d.py",
+      "source_sha256": "17ea7a3f8ac3da8eebb2cc7f810e347f8d880f7603cdd3219b93cf7fa435d6f0",
+      "previous_sha256": "032274b4ca31f968735a773c3e4e48483eddaacef8ee81eb5799eb1660377cb1"
+    },
+    {
+      "path": "app/cad_delivery.py",
+      "source_sha256": "7d0508170f6ad240146f7c6080b3185f31a5c4d273fbfac1b5f59d06e02eefd8",
+      "previous_sha256": null
+    },
+    {
+      "path": "app/cad_editability_validator.py",
+      "source_sha256": "270c2940483d4b0dcf4804502b78496bf407f730d6e0b2265246e592c0085e50",
+      "previous_sha256": null
+    },
+    {
+      "path": "app/cad_projection_cache.py",
+      "source_sha256": "99fe8ede4e22e71cdb9f9a9daad85e5b0e8300f4056f9dc4284ea7ab22e52fda",
+      "previous_sha256": null
+    },
+    {
+      "path": "app/cad_regeneration_bridge.py",
+      "source_sha256": "eeb00239ba9004ba7dcd36f4f82d31ae1bb6b53f1a3987e5830afcbb05de843c",
+      "previous_sha256": null
+    },
+    {
+      "path": "app/cad_six_view_generator.py",
+      "source_sha256": "d6ad2292f8416493ab5ad7e5ef3f757df088dd729ea26a8b43e1558b1bedcf77",
+      "previous_sha256": null
+    },
+    {
+      "path": "app/drawing_validator.py",
+      "source_sha256": "c8a79aad02150a00071dc2bd55e2f37318f3cd2c5e97854e358b9d5fc2c09c21",
+      "previous_sha256": null
+    },
+    {
+      "path": "app/engineering_drawing_generator.py",
+      "source_sha256": "706f8d76a82689068781deda2a2d1647ce814600e9ad23d5cc0673cabd8f216a",
+      "previous_sha256": null
+    },
+    {
+      "path": "app/engineering_schema.py",
+      "source_sha256": "d72284e9206b7e537101b4f70bc52d9fc67c73a2ff000f815ec2346723f670eb",
+      "previous_sha256": "baf3f76f11391b1e7eff636cdbecea6508684b2313ab62e318e07575a0bab111"
+    },
+    {
+      "path": "app/freecad_project_exporter.py",
+      "source_sha256": "cc1b2c91e1a48a710f15cac78c99f967af4bb5f3ed575355e302282becdeea1a",
+      "previous_sha256": null
+    },
+    {
+      "path": "app/freecad_project_worker.py",
+      "source_sha256": "88332efe826d693c34f7f1c95027a0e4644c35cbea4f412d65471a1e1ddf8d25",
+      "previous_sha256": null
+    },
+    {
+      "path": "app/furniture_cad_proxy.py",
+      "source_sha256": "d05e9b044b14a47d2e715cf5dd1df3f73efa471143480d836bdfe6c678463be2",
+      "previous_sha256": null
+    },
+    {
+      "path": "app/furniture_part_graph.py",
+      "source_sha256": "bb38ce93700fa0d4cc9f62f28302fab52a2fb907feb9a1665edd034b9e520c12",
+      "previous_sha256": null
+    },
+    {
+      "path": "app/mesh_analyzer.py",
+      "source_sha256": "ac8778e659b78d3b731c7e665c42548f4ea9da003ff39aeac25521008d8210f8",
+      "previous_sha256": "03a553a78a0857787454ffcb2fe57cdd47be326012a0a07de986b8d1ef1b25ec"
+    },
+    {
+      "path": "app/mesh_cad_schema.py",
+      "source_sha256": "19aec957c9d3559026551313c547da6f4f509969cb82031d6f16ccf567f8a31f",
+      "previous_sha256": "b838d5d5dac792f4db14a0136cdca74052767a9d11d81b7d8b6654a3fe7c5f28"
+    },
+    {
+      "path": "app/mesh_pipeline.py",
+      "source_sha256": "c3579a8f7fbba9b72e1cc8f03c9aa73fe46bd4233354753ad4edc8494c7213bd",
+      "previous_sha256": "13b706a8d26b157d7ac17d645279bf3d1b2144d6e3766609daf606231bcce6b8"
+    },
+    {
+      "path": "app/mesh_pipeline_worker.py",
+      "source_sha256": "c0df0c61271d85433ac68cc739c78badeeeba7d692fa4674e3ae408aeefec22f",
+      "previous_sha256": "e5ba1a15f57417d84edb50f3b7c89120759ebbc92c6bcc7673c068b9f14e7eff"
+    },
+    {
+      "path": "app/mesh_segmentation.py",
+      "source_sha256": "bcb5b538f872460687e2aa25666d12d85a2b2cc7a664a4eb059bf752243d9ce6",
+      "previous_sha256": "43b9f56aa9c664e614c4f8f460d29b805f6cd59bf417f0cbd01411397ec17b84"
+    },
+    {
+      "path": "app/part_segmentation_validator.py",
+      "source_sha256": "0cd807475cb88cbb66d690bf347efddd2e1e2afb472172d9b62c264b6a7a141a",
+      "previous_sha256": null
+    },
+    {
+      "path": "app/studio_dist/assets/DimensionSheet-Dv9x3quz.js",
+      "source_sha256": "56b0eaee01128829e357309b006a2edae394e364376893375c941affb5fdc3cd",
+      "previous_sha256": null
+    },
+    {
+      "path": "app/studio_dist/assets/index-B0dPuHz-.css",
+      "source_sha256": "497df57b0ec6dafe99439b9945ad81e02b4f0aef46d4044a13bd8908c96502ea",
+      "previous_sha256": null
+    },
+    {
+      "path": "app/studio_dist/assets/index-CgJmskEC.js",
+      "source_sha256": "f6c3cef33e76b2feb6965a12e8878e674ea6a7dd893e45894d07de9ac8c045b7",
+      "previous_sha256": null
+    },
+    {
+      "path": "app/studio_dist/assets/Viewer-BWFpzQFQ.js",
+      "source_sha256": "2291a9111044bc8216a65c2cddf2e3164c92e90ade4f599e5a839049c402bbd8",
+      "previous_sha256": null
+    },
+    {
+      "path": "app/studio_dist/index.html",
+      "source_sha256": "8ade6a1085a0357a190ac34ea3f0c8480ac06b4922e6318db6dddfe3c9616c2d",
+      "previous_sha256": "7b9bda05c1c879d6aab89e8738a597c95102d9c830c21a29aee46922552cab35"
+    },
+    {
+      "path": "docs/editable-cad-benchmarks.json",
+      "source_sha256": "61b799565491ee80d838fdf52fbf1b54132d984a0f84d48217c8070f917a3ba6",
+      "previous_sha256": null
+    },
+    {
+      "path": "docs/editable-cad-browser-validation.json",
+      "source_sha256": "a2689709f49c2e456d965356a2abc339707b05e1c889c1a2d87834e607d00861",
+      "previous_sha256": null
+    },
+    {
+      "path": "docs/editable-cad-compatibility.xml",
+      "source_sha256": "f518eacdf3bca0d459446a0c0e7f1ea8494dc52379eba6637a61c32765d3360b",
+      "previous_sha256": null
+    },
+    {
+      "path": "docs/editable-cad-final-export-tests.xml",
+      "source_sha256": "e739171a64b84cdd7329c46048ab748b14ed95aa5bc9784f4355a84064688f14",
+      "previous_sha256": null
+    },
+    {
+      "path": "docs/editable-cad-source-inventory.txt",
+      "source_sha256": "5f77f7ce32011e19dbfa29d64bebddf9a6475bfc02cd2092e3eef075cca6f4cd",
+      "previous_sha256": null
+    },
+    {
+      "path": "docs/editable-cad-tests.xml",
+      "source_sha256": "71407754a210b0fd85f7490ffeadb0ba6a23ab60f039c13fd6615904d0365e48",
+      "previous_sha256": null
+    },
+    {
+      "path": "docs/EDITABLE_CAD_UPGRADE_REPORT.md",
+      "source_sha256": "11f769191acb0870b66a1143206b909048b00fbb3d61d35c77842cc6cdd553c0",
+      "previous_sha256": null
+    },
+    {
+      "path": "examples/editable_cad_pipeline/assembly.FCStd",
+      "source_sha256": "b642dd734873593dbcb696b231ed906f679ccf0acaba3911d934dafb6df570af",
+      "previous_sha256": null
+    },
+    {
+      "path": "examples/editable_cad_pipeline/assembly.py",
+      "source_sha256": "ae167104daf90c78f184a6814818559fdf24474921c987dd19713859149d9003",
+      "previous_sha256": null
+    },
+    {
+      "path": "examples/editable_cad_pipeline/assembly.step",
+      "source_sha256": "629391dcca8f66148aa79e2b5f90198c2559fc923c8fe9c8b1d20d059df34aa4",
+      "previous_sha256": null
+    },
+    {
+      "path": "examples/editable_cad_pipeline/assembly_six_views.pdf",
+      "source_sha256": "fa75f54710550471f301ba8c3a5178b4a6e0d967d7298b50dcfbbf50f7597415",
+      "previous_sha256": null
+    },
+    {
+      "path": "examples/editable_cad_pipeline/cabinet_package.zip",
+      "source_sha256": "9c2e5944085771d67520c5f22f37baf6d9d8c2f2cb012efb6a7cb0db3f8cca3b",
+      "previous_sha256": null
+    },
+    {
+      "path": "examples/editable_cad_pipeline/cad_parameters.json",
+      "source_sha256": "d65aa6d0b82337e1a310fb0e34d9adcdc4353669237911e1ae91a22080ec2f3e",
+      "previous_sha256": null
+    },
+    {
+      "path": "examples/editable_cad_pipeline/curved_chair_package.zip",
+      "source_sha256": "3412456c14d97972cc37122cd19f0ef651470469192205304e8d632a7a089bc4",
+      "previous_sha256": null
+    },
+    {
+      "path": "examples/editable_cad_pipeline/feature_specification.json",
+      "source_sha256": "f3de7bf36397aa3182765b585b2a209e3f05dc0b4cf02fb24a25dfe93bc15093",
+      "previous_sha256": null
+    },
+    {
+      "path": "examples/editable_cad_pipeline/furniture_cad_proxy.py",
+      "source_sha256": "d05e9b044b14a47d2e715cf5dd1df3f73efa471143480d836bdfe6c678463be2",
+      "previous_sha256": null
+    },
+    {
+      "path": "examples/editable_cad_pipeline/manufacturing_drawings.pdf",
+      "source_sha256": "d6028176228b6e498eabdd24c19f8af78b2efb1d56e20e5a56522dbaf591b696",
+      "previous_sha256": null
+    },
+    {
+      "path": "examples/editable_cad_pipeline/open_project.FCMacro",
+      "source_sha256": "ab05b21d2684c9229484aa5ca897206a312fc7996c974f6b89ca644026ed2555",
+      "previous_sha256": null
+    },
+    {
+      "path": "examples/editable_cad_pipeline/README_EDITABLE_CAD.txt",
+      "source_sha256": "30c173e7cd09d27d07001f2093222ccf01e84ca919b1c2b8dff93faedf0851ce",
+      "previous_sha256": null
+    },
+    {
+      "path": "examples/editable_cad_pipeline/table_package.zip",
+      "source_sha256": "42dc2507d9532503fe8fe438d882141ccdd1c20513e803f603de29932eae179d",
+      "previous_sha256": null
+    },
+    {
+      "path": "frontend/src/CADOutputWorkspace.jsx",
+      "source_sha256": "eb186b22e741a8c5766aa94e7ec7bdcc92fe5db11e741516192eeb254b4a9894",
+      "previous_sha256": null
+    },
+    {
+      "path": "frontend/src/MeshReconstruction.jsx",
+      "source_sha256": "91f50d5a589ed29824bf027e9a59a638f437bb99c5bbec4b22d8ade8802e60c3",
+      "previous_sha256": "e391322783f59c5e1d00baabf6e287eabf12e745370a1161f469160b2721f3eb"
+    },
+    {
+      "path": "frontend/src/style.css",
+      "source_sha256": "31360608d95144478ffdb2be7941005a214536dd2df2871d368a8e003d9290e3",
+      "previous_sha256": "2a0d83d2f8797a5770963c21938fec21d40ce74ced7efbb870c5c6ea55f30415"
+    },
+    {
+      "path": "README.md",
+      "source_sha256": "e9535e26a73e7eb15bc0e4a6ba07c478db947bc5682e5d9f336d0d51d63d85bc",
+      "previous_sha256": "69be2e209b8b461a43a7420646f08b3ab6ce45a8611e6d33c4bb17bea1241c2b"
+    },
+    {
+      "path": "scripts/apply_mesh_upgrade.ps1",
+      "source_sha256": "d36353ff743b8cdd7ed2e42d3224e8e7a441c6b901648bca0eee5b9e5f6d0098",
+      "previous_sha256": "53f7364254ff55414878e93f15fd5918c2889ed9d0a4b4e8db22edb1a4d9d92b"
+    },
+    {
+      "path": "scripts/benchmark_editable_delivery.py",
+      "source_sha256": "9361ccf3eb39883210bb69ae8bd5d815221cf91ae186d84e99d190e230691498",
+      "previous_sha256": null
+    },
+    {
+      "path": "scripts/check_editable_cad_browser.py",
+      "source_sha256": "af460e2f8cfaa239770e20ecd422905c846eab12be6dbe00ff617a30a473c9b3",
+      "previous_sha256": null
+    },
+    {
+      "path": "scripts/editable_cad_demo_server.py",
+      "source_sha256": "706d7c489781399a98856a470590ca9ae55f822cb8001f3238de4dd5df68abd9",
+      "previous_sha256": null
+    },
+    {
+      "path": "scripts/prepare_editable_upgrade.py",
+      "source_sha256": "cd99b8a4919a2dcc252a6ba979deb46e5093ffe1a4417837be9c6789906e1ce9",
+      "previous_sha256": null
+    },
+    {
+      "path": "tests/test_editable_cad_delivery.py",
+      "source_sha256": "0b5caac72156daaf8a9b70ef7350ca2f7f250b07dafa727dd0dbcd90da2edb5e",
+      "previous_sha256": null
+    },
+    {
+      "path": "tests/test_engineering_cad.py",
+      "source_sha256": "f0080c31c4636743e4e1ff3ca6732a215678e0e72bd0ad5c14195ce865d4d711",
+      "previous_sha256": "27e31b3b8d0361b4de65b90fd6042b3a4abd293470abeb6a14725371118d42d1"
+    },
+    {
+      "path": "tests/test_mesh_reconstruction_api.py",
+      "source_sha256": "8b2defb67dbfe22e5c25c16d3aaa21f70125e27dbdd4744e7984db995cde7a32",
+      "previous_sha256": "85fd7c457f33eccfa7b214ec3cbf2ecf1f447f9ddfc2d8012a9e22084440d6a0"
+    }
+  ],
+  "sol_generation_limit": 2,
+  "neural4d_job_limit": 1
+}

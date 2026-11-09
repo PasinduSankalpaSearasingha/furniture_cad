@@ -1,0 +1,967 @@
+{
+  "version": "DENSE_NATIVE_CAD_V1",
+  "status": "improved",
+  "mode": "quality",
+  "solver": "SciPy bounded trust-region least_squares, soft_l1, grouped parameters and sensitivity probes",
+  "constraints": "Hard parameter bounds and measurement locks; exact native topology, contacts and interference acceptance",
+  "loss_weights": {
+    "surface": 1.0,
+    "silhouette": 0.15,
+    "normals": 0.05,
+    "photo": 2.0,
+    "regularization": 0.001
+  },
+  "initial": {
+    "cad_to_reference": {
+      "mean_mm": 0.7206830036139432,
+      "median_mm": 0.006744384765625,
+      "p95_mm": 6.469452857971191,
+      "maximum_observed_mm": 19.413991928100586
+    },
+    "reference_to_cad": {
+      "mean_mm": 0.6939011106356052,
+      "median_mm": 0.006713936571031809,
+      "p95_mm": 5.70745849609375,
+      "maximum_observed_mm": 14.993255615234375
+    },
+    "components": {
+      "0": {
+        "mean_mm": 0.006265014547186212,
+        "median_mm": 0.006042485125362873,
+        "p95_mm": 0.013305777683854103,
+        "maximum_observed_mm": 0.015930213034152985
+      },
+      "1": {
+        "mean_mm": 7.333481396244338,
+        "median_mm": 7.070619583129883,
+        "p95_mm": 14.990264892578125,
+        "maximum_observed_mm": 14.993255615234375
+      },
+      "2": {
+        "mean_mm": 0.006334343442426871,
+        "median_mm": 0.0061187744140625,
+        "p95_mm": 0.01300120446830988,
+        "maximum_observed_mm": 0.01474000420421362
+      },
+      "3": {
+        "mean_mm": 0.009928779105654331,
+        "median_mm": 0.008697509765625,
+        "p95_mm": 0.02026379480957985,
+        "maximum_observed_mm": 0.02218630351126194
+      },
+      "4": {
+        "mean_mm": 0.006372919169114289,
+        "median_mm": 0.0061865877360105515,
+        "p95_mm": 0.01300049014389515,
+        "maximum_observed_mm": 0.014740020968019962
+      }
+    },
+    "symmetric_mean_mm": 0.707292057124774,
+    "normal_loss": 0.03966130471118015,
+    "distance_method": "Open3D closest triangle surface on temporary CAD tessellation",
+    "cad_tessellation_tolerance_mm": 0.25,
+    "reference_points": 25000,
+    "cad_points": 25000
+  },
+  "final": {
+    "cad_to_reference": {
+      "mean_mm": 0.02610419481769244,
+      "median_mm": 0.006317138671875,
+      "p95_mm": 0.014038127847015858,
+      "maximum_observed_mm": 19.408294677734375
+    },
+    "reference_to_cad": {
+      "mean_mm": 0.006636446635901807,
+      "median_mm": 0.006286725867539644,
+      "p95_mm": 0.013977084308862686,
+      "maximum_observed_mm": 0.02221682481467724
+    },
+    "components": {
+      "0": {
+        "mean_mm": 0.006220722332473932,
+        "median_mm": 0.005920434836298227,
+        "p95_mm": 0.013244683854281902,
+        "maximum_observed_mm": 0.016174323856830597
+      },
+      "1": {
+        "mean_mm": 0.00657353607495348,
+        "median_mm": 0.0063018798828125,
+        "p95_mm": 0.013702545315027237,
+        "maximum_observed_mm": 0.015167237259447575
+      },
+      "2": {
+        "mean_mm": 0.00641423463749462,
+        "median_mm": 0.006248301826417446,
+        "p95_mm": 0.013061853125691414,
+        "maximum_observed_mm": 0.014923189766705036
+      },
+      "3": {
+        "mean_mm": 0.009884835788429351,
+        "median_mm": 0.008656037971377373,
+        "p95_mm": 0.020325487479567528,
+        "maximum_observed_mm": 0.02221682481467724
+      },
+      "4": {
+        "mean_mm": 0.006392189458278968,
+        "median_mm": 0.006198093295097351,
+        "p95_mm": 0.013061724603176117,
+        "maximum_observed_mm": 0.0149231543764472
+      }
+    },
+    "symmetric_mean_mm": 0.01637032072679712,
+    "normal_loss": 0.00613497543067104,
+    "distance_method": "Open3D closest triangle surface on temporary CAD tessellation",
+    "cad_tessellation_tolerance_mm": 0.25,
+    "reference_points": 750000,
+    "cad_points": 750000
+  },
+  "initial_objective": 0.011915711280715656,
+  "final_objective": 0.0002954148552371587,
+  "units": "mm",
+  "evaluations": 29,
+  "stages": [
+    {
+      "requested_points": 25000,
+      "actual_points": 25000,
+      "evaluations": 19,
+      "seconds": 1.5469999999913853,
+      "exact_score_improvement": 0.0115709630923966,
+      "sensitivities": {
+        "F002.position.0": 0.38273277230987157
+      }
+    },
+    {
+      "requested_points": 100000,
+      "actual_points": 100000,
+      "evaluations": 6,
+      "seconds": 2.2180000000080327,
+      "exact_score_improvement": 4.9333333081898634e-05,
+      "sensitivities": {
+        "F002.position.0": 0.38273277230987157
+      }
+    },
+    {
+      "requested_points": 300000,
+      "actual_points": 300000,
+      "evaluations": 4,
+      "seconds": 3.4539999999979045,
+      "exact_score_improvement": 0.0,
+      "sensitivities": {
+        "F002.position.0": 0.38273277230987157
+      }
+    }
+  ],
+  "revisions": [
+    {
+      "score": 0.0003447481883190573,
+      "surface_mean_mm": 0.022529840551058212,
+      "updates": {
+        "F002.position.0": -289.84232421100825
+      }
+    },
+    {
+      "score": 0.0002954148552371587,
+      "surface_mean_mm": 0.016265010399396544,
+      "updates": {
+        "F002.position.0": -289.99293766109696
+      }
+    }
+  ],
+  "attempts": [
+    {
+      "valid": true,
+      "score": 0.0003447481883190573,
+      "updates": {
+        "F002.position.0": -289.84232421100825
+      }
+    },
+    {
+      "valid": false,
+      "reason": "Candidate worsens reviewed original-photo evidence",
+      "updates": {
+        "F002.position.0": -289.81719999360973
+      }
+    },
+    {
+      "valid": false,
+      "reason": "Candidate worsens reviewed original-photo evidence",
+      "updates": {
+        "F002.position.0": -289.79165392993025
+      }
+    },
+    {
+      "valid": false,
+      "reason": "Candidate worsens reviewed original-photo evidence",
+      "updates": {
+        "F002.position.0": -290.19942834744535
+      }
+    },
+    {
+      "valid": true,
+      "score": 0.0002954148552371587,
+      "updates": {
+        "F002.position.0": -289.99293766109696
+      }
+    },
+    {
+      "valid": true,
+      "score": 0.00029639717272920415,
+      "updates": {
+        "F002.position.0": -289.99447060773724
+      }
+    },
+    {
+      "valid": false,
+      "reason": "Candidate worsens reviewed original-photo evidence",
+      "updates": {
+        "F002.position.0": -289.842324211
+      }
+    },
+    {
+      "valid": false,
+      "reason": "Candidate worsens reviewed original-photo evidence",
+      "updates": {
+        "F002.position.0": -292.74074745311003
+      }
+    },
+    {
+      "valid": true,
+      "score": 0.00029635600263113967,
+      "updates": {
+        "F002.position.0": -289.99467836165724
+      }
+    },
+    {
+      "valid": true,
+      "score": 0.0002954148552371587,
+      "updates": {
+        "F002.position.0": -289.992937661097
+      }
+    },
+    {
+      "valid": false,
+      "reason": "Candidate worsens reviewed original-photo evidence",
+      "updates": {
+        "F002.position.0": -292.892867037708
+      }
+    },
+    {
+      "valid": false,
+      "reason": "Candidate worsens reviewed original-photo evidence",
+      "updates": {
+        "F002.position.0": -292.89462514527384
+      }
+    }
+  ],
+  "stop_reason": "density_increase_did_not_improve_fit",
+  "multiview": {
+    "views": [
+      {
+        "silhouette_iou_loss": 0.0,
+        "boundary_mean_mm": 0.0,
+        "azimuth_deg": 0.0,
+        "elevation_deg": -45.0,
+        "new_faces": 20,
+        "new_area_mm2": 486599.99999999884
+      },
+      {
+        "silhouette_iou_loss": 0.0,
+        "boundary_mean_mm": 0.0,
+        "azimuth_deg": 30.0,
+        "elevation_deg": -45.0,
+        "new_faces": 10,
+        "new_area_mm2": 136199.99999999945
+      },
+      {
+        "silhouette_iou_loss": 0.0,
+        "boundary_mean_mm": 0.0,
+        "azimuth_deg": 60.0,
+        "elevation_deg": -45.0,
+        "new_faces": 0,
+        "new_area_mm2": 0.0
+      },
+      {
+        "silhouette_iou_loss": 0.0,
+        "boundary_mean_mm": 0.0,
+        "azimuth_deg": 90.0,
+        "elevation_deg": -45.0,
+        "new_faces": 0,
+        "new_area_mm2": 0.0
+      },
+      {
+        "silhouette_iou_loss": 0.0,
+        "boundary_mean_mm": 0.0,
+        "azimuth_deg": 120.0,
+        "elevation_deg": -45.0,
+        "new_faces": 10,
+        "new_area_mm2": 130199.99999999967
+      },
+      {
+        "silhouette_iou_loss": 0.0,
+        "boundary_mean_mm": 0.0,
+        "azimuth_deg": 150.0,
+        "elevation_deg": -45.0,
+        "new_faces": 0,
+        "new_area_mm2": 0.0
+      },
+      {
+        "silhouette_iou_loss": 0.0,
+        "boundary_mean_mm": 0.0,
+        "azimuth_deg": 180.0,
+        "elevation_deg": -45.0,
+        "new_faces": 0,
+        "new_area_mm2": 0.0
+      },
+      {
+        "silhouette_iou_loss": 0.0,
+        "boundary_mean_mm": 0.0,
+        "azimuth_deg": 210.0,
+        "elevation_deg": -45.0,
+        "new_faces": 10,
+        "new_area_mm2": 136199.99999999945
+      },
+      {
+        "silhouette_iou_loss": 0.0,
+        "boundary_mean_mm": 0.0,
+        "azimuth_deg": 240.0,
+        "elevation_deg": -45.0,
+        "new_faces": 0,
+        "new_area_mm2": 0.0
+      },
+      {
+        "silhouette_iou_loss": 0.0,
+        "boundary_mean_mm": 0.0,
+        "azimuth_deg": 270.0,
+        "elevation_deg": -45.0,
+        "new_faces": 0,
+        "new_area_mm2": 0.0
+      },
+      {
+        "silhouette_iou_loss": 0.0,
+        "boundary_mean_mm": 0.0,
+        "azimuth_deg": 300.0,
+        "elevation_deg": -45.0,
+        "new_faces": 0,
+        "new_area_mm2": 0.0
+      },
+      {
+        "silhouette_iou_loss": 0.0,
+        "boundary_mean_mm": 0.0,
+        "azimuth_deg": 330.0,
+        "elevation_deg": -45.0,
+        "new_faces": 0,
+        "new_area_mm2": 0.0
+      },
+      {
+        "silhouette_iou_loss": 0.0,
+        "boundary_mean_mm": 0.0,
+        "azimuth_deg": 0.0,
+        "elevation_deg": -15.0,
+        "new_faces": 0,
+        "new_area_mm2": 0.0
+      },
+      {
+        "silhouette_iou_loss": 0.0,
+        "boundary_mean_mm": 0.0,
+        "azimuth_deg": 30.0,
+        "elevation_deg": -15.0,
+        "new_faces": 0,
+        "new_area_mm2": 0.0
+      },
+      {
+        "silhouette_iou_loss": 0.0,
+        "boundary_mean_mm": 0.0,
+        "azimuth_deg": 60.0,
+        "elevation_deg": -15.0,
+        "new_faces": 0,
+        "new_area_mm2": 0.0
+      },
+      {
+        "silhouette_iou_loss": 0.0,
+        "boundary_mean_mm": 0.0,
+        "azimuth_deg": 90.0,
+        "elevation_deg": -15.0,
+        "new_faces": 0,
+        "new_area_mm2": 0.0
+      },
+      {
+        "silhouette_iou_loss": 0.0,
+        "boundary_mean_mm": 0.0,
+        "azimuth_deg": 120.0,
+        "elevation_deg": -15.0,
+        "new_faces": 0,
+        "new_area_mm2": 0.0
+      },
+      {
+        "silhouette_iou_loss": 0.0,
+        "boundary_mean_mm": 0.0,
+        "azimuth_deg": 150.0,
+        "elevation_deg": -15.0,
+        "new_faces": 0,
+        "new_area_mm2": 0.0
+      },
+      {
+        "silhouette_iou_loss": 0.0,
+        "boundary_mean_mm": 0.0,
+        "azimuth_deg": 180.0,
+        "elevation_deg": -15.0,
+        "new_faces": 0,
+        "new_area_mm2": 0.0
+      },
+      {
+        "silhouette_iou_loss": 0.0,
+        "boundary_mean_mm": 0.0,
+        "azimuth_deg": 210.0,
+        "elevation_deg": -15.0,
+        "new_faces": 0,
+        "new_area_mm2": 0.0
+      },
+      {
+        "silhouette_iou_loss": 0.0,
+        "boundary_mean_mm": 0.0,
+        "azimuth_deg": 240.0,
+        "elevation_deg": -15.0,
+        "new_faces": 0,
+        "new_area_mm2": 0.0
+      },
+      {
+        "silhouette_iou_loss": 0.0,
+        "boundary_mean_mm": 0.0,
+        "azimuth_deg": 270.0,
+        "elevation_deg": -15.0,
+        "new_faces": 0,
+        "new_area_mm2": 0.0
+      },
+      {
+        "silhouette_iou_loss": 0.0,
+        "boundary_mean_mm": 0.0,
+        "azimuth_deg": 300.0,
+        "elevation_deg": -15.0,
+        "new_faces": 0,
+        "new_area_mm2": 0.0
+      },
+      {
+        "silhouette_iou_loss": 0.0,
+        "boundary_mean_mm": 0.0,
+        "azimuth_deg": 330.0,
+        "elevation_deg": -15.0,
+        "new_faces": 0,
+        "new_area_mm2": 0.0
+      },
+      {
+        "silhouette_iou_loss": 0.0,
+        "boundary_mean_mm": 0.0,
+        "azimuth_deg": 0.0,
+        "elevation_deg": 15.0,
+        "new_faces": 2,
+        "new_area_mm2": 349999.9999999992
+      },
+      {
+        "silhouette_iou_loss": 0.0,
+        "boundary_mean_mm": 0.0,
+        "azimuth_deg": 30.0,
+        "elevation_deg": 15.0,
+        "new_faces": 0,
+        "new_area_mm2": 0.0
+      },
+      {
+        "silhouette_iou_loss": 0.0,
+        "boundary_mean_mm": 0.0,
+        "azimuth_deg": 60.0,
+        "elevation_deg": 15.0,
+        "new_faces": 0,
+        "new_area_mm2": 0.0
+      },
+      {
+        "silhouette_iou_loss": 0.0,
+        "boundary_mean_mm": 0.0,
+        "azimuth_deg": 90.0,
+        "elevation_deg": 15.0,
+        "new_faces": 0,
+        "new_area_mm2": 0.0
+      },
+      {
+        "silhouette_iou_loss": 0.0,
+        "boundary_mean_mm": 0.0,
+        "azimuth_deg": 120.0,
+        "elevation_deg": 15.0,
+        "new_faces": 0,
+        "new_area_mm2": 0.0
+      },
+      {
+        "silhouette_iou_loss": 0.0,
+        "boundary_mean_mm": 0.0,
+        "azimuth_deg": 150.0,
+        "elevation_deg": 15.0,
+        "new_faces": 0,
+        "new_area_mm2": 0.0
+      },
+      {
+        "silhouette_iou_loss": 0.0,
+        "boundary_mean_mm": 0.0,
+        "azimuth_deg": 180.0,
+        "elevation_deg": 15.0,
+        "new_faces": 0,
+        "new_area_mm2": 0.0
+      },
+      {
+        "silhouette_iou_loss": 0.0,
+        "boundary_mean_mm": 0.0,
+        "azimuth_deg": 210.0,
+        "elevation_deg": 15.0,
+        "new_faces": 0,
+        "new_area_mm2": 0.0
+      },
+      {
+        "silhouette_iou_loss": 0.0,
+        "boundary_mean_mm": 0.0,
+        "azimuth_deg": 240.0,
+        "elevation_deg": 15.0,
+        "new_faces": 0,
+        "new_area_mm2": 0.0
+      },
+      {
+        "silhouette_iou_loss": 0.0,
+        "boundary_mean_mm": 0.0,
+        "azimuth_deg": 270.0,
+        "elevation_deg": 15.0,
+        "new_faces": 0,
+        "new_area_mm2": 0.0
+      },
+      {
+        "silhouette_iou_loss": 0.0,
+        "boundary_mean_mm": 0.0,
+        "azimuth_deg": 300.0,
+        "elevation_deg": 15.0,
+        "new_faces": 0,
+        "new_area_mm2": 0.0
+      },
+      {
+        "silhouette_iou_loss": 0.0,
+        "boundary_mean_mm": 0.0,
+        "azimuth_deg": 330.0,
+        "elevation_deg": 15.0,
+        "new_faces": 0,
+        "new_area_mm2": 0.0
+      },
+      {
+        "silhouette_iou_loss": 0.0,
+        "boundary_mean_mm": 0.0,
+        "azimuth_deg": 0.0,
+        "elevation_deg": 45.0,
+        "new_faces": 0,
+        "new_area_mm2": 0.0
+      },
+      {
+        "silhouette_iou_loss": 0.0,
+        "boundary_mean_mm": 0.0,
+        "azimuth_deg": 30.0,
+        "elevation_deg": 45.0,
+        "new_faces": 0,
+        "new_area_mm2": 0.0
+      },
+      {
+        "silhouette_iou_loss": 0.0,
+        "boundary_mean_mm": 0.0,
+        "azimuth_deg": 60.0,
+        "elevation_deg": 45.0,
+        "new_faces": 0,
+        "new_area_mm2": 0.0
+      },
+      {
+        "silhouette_iou_loss": 0.0,
+        "boundary_mean_mm": 0.0,
+        "azimuth_deg": 90.0,
+        "elevation_deg": 45.0,
+        "new_faces": 0,
+        "new_area_mm2": 0.0
+      },
+      {
+        "silhouette_iou_loss": 0.0,
+        "boundary_mean_mm": 0.0,
+        "azimuth_deg": 120.0,
+        "elevation_deg": 45.0,
+        "new_faces": 0,
+        "new_area_mm2": 0.0
+      },
+      {
+        "silhouette_iou_loss": 0.0,
+        "boundary_mean_mm": 0.0,
+        "azimuth_deg": 150.0,
+        "elevation_deg": 45.0,
+        "new_faces": 0,
+        "new_area_mm2": 0.0
+      },
+      {
+        "silhouette_iou_loss": 0.0,
+        "boundary_mean_mm": 0.0,
+        "azimuth_deg": 180.0,
+        "elevation_deg": 45.0,
+        "new_faces": 0,
+        "new_area_mm2": 0.0
+      },
+      {
+        "silhouette_iou_loss": 0.0,
+        "boundary_mean_mm": 0.0,
+        "azimuth_deg": 210.0,
+        "elevation_deg": 45.0,
+        "new_faces": 0,
+        "new_area_mm2": 0.0
+      },
+      {
+        "silhouette_iou_loss": 0.0,
+        "boundary_mean_mm": 0.0,
+        "azimuth_deg": 240.0,
+        "elevation_deg": 45.0,
+        "new_faces": 0,
+        "new_area_mm2": 0.0
+      },
+      {
+        "silhouette_iou_loss": 0.0,
+        "boundary_mean_mm": 0.0,
+        "azimuth_deg": 270.0,
+        "elevation_deg": 45.0,
+        "new_faces": 0,
+        "new_area_mm2": 0.0
+      },
+      {
+        "silhouette_iou_loss": 0.0,
+        "boundary_mean_mm": 0.0,
+        "azimuth_deg": 300.0,
+        "elevation_deg": 45.0,
+        "new_faces": 0,
+        "new_area_mm2": 0.0
+      },
+      {
+        "silhouette_iou_loss": 0.0,
+        "boundary_mean_mm": 0.0,
+        "azimuth_deg": 330.0,
+        "elevation_deg": 45.0,
+        "new_faces": 0,
+        "new_area_mm2": 0.0
+      }
+    ],
+    "count": 48,
+    "covered_faces": 52,
+    "covered_area_fraction": 0.9948619139370585,
+    "silhouette_iou_loss": 0.0,
+    "virtual_views_supply_new_physical_evidence": false
+  },
+  "fitting_views": 4,
+  "photo_error": 8.46659973527157e-07,
+  "photo_evidence": [
+    {
+      "image_id": "872c2374-9bd2-457a-bbcd-56e68991dcf7",
+      "status": "measured",
+      "error": 8.46659973527157e-07
+    }
+  ],
+  "photo_verification_status": "reviewed_photo_camera_evidence",
+  "locked_measurements": [
+    {
+      "parameter": "width_mm",
+      "requested_mm": 700,
+      "actual_mm": 700.0,
+      "error_mm": 0.0,
+      "tolerance_mm": 0.01
+    }
+  ],
+  "fixed_dimensions_preserved": true,
+  "solid_checks": {
+    "valid_closed_solids": true,
+    "part_count": 5,
+    "contacts": [
+      {
+        "a": "F001",
+        "b": "F002",
+        "gap_mm": 0.0,
+        "overlap_mm3": 0.0
+      },
+      {
+        "a": "F001",
+        "b": "F003",
+        "gap_mm": 0.0,
+        "overlap_mm3": 0.0
+      },
+      {
+        "a": "F001",
+        "b": "F004",
+        "gap_mm": 0.0,
+        "overlap_mm3": 0.0
+      },
+      {
+        "a": "F001",
+        "b": "F005",
+        "gap_mm": 0.0,
+        "overlap_mm3": 0.0
+      }
+    ],
+    "contact_groups": [
+      [
+        "F001",
+        "F002",
+        "F004",
+        "F003",
+        "F005"
+      ]
+    ],
+    "assembly_connected": true,
+    "contact_tolerance_mm": 0.5,
+    "furniture_items_connected": true,
+    "furniture_items": [
+      {
+        "item_id": "PRIMARY",
+        "label": "synthetic table",
+        "part_ids": [
+          "F001",
+          "F002",
+          "F003",
+          "F004",
+          "F005"
+        ],
+        "connected": true,
+        "contact_groups": [
+          [
+            "F001",
+            "F002",
+            "F003",
+            "F004",
+            "F005"
+          ]
+        ]
+      }
+    ],
+    "separate_item_dimensions": [],
+    "interference_check_passed": true,
+    "physical_joinery_verified": false,
+    "structural_strength_verified": false
+  },
+  "processing_seconds": 10.5,
+  "resources": {
+    "rss_mb": 557.79296875,
+    "available_mb": 904.35546875,
+    "cpu_seconds": 22.375
+  },
+  "fallback": false,
+  "actual_verification_points": 750000,
+  "additional_neural4d_generations": 0,
+  "additional_llm_calls": 0,
+  "physical_accuracy_verified": false,
+  "fast_model": "cached component affine and local control displacement; reverse nearest-point approximation",
+  "exact_model": "rebuilt OCCT B-Rep, topology/contact checks and closest CAD tessellation surface",
+  "limitations": [
+    "Arbitrary sculpted furniture and automatic multi-patch fitting are unresolved",
+    "Final verification is a separate pass and may exceed the numerical solver wall-time budget"
+  ],
+  "reconstruction": {
+    "source": "existing_engineering_plan",
+    "complete": true,
+    "unresolved_features": []
+  },
+  "export_validation": {
+    "assembly_reopened": true,
+    "assembly_solid_count": 5,
+    "assembly_sha256": "25441da8e8f6d98bbcab4e12015ccf0540f63b6479a05489513b9f7feb394a3d",
+    "components": {
+      "F001": {
+        "valid_closed_solid": true,
+        "solid_count": 1,
+        "step_reopened": true,
+        "source_volume_mm3": 10500000.000000002,
+        "step_volume_mm3": 10500000.000000002,
+        "volume_error_mm3": 0.0,
+        "volume_tolerance_mm3": 1.05,
+        "volume_integration_relative_tolerance": 1e-10,
+        "source_kernel_default_volume_mm3": 10500000.0,
+        "step_kernel_default_volume_mm3": 10500000.0,
+        "envelope_max_error_mm": 0.0,
+        "envelope_tolerance_mm": 0.005,
+        "envelope_tessellation_mm": 0.02,
+        "envelope_mesh_mode": "ABSOLUTE",
+        "envelope_recorded_mesh_deflection_mm": 2.0097183471152322e-14,
+        "raw_occt_bound_difference_mm": 0.0,
+        "sampled_surface_max_gap_mm": 0.0,
+        "surface_samples": 388,
+        "surface_sampling_method": "EXACT_BREP_TRIMMED_UV_EDGES_AND_VERTICES",
+        "surface_tolerance_mm": 0.001,
+        "verification": "B-Rep validity, closed shells, volume, bounds and bidirectional surface samples; not an exact surface proof",
+        "physical_dimensions_verified": false,
+        "approved_for_manufacturing": false
+      },
+      "F002": {
+        "valid_closed_solid": true,
+        "solid_count": 1,
+        "step_reopened": true,
+        "source_volume_mm3": 1152000.0,
+        "step_volume_mm3": 1152000.0,
+        "volume_error_mm3": 0.0,
+        "volume_tolerance_mm3": 0.1152,
+        "volume_integration_relative_tolerance": 1e-10,
+        "source_kernel_default_volume_mm3": 1152000.0,
+        "step_kernel_default_volume_mm3": 1152000.0,
+        "envelope_max_error_mm": 9.703171599539928e-11,
+        "envelope_tolerance_mm": 0.005,
+        "envelope_tessellation_mm": 0.02,
+        "envelope_mesh_mode": "ABSOLUTE",
+        "envelope_recorded_mesh_deflection_mm": 5.684341886080802e-14,
+        "raw_occt_bound_difference_mm": 9.703171599539928e-11,
+        "sampled_surface_max_gap_mm": 9.703171599539928e-11,
+        "surface_samples": 388,
+        "surface_sampling_method": "EXACT_BREP_TRIMMED_UV_EDGES_AND_VERTICES",
+        "surface_tolerance_mm": 0.001,
+        "verification": "B-Rep validity, closed shells, volume, bounds and bidirectional surface samples; not an exact surface proof",
+        "physical_dimensions_verified": false,
+        "approved_for_manufacturing": false
+      },
+      "F003": {
+        "valid_closed_solid": true,
+        "solid_count": 1,
+        "step_reopened": true,
+        "source_volume_mm3": 1152000.0,
+        "step_volume_mm3": 1152000.0,
+        "volume_error_mm3": 0.0,
+        "volume_tolerance_mm3": 0.1152,
+        "volume_integration_relative_tolerance": 1e-10,
+        "source_kernel_default_volume_mm3": 1152000.0,
+        "step_kernel_default_volume_mm3": 1152000.0,
+        "envelope_max_error_mm": 0.0,
+        "envelope_tolerance_mm": 0.005,
+        "envelope_tessellation_mm": 0.02,
+        "envelope_mesh_mode": "ABSOLUTE",
+        "envelope_recorded_mesh_deflection_mm": 0.0,
+        "raw_occt_bound_difference_mm": 0.0,
+        "sampled_surface_max_gap_mm": 0.0,
+        "surface_samples": 388,
+        "surface_sampling_method": "EXACT_BREP_TRIMMED_UV_EDGES_AND_VERTICES",
+        "surface_tolerance_mm": 0.001,
+        "verification": "B-Rep validity, closed shells, volume, bounds and bidirectional surface samples; not an exact surface proof",
+        "physical_dimensions_verified": false,
+        "approved_for_manufacturing": false
+      },
+      "F004": {
+        "valid_closed_solid": true,
+        "solid_count": 1,
+        "step_reopened": true,
+        "source_volume_mm3": 1152000.0,
+        "step_volume_mm3": 1152000.0,
+        "volume_error_mm3": 0.0,
+        "volume_tolerance_mm3": 0.1152,
+        "volume_integration_relative_tolerance": 1e-10,
+        "source_kernel_default_volume_mm3": 1152000.0,
+        "step_kernel_default_volume_mm3": 1152000.0,
+        "envelope_max_error_mm": 0.0,
+        "envelope_tolerance_mm": 0.005,
+        "envelope_tessellation_mm": 0.02,
+        "envelope_mesh_mode": "ABSOLUTE",
+        "envelope_recorded_mesh_deflection_mm": 0.0,
+        "raw_occt_bound_difference_mm": 0.0,
+        "sampled_surface_max_gap_mm": 0.0,
+        "surface_samples": 388,
+        "surface_sampling_method": "EXACT_BREP_TRIMMED_UV_EDGES_AND_VERTICES",
+        "surface_tolerance_mm": 0.001,
+        "verification": "B-Rep validity, closed shells, volume, bounds and bidirectional surface samples; not an exact surface proof",
+        "physical_dimensions_verified": false,
+        "approved_for_manufacturing": false
+      },
+      "F005": {
+        "valid_closed_solid": true,
+        "solid_count": 1,
+        "step_reopened": true,
+        "source_volume_mm3": 1152000.0,
+        "step_volume_mm3": 1152000.0,
+        "volume_error_mm3": 0.0,
+        "volume_tolerance_mm3": 0.1152,
+        "volume_integration_relative_tolerance": 1e-10,
+        "source_kernel_default_volume_mm3": 1152000.0,
+        "step_kernel_default_volume_mm3": 1152000.0,
+        "envelope_max_error_mm": 0.0,
+        "envelope_tolerance_mm": 0.005,
+        "envelope_tessellation_mm": 0.02,
+        "envelope_mesh_mode": "ABSOLUTE",
+        "envelope_recorded_mesh_deflection_mm": 0.0,
+        "raw_occt_bound_difference_mm": 0.0,
+        "sampled_surface_max_gap_mm": 0.0,
+        "surface_samples": 388,
+        "surface_sampling_method": "EXACT_BREP_TRIMMED_UV_EDGES_AND_VERTICES",
+        "surface_tolerance_mm": 0.001,
+        "verification": "B-Rep validity, closed shells, volume, bounds and bidirectional surface samples; not an exact surface proof",
+        "physical_dimensions_verified": false,
+        "approved_for_manufacturing": false
+      }
+    },
+    "approved_for_manufacturing": false
+  },
+  "calibration": {
+    "transform": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "uniform_scale": 1.0,
+    "units": "mm",
+    "calibration": "confirmed dimensions",
+    "confirmed_dimensions": {
+      "width_mm": 700
+    },
+    "physical_accuracy_verified": false
+  },
+  "registration": {
+    "method": "trimmed multiscale rigid point-to-point ICP",
+    "rmse_mm": 0.5660361088087247,
+    "iterations": 15,
+    "scale_optimized": false,
+    "coarse_orientation_candidates": 24,
+    "reference_to_cad_transform": [
+      [
+        0.9999999996054535,
+        -1.9186578305783712e-05,
+        -2.0517389693475887e-05,
+        0.018190335975367285
+      ],
+      [
+        1.9186345433163253e-05,
+        0.9999999997515286,
+        -1.1350189170610708e-05,
+        0.004196412143088672
+      ],
+      [
+        2.051760745942338e-05,
+        1.1349795512817704e-05,
+        0.9999999997251028,
+        -0.006179111585238885
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ]
+  },
+  "original_mesh_preserved": true,
+  "error_map_95th_percentile_mm": 0.020813021808862686,
+  "original_photo_used": true,
+  "production_ready": false,
+  "manufacturing_review_required": true
+}

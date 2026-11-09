@@ -1,0 +1,138 @@
+{
+  "components": [
+    {
+      "id": 0,
+      "label": "tabletop",
+      "candidate_geometry": "box",
+      "estimated_size_mm": [
+        30.0,
+        500.0,
+        700.0
+      ],
+      "confidence": 0.9,
+      "uncertainties": [
+        "Geometric region may contain multiple manufactured parts"
+      ],
+      "face_count": 12,
+      "fixed_measurements": []
+    },
+    {
+      "id": 1,
+      "label": "leg",
+      "candidate_geometry": "box",
+      "estimated_size_mm": [
+        40.0,
+        40.0,
+        720.0
+      ],
+      "confidence": 0.9,
+      "uncertainties": [
+        "Geometric region may contain multiple manufactured parts"
+      ],
+      "face_count": 12,
+      "fixed_measurements": []
+    },
+    {
+      "id": 2,
+      "label": "leg",
+      "candidate_geometry": "box",
+      "estimated_size_mm": [
+        40.0,
+        40.0,
+        720.0
+      ],
+      "confidence": 0.9,
+      "uncertainties": [
+        "Geometric region may contain multiple manufactured parts"
+      ],
+      "face_count": 12,
+      "fixed_measurements": []
+    },
+    {
+      "id": 3,
+      "label": "leg",
+      "candidate_geometry": "box",
+      "estimated_size_mm": [
+        40.0,
+        40.0,
+        720.0
+      ],
+      "confidence": 0.9,
+      "uncertainties": [
+        "Geometric region may contain multiple manufactured parts"
+      ],
+      "face_count": 12,
+      "fixed_measurements": []
+    },
+    {
+      "id": 4,
+      "label": "leg",
+      "candidate_geometry": "box",
+      "estimated_size_mm": [
+        40.0,
+        40.0,
+        720.0
+      ],
+      "confidence": 0.9,
+      "uncertainties": [
+        "Geometric region may contain multiple manufactured parts"
+      ],
+      "face_count": 12,
+      "fixed_measurements": []
+    }
+  ],
+  "relationships": [
+    {
+      "left": 0,
+      "right": 1,
+      "kind": "possible_contact"
+    },
+    {
+      "left": 0,
+      "right": 2,
+      "kind": "possible_contact"
+    },
+    {
+      "left": 0,
+      "right": 3,
+      "kind": "possible_contact"
+    },
+    {
+      "left": 0,
+      "right": 4,
+      "kind": "possible_contact"
+    },
+    {
+      "left": 1,
+      "right": 2,
+      "kind": "repeated_dimensions"
+    },
+    {
+      "left": 1,
+      "right": 3,
+      "kind": "repeated_dimensions"
+    },
+    {
+      "left": 1,
+      "right": 4,
+      "kind": "repeated_dimensions"
+    },
+    {
+      "left": 2,
+      "right": 3,
+      "kind": "repeated_dimensions"
+    },
+    {
+      "left": 2,
+      "right": 4,
+      "kind": "repeated_dimensions"
+    },
+    {
+      "left": 3,
+      "right": 4,
+      "kind": "repeated_dimensions"
+    }
+  ],
+  "unresolved_faces": [],
+  "review_required": true
+}

@@ -1,0 +1,296 @@
+{
+  "version": 2,
+  "original_root": "D:\\Enfection\\furniture_planner\\furniture_manufacturing_starter",
+  "files": [
+    {
+      "path": ".env.example",
+      "source_sha256": "7e782402673822330b2073c759cfbe59a8d932f3a42ff753097c32f5cfe6f0ac",
+      "previous_sha256": "d1c5dfabacb2bb074df7bd13df4961a07eb6f647839257dd51773086c6ff424f"
+    },
+    {
+      "path": "app/agents/photo_agent.py",
+      "source_sha256": "54a381a7b004b3999d028bacf3c2428e1a28fe29aea434d87d9f10496dbeca30",
+      "previous_sha256": "0f2f25c2d90890e591c948547880e880a4fec101e0085b4688776aae7b957209"
+    },
+    {
+      "path": "app/api/neural4d.py",
+      "source_sha256": "032274b4ca31f968735a773c3e4e48483eddaacef8ee81eb5799eb1660377cb1",
+      "previous_sha256": "4e4239716c49b6090537d79381d6339d62a5983e36b61f211110c7b28a039389"
+    },
+    {
+      "path": "app/cad_geometry_proxy.py",
+      "source_sha256": "5d5fbdb554935e596de8687de8c3ef974afed6b00a79db89738c5762d6d99edd",
+      "previous_sha256": null
+    },
+    {
+      "path": "app/cad_optimizer.py",
+      "source_sha256": "8d84d1c763aaea6155b490970b1d5012849472a46a38f1f0c3b264302abb4e6b",
+      "previous_sha256": "cc47aa021eada49256d74963bf5d364a86f6e9efdcb5c04052d07b8838b87222"
+    },
+    {
+      "path": "app/cad_parameters.py",
+      "source_sha256": "1fc8dd25f1ef949050de7f8b64a2adb5785ff69eb3c10414b4622ffc7557544b",
+      "previous_sha256": "f98fb5b3c8952c36cc53668b1ebb8f70934ccc384993de41afaadce8b5ea64e1"
+    },
+    {
+      "path": "app/config.py",
+      "source_sha256": "9db1dc17c7922736645bfff2df86fe8348a6a881dfd9530f33224e3730094374",
+      "previous_sha256": "4df4fb998c7196cf8595c96124153cb048e759153fe179846795f661a0d7232c"
+    },
+    {
+      "path": "app/dense_cad_optimizer.py",
+      "source_sha256": "b0b78740bf3c4a455c3d041830a78f5522929799ee0389c783524dfefb1f2701",
+      "previous_sha256": "259ba9e8fba4e53d6ba7018eda2895fb739ae2c5dd7c06f474f8490c64d16b0b"
+    },
+    {
+      "path": "app/geometry_acceleration.py",
+      "source_sha256": "762f8d4c37cd435a655dba69eaf1b684bbe884754529da43d3a01ba879f9f08e",
+      "previous_sha256": "04feb41dc6e8da5442a185d767a66fc4f9a4662bb64020cb391faa247f8fbeca"
+    },
+    {
+      "path": "app/global_cad_optimizer.py",
+      "source_sha256": "c38c1c6c0edd13ddb88d90ce2ad73030f0b59321f6d4977dbc2855c9344d21e9",
+      "previous_sha256": null
+    },
+    {
+      "path": "app/global_mesh_fitter.py",
+      "source_sha256": "b1dff8aab24b680042408650e306d7107f27ec90184eea6123001bbbbb0bd916",
+      "previous_sha256": null
+    },
+    {
+      "path": "app/mesh_cad_schema.py",
+      "source_sha256": "b838d5d5dac792f4db14a0136cdca74052767a9d11d81b7d8b6654a3fe7c5f28",
+      "previous_sha256": "4aab58f03e0f747fe2b5d86b583e974d8ab9ef659fd90662236de2b168ea981a"
+    },
+    {
+      "path": "app/mesh_pipeline.py",
+      "source_sha256": "13b706a8d26b157d7ac17d645279bf3d1b2144d6e3766609daf606231bcce6b8",
+      "previous_sha256": "fe8b7471a5618b5c5e59211ade775c543cc3581b37325d15bfc16469085d4a5b"
+    },
+    {
+      "path": "app/mesh_registration.py",
+      "source_sha256": "46cc564ec7a39c3849cef529110f364acf3512b9c6e7fddcac58878f21c45cb2",
+      "previous_sha256": "32340708490779ef3aa1305eb8ed55fc9594c61e48c82b9a40fb2c929f7a6587"
+    },
+    {
+      "path": "app/mesh_to_cad.py",
+      "source_sha256": "9f4b4b1535c1e1a7008dab56ce5a34e1083ad493cc3a558c61d40a59d37db5d9",
+      "previous_sha256": "4e3c4db31fde3f7b1734ed46b0f771b586fea96d63723ba27d2892a86cfeac84"
+    },
+    {
+      "path": "app/photo_cad.py",
+      "source_sha256": "2b1b64a10119fffb0662d1c8dfa1da9cea9212d95dd7999fd278c6ec5408a619",
+      "previous_sha256": "4877090da6737d4b443eaee3235642713d31d3471edb337eeb15b935452c5cbc"
+    },
+    {
+      "path": "app/photo_schema.py",
+      "source_sha256": "9a65588472ee142cb36427bd5345380197d16d9cc9601373edcc21ab7f3eb2b7",
+      "previous_sha256": "b5c4905d7687023d8f57d1d5234ff28c483b81b9c351357661b114de38921084"
+    },
+    {
+      "path": "app/studio_dist/assets/DimensionSheet-B20IEq3e.js",
+      "source_sha256": "94196e760960b38e580769bc52ed98fe5dfc0000acd1f0005973377d8d63d3ec",
+      "previous_sha256": null
+    },
+    {
+      "path": "app/studio_dist/assets/index-IWc0_1wF.js",
+      "source_sha256": "49f133caa86deab2069395edef09d3800965bd475c4869be6fc49a73512246d4",
+      "previous_sha256": null
+    },
+    {
+      "path": "app/studio_dist/assets/Viewer-CTMG-JBp.js",
+      "source_sha256": "09ef8e530350953ec77c2b11d419f6295229ca8502ba45b75bf7bedb217be962",
+      "previous_sha256": null
+    },
+    {
+      "path": "app/studio_dist/index.html",
+      "source_sha256": "7b9bda05c1c879d6aab89e8738a597c95102d9c830c21a29aee46922552cab35",
+      "previous_sha256": "b1f31d50184c2f7534575f6063588522e0dc5c246ee3a488adca3f729a666f0d"
+    },
+    {
+      "path": "docs/global-compatibility-test-results.xml",
+      "source_sha256": "f6c1cb849ac03c080761734fc64de0cccd4fae4b75fc3ffafa60e7b373e9070f",
+      "previous_sha256": null
+    },
+    {
+      "path": "docs/global-fitting-benchmarks.json",
+      "source_sha256": "c773696b82e990712b9e3f36659b94653ac35b419bb34fc7dd7a20152714bc7c",
+      "previous_sha256": null
+    },
+    {
+      "path": "docs/global-fitting-test-results.xml",
+      "source_sha256": "cc078319d17e4ccff4e1a86e78f3d5ce2c28b222b949aceed8026876d44644dc",
+      "previous_sha256": null
+    },
+    {
+      "path": "docs/global-source-inventory.txt",
+      "source_sha256": "45e7915da456751269a44950a995d70b2373c5dfd2b94fbd388183e1a7386e21",
+      "previous_sha256": null
+    },
+    {
+      "path": "docs/GLOBAL_3D_FITTING_REPORT.md",
+      "source_sha256": "85018ec33d20ceca7385c3e1a51e0ca6818efc044c04c3ce52bd48058d721484",
+      "previous_sha256": null
+    },
+    {
+      "path": "examples/global_surface_pipeline/assembly.step",
+      "source_sha256": "ff87407bb247682c98de51c3c1d57a42035e47bd6f805b8c6c5c9ddfa54bbd52",
+      "previous_sha256": null
+    },
+    {
+      "path": "examples/global_surface_pipeline/calibration.json",
+      "source_sha256": "596a08179e920e28f263e8b5b930c8073561888453b8dc630ec13036550b08e7",
+      "previous_sha256": null
+    },
+    {
+      "path": "examples/global_surface_pipeline/component_graph.json",
+      "source_sha256": "ab65d2c88991bdce71e4990d4bbb319d199cbf7d2f7a36a19981db4f904dc286",
+      "previous_sha256": null
+    },
+    {
+      "path": "examples/global_surface_pipeline/deviation.glb",
+      "source_sha256": "ac16434153a2409d016c77a656628f4c208b45aa967213850a36740dfb13fd5e",
+      "previous_sha256": null
+    },
+    {
+      "path": "examples/global_surface_pipeline/editable_cad.py",
+      "source_sha256": "7bf8f6373b0e76b3234c19562b261f8f56cdba79cfff7e4c8cafb0864e6307ad",
+      "previous_sha256": null
+    },
+    {
+      "path": "examples/global_surface_pipeline/F001.step",
+      "source_sha256": "f330ed7683e233f5192df3cce349d6da0df045f675a9aa6dc98a673fc928aae1",
+      "previous_sha256": null
+    },
+    {
+      "path": "examples/global_surface_pipeline/F002.step",
+      "source_sha256": "f37efa85c4ec21da41cf555887b309497fa34657143bff01e3af6a7d602b77e5",
+      "previous_sha256": null
+    },
+    {
+      "path": "examples/global_surface_pipeline/F003.step",
+      "source_sha256": "c505b820fed74da4c35a92ae1fcd474ae305d9536c907097042b20563196fdb3",
+      "previous_sha256": null
+    },
+    {
+      "path": "examples/global_surface_pipeline/F004.step",
+      "source_sha256": "1439f41f7d5edf72b2fbead0896be81241a7da53a6e478bf104519fdf2db3ba5",
+      "previous_sha256": null
+    },
+    {
+      "path": "examples/global_surface_pipeline/F005.step",
+      "source_sha256": "3471f5e7ed53a6b5f2d1ba2f9e1d98feffca56515650c2e3ef638b62d26787b9",
+      "previous_sha256": null
+    },
+    {
+      "path": "examples/global_surface_pipeline/feature_specification.json",
+      "source_sha256": "f1b464ea8ad954892323b4b6105da44a2933358546531d000b661fa0ee8b002a",
+      "previous_sha256": null
+    },
+    {
+      "path": "examples/global_surface_pipeline/geometry_deviation_report.json",
+      "source_sha256": "592530f9cf6f5bafd221e8fc095a6fca861d39154a8240464e2d405d56750fbb",
+      "previous_sha256": null
+    },
+    {
+      "path": "examples/global_surface_pipeline/optimization_report.json",
+      "source_sha256": "ba95d3c07fab9f4668c7306217cd85443bd6629d476736aa436c0d0d04e0f697",
+      "previous_sha256": null
+    },
+    {
+      "path": "examples/global_surface_pipeline/optimized_cad.glb",
+      "source_sha256": "f2528171397bbd3268ca4f27a0f825cdccee15d72c91bbf9d02a7782c28d6808",
+      "previous_sha256": null
+    },
+    {
+      "path": "examples/global_surface_pipeline/original_photo.png",
+      "source_sha256": "18845735262e8d4e891ea78712005302fcfef630e787309f912547879e61e2ac",
+      "previous_sha256": null
+    },
+    {
+      "path": "examples/global_surface_pipeline/overlay.glb",
+      "source_sha256": "03039640c61833341524d3261a2c21fb62acba8943646684c1da546570e33776",
+      "previous_sha256": null
+    },
+    {
+      "path": "examples/global_surface_pipeline/parameter_revision_history.json",
+      "source_sha256": "d2122b56607fcdde8ac2a2ddc86c5c9634898508e17ae6a10ab4b2be4b0ad605",
+      "previous_sha256": null
+    },
+    {
+      "path": "examples/global_surface_pipeline/reference.glb",
+      "source_sha256": "f457350cabed4e656f1cdbd04bd2855c699aa2d3e1e65d9503dcf244b174f5e4",
+      "previous_sha256": null
+    },
+    {
+      "path": "examples/global_surface_pipeline/registration.json",
+      "source_sha256": "8496d5b7e6285e6a43291e9b0d94aef7039c469b957b850d50a85a9c3cc4d25c",
+      "previous_sha256": null
+    },
+    {
+      "path": "examples/global_surface_pipeline/synthetic_reference.obj",
+      "source_sha256": "6eb7f3f3fec8bf9b06a4cd804b178c6d5a32c4268b12e14dec27fd7c85362c88",
+      "previous_sha256": null
+    },
+    {
+      "path": "frontend/src/MeshReconstruction.jsx",
+      "source_sha256": "e391322783f59c5e1d00baabf6e287eabf12e745370a1161f469160b2721f3eb",
+      "previous_sha256": "24e61a96aa2b4320b3dba787fa183e829680a4e059dc983d23e40b2a46eab17b"
+    },
+    {
+      "path": "README.md",
+      "source_sha256": "69be2e209b8b461a43a7420646f08b3ab6ce45a8611e6d33c4bb17bea1241c2b",
+      "previous_sha256": "d256fd0604fa03927d124276b3435b6f045b556dcb97accb09747a5abd76498a"
+    },
+    {
+      "path": "scripts/apply_mesh_upgrade.ps1",
+      "source_sha256": "53f7364254ff55414878e93f15fd5918c2889ed9d0a4b4e8db22edb1a4d9d92b",
+      "previous_sha256": "7b36c8795330dcfadbf4701dab2a546fcd00a251a30986496877097b44564e21"
+    },
+    {
+      "path": "scripts/benchmark_global_fitting.py",
+      "source_sha256": "f9a0372c8772a133357e296ec08752db7dfd5e04fdf66848e56fca29288be662",
+      "previous_sha256": null
+    },
+    {
+      "path": "scripts/create_dense_mesh_sample.py",
+      "source_sha256": "11224f3ee67226d5ce213f140075d568b8c098e461bf23cfe0b16ad10d806f5f",
+      "previous_sha256": "9794f139a247a44077d6fbb01ffff6673d8b5a21f49fd6e71019ac47a9eebafd"
+    },
+    {
+      "path": "scripts/prepare_global_upgrade.py",
+      "source_sha256": "2d5e2a2f634ddb8d1e26186ca44f127f116278d707f27e64a4af9e842c5d8081",
+      "previous_sha256": null
+    },
+    {
+      "path": "tests/fixtures/legacy_dense_optimizer_v1.py.txt",
+      "source_sha256": "259ba9e8fba4e53d6ba7018eda2895fb739ae2c5dd7c06f474f8490c64d16b0b",
+      "previous_sha256": null
+    },
+    {
+      "path": "tests/global_mesh_fixtures.py",
+      "source_sha256": "1b851a9f46f9638628f15ebdbaac825dc6ad0b7e3b5e9f0cb02ae1753cbe05e6",
+      "previous_sha256": null
+    },
+    {
+      "path": "tests/test_global_cad_optimizer.py",
+      "source_sha256": "3bddcf4332d6d466ab4e8dd9a890f292923a0010792938faff725eaf9e65057a",
+      "previous_sha256": null
+    },
+    {
+      "path": "tests/test_global_mesh_fitter.py",
+      "source_sha256": "943694450d23669028b4752320ee15db2c7227d97337744c093f526e81a1a860",
+      "previous_sha256": null
+    },
+    {
+      "path": "tests/test_mesh_pipeline.py",
+      "source_sha256": "b3754816ead056b26c6ccc7e8e63c8bd9359b375030902181ae3245fffda1a79",
+      "previous_sha256": "611ee705b805a355c6df1d794292c34f1299c37b7314500a22c12ba67f180999"
+    },
+    {
+      "path": "tests/test_mesh_reconstruction_api.py",
+      "source_sha256": "85fd7c457f33eccfa7b214ec3cbf2ecf1f447f9ddfc2d8012a9e22084440d6a0",
+      "previous_sha256": "19f25e4c27962f76c5700dc7d64c85e1211b71ed1724abcc4d7216cb174f7d20"
+    }
+  ]
+}

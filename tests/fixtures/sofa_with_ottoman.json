@@ -1,0 +1,1529 @@
+{
+  "furniture_type": "Curved upholstered corner sectional with detached ottoman",
+  "summary": "Regression for a curved sectional with a detached ottoman and explicitly scoped dimensions.",
+  "values": [
+    {
+      "key": "width_mm",
+      "value": 3000.0,
+      "explanation": "Fixed supplied sofa-only width target; not a verified measurement."
+    },
+    {
+      "key": "depth_mm",
+      "value": 1450.0,
+      "explanation": "Fixed supplied sofa-only depth target; overrides inset annotations."
+    },
+    {
+      "key": "height_mm",
+      "value": 880.0,
+      "explanation": "Fixed supplied floor-to-highest-back target."
+    },
+    {
+      "key": "width_to_height_ratio",
+      "value": 3.409,
+      "explanation": "Supplied rounded envelope ratio; descriptive only."
+    },
+    {
+      "key": "depth_to_width_ratio",
+      "value": 0.4833,
+      "explanation": "Supplied rounded envelope ratio; descriptive only."
+    },
+    {
+      "key": "visible_seating_zone_count",
+      "value": 3.0,
+      "explanation": "Three visible seating regions, F001-F003."
+    },
+    {
+      "key": "back_tier_count",
+      "value": 2.0,
+      "explanation": "Two padded back tiers, F004-F009."
+    },
+    {
+      "key": "upper_back_pad_count",
+      "value": 3.0,
+      "explanation": "Three upper regions, F007-F009."
+    },
+    {
+      "key": "lower_back_pad_count",
+      "value": 3.0,
+      "explanation": "Three lower regions, F004-F006."
+    },
+    {
+      "key": "arm_count",
+      "value": 2.0,
+      "explanation": "Two sculpted arms, F010-F011."
+    },
+    {
+      "key": "ottoman_count",
+      "value": 1.0,
+      "explanation": "One detached ottoman, F012 and F015."
+    },
+    {
+      "key": "section_depth_mm",
+      "value": 900.0,
+      "explanation": "Supplied adapted nominal section-depth estimate."
+    },
+    {
+      "key": "short_return_additional_projection_mm",
+      "value": 550.0,
+      "explanation": "Supplied extra short-return projection; drives curves."
+    },
+    {
+      "key": "seat_height_mm",
+      "value": 440.0,
+      "explanation": "Supplied nominal seat-top estimate."
+    },
+    {
+      "key": "reference_alternate_seat_height_mm",
+      "value": 380.0,
+      "explanation": "Unresolved reference height; not assigned to an unidentified surface."
+    },
+    {
+      "key": "seat_depth_mm",
+      "value": 580.0,
+      "explanation": "Supplied usable long-run seat-depth estimate."
+    },
+    {
+      "key": "seat_pad_thickness_mm",
+      "value": 210.0,
+      "explanation": "Supplied visible seat thickness estimate."
+    },
+    {
+      "key": "seat_pad_bottom_height_mm",
+      "value": 230.0,
+      "explanation": "Supplied seat underside and lower-body top estimate."
+    },
+    {
+      "key": "backrest_height_above_seat_mm",
+      "value": 440.0,
+      "explanation": "Supplied nominal back rise above seating plane."
+    },
+    {
+      "key": "lower_back_tier_height_mm",
+      "value": 200.0,
+      "explanation": "Supplied lower tier vertical span."
+    },
+    {
+      "key": "upper_back_tier_height_mm",
+      "value": 240.0,
+      "explanation": "Supplied upper tier vertical span."
+    },
+    {
+      "key": "back_pad_thickness_mm",
+      "value": 180.0,
+      "explanation": "Supplied horizontal thickness for oval back sweeps."
+    },
+    {
+      "key": "left_seat_projected_width_mm",
+      "value": 550.0,
+      "explanation": "Supplied left seating projected allocation."
+    },
+    {
+      "key": "corner_seat_projected_width_mm",
+      "value": 640.0,
+      "explanation": "Supplied curved corner projected allocation."
+    },
+    {
+      "key": "right_seat_projected_width_mm",
+      "value": 1350.0,
+      "explanation": "Supplied right seating allocation."
+    },
+    {
+      "key": "inside_corner_radius_mm",
+      "value": 350.0,
+      "explanation": "Supplied inside-corner curvature scale for Bezier controls."
+    },
+    {
+      "key": "arm_height_mm",
+      "value": 590.0,
+      "explanation": "Supplied maximum arm height estimate."
+    },
+    {
+      "key": "arm_width_mm",
+      "value": 230.0,
+      "explanation": "Supplied maximum nominal arm width."
+    },
+    {
+      "key": "arm_length_mm",
+      "value": 680.0,
+      "explanation": "Supplied nominal arm plan length."
+    },
+    {
+      "key": "arm_cap_thickness_mm",
+      "value": 160.0,
+      "explanation": "Supplied cap transition vertical span."
+    },
+    {
+      "key": "arm_front_lower_width_mm",
+      "value": 150.0,
+      "explanation": "Supplied narrower lower arm-front width."
+    },
+    {
+      "key": "seat_front_rounding_radius_mm",
+      "value": 95.0,
+      "explanation": "Supplied seat rounding scale; edge treatment uses half."
+    },
+    {
+      "key": "back_pad_edge_radius_mm",
+      "value": 70.0,
+      "explanation": "Supplied back rounding scale; drives offsets and base softening."
+    },
+    {
+      "key": "ottoman_width_mm",
+      "value": 1050.0,
+      "explanation": "Supplied ottoman maximum width estimate."
+    },
+    {
+      "key": "ottoman_depth_mm",
+      "value": 780.0,
+      "explanation": "Supplied ottoman maximum depth estimate."
+    },
+    {
+      "key": "ottoman_height_mm",
+      "value": 420.0,
+      "explanation": "Supplied ottoman top elevation estimate."
+    },
+    {
+      "key": "ottoman_top_thickness_mm",
+      "value": 140.0,
+      "explanation": "Supplied ottoman top-region thickness."
+    },
+    {
+      "key": "ottoman_body_height_mm",
+      "value": 280.0,
+      "explanation": "Supplied lower ottoman body height."
+    },
+    {
+      "key": "ottoman_plan_corner_radius_mm",
+      "value": 180.0,
+      "explanation": "Supplied ottoman plan-corner scale."
+    },
+    {
+      "key": "ottoman_inner_edge_inset_mm",
+      "value": 65.0,
+      "explanation": "Supplied shallow sofa-facing inset."
+    },
+    {
+      "key": "ottoman_top_edge_radius_mm",
+      "value": 70.0,
+      "explanation": "Supplied ottoman rounding scale; top uses 90 percent."
+    },
+    {
+      "key": "ottoman_to_sofa_gap_mm",
+      "value": 150.0,
+      "explanation": "Supplied foreground clearance, excluded from sofa dimensions."
+    },
+    {
+      "key": "backrest_height_mm",
+      "value": 440.0,
+      "explanation": "Matching-input alias for edited back rise; drives central upper-pad elevation."
+    },
+    {
+      "key": "left_seat_pad_width_mm",
+      "value": 550.0,
+      "explanation": "Matching-input width updated to edited left allocation; drives F001."
+    },
+    {
+      "key": "right_seat_pad_width_mm",
+      "value": 1350.0,
+      "explanation": "Matching-input width updated to edited right allocation; drives F003."
+    },
+    {
+      "key": "rear_shell_thickness_mm",
+      "value": 160.0,
+      "explanation": "Unverified rear reference scale. Repaired closure uses one quarter as its effective depth to avoid pad intersections; not stock thickness."
+    }
+  ],
+  "parts": [
+    {
+      "part_id": "F001",
+      "label": "Short left seating region",
+      "evidence": "Short left seat has a broad top, rounded thick front and central seam.",
+      "geometry": "outline_panel",
+      "material": "fabric",
+      "color_rgb": [
+        0.76,
+        0.7,
+        0.6
+      ],
+      "position": [
+        0.0,
+        0.0,
+        "seat_height_mm-seat_pad_thickness_mm/2"
+      ],
+      "rotation_deg": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        "left_seat_pad_width_mm",
+        "section_depth_mm",
+        "seat_pad_thickness_mm"
+      ],
+      "corner_radius": 0.0,
+      "edge_radius": "seat_front_rounding_radius_mm/2",
+      "dish_depth": 0.0,
+      "outline": [
+        [
+          "arm_width_mm",
+          "arm_width_mm/2"
+        ],
+        [
+          "arm_width_mm+left_seat_pad_width_mm/3",
+          "arm_width_mm/2"
+        ],
+        [
+          "arm_width_mm+left_seat_pad_width_mm",
+          "arm_width_mm/2"
+        ],
+        [
+          "arm_width_mm+left_seat_pad_width_mm",
+          "short_return_additional_projection_mm*0.45"
+        ],
+        [
+          "arm_width_mm+left_seat_pad_width_mm",
+          "short_return_additional_projection_mm*0.7"
+        ],
+        [
+          "arm_width_mm+left_seat_pad_width_mm",
+          "depth_mm-section_depth_mm+seat_depth_mm*0.8"
+        ],
+        [
+          "arm_width_mm+left_seat_pad_width_mm",
+          "depth_mm-section_depth_mm+seat_depth_mm"
+        ],
+        [
+          "arm_width_mm+left_seat_pad_width_mm*0.6",
+          "depth_mm-section_depth_mm+seat_depth_mm"
+        ],
+        [
+          "arm_width_mm",
+          "section_depth_mm"
+        ],
+        [
+          "arm_width_mm",
+          "arm_length_mm"
+        ],
+        [
+          "arm_width_mm",
+          "arm_length_mm*0.75"
+        ],
+        [
+          "arm_width_mm",
+          "arm_width_mm"
+        ],
+        [
+          "arm_width_mm",
+          "arm_width_mm/2"
+        ]
+      ],
+      "path": [],
+      "curve_mode": "bezier",
+      "sections": []
+    },
+    {
+      "part_id": "F002",
+      "label": "Curved corner seating region",
+      "evidence": "Central seat joins unequal runs through a concave curved front, not a square elbow.",
+      "geometry": "outline_panel",
+      "material": "fabric",
+      "color_rgb": [
+        0.76,
+        0.7,
+        0.6
+      ],
+      "position": [
+        0.0,
+        0.0,
+        "seat_height_mm-seat_pad_thickness_mm/2"
+      ],
+      "rotation_deg": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        "corner_seat_projected_width_mm",
+        "section_depth_mm",
+        "seat_pad_thickness_mm"
+      ],
+      "corner_radius": 0.0,
+      "edge_radius": "seat_front_rounding_radius_mm/2",
+      "dish_depth": 0.0,
+      "outline": [
+        [
+          "arm_width_mm+left_seat_projected_width_mm",
+          "short_return_additional_projection_mm*0.45"
+        ],
+        [
+          "arm_width_mm+left_seat_projected_width_mm",
+          "depth_mm-section_depth_mm"
+        ],
+        [
+          "arm_width_mm+left_seat_projected_width_mm+corner_seat_projected_width_mm-inside_corner_radius_mm",
+          "depth_mm-section_depth_mm"
+        ],
+        [
+          "arm_width_mm+left_seat_projected_width_mm+corner_seat_projected_width_mm",
+          "depth_mm-section_depth_mm"
+        ],
+        [
+          "arm_width_mm+left_seat_projected_width_mm+corner_seat_projected_width_mm",
+          "depth_mm-section_depth_mm+seat_depth_mm/3"
+        ],
+        [
+          "arm_width_mm+left_seat_projected_width_mm+corner_seat_projected_width_mm",
+          "depth_mm-section_depth_mm+seat_depth_mm"
+        ],
+        [
+          "arm_width_mm+left_seat_projected_width_mm+corner_seat_projected_width_mm",
+          "depth_mm-section_depth_mm+seat_depth_mm+back_pad_thickness_mm/2"
+        ],
+        [
+          "arm_width_mm+left_seat_projected_width_mm+corner_seat_projected_width_mm*0.6",
+          "depth_mm-section_depth_mm+seat_depth_mm+back_pad_thickness_mm/2"
+        ],
+        [
+          "arm_width_mm+left_seat_projected_width_mm+corner_seat_projected_width_mm*0.3",
+          "depth_mm-section_depth_mm+seat_depth_mm"
+        ],
+        [
+          "arm_width_mm+left_seat_projected_width_mm",
+          "depth_mm-section_depth_mm+seat_depth_mm"
+        ],
+        [
+          "arm_width_mm+left_seat_projected_width_mm",
+          "depth_mm-section_depth_mm+seat_depth_mm*0.8"
+        ],
+        [
+          "arm_width_mm+left_seat_projected_width_mm",
+          "short_return_additional_projection_mm*0.7"
+        ],
+        [
+          "arm_width_mm+left_seat_projected_width_mm",
+          "short_return_additional_projection_mm*0.45"
+        ]
+      ],
+      "path": [],
+      "curve_mode": "bezier",
+      "sections": []
+    },
+    {
+      "part_id": "F003",
+      "label": "Long right seating region",
+      "evidence": "One elongated right seat with a thick softly rolling front.",
+      "geometry": "box",
+      "material": "fabric",
+      "color_rgb": [
+        0.76,
+        0.7,
+        0.6
+      ],
+      "position": [
+        "width_mm-arm_width_mm-right_seat_pad_width_mm/2",
+        "depth_mm-section_depth_mm+(seat_depth_mm+back_pad_thickness_mm/2)/2",
+        "seat_height_mm-seat_pad_thickness_mm/2"
+      ],
+      "rotation_deg": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        "right_seat_pad_width_mm",
+        "seat_depth_mm+back_pad_thickness_mm/2",
+        "seat_pad_thickness_mm"
+      ],
+      "corner_radius": "seat_front_rounding_radius_mm",
+      "edge_radius": "seat_front_rounding_radius_mm/2",
+      "dish_depth": 0.0,
+      "outline": [],
+      "path": [],
+      "curve_mode": "polyline",
+      "sections": []
+    },
+    {
+      "part_id": "F004",
+      "label": "Left lower back tier",
+      "evidence": "Lower left padded band curves around the short run.",
+      "geometry": "ellipse_sweep",
+      "material": "fabric",
+      "color_rgb": [
+        0.79,
+        0.73,
+        0.64
+      ],
+      "position": [
+        0.0,
+        0.0,
+        "seat_height_mm+lower_back_tier_height_mm/2"
+      ],
+      "rotation_deg": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        "back_pad_thickness_mm",
+        "lower_back_tier_height_mm",
+        1.0
+      ],
+      "corner_radius": 0.0,
+      "rounded_ends": true,
+      "dish_depth": 0.0,
+      "outline": [],
+      "path": [
+        [
+          "arm_width_mm-back_pad_thickness_mm/2",
+          "arm_length_mm",
+          0.0
+        ],
+        [
+          "arm_width_mm-back_pad_thickness_mm/2",
+          "arm_length_mm+short_return_additional_projection_mm*0.6",
+          0.0
+        ],
+        [
+          "arm_width_mm+left_seat_projected_width_mm*0.4",
+          "depth_mm-section_depth_mm+seat_depth_mm+back_pad_thickness_mm/2-back_pad_edge_radius_mm/2",
+          0.0
+        ],
+        [
+          "arm_width_mm+left_seat_projected_width_mm",
+          "depth_mm-section_depth_mm+seat_depth_mm+back_pad_thickness_mm/2-back_pad_edge_radius_mm/2",
+          0.0
+        ]
+      ],
+      "curve_mode": "bezier",
+      "sections": []
+    },
+    {
+      "part_id": "F005",
+      "label": "Corner lower back tier",
+      "evidence": "Central lower band follows the corner sweep.",
+      "geometry": "ellipse_sweep",
+      "material": "fabric",
+      "color_rgb": [
+        0.79,
+        0.73,
+        0.64
+      ],
+      "position": [
+        0.0,
+        0.0,
+        "seat_height_mm+lower_back_tier_height_mm/2"
+      ],
+      "rotation_deg": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        "back_pad_thickness_mm",
+        "lower_back_tier_height_mm",
+        1.0
+      ],
+      "corner_radius": 0.0,
+      "rounded_ends": true,
+      "dish_depth": 0.0,
+      "outline": [],
+      "path": [
+        [
+          "arm_width_mm+left_seat_projected_width_mm",
+          "depth_mm-section_depth_mm+seat_depth_mm+back_pad_thickness_mm/2-back_pad_edge_radius_mm/2",
+          0.0
+        ],
+        [
+          "arm_width_mm+left_seat_projected_width_mm+corner_seat_projected_width_mm/3",
+          "depth_mm-section_depth_mm+seat_depth_mm+back_pad_thickness_mm/2-back_pad_edge_radius_mm/2",
+          0.0
+        ],
+        [
+          "arm_width_mm+left_seat_projected_width_mm+corner_seat_projected_width_mm*2/3",
+          "depth_mm-section_depth_mm+seat_depth_mm+back_pad_thickness_mm/2",
+          0.0
+        ],
+        [
+          "arm_width_mm+left_seat_projected_width_mm+corner_seat_projected_width_mm",
+          "depth_mm-section_depth_mm+seat_depth_mm+back_pad_thickness_mm/2",
+          0.0
+        ]
+      ],
+      "curve_mode": "bezier",
+      "sections": []
+    },
+    {
+      "part_id": "F006",
+      "label": "Right lower back tier",
+      "evidence": "Long right lower band remains one region.",
+      "geometry": "ellipse_sweep",
+      "material": "fabric",
+      "color_rgb": [
+        0.79,
+        0.73,
+        0.64
+      ],
+      "position": [
+        0.0,
+        0.0,
+        "seat_height_mm+lower_back_tier_height_mm/2"
+      ],
+      "rotation_deg": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        "back_pad_thickness_mm",
+        "lower_back_tier_height_mm",
+        1.0
+      ],
+      "corner_radius": 0.0,
+      "rounded_ends": true,
+      "dish_depth": 0.0,
+      "outline": [],
+      "path": [
+        [
+          "width_mm-arm_width_mm-right_seat_projected_width_mm",
+          "depth_mm-section_depth_mm+seat_depth_mm+back_pad_thickness_mm/2",
+          0.0
+        ],
+        [
+          "width_mm-arm_width_mm/2",
+          "depth_mm-section_depth_mm+seat_depth_mm+back_pad_thickness_mm/2",
+          0.0
+        ]
+      ],
+      "curve_mode": "polyline",
+      "sections": []
+    },
+    {
+      "part_id": "F007",
+      "label": "Left upper back tier",
+      "evidence": "Upper left pad is softly crowned above the lower tier.",
+      "geometry": "ellipse_sweep",
+      "material": "fabric",
+      "color_rgb": [
+        0.78,
+        0.72,
+        0.63
+      ],
+      "position": [
+        0.0,
+        0.0,
+        "height_mm-upper_back_tier_height_mm/2"
+      ],
+      "rotation_deg": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        "back_pad_thickness_mm",
+        "upper_back_tier_height_mm",
+        1.0
+      ],
+      "corner_radius": 0.0,
+      "rounded_ends": true,
+      "dish_depth": 0.0,
+      "outline": [],
+      "path": [
+        [
+          "back_pad_thickness_mm/2+rear_shell_thickness_mm/2",
+          "arm_length_mm",
+          0.0
+        ],
+        [
+          "back_pad_thickness_mm/2+rear_shell_thickness_mm/2",
+          "arm_length_mm+short_return_additional_projection_mm*0.6",
+          0.0
+        ],
+        [
+          "arm_width_mm+left_seat_projected_width_mm*0.4",
+          "depth_mm-back_pad_thickness_mm/2-rear_shell_thickness_mm/2-back_pad_edge_radius_mm/2",
+          0.0
+        ],
+        [
+          "arm_width_mm+left_seat_projected_width_mm",
+          "depth_mm-back_pad_thickness_mm/2-rear_shell_thickness_mm/2-back_pad_edge_radius_mm/2",
+          0.0
+        ]
+      ],
+      "curve_mode": "bezier",
+      "sections": []
+    },
+    {
+      "part_id": "F008",
+      "label": "Corner upper back tier",
+      "evidence": "Separate central upper pad follows the curved perimeter.",
+      "geometry": "ellipse_sweep",
+      "material": "fabric",
+      "color_rgb": [
+        0.78,
+        0.72,
+        0.63
+      ],
+      "position": [
+        0.0,
+        0.0,
+        "seat_height_mm+backrest_height_mm-upper_back_tier_height_mm/2"
+      ],
+      "rotation_deg": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        "back_pad_thickness_mm",
+        "upper_back_tier_height_mm",
+        1.0
+      ],
+      "corner_radius": 0.0,
+      "rounded_ends": true,
+      "dish_depth": 0.0,
+      "outline": [],
+      "path": [
+        [
+          "arm_width_mm+left_seat_projected_width_mm",
+          "depth_mm-back_pad_thickness_mm/2-rear_shell_thickness_mm/2-back_pad_edge_radius_mm/2",
+          0.0
+        ],
+        [
+          "arm_width_mm+left_seat_projected_width_mm+corner_seat_projected_width_mm/3",
+          "depth_mm-back_pad_thickness_mm/2-rear_shell_thickness_mm/2-back_pad_edge_radius_mm/2",
+          0.0
+        ],
+        [
+          "arm_width_mm+left_seat_projected_width_mm+corner_seat_projected_width_mm*2/3",
+          "depth_mm-back_pad_thickness_mm/2-rear_shell_thickness_mm/2",
+          0.0
+        ],
+        [
+          "arm_width_mm+left_seat_projected_width_mm+corner_seat_projected_width_mm",
+          "depth_mm-back_pad_thickness_mm/2-rear_shell_thickness_mm/2",
+          0.0
+        ]
+      ],
+      "curve_mode": "bezier",
+      "sections": []
+    },
+    {
+      "part_id": "F009",
+      "label": "Right upper back tier",
+      "evidence": "Long right upper pad is broad and rounded, without extra subdivisions.",
+      "geometry": "ellipse_sweep",
+      "material": "fabric",
+      "color_rgb": [
+        0.78,
+        0.72,
+        0.63
+      ],
+      "position": [
+        0.0,
+        0.0,
+        "seat_height_mm+backrest_height_above_seat_mm-upper_back_tier_height_mm/2"
+      ],
+      "rotation_deg": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        "back_pad_thickness_mm",
+        "upper_back_tier_height_mm",
+        1.0
+      ],
+      "corner_radius": 0.0,
+      "rounded_ends": true,
+      "dish_depth": 0.0,
+      "outline": [],
+      "path": [
+        [
+          "width_mm-arm_width_mm-right_seat_projected_width_mm",
+          "depth_mm-back_pad_thickness_mm/2-rear_shell_thickness_mm/2",
+          0.0
+        ],
+        [
+          "width_mm-arm_width_mm/2",
+          "depth_mm-back_pad_thickness_mm/2-rear_shell_thickness_mm/2",
+          0.0
+        ]
+      ],
+      "curve_mode": "polyline",
+      "sections": []
+    },
+    {
+      "part_id": "F010",
+      "label": "Sculpted left end arm",
+      "evidence": "Left arm has a bulbous cap above a narrower rounded front; one continuous region.",
+      "geometry": "loft",
+      "material": "fabric",
+      "color_rgb": [
+        0.77,
+        0.71,
+        0.62
+      ],
+      "position": [
+        "arm_width_mm/2",
+        "arm_length_mm/2",
+        0.0
+      ],
+      "rotation_deg": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        "arm_width_mm",
+        "arm_length_mm",
+        "arm_height_mm"
+      ],
+      "corner_radius": 0.0,
+      "dish_depth": 0.0,
+      "outline": [],
+      "path": [],
+      "curve_mode": "polyline",
+      "sections": [
+        {
+          "center": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "width": "arm_front_lower_width_mm",
+          "depth": "arm_length_mm*0.85",
+          "profile": "rectangle",
+          "corner_radius": "arm_front_lower_width_mm/3"
+        },
+        {
+          "center": [
+            0.0,
+            0.0,
+            "seat_pad_bottom_height_mm"
+          ],
+          "width": "arm_front_lower_width_mm*1.1",
+          "depth": "arm_length_mm*0.95",
+          "profile": "rectangle",
+          "corner_radius": "arm_front_lower_width_mm/2"
+        },
+        {
+          "center": [
+            0.0,
+            0.0,
+            "arm_height_mm-arm_cap_thickness_mm"
+          ],
+          "width": "arm_width_mm",
+          "depth": "arm_length_mm",
+          "profile": "rectangle",
+          "corner_radius": "arm_width_mm/2-1"
+        },
+        {
+          "center": [
+            0.0,
+            "arm_length_mm*0.01",
+            "arm_height_mm-arm_cap_thickness_mm/3"
+          ],
+          "width": "arm_width_mm*0.95",
+          "depth": "arm_length_mm*0.96",
+          "profile": "rectangle",
+          "corner_radius": "arm_width_mm*0.45"
+        },
+        {
+          "center": [
+            0.0,
+            "arm_length_mm*0.04",
+            "arm_height_mm"
+          ],
+          "width": "arm_front_lower_width_mm",
+          "depth": "arm_length_mm*0.73",
+          "profile": "rectangle",
+          "corner_radius": "arm_front_lower_width_mm/3"
+        }
+      ]
+    },
+    {
+      "part_id": "F011",
+      "label": "Sculpted right end arm",
+      "evidence": "Right arm has a broad cap, narrower front and deep boundary seam.",
+      "geometry": "loft",
+      "material": "fabric",
+      "color_rgb": [
+        0.77,
+        0.71,
+        0.62
+      ],
+      "position": [
+        "width_mm-arm_width_mm/2",
+        "depth_mm-section_depth_mm+arm_length_mm/2",
+        0.0
+      ],
+      "rotation_deg": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        "arm_width_mm",
+        "arm_length_mm",
+        "arm_height_mm"
+      ],
+      "corner_radius": 0.0,
+      "dish_depth": 0.0,
+      "outline": [],
+      "path": [],
+      "curve_mode": "polyline",
+      "sections": [
+        {
+          "center": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "width": "arm_front_lower_width_mm",
+          "depth": "arm_length_mm*0.85",
+          "profile": "rectangle",
+          "corner_radius": "arm_front_lower_width_mm/3"
+        },
+        {
+          "center": [
+            0.0,
+            0.0,
+            "seat_pad_bottom_height_mm"
+          ],
+          "width": "arm_front_lower_width_mm*1.1",
+          "depth": "arm_length_mm*0.95",
+          "profile": "rectangle",
+          "corner_radius": "arm_front_lower_width_mm/2"
+        },
+        {
+          "center": [
+            0.0,
+            0.0,
+            "arm_height_mm-arm_cap_thickness_mm"
+          ],
+          "width": "arm_width_mm",
+          "depth": "arm_length_mm",
+          "profile": "rectangle",
+          "corner_radius": "arm_width_mm/2-1"
+        },
+        {
+          "center": [
+            0.0,
+            "arm_length_mm*0.015",
+            "arm_height_mm-arm_cap_thickness_mm/3"
+          ],
+          "width": "arm_width_mm*0.95",
+          "depth": "arm_length_mm*0.95",
+          "profile": "rectangle",
+          "corner_radius": "arm_width_mm*0.45"
+        },
+        {
+          "center": [
+            0.0,
+            "arm_length_mm*0.055",
+            "arm_height_mm"
+          ],
+          "width": "arm_front_lower_width_mm",
+          "depth": "arm_length_mm*0.7",
+          "profile": "rectangle",
+          "corner_radius": "arm_front_lower_width_mm/3"
+        }
+      ]
+    },
+    {
+      "part_id": "F012",
+      "label": "Contoured ottoman top",
+      "evidence": "Detached rounded-oblong top has a shallow inward sofa-facing edge sweep.",
+      "geometry": "outline_panel",
+      "material": "fabric",
+      "color_rgb": [
+        0.78,
+        0.72,
+        0.63
+      ],
+      "position": [
+        "arm_width_mm+left_seat_projected_width_mm",
+        "0-ottoman_to_sofa_gap_mm-ottoman_depth_mm",
+        "ottoman_height_mm-ottoman_top_thickness_mm/2"
+      ],
+      "rotation_deg": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        "ottoman_width_mm",
+        "ottoman_depth_mm",
+        "ottoman_top_thickness_mm"
+      ],
+      "corner_radius": 0.0,
+      "edge_radius": "ottoman_top_edge_radius_mm*0.9",
+      "dish_depth": 0.0,
+      "outline": [
+        [
+          0.0,
+          "ottoman_plan_corner_radius_mm"
+        ],
+        [
+          0.0,
+          "ottoman_plan_corner_radius_mm*0.4"
+        ],
+        [
+          "ottoman_plan_corner_radius_mm*0.4",
+          0.0
+        ],
+        [
+          "ottoman_plan_corner_radius_mm",
+          0.0
+        ],
+        [
+          "ottoman_width_mm/3",
+          0.0
+        ],
+        [
+          "ottoman_width_mm*2/3",
+          0.0
+        ],
+        [
+          "ottoman_width_mm-ottoman_plan_corner_radius_mm",
+          0.0
+        ],
+        [
+          "ottoman_width_mm",
+          0.0
+        ],
+        [
+          "ottoman_width_mm",
+          "ottoman_depth_mm-ottoman_plan_corner_radius_mm*1.5"
+        ],
+        [
+          "ottoman_width_mm",
+          "ottoman_depth_mm-ottoman_plan_corner_radius_mm"
+        ],
+        [
+          "ottoman_width_mm",
+          "ottoman_depth_mm-ottoman_plan_corner_radius_mm*0.4"
+        ],
+        [
+          "ottoman_width_mm-ottoman_plan_corner_radius_mm*0.4",
+          "ottoman_depth_mm"
+        ],
+        [
+          "ottoman_width_mm-ottoman_plan_corner_radius_mm",
+          "ottoman_depth_mm"
+        ],
+        [
+          "ottoman_width_mm*0.68",
+          "ottoman_depth_mm"
+        ],
+        [
+          "ottoman_width_mm*0.62",
+          "ottoman_depth_mm-ottoman_inner_edge_inset_mm"
+        ],
+        [
+          "ottoman_width_mm/2",
+          "ottoman_depth_mm-ottoman_inner_edge_inset_mm"
+        ],
+        [
+          "ottoman_width_mm*0.38",
+          "ottoman_depth_mm-ottoman_inner_edge_inset_mm"
+        ],
+        [
+          "ottoman_width_mm*0.3",
+          "ottoman_depth_mm"
+        ],
+        [
+          "ottoman_plan_corner_radius_mm",
+          "ottoman_depth_mm"
+        ],
+        [
+          "ottoman_plan_corner_radius_mm*0.4",
+          "ottoman_depth_mm"
+        ],
+        [
+          0.0,
+          "ottoman_depth_mm-ottoman_plan_corner_radius_mm*0.4"
+        ],
+        [
+          0.0,
+          "ottoman_depth_mm-ottoman_plan_corner_radius_mm"
+        ],
+        [
+          0.0,
+          "ottoman_depth_mm*0.6"
+        ],
+        [
+          0.0,
+          "ottoman_depth_mm*0.4"
+        ],
+        [
+          0.0,
+          "ottoman_plan_corner_radius_mm"
+        ]
+      ],
+      "path": [],
+      "curve_mode": "bezier",
+      "sections": []
+    },
+    {
+      "part_id": "F013",
+      "label": "Continuous curved upholstered lower body",
+      "evidence": "Low enclosed base follows unequal runs and continuous concave front; no tall exposed feet.",
+      "geometry": "outline_panel",
+      "material": "fabric",
+      "color_rgb": [
+        0.72,
+        0.66,
+        0.57
+      ],
+      "position": [
+        0.0,
+        0.0,
+        "seat_pad_bottom_height_mm/2"
+      ],
+      "rotation_deg": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        "width_mm",
+        "depth_mm",
+        "seat_pad_bottom_height_mm"
+      ],
+      "corner_radius": 0.0,
+      "edge_radius": "back_pad_edge_radius_mm/4",
+      "dish_depth": 0.0,
+      "outline": [
+        [
+          "arm_width_mm",
+          0.0
+        ],
+        [
+          "arm_width_mm*1.5",
+          0.0
+        ],
+        [
+          "arm_width_mm+left_seat_projected_width_mm",
+          0.0
+        ],
+        [
+          "arm_width_mm+left_seat_projected_width_mm",
+          "short_return_additional_projection_mm*0.45"
+        ],
+        [
+          "arm_width_mm+left_seat_projected_width_mm",
+          "depth_mm-section_depth_mm"
+        ],
+        [
+          "arm_width_mm+left_seat_projected_width_mm+corner_seat_projected_width_mm-inside_corner_radius_mm",
+          "depth_mm-section_depth_mm"
+        ],
+        [
+          "arm_width_mm+left_seat_projected_width_mm+corner_seat_projected_width_mm",
+          "depth_mm-section_depth_mm"
+        ],
+        [
+          "width_mm-right_seat_projected_width_mm*0.7",
+          "depth_mm-section_depth_mm"
+        ],
+        [
+          "width_mm-arm_width_mm",
+          "depth_mm-section_depth_mm"
+        ],
+        [
+          "width_mm-arm_width_mm/2",
+          "depth_mm-section_depth_mm"
+        ],
+        [
+          "width_mm",
+          "depth_mm-section_depth_mm"
+        ],
+        [
+          "width_mm",
+          "depth_mm-section_depth_mm+arm_width_mm/4"
+        ],
+        [
+          "width_mm",
+          "depth_mm-section_depth_mm+arm_width_mm/2"
+        ],
+        [
+          "width_mm",
+          "depth_mm-section_depth_mm+arm_length_mm/2"
+        ],
+        [
+          "width_mm",
+          "depth_mm-back_pad_edge_radius_mm*2"
+        ],
+        [
+          "width_mm",
+          "depth_mm-back_pad_edge_radius_mm"
+        ],
+        [
+          "width_mm",
+          "depth_mm-back_pad_edge_radius_mm*0.4"
+        ],
+        [
+          "width_mm-back_pad_edge_radius_mm*0.4",
+          "depth_mm"
+        ],
+        [
+          "width_mm-back_pad_edge_radius_mm",
+          "depth_mm"
+        ],
+        [
+          "width_mm-right_seat_projected_width_mm/2",
+          "depth_mm"
+        ],
+        [
+          "arm_width_mm+left_seat_projected_width_mm+corner_seat_projected_width_mm/2",
+          "depth_mm"
+        ],
+        [
+          "arm_width_mm+left_seat_projected_width_mm",
+          "depth_mm"
+        ],
+        [
+          "arm_width_mm+left_seat_projected_width_mm*0.1",
+          "depth_mm"
+        ],
+        [
+          0.0,
+          "arm_length_mm+short_return_additional_projection_mm*0.8"
+        ],
+        [
+          0.0,
+          "arm_length_mm"
+        ],
+        [
+          0.0,
+          "arm_length_mm*0.75"
+        ],
+        [
+          0.0,
+          "arm_width_mm*1.5"
+        ],
+        [
+          0.0,
+          "arm_width_mm"
+        ],
+        [
+          0.0,
+          "arm_width_mm*0.4"
+        ],
+        [
+          "arm_width_mm*0.4",
+          0.0
+        ],
+        [
+          "arm_width_mm",
+          0.0
+        ]
+      ],
+      "path": [],
+      "curve_mode": "bezier",
+      "sections": []
+    },
+    {
+      "part_id": "F014",
+      "label": "Continuous upholstered rear enclosure, repaired",
+      "evidence": "Enclosed upholstered outer silhouette; unseen rear inferred. Repaired outboard closure ends behind the arms without extending through the back pads.",
+      "geometry": "outline_panel",
+      "material": "fabric",
+      "color_rgb": [
+        0.74,
+        0.68,
+        0.59
+      ],
+      "position": [
+        0.0,
+        0.0,
+        "seat_pad_bottom_height_mm+(height_mm-seat_pad_bottom_height_mm-back_pad_edge_radius_mm/2)/2"
+      ],
+      "rotation_deg": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        "width_mm",
+        "depth_mm",
+        "height_mm-seat_pad_bottom_height_mm-back_pad_edge_radius_mm/2"
+      ],
+      "corner_radius": 0.0,
+      "dish_depth": 0.0,
+      "outline": [
+        [
+          0.0,
+          "arm_length_mm"
+        ],
+        [
+          0.0,
+          "arm_length_mm+short_return_additional_projection_mm*0.8"
+        ],
+        [
+          "arm_width_mm+left_seat_projected_width_mm*0.1",
+          "depth_mm"
+        ],
+        [
+          "arm_width_mm+left_seat_projected_width_mm",
+          "depth_mm"
+        ],
+        [
+          "arm_width_mm+left_seat_projected_width_mm+corner_seat_projected_width_mm/2",
+          "depth_mm"
+        ],
+        [
+          "width_mm-right_seat_projected_width_mm/2",
+          "depth_mm"
+        ],
+        [
+          "width_mm-back_pad_edge_radius_mm",
+          "depth_mm"
+        ],
+        [
+          "width_mm-back_pad_edge_radius_mm*0.4",
+          "depth_mm"
+        ],
+        [
+          "width_mm",
+          "depth_mm-back_pad_edge_radius_mm*0.4"
+        ],
+        [
+          "width_mm",
+          "depth_mm-back_pad_edge_radius_mm"
+        ],
+        [
+          "width_mm",
+          "depth_mm-back_pad_edge_radius_mm*2"
+        ],
+        [
+          "width_mm",
+          "depth_mm-section_depth_mm+arm_length_mm+back_pad_edge_radius_mm/2"
+        ],
+        [
+          "width_mm",
+          "depth_mm-section_depth_mm+arm_length_mm"
+        ],
+        [
+          "width_mm-rear_shell_thickness_mm/12",
+          "depth_mm-section_depth_mm+arm_length_mm"
+        ],
+        [
+          "width_mm-rear_shell_thickness_mm/6",
+          "depth_mm-section_depth_mm+arm_length_mm"
+        ],
+        [
+          "width_mm-rear_shell_thickness_mm/4",
+          "depth_mm-section_depth_mm+arm_length_mm"
+        ],
+        [
+          "width_mm-rear_shell_thickness_mm/4",
+          "depth_mm-section_depth_mm+arm_length_mm+back_pad_edge_radius_mm/2"
+        ],
+        [
+          "width_mm-rear_shell_thickness_mm/4",
+          "depth_mm-rear_shell_thickness_mm/4-back_pad_edge_radius_mm/2"
+        ],
+        [
+          "width_mm-rear_shell_thickness_mm/4",
+          "depth_mm-rear_shell_thickness_mm/4"
+        ],
+        [
+          "width_mm-right_seat_projected_width_mm/2",
+          "depth_mm-rear_shell_thickness_mm/4"
+        ],
+        [
+          "arm_width_mm+left_seat_projected_width_mm+corner_seat_projected_width_mm/2",
+          "depth_mm-rear_shell_thickness_mm/4"
+        ],
+        [
+          "arm_width_mm+left_seat_projected_width_mm",
+          "depth_mm-rear_shell_thickness_mm/4"
+        ],
+        [
+          "arm_width_mm+left_seat_projected_width_mm*0.1+rear_shell_thickness_mm/4",
+          "depth_mm-rear_shell_thickness_mm/4"
+        ],
+        [
+          "rear_shell_thickness_mm/4",
+          "arm_length_mm+short_return_additional_projection_mm*0.8-rear_shell_thickness_mm/4"
+        ],
+        [
+          "rear_shell_thickness_mm/4",
+          "arm_length_mm"
+        ],
+        [
+          "rear_shell_thickness_mm/6",
+          "arm_length_mm"
+        ],
+        [
+          "rear_shell_thickness_mm/12",
+          "arm_length_mm"
+        ],
+        [
+          0.0,
+          "arm_length_mm"
+        ]
+      ],
+      "path": [],
+      "curve_mode": "bezier",
+      "sections": []
+    },
+    {
+      "part_id": "F015",
+      "label": "Contoured ottoman lower body",
+      "evidence": "Ottoman has deep rounded sides, a top seam and no visible exposed legs.",
+      "geometry": "outline_panel",
+      "material": "fabric",
+      "color_rgb": [
+        0.74,
+        0.68,
+        0.59
+      ],
+      "position": [
+        "arm_width_mm+left_seat_projected_width_mm",
+        "0-ottoman_to_sofa_gap_mm-ottoman_depth_mm",
+        "ottoman_body_height_mm/2"
+      ],
+      "rotation_deg": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        "ottoman_width_mm",
+        "ottoman_depth_mm",
+        "ottoman_body_height_mm"
+      ],
+      "corner_radius": 0.0,
+      "edge_radius": "ottoman_top_edge_radius_mm*0.6",
+      "dish_depth": 0.0,
+      "outline": [
+        [
+          0.0,
+          "ottoman_plan_corner_radius_mm"
+        ],
+        [
+          0.0,
+          "ottoman_plan_corner_radius_mm*0.4"
+        ],
+        [
+          "ottoman_plan_corner_radius_mm*0.4",
+          0.0
+        ],
+        [
+          "ottoman_plan_corner_radius_mm",
+          0.0
+        ],
+        [
+          "ottoman_width_mm/3",
+          0.0
+        ],
+        [
+          "ottoman_width_mm*2/3",
+          0.0
+        ],
+        [
+          "ottoman_width_mm-ottoman_plan_corner_radius_mm",
+          0.0
+        ],
+        [
+          "ottoman_width_mm",
+          0.0
+        ],
+        [
+          "ottoman_width_mm",
+          "ottoman_depth_mm-ottoman_plan_corner_radius_mm*1.5"
+        ],
+        [
+          "ottoman_width_mm",
+          "ottoman_depth_mm-ottoman_plan_corner_radius_mm"
+        ],
+        [
+          "ottoman_width_mm",
+          "ottoman_depth_mm-ottoman_plan_corner_radius_mm*0.4"
+        ],
+        [
+          "ottoman_width_mm-ottoman_plan_corner_radius_mm*0.4",
+          "ottoman_depth_mm"
+        ],
+        [
+          "ottoman_width_mm-ottoman_plan_corner_radius_mm",
+          "ottoman_depth_mm"
+        ],
+        [
+          "ottoman_width_mm*0.68",
+          "ottoman_depth_mm"
+        ],
+        [
+          "ottoman_width_mm*0.62",
+          "ottoman_depth_mm-ottoman_inner_edge_inset_mm"
+        ],
+        [
+          "ottoman_width_mm/2",
+          "ottoman_depth_mm-ottoman_inner_edge_inset_mm"
+        ],
+        [
+          "ottoman_width_mm*0.38",
+          "ottoman_depth_mm-ottoman_inner_edge_inset_mm"
+        ],
+        [
+          "ottoman_width_mm*0.3",
+          "ottoman_depth_mm"
+        ],
+        [
+          "ottoman_plan_corner_radius_mm",
+          "ottoman_depth_mm"
+        ],
+        [
+          "ottoman_plan_corner_radius_mm*0.4",
+          "ottoman_depth_mm"
+        ],
+        [
+          0.0,
+          "ottoman_depth_mm-ottoman_plan_corner_radius_mm*0.4"
+        ],
+        [
+          0.0,
+          "ottoman_depth_mm-ottoman_plan_corner_radius_mm"
+        ],
+        [
+          0.0,
+          "ottoman_depth_mm*0.6"
+        ],
+        [
+          0.0,
+          "ottoman_depth_mm*0.4"
+        ],
+        [
+          0.0,
+          "ottoman_plan_corner_radius_mm"
+        ]
+      ],
+      "path": [],
+      "curve_mode": "bezier",
+      "sections": []
+    }
+  ],
+  "assumptions": [
+    "Supplied sofa dimensions are design targets, not verified measurements; they exclude the detached ottoman and its placement.",
+    "Other supplied dimensions remain unverified estimates. Matching-input aliases follow the edited seating allocations.",
+    "The reported enclosure failures involve edge treatment and contact-trimmed geometry. The repair removes its fillet and deep pad intersections while retaining a single continuous curved exterior region.",
+    "The repaired rear closure uses rear_shell_thickness_mm/4 as its effective depth. Its concealed inner face and clearance behind the pads are modeling estimates, not verified construction.",
+    "Fabric describes visible upholstery, not homogeneous internal material. Concealed frame, padding, joinery and underside remain unknown.",
+    "The unresolved 380 mm reference height is retained as metadata, not assigned to an unidentified surface. Ratios and counts are descriptive.",
+    "Positive Y points rearward. The detached ottoman occupies negative Y and is excluded from the sofa envelope.",
+    "Fifteen solids describe exterior visual regions, not manufactured parts. No hidden fasteners, framing or supports are invented.",
+    "The arms retain related but slightly different cap profiles. Upholstery rounding is approximate.",
+    "Deterministic validation and qualified designer signoff remain required; no manufacturing or structural approval is implied."
+  ],
+  "unrepresented_features": [
+    "Fine textile texture, stitching, piping and seam depressions.",
+    "Exact soft deformation and compound upholstery crowns.",
+    "Unseen frame, underside, feet, connections and padding composition.",
+    "Perspective uncertainty and adaptation to the shallower supplied depth.",
+    "Rear closure top and bottom are unfilleted; its curved plan remains.",
+    "Alternative inset dimensions and the unresolved 380 mm note are not additional envelope constraints."
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "seconds": 0.8474030000070343,
+  "evaluations": 8,
+  "image_error": 7.657950604514887e-06,
+  "image_error_units": "image_diagonal_normalized_pixel_distance",
+  "final_surface_deviation_mm": 0.006265384571909277,
+  "comparison_limit": "Legacy uses synthetic photo landmarks; dense fitting uses the generated surface. Evidence differs."
+}

@@ -1,0 +1,202 @@
+{
+  "furniture_type": "synthetic table",
+  "summary": "Synthetic separate-part B-Rep assembly",
+  "values": [
+    {
+      "key": "width_mm",
+      "value": 700.0,
+      "explanation": "Synthetic estimate"
+    },
+    {
+      "key": "depth_mm",
+      "value": 500.0,
+      "explanation": "Synthetic estimate"
+    },
+    {
+      "key": "height_mm",
+      "value": 750.0,
+      "explanation": "Synthetic estimate"
+    },
+    {
+      "key": "top_thickness_mm",
+      "value": 30.0,
+      "explanation": "Synthetic estimate"
+    },
+    {
+      "key": "leg_width_mm",
+      "value": 40.0,
+      "explanation": "Synthetic estimate"
+    }
+  ],
+  "parts": [
+    {
+      "part_id": "F001",
+      "label": "Table top",
+      "evidence": "Synthetic fixture; not actual photo recognition",
+      "geometry": "box",
+      "material": "solid_wood",
+      "color_rgb": [
+        0.55,
+        0.34,
+        0.18
+      ],
+      "position": [
+        0.0,
+        0.0,
+        "height_mm-top_thickness_mm/2"
+      ],
+      "rotation_deg": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        "width_mm",
+        "depth_mm",
+        "top_thickness_mm"
+      ],
+      "corner_radius": 0.0,
+      "dish_depth": 0.0,
+      "outline": [],
+      "path": [],
+      "curve_mode": "polyline",
+      "sections": []
+    },
+    {
+      "part_id": "F002",
+      "label": "Table leg",
+      "evidence": "Synthetic fixture; not actual photo recognition",
+      "geometry": "box",
+      "material": "solid_wood",
+      "color_rgb": [
+        0.55,
+        0.34,
+        0.18
+      ],
+      "position": [
+        "((-width_mm/2+75) + (-14.842324211)) + (-0.150613450097)",
+        "-depth_mm/2+60",
+        "(height_mm-top_thickness_mm)/2"
+      ],
+      "rotation_deg": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        "leg_width_mm",
+        "leg_width_mm",
+        "height_mm-top_thickness_mm"
+      ],
+      "corner_radius": 0.0,
+      "dish_depth": 0.0,
+      "outline": [],
+      "path": [],
+      "curve_mode": "polyline",
+      "sections": []
+    },
+    {
+      "part_id": "F003",
+      "label": "Table leg",
+      "evidence": "Synthetic fixture; not actual photo recognition",
+      "geometry": "box",
+      "material": "solid_wood",
+      "color_rgb": [
+        0.55,
+        0.34,
+        0.18
+      ],
+      "position": [
+        "-width_mm/2+60",
+        "depth_mm/2-60",
+        "(height_mm-top_thickness_mm)/2"
+      ],
+      "rotation_deg": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        "leg_width_mm",
+        "leg_width_mm",
+        "height_mm-top_thickness_mm"
+      ],
+      "corner_radius": 0.0,
+      "dish_depth": 0.0,
+      "outline": [],
+      "path": [],
+      "curve_mode": "polyline",
+      "sections": []
+    },
+    {
+      "part_id": "F004",
+      "label": "Table leg",
+      "evidence": "Synthetic fixture; not actual photo recognition",
+      "geometry": "box",
+      "material": "solid_wood",
+      "color_rgb": [
+        0.55,
+        0.34,
+        0.18
+      ],
+      "position": [
+        "width_mm/2-60",
+        "-depth_mm/2+60",
+        "(height_mm-top_thickness_mm)/2"
+      ],
+      "rotation_deg": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        "leg_width_mm",
+        "leg_width_mm",
+        "height_mm-top_thickness_mm"
+      ],
+      "corner_radius": 0.0,
+      "dish_depth": 0.0,
+      "outline": [],
+      "path": [],
+      "curve_mode": "polyline",
+      "sections": []
+    },
+    {
+      "part_id": "F005",
+      "label": "Table leg",
+      "evidence": "Synthetic fixture; not actual photo recognition",
+      "geometry": "box",
+      "material": "solid_wood",
+      "color_rgb": [
+        0.55,
+        0.34,
+        0.18
+      ],
+      "position": [
+        "width_mm/2-60",
+        "depth_mm/2-60",
+        "(height_mm-top_thickness_mm)/2"
+      ],
+      "rotation_deg": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        "leg_width_mm",
+        "leg_width_mm",
+        "height_mm-top_thickness_mm"
+      ],
+      "corner_radius": 0.0,
+      "dish_depth": 0.0,
+      "outline": [],
+      "path": [],
+      "curve_mode": "polyline",
+      "sections": []
+    }
+  ],
+  "assumptions": [
+    "Synthetic geometry, hidden joints unverified"
+  ],
+  "unrepresented_features": []
+}

@@ -1,0 +1,9 @@
+{
+  "description": "Rounded rectangular arm whose four-section global spline rings outside its envelope.",
+  "sections": [
+    {"center": [0, 20, 84], "width": 204, "depth": 552.5, "profile": "rectangle", "corner_radius": 75},
+    {"center": [0, 0, 440], "width": 240, "depth": 650, "profile": "rectangle", "corner_radius": 75},
+    {"center": [0, 0, 549], "width": 240, "depth": 650, "profile": "rectangle", "corner_radius": 75},
+    {"center": [0, 10, 610], "width": 158.4, "depth": 520, "profile": "rectangle", "corner_radius": 75}
+  ]
+}

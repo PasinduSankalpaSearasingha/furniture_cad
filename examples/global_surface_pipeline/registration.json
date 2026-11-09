@@ -1,0 +1,36 @@
+{
+  "method": "trimmed multiscale rigid point-to-point ICP",
+  "rmse_mm": 0.5660361088087247,
+  "iterations": 15,
+  "scale_optimized": false,
+  "reference_to_cad_transform": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "coarse_orientation_candidates": 24,
+  "initial_surface_mean_mm": 1.0677886009216309,
+  "final_surface_mean_mm": 1.0677886009216309,
+  "shape_parameters_optimized": false
+}

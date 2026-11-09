@@ -1,0 +1,438 @@
+{
+  "revision": 1,
+  "findings": [
+    {
+      "code": "MEASUREMENTS_REQUIRED",
+      "severity": "BLOCKER",
+      "category": "dimensional",
+      "message": "Physical measurements and their evidence reference must be verified",
+      "part_ids": []
+    },
+    {
+      "code": "MATERIAL_APPROVAL_REQUIRED",
+      "severity": "BLOCKER",
+      "category": "material",
+      "message": "Material profile needs evidence-backed approval",
+      "part_ids": [
+        "P001"
+      ]
+    },
+    {
+      "code": "MATERIAL_DETAILS_REQUIRED",
+      "severity": "BLOCKER",
+      "category": "material",
+      "message": "edge treatment, sheet dimensions, grain direction",
+      "part_ids": [
+        "P001"
+      ]
+    },
+    {
+      "code": "BLANK_ALLOWANCE_REQUIRED",
+      "severity": "BLOCKER",
+      "category": "dimensional",
+      "message": "Explicit approved blank allowances are required",
+      "part_ids": [
+        "P001"
+      ]
+    },
+    {
+      "code": "MATERIAL_APPROVAL_REQUIRED",
+      "severity": "BLOCKER",
+      "category": "material",
+      "message": "Material profile needs evidence-backed approval",
+      "part_ids": [
+        "P002"
+      ]
+    },
+    {
+      "code": "MATERIAL_DETAILS_REQUIRED",
+      "severity": "BLOCKER",
+      "category": "material",
+      "message": "edge treatment, sheet dimensions, grain direction",
+      "part_ids": [
+        "P002"
+      ]
+    },
+    {
+      "code": "BLANK_ALLOWANCE_REQUIRED",
+      "severity": "BLOCKER",
+      "category": "dimensional",
+      "message": "Explicit approved blank allowances are required",
+      "part_ids": [
+        "P002"
+      ]
+    },
+    {
+      "code": "MATERIAL_APPROVAL_REQUIRED",
+      "severity": "BLOCKER",
+      "category": "material",
+      "message": "Material profile needs evidence-backed approval",
+      "part_ids": [
+        "P003"
+      ]
+    },
+    {
+      "code": "MATERIAL_DETAILS_REQUIRED",
+      "severity": "BLOCKER",
+      "category": "material",
+      "message": "edge treatment, sheet dimensions, grain direction",
+      "part_ids": [
+        "P003"
+      ]
+    },
+    {
+      "code": "BLANK_ALLOWANCE_REQUIRED",
+      "severity": "BLOCKER",
+      "category": "dimensional",
+      "message": "Explicit approved blank allowances are required",
+      "part_ids": [
+        "P003"
+      ]
+    },
+    {
+      "code": "MATERIAL_APPROVAL_REQUIRED",
+      "severity": "BLOCKER",
+      "category": "material",
+      "message": "Material profile needs evidence-backed approval",
+      "part_ids": [
+        "P004"
+      ]
+    },
+    {
+      "code": "MATERIAL_DETAILS_REQUIRED",
+      "severity": "BLOCKER",
+      "category": "material",
+      "message": "edge treatment, sheet dimensions, grain direction",
+      "part_ids": [
+        "P004"
+      ]
+    },
+    {
+      "code": "BLANK_ALLOWANCE_REQUIRED",
+      "severity": "BLOCKER",
+      "category": "dimensional",
+      "message": "Explicit approved blank allowances are required",
+      "part_ids": [
+        "P004"
+      ]
+    },
+    {
+      "code": "MATERIAL_APPROVAL_REQUIRED",
+      "severity": "BLOCKER",
+      "category": "material",
+      "message": "Material profile needs evidence-backed approval",
+      "part_ids": [
+        "P005"
+      ]
+    },
+    {
+      "code": "MATERIAL_DETAILS_REQUIRED",
+      "severity": "BLOCKER",
+      "category": "material",
+      "message": "edge treatment, sheet dimensions, grain direction",
+      "part_ids": [
+        "P005"
+      ]
+    },
+    {
+      "code": "BLANK_ALLOWANCE_REQUIRED",
+      "severity": "BLOCKER",
+      "category": "dimensional",
+      "message": "Explicit approved blank allowances are required",
+      "part_ids": [
+        "P005"
+      ]
+    },
+    {
+      "code": "MATERIAL_APPROVAL_REQUIRED",
+      "severity": "BLOCKER",
+      "category": "material",
+      "message": "Material profile needs evidence-backed approval",
+      "part_ids": [
+        "D001"
+      ]
+    },
+    {
+      "code": "MATERIAL_DETAILS_REQUIRED",
+      "severity": "BLOCKER",
+      "category": "material",
+      "message": "edge treatment, grain direction, species, moisture, wood movement review, stock dimensions",
+      "part_ids": [
+        "D001"
+      ]
+    },
+    {
+      "code": "BLANK_ALLOWANCE_REQUIRED",
+      "severity": "BLOCKER",
+      "category": "dimensional",
+      "message": "Explicit approved blank allowances are required",
+      "part_ids": [
+        "D001"
+      ]
+    },
+    {
+      "code": "MATERIAL_APPROVAL_REQUIRED",
+      "severity": "BLOCKER",
+      "category": "material",
+      "message": "Material profile needs evidence-backed approval",
+      "part_ids": [
+        "D002"
+      ]
+    },
+    {
+      "code": "MATERIAL_DETAILS_REQUIRED",
+      "severity": "BLOCKER",
+      "category": "material",
+      "message": "edge treatment, grain direction, species, moisture, wood movement review, stock dimensions",
+      "part_ids": [
+        "D002"
+      ]
+    },
+    {
+      "code": "BLANK_ALLOWANCE_REQUIRED",
+      "severity": "BLOCKER",
+      "category": "dimensional",
+      "message": "Explicit approved blank allowances are required",
+      "part_ids": [
+        "D002"
+      ]
+    },
+    {
+      "code": "MATERIAL_APPROVAL_REQUIRED",
+      "severity": "BLOCKER",
+      "category": "material",
+      "message": "Material profile needs evidence-backed approval",
+      "part_ids": [
+        "D003"
+      ]
+    },
+    {
+      "code": "MATERIAL_DETAILS_REQUIRED",
+      "severity": "BLOCKER",
+      "category": "material",
+      "message": "edge treatment, grain direction, species, moisture, wood movement review, stock dimensions",
+      "part_ids": [
+        "D003"
+      ]
+    },
+    {
+      "code": "BLANK_ALLOWANCE_REQUIRED",
+      "severity": "BLOCKER",
+      "category": "dimensional",
+      "message": "Explicit approved blank allowances are required",
+      "part_ids": [
+        "D003"
+      ]
+    },
+    {
+      "code": "MATERIAL_APPROVAL_REQUIRED",
+      "severity": "BLOCKER",
+      "category": "material",
+      "message": "Material profile needs evidence-backed approval",
+      "part_ids": [
+        "D004"
+      ]
+    },
+    {
+      "code": "MATERIAL_DETAILS_REQUIRED",
+      "severity": "BLOCKER",
+      "category": "material",
+      "message": "edge treatment, grain direction, species, moisture, wood movement review, stock dimensions",
+      "part_ids": [
+        "D004"
+      ]
+    },
+    {
+      "code": "BLANK_ALLOWANCE_REQUIRED",
+      "severity": "BLOCKER",
+      "category": "dimensional",
+      "message": "Explicit approved blank allowances are required",
+      "part_ids": [
+        "D004"
+      ]
+    },
+    {
+      "code": "MATERIAL_APPROVAL_REQUIRED",
+      "severity": "BLOCKER",
+      "category": "material",
+      "message": "Material profile needs evidence-backed approval",
+      "part_ids": [
+        "G001"
+      ]
+    },
+    {
+      "code": "MATERIAL_DETAILS_REQUIRED",
+      "severity": "BLOCKER",
+      "category": "material",
+      "message": "edge treatment",
+      "part_ids": [
+        "G001"
+      ]
+    },
+    {
+      "code": "BLANK_ALLOWANCE_REQUIRED",
+      "severity": "BLOCKER",
+      "category": "dimensional",
+      "message": "Explicit approved blank allowances are required",
+      "part_ids": [
+        "G001"
+      ]
+    },
+    {
+      "code": "CONNECTION_ENGINEERING_REQUIRED",
+      "severity": "BLOCKER",
+      "category": "joinery",
+      "message": "Complete carcass/back connections, residual walls and loads require engineered design",
+      "part_ids": []
+    },
+    {
+      "code": "HARDWARE_SPECIFICATION_REQUIRED",
+      "severity": "BLOCKER",
+      "category": "hardware",
+      "message": "No verified connector/hardware schedule is supplied",
+      "part_ids": []
+    },
+    {
+      "code": "GLASS_SPECIFICATION_REQUIRED",
+      "severity": "BLOCKER",
+      "category": "glass",
+      "message": "Glass type, actual thickness, edges, retention and safety evidence required",
+      "part_ids": [
+        "G001"
+      ]
+    },
+    {
+      "code": "DOOR_CLEARANCE_SPECIFICATION_REQUIRED",
+      "severity": "BLOCKER",
+      "category": "glass",
+      "message": "Legacy display offsets have no approved clearance basis",
+      "part_ids": []
+    },
+    {
+      "code": "GLASS_RETENTION_GEOMETRY_REQUIRED",
+      "severity": "BLOCKER",
+      "category": "glass",
+      "message": "Pane is visual only; retention and glass cut dimensions are not engineered",
+      "part_ids": [
+        "G001"
+      ]
+    },
+    {
+      "code": "DOOR_SWING_CHECK_REQUIRED",
+      "severity": "BLOCKER",
+      "category": "geometric",
+      "message": "Hinge pivot, opening sweep and collision envelope are not verified",
+      "part_ids": []
+    },
+    {
+      "code": "HARDWARE_SPECIFICATION_REQUIRED",
+      "severity": "BLOCKER",
+      "category": "hardware",
+      "message": "hinge configuration is missing",
+      "part_ids": []
+    },
+    {
+      "code": "HARDWARE_SPECIFICATION_REQUIRED",
+      "severity": "BLOCKER",
+      "category": "hardware",
+      "message": "handle configuration is missing",
+      "part_ids": []
+    },
+    {
+      "code": "HARDWARE_SPECIFICATION_REQUIRED",
+      "severity": "BLOCKER",
+      "category": "hardware",
+      "message": "glass_retainer configuration is missing",
+      "part_ids": []
+    },
+    {
+      "code": "SHOP_DRAWING_ENGINEERING_REQUIRED",
+      "severity": "BLOCKER",
+      "category": "documentation",
+      "message": "Projected review views are not complete section/joint/tolerance shop drawings",
+      "part_ids": []
+    },
+    {
+      "code": "ENGINEERING_BENCHMARK_REQUIRED",
+      "severity": "BLOCKER",
+      "category": "engineering",
+      "message": "Strength, stability, glass safety and machining safety require qualified review and a real measured benchmark",
+      "part_ids": []
+    },
+    {
+      "code": "PRICE_REQUIRED",
+      "severity": "WARNING",
+      "category": "costing",
+      "message": "No approved procurement, labour, finishing or packaging prices supplied",
+      "part_ids": []
+    },
+    {
+      "code": "GEOMETRY_CHECKS_COMPLETED",
+      "severity": "INFO",
+      "category": "geometric",
+      "message": "Solid, envelope, placement and intersection checks ran; these do not establish structural safety",
+      "part_ids": []
+    }
+  ],
+  "approved_for_manufacturing": false,
+  "has_blockers": true,
+  "status": "VALIDATION_FAILED",
+  "part_count": 10,
+  "operations_count": 0,
+  "part_ids": [
+    "P001",
+    "P002",
+    "P003",
+    "P004",
+    "P005",
+    "D001",
+    "D002",
+    "D003",
+    "D004",
+    "G001"
+  ],
+  "blocking_issues": [
+    "Physical measurements and their evidence reference must be verified",
+    "Material profile needs evidence-backed approval",
+    "edge treatment, sheet dimensions, grain direction",
+    "Explicit approved blank allowances are required",
+    "Material profile needs evidence-backed approval",
+    "edge treatment, sheet dimensions, grain direction",
+    "Explicit approved blank allowances are required",
+    "Material profile needs evidence-backed approval",
+    "edge treatment, sheet dimensions, grain direction",
+    "Explicit approved blank allowances are required",
+    "Material profile needs evidence-backed approval",
+    "edge treatment, sheet dimensions, grain direction",
+    "Explicit approved blank allowances are required",
+    "Material profile needs evidence-backed approval",
+    "edge treatment, sheet dimensions, grain direction",
+    "Explicit approved blank allowances are required",
+    "Material profile needs evidence-backed approval",
+    "edge treatment, grain direction, species, moisture, wood movement review, stock dimensions",
+    "Explicit approved blank allowances are required",
+    "Material profile needs evidence-backed approval",
+    "edge treatment, grain direction, species, moisture, wood movement review, stock dimensions",
+    "Explicit approved blank allowances are required",
+    "Material profile needs evidence-backed approval",
+    "edge treatment, grain direction, species, moisture, wood movement review, stock dimensions",
+    "Explicit approved blank allowances are required",
+    "Material profile needs evidence-backed approval",
+    "edge treatment, grain direction, species, moisture, wood movement review, stock dimensions",
+    "Explicit approved blank allowances are required",
+    "Material profile needs evidence-backed approval",
+    "edge treatment",
+    "Explicit approved blank allowances are required",
+    "Complete carcass/back connections, residual walls and loads require engineered design",
+    "No verified connector/hardware schedule is supplied",
+    "Glass type, actual thickness, edges, retention and safety evidence required",
+    "Legacy display offsets have no approved clearance basis",
+    "Pane is visual only; retention and glass cut dimensions are not engineered",
+    "Hinge pivot, opening sweep and collision envelope are not verified",
+    "hinge configuration is missing",
+    "handle configuration is missing",
+    "glass_retainer configuration is missing",
+    "Projected review views are not complete section/joint/tolerance shop drawings",
+    "Strength, stability, glass safety and machining safety require qualified review and a real measured benchmark"
+  ]
+}

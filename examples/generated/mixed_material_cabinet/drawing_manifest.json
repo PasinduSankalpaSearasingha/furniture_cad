@@ -1,0 +1,286 @@
+{
+  "revision": 1,
+  "units": "mm",
+  "status": "REVIEW",
+  "part_ids": [
+    "P001",
+    "P002",
+    "P003",
+    "P004",
+    "P005",
+    "D001",
+    "D002",
+    "D003",
+    "D004",
+    "G001"
+  ],
+  "drawings": [
+    {
+      "file": "front_elevation_REVIEW.dxf",
+      "drawing_number": "GA-001",
+      "revision": 1,
+      "status": "REVIEW",
+      "axes": [
+        0,
+        2
+      ],
+      "bounds_mm": [
+        0.0,
+        700.0,
+        0.0,
+        1800.0
+      ],
+      "width_mm": 700.0,
+      "height_mm": 1800.0,
+      "scale": "1:1 model space",
+      "units": "mm"
+    },
+    {
+      "file": "side_elevation_REVIEW.dxf",
+      "drawing_number": "GA-002",
+      "revision": 1,
+      "status": "REVIEW",
+      "axes": [
+        1,
+        2
+      ],
+      "bounds_mm": [
+        -25.0,
+        450.0,
+        0.0,
+        1800.0
+      ],
+      "width_mm": 475.0,
+      "height_mm": 1800.0,
+      "scale": "1:1 model space",
+      "units": "mm"
+    },
+    {
+      "file": "top_view_REVIEW.dxf",
+      "drawing_number": "GA-003",
+      "revision": 1,
+      "status": "REVIEW",
+      "axes": [
+        0,
+        1
+      ],
+      "bounds_mm": [
+        0.0,
+        700.0,
+        -25.0,
+        450.0
+      ],
+      "width_mm": 700.0,
+      "height_mm": 475.0,
+      "scale": "1:1 model space",
+      "units": "mm"
+    },
+    {
+      "file": "part_P001_REVIEW.dxf",
+      "drawing_number": "PT-P001",
+      "revision": 1,
+      "status": "REVIEW",
+      "axes": [
+        0,
+        1
+      ],
+      "bounds_mm": [
+        -900.0,
+        900.0,
+        -225.0,
+        225.0
+      ],
+      "width_mm": 1800.0,
+      "height_mm": 450.0,
+      "scale": "1:1 model space",
+      "units": "mm"
+    },
+    {
+      "file": "part_P002_REVIEW.dxf",
+      "drawing_number": "PT-P002",
+      "revision": 1,
+      "status": "REVIEW",
+      "axes": [
+        0,
+        1
+      ],
+      "bounds_mm": [
+        -900.0,
+        900.0,
+        -225.0,
+        225.0
+      ],
+      "width_mm": 1800.0,
+      "height_mm": 450.0,
+      "scale": "1:1 model space",
+      "units": "mm"
+    },
+    {
+      "file": "part_P003_REVIEW.dxf",
+      "drawing_number": "PT-P003",
+      "revision": 1,
+      "status": "REVIEW",
+      "axes": [
+        0,
+        1
+      ],
+      "bounds_mm": [
+        -332.0,
+        332.0,
+        -225.0,
+        225.0
+      ],
+      "width_mm": 664.0,
+      "height_mm": 450.0,
+      "scale": "1:1 model space",
+      "units": "mm"
+    },
+    {
+      "file": "part_P004_REVIEW.dxf",
+      "drawing_number": "PT-P004",
+      "revision": 1,
+      "status": "REVIEW",
+      "axes": [
+        0,
+        1
+      ],
+      "bounds_mm": [
+        -332.0,
+        332.0,
+        -225.0,
+        225.0
+      ],
+      "width_mm": 664.0,
+      "height_mm": 450.0,
+      "scale": "1:1 model space",
+      "units": "mm"
+    },
+    {
+      "file": "part_P005_REVIEW.dxf",
+      "drawing_number": "PT-P005",
+      "revision": 1,
+      "status": "REVIEW",
+      "axes": [
+        0,
+        1
+      ],
+      "bounds_mm": [
+        -882.0,
+        882.0,
+        -332.0,
+        332.0
+      ],
+      "width_mm": 1764.0,
+      "height_mm": 664.0,
+      "scale": "1:1 model space",
+      "units": "mm"
+    },
+    {
+      "file": "part_D001_REVIEW.dxf",
+      "drawing_number": "PT-D001",
+      "revision": 1,
+      "status": "REVIEW",
+      "axes": [
+        0,
+        1
+      ],
+      "bounds_mm": [
+        -879.0,
+        879.0,
+        -27.5,
+        27.5
+      ],
+      "width_mm": 1758.0,
+      "height_mm": 55.0,
+      "scale": "1:1 model space",
+      "units": "mm"
+    },
+    {
+      "file": "part_D002_REVIEW.dxf",
+      "drawing_number": "PT-D002",
+      "revision": 1,
+      "status": "REVIEW",
+      "axes": [
+        0,
+        1
+      ],
+      "bounds_mm": [
+        -879.0,
+        879.0,
+        -27.5,
+        27.5
+      ],
+      "width_mm": 1758.0,
+      "height_mm": 55.0,
+      "scale": "1:1 model space",
+      "units": "mm"
+    },
+    {
+      "file": "part_D003_REVIEW.dxf",
+      "drawing_number": "PT-D003",
+      "revision": 1,
+      "status": "REVIEW",
+      "axes": [
+        0,
+        1
+      ],
+      "bounds_mm": [
+        -274.0,
+        274.0,
+        -27.5,
+        27.5
+      ],
+      "width_mm": 548.0,
+      "height_mm": 55.0,
+      "scale": "1:1 model space",
+      "units": "mm"
+    },
+    {
+      "file": "part_D004_REVIEW.dxf",
+      "drawing_number": "PT-D004",
+      "revision": 1,
+      "status": "REVIEW",
+      "axes": [
+        0,
+        1
+      ],
+      "bounds_mm": [
+        -274.0,
+        274.0,
+        -27.5,
+        27.5
+      ],
+      "width_mm": 548.0,
+      "height_mm": 55.0,
+      "scale": "1:1 model space",
+      "units": "mm"
+    },
+    {
+      "file": "part_G001_REVIEW.dxf",
+      "drawing_number": "PT-G001",
+      "revision": 1,
+      "status": "REVIEW",
+      "axes": [
+        0,
+        1
+      ],
+      "bounds_mm": [
+        -823.0,
+        823.0,
+        -273.0,
+        273.0
+      ],
+      "width_mm": 1646.0,
+      "height_mm": 546.0,
+      "scale": "1:1 model space",
+      "units": "mm"
+    }
+  ],
+  "incomplete": [
+    "sections",
+    "exploded assembly",
+    "joint details",
+    "hardware mounting",
+    "manufacturing tolerances"
+  ]
+}

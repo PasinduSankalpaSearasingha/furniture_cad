@@ -1,0 +1,20 @@
+# Loads the packaged parametric implementations before opening the document.
+import sys
+from pathlib import Path
+import FreeCAD
+import FreeCADGui
+folder=Path(globals().get('__file__','D:\\Enfection\\furniture cad\\outputs\\editable_delivery_benchmark\\table\\cad\\open_project.FCMacro')).resolve().parent
+filename=folder/'assembly.FCStd'
+if not filename.is_file():
+    from PySide import QtGui
+    selected=QtGui.QFileDialog.getOpenFileName(None,'Select the packaged assembly or part',str(folder),'FreeCAD (*.FCStd)')[0]
+    if not selected:raise RuntimeError('No parametric CAD document selected')
+    filename=Path(selected);folder=filename.parent
+    if folder.parent.name=='parts':folder=folder.parent.parent
+sys.path.insert(0,str(folder))
+import furniture_cad_proxy
+doc=FreeCAD.openDocument(str(filename))
+for obj in doc.Objects:
+    if obj.TypeId=='Sketcher::SketchObject' and obj.ViewObject:obj.ViewObject.Visibility=False
+FreeCADGui.activeDocument().activeView().viewAxonometric()
+FreeCADGui.activeDocument().activeView().fitAll()

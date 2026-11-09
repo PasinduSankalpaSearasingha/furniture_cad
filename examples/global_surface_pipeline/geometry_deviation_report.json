@@ -1,0 +1,163 @@
+{
+  "cad_to_reference": {
+    "mean_mm": 0.00015243390784356193,
+    "rms_mm": 0.00044762696764938153,
+    "median_mm": 2.4425980882369913e-05,
+    "p95_mm": 0.00091603584587574,
+    "maximum_observed_mm": 0.008088079281151295
+  },
+  "reference_to_cad": {
+    "mean_mm": 0.00015081688468223132,
+    "rms_mm": 0.00044375087504644516,
+    "median_mm": 2.4126411517499946e-05,
+    "p95_mm": 0.0008933887584134936,
+    "maximum_observed_mm": 0.008221578784286976
+  },
+  "symmetric_mean_mm": 0.00015162539626289659,
+  "rms_mm": 0.00044569313505564916,
+  "p95_mm": 0.0009049117797985673,
+  "maximum_observed_mm": 0.008221578784286976,
+  "components": {
+    "0": {
+      "cad_to_reference": {
+        "mean_mm": 5.652078607863275e-05,
+        "rms_mm": 0.0002678060843593541,
+        "median_mm": 2.15791860682657e-05,
+        "p95_mm": 6.823938019806519e-05,
+        "maximum_observed_mm": 0.008088079281151295
+      },
+      "reference_to_cad": {
+        "mean_mm": 5.5479319349156835e-05,
+        "rms_mm": 0.0002628552820626583,
+        "median_mm": 2.15791860682657e-05,
+        "p95_mm": 6.823938019806519e-05,
+        "maximum_observed_mm": 0.008221578784286976
+      },
+      "correspondence": "geometric region correspondence; not proof of a manufactured part",
+      "mean_mm": 5.5479319349156835e-05,
+      "rms_mm": 0.0002628552820626583,
+      "median_mm": 2.15791860682657e-05,
+      "p95_mm": 6.823938019806519e-05,
+      "maximum_observed_mm": 0.008221578784286976
+    },
+    "1": {
+      "cad_to_reference": {
+        "mean_mm": 0.00035091961944257996,
+        "rms_mm": 0.000647983575714086,
+        "median_mm": 0.00018310546875,
+        "p95_mm": 0.0015286230482161045,
+        "maximum_observed_mm": 0.0052512409165501595
+      },
+      "reference_to_cad": {
+        "mean_mm": 0.00035360826521242444,
+        "rms_mm": 0.000649346444247098,
+        "median_mm": 0.00018310546875,
+        "p95_mm": 0.0015369016909971833,
+        "maximum_observed_mm": 0.006110549904406071
+      },
+      "correspondence": "geometric region correspondence; not proof of a manufactured part",
+      "mean_mm": 0.00035360826521242444,
+      "rms_mm": 0.000649346444247098,
+      "median_mm": 0.00018310546875,
+      "p95_mm": 0.0015369016909971833,
+      "maximum_observed_mm": 0.006110549904406071
+    },
+    "2": {
+      "cad_to_reference": {
+        "mean_mm": 0.00029630014069840355,
+        "rms_mm": 0.0006413598907485028,
+        "median_mm": 3.0517578125e-05,
+        "p95_mm": 0.0015611762646585703,
+        "maximum_observed_mm": 0.0054324716329574585
+      },
+      "reference_to_cad": {
+        "mean_mm": 0.0002937412375599414,
+        "rms_mm": 0.0006385367320853881,
+        "median_mm": 3.0517578125e-05,
+        "p95_mm": 0.0015286230482161045,
+        "maximum_observed_mm": 0.00549392681568861
+      },
+      "correspondence": "geometric region correspondence; not proof of a manufactured part",
+      "mean_mm": 0.0002937412375599414,
+      "rms_mm": 0.0006385367320853881,
+      "median_mm": 3.0517578125e-05,
+      "p95_mm": 0.0015286230482161045,
+      "maximum_observed_mm": 0.00549392681568861
+    },
+    "3": {
+      "cad_to_reference": {
+        "mean_mm": 0.0002928118155700383,
+        "rms_mm": 0.0006345999998131572,
+        "median_mm": 3.0517578125e-05,
+        "p95_mm": 0.0015277850907295942,
+        "maximum_observed_mm": 0.005435213912278414
+      },
+      "reference_to_cad": {
+        "mean_mm": 0.00028785216476112776,
+        "rms_mm": 0.0006272287212956999,
+        "median_mm": 3.0517578125e-05,
+        "p95_mm": 0.001496606389991939,
+        "maximum_observed_mm": 0.005495727993547916
+      },
+      "correspondence": "geometric region correspondence; not proof of a manufactured part",
+      "mean_mm": 0.00028785216476112776,
+      "rms_mm": 0.0006272287212956999,
+      "median_mm": 3.0517578125e-05,
+      "p95_mm": 0.001496606389991939,
+      "maximum_observed_mm": 0.005495727993547916
+    },
+    "4": {
+      "cad_to_reference": {
+        "mean_mm": 0.0002950836786821923,
+        "rms_mm": 0.0006374707128865458,
+        "median_mm": 3.0517578125e-05,
+        "p95_mm": 0.0015307539142668247,
+        "maximum_observed_mm": 0.005127520766109228
+      },
+      "reference_to_cad": {
+        "mean_mm": 0.00029493930796253295,
+        "rms_mm": 0.0006365667702072357,
+        "median_mm": 3.0517578125e-05,
+        "p95_mm": 0.0015261840308085084,
+        "maximum_observed_mm": 0.005375340115278959
+      },
+      "correspondence": "geometric region correspondence; not proof of a manufactured part",
+      "mean_mm": 0.00029493930796253295,
+      "rms_mm": 0.0006365667702072357,
+      "median_mm": 3.0517578125e-05,
+      "p95_mm": 0.0015261840308085084,
+      "maximum_observed_mm": 0.005375340115278959
+    }
+  },
+  "normal_loss": 0.010362120991613464,
+  "normal_rms_angle_deg": 12.953162163224496,
+  "normals_reliable": true,
+  "normal_orientation": "oriented",
+  "unmatched_reference_area_fraction": 0.0,
+  "unmatched_cad_area_fraction": 0.0,
+  "oversized_cad_area_fraction": null,
+  "oversized_status": "unverified with unsigned distances",
+  "unmatched_tolerance_mm": 2.0,
+  "cad_points": 443884,
+  "reference_points": 298496,
+  "surface_coverage": "entire triangle surface; no visibility filtering",
+  "distance_method": "Open3D closest point on triangles in both directions",
+  "cad_tessellation_tolerance_mm": 0.25,
+  "objective_loss_components": {
+    "cad_to_reference": 1.001849080517854e-07,
+    "reference_to_cad": 9.845737585905845e-08,
+    "plane_cad": 1.9567442353170025e-10,
+    "plane_reference": 1.938868833278244e-10,
+    "normal_cad": 0.0010380038930132146,
+    "normal_reference": 0.00103442023444268,
+    "component_cad": 0.004182672309439328,
+    "component_reference": 2.4614982070152595e-08
+  },
+  "sdf": {
+    "eligible": false,
+    "reason": "self-intersections or intersecting shells",
+    "requested": "auto",
+    "enabled": false,
+    "sampling": "sparse query points; no dense voxel field"
+  }
+}
