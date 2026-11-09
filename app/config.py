@@ -15,6 +15,8 @@ class Settings:
     local_workspace: bool = field(default_factory=lambda: os.getenv('LOCAL_WORKSPACE','0') == '1')
     # Hosted without login: the single workspace is open to anyone who can reach the URL.
     public_workspace: bool = field(default_factory=lambda: os.getenv('PUBLIC_WORKSPACE','0') == '1')
+    # Let visitors create their own designer account from the sign-in page.
+    allow_signup: bool = field(default_factory=lambda: os.getenv('ALLOW_SIGNUP','0') == '1')
     local_workflow_process: bool = field(default_factory=lambda: os.getenv('LOCAL_WORKFLOW_PROCESS','1') == '1')
     max_request_bytes: int = 2 * 1024 * 1024
     ai_enabled: bool = field(default_factory=lambda: os.getenv('AI_ENABLED','0') == '1')

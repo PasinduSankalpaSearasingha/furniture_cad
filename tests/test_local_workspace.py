@@ -94,7 +94,7 @@ def test_local_mode_is_optional_and_accepts_same_origin(local_app):
         assert client.get('/api/v1/workspace/access').status_code == 200
     local_app.state.settings.local_workspace = False
     with local_client(local_app) as client:
-        assert client.get('/api/v1/workspace/access').json() == {'mode':'authenticated','user':None}
+        assert client.get('/api/v1/workspace/access').json() == {'mode':'authenticated','user':None,'signup':False}
         assert client.get('/api/v1/projects').status_code == 401
 
 

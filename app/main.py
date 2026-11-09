@@ -33,6 +33,11 @@ class Login(StrictModel):
     password: str = Field(min_length=1,max_length=256)
 
 
+class Signup(StrictModel):
+    username: str = Field(min_length=3,max_length=80,pattern=r'^[A-Za-z0-9_.@-]+$')
+    password: str = Field(min_length=8,max_length=256)
+
+
 class CreateUser(Login):
     password: str = Field(min_length=12,max_length=256)
     role: Literal['admin','designer','operator','viewer']
@@ -254,7 +259,7 @@ def create_app(config: Settings | None = None):
 
     @api.get('/api/v1/workspace/access')
     def workspace_access(request: Request):
-        if not config.local_workspace: return dict(mode='authenticated',user=None)
+        if not config.local_workspace: return dict(mode='authenticated',user=None,signup=config.allow_signup)
         user = local_workspace_user(request)
         return dict(mode='local',user=dict(id=user.id,username='My workspace',role=user.role))
 
@@ -280,6 +285,23 @@ def create_app(config: Settings | None = None):
         require_same_origin(request)
         result = login(data,session)
         response.set_cookie(WORKSPACE_COOKIE,result['access_token'],max_age=result['expires_in'],
+            httponly=True,secure=request.url.scheme=='https',samesite='strict',path='/')
+        return {'authenticated':True}
+
+    @api.post('/api/v1/workspace/signup',status_code=201)
+    def workspace_signup(data: Signup, request: Request, response: Response, session=Depends(db_session)):
+        if not config.allow_signup: raise HTTPException(403,'Sign-up is turned off')
+        require_same_origin(request)
+        if session.scalar(select(User.id).where(User.username==data.username)):
+            raise HTTPException(409,'That username is already taken')
+        user = User(username=data.username,password_hash=hash_password(data.password),role='designer')
+        session.add(user)
+        try: session.flush()
+        except IntegrityError: raise HTTPException(409,'That username is already taken')
+        audit(session,user.id,'user_signed_up',user.id,role=user.role)
+        raw = issue_token(session,user,config.token_hours)
+        session.commit()
+        response.set_cookie(WORKSPACE_COOKIE,raw,max_age=config.token_hours*3600,
             httponly=True,secure=request.url.scheme=='https',samesite='strict',path='/')
         return {'authenticated':True}
 
