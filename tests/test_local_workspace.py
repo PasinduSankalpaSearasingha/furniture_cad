@@ -96,3 +96,13 @@ def test_local_mode_is_optional_and_accepts_same_origin(local_app):
     with local_client(local_app) as client:
         assert client.get('/api/v1/workspace/access').json() == {'mode':'authenticated','user':None}
         assert client.get('/api/v1/projects').status_code == 401
+
+
+def test_public_workspace_opens_without_login_behind_a_proxy(local_app):
+    local_app.state.settings.public_workspace = True
+    remote = dict(base_url='https://fraugment.com', client=('10.0.1.5',50000))
+    with local_client(local_app, headers={'Origin':'https://fraugment.com','Sec-Fetch-Site':'same-origin'}, **remote) as client:
+        assert client.get('/api/v1/workspace/access').json()['mode'] == 'local'
+        assert client.post('/api/v1/projects',json={'name':'Hosted, no login'}).status_code == 201
+    with local_client(local_app, headers={'Origin':'https://evil.example','Sec-Fetch-Site':'cross-site'}, **remote) as client:
+        assert client.post('/api/v1/projects',json={'name':'Cross-site'}).status_code == 403

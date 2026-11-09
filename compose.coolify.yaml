@@ -2,6 +2,7 @@
 # - no host ports: Coolify's proxy routes the domain to api:8000 over the Docker network
 # - no YAML anchors: Coolify's compose parser is unreliable with them
 # - SERVICE_PASSWORD_POSTGRES is a Coolify magic variable (auto-generated password)
+# - no login: LOCAL_WORKSPACE=1 + PUBLIC_WORKSPACE=1 open one shared workspace to anyone with the URL
 # - the domain is set by hand in Coolify on the api service, e.g. https://fraugment.com:8000
 # In Coolify: Build Pack = Docker Compose, Docker Compose Location = /compose.coolify.yaml
 
@@ -41,7 +42,8 @@ services:
       REDIS_URL: redis://redis:6379/0
       STORAGE_ROOT: /srv/artifacts
       JOB_EXECUTOR: celery
-      LOCAL_WORKSPACE: '0'
+      LOCAL_WORKSPACE: ${LOCAL_WORKSPACE:-1}
+      PUBLIC_WORKSPACE: ${PUBLIC_WORKSPACE:-1}
     volumes:
       - artifacts:/srv/artifacts
     depends_on:
@@ -51,12 +53,15 @@ services:
 
   api:
     build: .
+    # Trust Coolify's proxy so the app sees https://fraugment.com, not http://<container>
+    command: [uvicorn, app.main:app, --host, 0.0.0.0, --port, '8000', --log-level, info, --proxy-headers, --forwarded-allow-ips, '*']
     environment:
       DATABASE_URL: postgresql+psycopg://furniture:${SERVICE_PASSWORD_POSTGRES}@postgres:5432/furniture
       REDIS_URL: redis://redis:6379/0
       STORAGE_ROOT: /srv/artifacts
       JOB_EXECUTOR: celery
-      LOCAL_WORKSPACE: '0'
+      LOCAL_WORKSPACE: ${LOCAL_WORKSPACE:-1}
+      PUBLIC_WORKSPACE: ${PUBLIC_WORKSPACE:-1}
       AI_ENABLED: ${AI_ENABLED:-0}
       OPENAI_API_KEY: ${OPENAI_API_KEY:-}
       OPENAI_REASONING_MODEL: ${OPENAI_REASONING_MODEL:-}
@@ -95,7 +100,8 @@ services:
       REDIS_URL: redis://redis:6379/0
       STORAGE_ROOT: /srv/artifacts
       JOB_EXECUTOR: celery
-      LOCAL_WORKSPACE: '0'
+      LOCAL_WORKSPACE: ${LOCAL_WORKSPACE:-1}
+      PUBLIC_WORKSPACE: ${PUBLIC_WORKSPACE:-1}
       AI_ENABLED: ${AI_ENABLED:-0}
       OPENAI_API_KEY: ${OPENAI_API_KEY:-}
       OPENAI_REASONING_MODEL: ${OPENAI_REASONING_MODEL:-}

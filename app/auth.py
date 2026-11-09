@@ -23,16 +23,20 @@ def require_same_origin(request: Request):
 
 def local_workspace_user(request: Request):
     """Resolve the single local designer without accepting remote or cross-site access."""
-    try:
-        peer = ipaddress.ip_address(request.client.host if request.client else '')
-        local_peer = peer.is_loopback or bool(getattr(peer,'ipv4_mapped',None) and peer.ipv4_mapped.is_loopback)
-    except ValueError:
-        local_peer = False
-    origin = request.headers.get('origin')
-    if (not local_peer or request.url.hostname not in ('127.0.0.1','localhost','::1') or
-        request.headers.get('sec-fetch-site','none') not in ('none','same-origin') or
-        (origin and origin.rstrip('/') != str(request.base_url).rstrip('/'))):
-        raise HTTPException(403,'Local workspace requires a direct same-origin loopback connection')
+    if getattr(request.app.state.settings,'public_workspace',False):
+        # Hosted deployment with login deliberately disabled: no loopback check, same-origin still enforced.
+        require_same_origin(request)
+    else:
+        try:
+            peer = ipaddress.ip_address(request.client.host if request.client else '')
+            local_peer = peer.is_loopback or bool(getattr(peer,'ipv4_mapped',None) and peer.ipv4_mapped.is_loopback)
+        except ValueError:
+            local_peer = False
+        origin = request.headers.get('origin')
+        if (not local_peer or request.url.hostname not in ('127.0.0.1','localhost','::1') or
+            request.headers.get('sec-fetch-site','none') not in ('none','same-origin') or
+            (origin and origin.rstrip('/') != str(request.base_url).rstrip('/'))):
+            raise HTTPException(403,'Local workspace requires a direct same-origin loopback connection')
     db = request.app.state.db
     try:
         with db.sessions.begin() as session:
